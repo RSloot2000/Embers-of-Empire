@@ -1,5 +1,0 @@
-﻿eoe_nick_augustulus = {}
-eoe_nick_philoromaios = {}
-eoe_nick_ktistes = {}
-eoe_nick_restitutor_galliarum = {}
-eoe_nick_restitutor_britanniae = {}
