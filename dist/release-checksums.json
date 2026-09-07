@@ -6,8 +6,8 @@
       "mod": "mods/eoe-main",
       "workshopId": "3679840613",
       "version": "1.18.3",
-      "size": 43789998,
-      "sha256": "f89e4ae7c0b814cfec960f440c4a7be2355a053f4f698745815db87519896dce"
+      "size": 101234628,
+      "sha256": "90d09ea67934b5eb1321459033dcc3eb76d693ec20919b6476d77a9fa63ea6da"
     },
     {
       "artifact": "eoe-compat-epe-v1.18.3.1.zip",
@@ -15,7 +15,7 @@
       "workshopId": "3679849030",
       "version": "1.18.3.1",
       "size": 815925,
-      "sha256": "5706438d547fe701a0ba146e4eb7440ccdc7027e039b967657f66763ea3df5ff"
+      "sha256": "fc97c8cc0a6366bbb45e210ec3d31d6f900ca33d87abf443616e42413697b0d4"
     },
     {
       "artifact": "eoe-compat-it-v1.18.3.zip",
@@ -31,7 +31,7 @@
       "workshopId": "3679850009",
       "version": "1.18.2",
       "size": 794536,
-      "sha256": "9c7b831df3c4c115f4e156ea6cb28fe8dcf77a5e151515ed3f1d12c083fe890a"
+      "sha256": "45622de0f86f76bef418801efb423a15b4571eb497644a55355b9616fe8c9393"
     }
   ]
 }
