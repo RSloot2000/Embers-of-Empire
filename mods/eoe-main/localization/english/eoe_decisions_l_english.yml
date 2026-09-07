@@ -20,6 +20,8 @@
  sol_invictus_tooltip:0 "Sol was an early Roman sun god who seemed to vanish in the 1st century but was later revived during the reign of Emperor Aurelian."
  convert_julianism_desc:0 "Julianism"
  julianism_tooltip:0 "$julianism_desc$"
+ convert_orphism_desc:0 "Orphism"
+ orphism_tooltip:0 "$orphism_desc$"
  CHOOSE_RELIGION_BUTTON:0 "Survey the Paths"
  CHOOSE_HELLENIC_BUTTON:0 "Undergo the Rites"
 

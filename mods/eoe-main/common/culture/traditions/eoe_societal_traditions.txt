@@ -59,7 +59,7 @@ tradition_roman_militarism = {
 	layers = {
 		0 = eoe_bottom_layer_gold.dds
 		1 = eoe_pattern_3.dds
-		2 = rec3.dds
+		2 = rec3
 		4 = roman_militarism.dds
 	}
 

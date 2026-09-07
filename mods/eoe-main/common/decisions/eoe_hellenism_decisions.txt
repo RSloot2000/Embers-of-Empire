@@ -146,6 +146,20 @@ convert_hellenism_religion_decision = {
 				value = 0
 			}
 		}
+		item = {
+			value = orphism
+			current_description = {
+				desc = convert_orphism_desc
+			}
+			localization  = {
+				desc = convert_orphism_desc
+			}
+			icon = "gfx/interface/icons/faith/orphism.dds"
+
+			ai_chance = {
+				value = 0
+			}
+		}
 	}
 	effect = {
 		custom_tooltip = convert_hellenism_decision_tooltip_1
@@ -209,6 +223,15 @@ convert_hellenism_religion_decision = {
 					scope:julianism = yes
 				}
             set_character_faith_with_conversion = faith:julianism
+			capital_county = { set_county_faith = root.faith }
+            }
+		}
+		hidden_effect = {
+            if = {
+				limit = {
+					scope:orphism = yes
+				}
+            set_character_faith_with_conversion = faith:orphism
 			capital_county = { set_county_faith = root.faith }
             }
 		}

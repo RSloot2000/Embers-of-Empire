@@ -1011,6 +1011,7 @@ k_imperium = {
 }
 
 d_pontificate = {
+	custom=yes
 	pattern="pattern_solid.dds"
 	color1=white
 	color2=yellow
@@ -1032,6 +1033,7 @@ d_pontificate = {
 }
 
 k_mesopotamia_roman = {
+	custom=yes
 	pattern="pattern_solid.dds"
 	color1=purple
 	color2=yellow
@@ -1059,6 +1061,7 @@ k_mesopotamia_roman = {
 }
 
 e_praetorian_albion = {
+	custom=yes
 	pattern="pattern_solid.dds"
 	color1=white
 	color2=yellow

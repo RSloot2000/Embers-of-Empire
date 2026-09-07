@@ -62,9 +62,7 @@
     doctrine_henotheist_desc: "While there are many Gods one reigns supreme above all."
 
     k_imperium:0 "Imperium"
-    k_imperium_adj:0 "Imperial"
     d_pontificate:0 "Pontificate"
-    d_pontificate_adj:0 "Pontifical"
 
     #Druidism and other Celts
 
@@ -90,7 +88,6 @@
  druidism_high_god_name_alternate:0 "Father Sky"
  druidism_high_god_name_alternate_possessive:0 "Father Sky's"
  druidism_good_god_father_sky:0 "$druidism_high_god_name$"
- druidism_good_god_ancestors:0 "the Ancestors"
  druidism_good_god_protection:0 "Toutatis"
  druidism_good_god_sailors:0 "Esus"
  druidism_devil_name:0 "Cernunnos"
@@ -136,7 +133,7 @@
  druidism_religious_head_title:0 "High Druid"
  druidism_religious_head_title_name:0 "Druid Council"
  druidism_devotee:0 "Vate"
- druidism_devoteeplural:0 "Vates"
+ druidism_devoteep_lural:0 "Vates"
  druidism_priest:0 "Bard"
  druidism_priest_plural:0 "Bards"
  druidism_priest_alternate_plural:0 "Druids"
@@ -164,15 +161,11 @@
  irish_druidism_good_god_protection:0 "$irish_druidism_high_god_name$"
  irish_druidism_devil_name:0 "Balor"
  irish_druidism_devil_name_possessive:0 "Balor's"
- irish_druidism_devil_shehe:0 "he"
- irish_druidism_devil_herselfhimself:0 "himself"
  irish_druidism_evil_god_decay:0 "$irish_druidism_devil_name$"
  irish_druidism_evil_god_decay_possessive:0 "$irish_druidism_devil_name$"
  irish_druidism_evil_god_drought:0 "$irish_druidism_devil_name$"
  irish_druidism_death_deity_name:0 "Donn"
  irish_druidism_death_deity_name_possessive:0 "Donn's"
- irish_druidism_death_deity_herhis:0 "his"
- irish_druidism_afterlife:0 "the Otherworld"
  irish_druidism_pantheon_gods:0 "the Tuatha Dé Danann"
  irish_druidism_pantheon_gods_possesive:0 "the Tuatha Dé Danann's"
 
@@ -198,7 +191,7 @@
  irish_druidism_night_god_name_possessive:0 "Arianrhod's"
  irish_druidism_water_god_name:0 "$irish_druidism_high_god_name$"
  irish_druidism_water_god_name_possessive:0 "$irish_druidism_high_god_name_possessive$"
- witchgodname_irish_druidism_the_shadow:0 "the Cailleach"
+ witchgodname_irish_ruidism_the_shadow:0 "the Cailleach"
 
  pictish_druidism:0 "Pictish Paganism"
  pictish_druidism_adj:0 "Pictish"
@@ -266,10 +259,6 @@
  gaulish_death_deity_name:0 "Vellaunus"
  gaulish_death_deity_name_possessive:0 "Vellaunus'"
  gaulish_witchgodname_morrigan:0 "Adsagsona"
- gaulish_religious_head_title:0 "High Druid"
- holy_order_vercingetorix_warband:0 "Vercingetorix's Warband"
- holy_order_cingeth_u_caturix:0 "Cingeth U Caturix"
- holy_order_heroes_of_gaul:0 "Heroes of Gaul"
 
  gaulish_pagan:0 "Gaulish"
  gaulish_pagan_adj:0 "Gaulish"
@@ -296,7 +285,7 @@
  celto_hellenic_syncretism_high_god_name:0 "Taranis Jupiter"
  celto_hellenic_syncretism_high_god_name_possesive:0 "Taranis Jupiter's"
  celto_hellenic_syncretism_high_god_name_alternate:0 "Jupiter Poeninus"
- celto_hellenic_syncretism_high_god_name_alternate_possessive:0 "Jupiter Poeninus'"
+ celto_hellenic_syncretism_high_god_name_alternate_possesive:0 "Jupiter Poeninus'"
  celto_hellenic_syncretism_creator_god_name:0 "Dis Pater"
  celto_hellenic_syncretism_creator_god_name_possessive:0 "Dis Pater's"
  
@@ -430,9 +419,7 @@
  holy_site_anglesey_name:0 "Ynis Mon Grove"
  holy_site_anglesey_effect_name:0 "From [holy_site|E] #weak ($holy_site_anglesey_name$)#!"
  holy_site_tara_name:0 "Hill Of Tara"
- holy_site_tara_effect_name:0 "From [holy_site|E] #weak ($holy_site_tara_name$)#!"
- holy_site_ephesos_name:0 "Ephesos"
- holy_site_ephesos_effect_name:0 "From [holy_site|E] #weak ($holy_site_ephesos_name$)#!"
+ #holy_site_tara_effect_name:0 "From [holy_site|E] #weak ($holy_site_sligo_name$)#!"
  holy_site_fortriu_name:0 "Fortriu"
  holy_site_fortriu_effect_name:0 "From [holy_site|E] #weak ($holy_site_fortriu_name$)#!"
  holy_site_hexham_name:0 "Hadrian's Wall"
@@ -453,14 +440,8 @@
  holy_site_lysa_gora_name:0 "Łysa Góra"
  holy_site_lysa_gora_effect_name:0 "From [holy_site|E] #weak ($holy_site_lysa_gora_name$)#!"
  holy_site_brigantium_name:0 "Brigantium"
- holy_site_brigantium_effects:0 "The wealth of the Atlantic coast strengthens this holy site."
  holy_site_alesia_name:0 "Alesia"
- holy_site_alesia_effects:0 "The memory of Alesia inspires religious conversion."
- holy_site_vannes_name:0 "Vannes"
- holy_site_vannes_effects:0 "The sacred traditions of Vannes inspire faithful warriors."
- holy_site_zherkovo_effects:0 "The Sanctum of Orpheus strengthens learning and religious tolerance."
 
  k_myrdidin:0 "Myrdidin"
- k_myrdidin_adj:0 "Myrdidin"
 
 

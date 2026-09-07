@@ -4,7 +4,7 @@
 	layers = {
 		0 = eoe_bottom_layer_gold.dds
 		1 = eoe_pattern_3.dds
-		2 = rec3.dds
+		2 = rec3
 		4 = sundered_legacy.dds
 	}
 
@@ -44,7 +44,7 @@ tradition_imperium = {
 	layers = {
 		0 = eoe_bottom_layer_white.dds
 		1 = eoe_pattern_1.dds
-		2 = rec3.dds
+		2 = rec3
 		4 = roman_eagle.dds 
 	}
 
@@ -92,7 +92,7 @@ tradition_sacrum_imperium = {
 	layers = {
 		0 = eoe_bottom_layer_gold.dds
 		1 = eoe_pattern_3.dds
-		2 = rec3.dds
+		2 = rec3
 		4 = chi_roh.dds 
 	}
 
@@ -151,7 +151,7 @@ tradition_roman_legalism = {
 	layers = {
 		0 = eoe_bottom_layer_gold.dds
 		1 = eoe_pattern_3.dds
-		2 = rec3.dds
+		2 = rec3
 		4 = roman_law.dds
 	}
 
@@ -197,7 +197,7 @@ tradition_molded_architecture = {
 	layers = {
 		0 = eoe_bottom_layer_gold.dds
 		1 = eoe_pattern_3.dds
-		2 = rec3.dds
+		2 = rec3
 		4 = roman_temple.dds 
 	}
 

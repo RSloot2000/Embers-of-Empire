@@ -28,6 +28,9 @@
 # writing
 # figures
 
+# Double underscore intentional to make it the first option in the list
+ce__empty_designer.dds = { colors = 0 category = abstract }
+
 ce_african_asetena.dds = { colors = 1 category = abstract }
 ce_african_builder_god.dds = { colors = 1 category = abstract }
 ce_african_duguwa.dds = { colors = 1 category = abstract }
@@ -1121,6 +1124,7 @@ ce_tamgha_zoroastrian_09.dds = { colors = 1 category = tribal_seal }
 ce_tamgha_zoroastrian_10.dds = { colors = 1 category = tribal_seal }
 ce_tamgha_yelu.dds = { colors = 1 category = tribal_seal }
 ce_tamgha_pecheneg.dds = { colors = 1 category = tribal_seal }
+ce_tamgha_ashina.dds = { colors = 1 category = tribal_seal }
 ce_arabic_allah.dds = { colors = 1 category = writing }
 ce_arabic_ali.dds = { colors = 1 category = writing }
 ce_arabic_allah_kufic.dds = { colors = 1 category = writing }
@@ -1165,6 +1169,32 @@ ce_letter_z.dds = { colors = 1 category = writing }
 ce_norse_frame_urnes.dds = { colors = 2 category = writing }
 ce_rune_algiz.dds = { colors = 1 category = writing }
 ce_rune_ehwaz.dds = { colors = 1 category = writing }
+ce_rune_futhark_ar.dds = { colors = 1 category = writing }
+ce_rune_futhark_bjarkan.dds = { colors = 1 category = writing }
+ce_rune_futhark_fe.dds = { colors = 1 category = writing }
+ce_rune_futhark_hagall.dds = { colors = 1 category = writing }
+ce_rune_futhark_kaun.dds = { colors = 1 category = writing }
+ce_rune_futhark_logr.dds = { colors = 1 category = writing }
+ce_rune_futhark_madr.dds = { colors = 1 category = writing }
+ce_rune_futhark_naudr.dds = { colors = 1 category = writing }
+ce_rune_futhark_oss.dds = { colors = 1 category = writing }
+ce_rune_futhark_reid.dds = { colors = 1 category = writing }
+ce_rune_futhark_sol.dds = { colors = 1 category = writing }
+ce_rune_futhark_thurs.dds = { colors = 1 category = writing }
+ce_rune_futhark_tyr.dds = { colors = 1 category = writing }
+ce_rune_futhark_ur.dds = { colors = 1 category = writing }
+ce_rune_futhark_yr.dds = { colors = 1 category = writing }
+ce_rune_hagal.dds = { colors = 1 category = writing }
+ce_rune_hagalaz.dds = { colors = 1 category = writing }
+ce_rune_laguz.dds = { colors = 1 category = writing }
+ce_rune_mannaz.dds = { colors = 1 category = writing }
+ce_rune_nauthiz.dds = { colors = 1 category = writing }
+ce_rune_odal.dds = { colors = 1 category = writing }
+ce_rune_sowulo.dds = { colors = 1 category = writing }
+ce_rune_tiwaz.dds = { colors = 1 category = writing }
+ce_rune_wunjo.dds = { colors = 1 category = writing }
+ce_snake_witch.dds = { colors = 1 category = figures }
+ce_tibetan_aum.dds = { colors = 1 category = writing }
 ce_rune_futhark_ar.dds = { colors = 1 category = writing }
 ce_rune_futhark_bjarkan.dds = { colors = 1 category = writing }
 ce_rune_futhark_fe.dds = { colors = 1 category = writing }
@@ -1485,6 +1515,7 @@ ce_seal_name_lu_9b6f.dds = { colors = 1 category = chinese_seal }
 ce_seal_name_qing_9751.dds = { colors = 1 category = chinese_seal }
 ce_seal_name_cang_6ec4.dds = { colors = 1 category = chinese_seal }
 ce_seal_name_wei_885e.dds = { colors = 1 category = chinese_seal }
+ce_seal_name_ding_589a.dds = { colors = 1 category = chinese_seal }
 ce_seal_name_ying_701b.dds = { colors = 1 category = chinese_seal }
 ce_seal_name_you_5e7d.dds = { colors = 1 category = chinese_seal }
 ce_seal_name_gui_5b00.dds = { colors = 1 category = chinese_seal }
