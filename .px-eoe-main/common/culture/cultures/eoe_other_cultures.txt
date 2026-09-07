@@ -1,0 +1,177 @@
+﻿illyrian = {
+	color = { 0.4 0.2 0.2 }
+
+	ethos = ethos_bellicose
+	heritage = heritage_albanian
+	language = language_illyrian
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_practiced_pirates # Cybr: Illyrian pirates
+		tradition_seafaring # Cybr: Famous seafarers
+		tradition_stand_and_fight # Cybr: Resistance to Romans, I dunno
+		# From Illyro-Romans
+		tradition_hill_dwellers # Juli: Illyria is a hilly area
+	}
+	
+	name_list = name_list_illyro_roman
+	
+	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { northern_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+
+	ethnicities = {
+		10 = mediterranean
+	}
+}
+
+thracian = {
+	color = { 108 20 50 }
+
+	ethos = ethos_bellicose
+	heritage = heritage_daco_thracian
+	language = language_thracian
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		#tradition_adaptive_skirmishing # Cybr: Well known for skirmishing
+		tradition_hit_and_run # Cybr: Known for being excellent cavalrymen
+		tradition_swords_for_hire # Cybr: Sought after mercenaries for Greeks and Romans, many served in Roman armies
+		#tradition_pastoralists # Cybr: It's there in the region I guess
+		tradition_mystical_ancestors # Cybr: Thracian kings were believed to have divine origins
+		tradition_orpheus # Cybr: Orpheus was an important figure in Thracian culture and religion
+	}
+
+	dlc_tradition = { # Cybr: Persian and Greek influences
+		trait = tradition_culture_blending
+		requires_dlc_flag = hybridize_culture
+	}
+	
+	name_list = name_list_thracio_roman # Should have their own namelist type in the future
+	
+	coa_gfx = { latin_group_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { northern_clothing_gfx }
+	unit_gfx = { eastern_unit_gfx }
+
+	ethnicities = {
+		10 = mediterranean
+	}
+}
+
+cantabrian = {
+	color = { 0.35 0.7 0.1 }
+
+	ethos = ethos_bellicose
+	heritage = heritage_celtiberian
+	language = language_celtiberian
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_pastoralists
+		tradition_poetry
+		tradition_mountaineers
+		tradition_ancient_miners
+		tradition_sacred_groves # Cybr: Worshipped trees and stuff
+	}
+	
+	name_list = name_list_cantabrian
+	
+	coa_gfx = { iberian_group_coa_gfx }
+	building_gfx = { iberian_building_gfx  } # Matt: previously western_building_gfx
+	clothing_gfx = { northern_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+
+	ethnicities = {
+		10 = mediterranean
+	}
+}
+
+gaul = {
+	color = { 0.4 0.8 0.12 }
+
+	ethos = ethos_communal
+	heritage = heritage_celtic
+	language = language_celtic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_pastoralists
+		tradition_poetry
+		tradition_polygamous
+		tradition_language_scholars
+		tradition_monastic_communities
+	}
+	
+	name_list = name_list_gaul
+	
+	coa_gfx = { celtic_coa_gfx }
+	building_gfx = { western_building_gfx  }
+	clothing_gfx = { northern_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+
+	ethnicities = {
+		25 = caucasian_blond
+		25 = caucasian_ginger
+		25 = caucasian_brown_hair
+		25 = caucasian_dark_hair
+	}
+}
+
+punic = {
+	color = { 0.26 0.27 0.47 }
+	ethos = ethos_egalitarian # Spiritual or bureaucratic?
+	heritage = heritage_levantine
+	language = language_phoenician
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_maritime_mercantilism # Cybr: Carthaginian trade
+		tradition_seafaring # Cybr: More sailing
+		tradition_city_keepers # Cybr: Carthaginian colonies
+		tradition_legalistic # Cybr: To represent complex Carthaginian oligarchic system
+		tradition_religion_blending # Cybr: Carthaginian religious syncretism, and later Christian and Manichean presence
+	}
+	
+	name_list = name_list_phoenician
+
+	coa_gfx = { arabic_group_coa_gfx } 
+	building_gfx = { levantine_building_gfx mediterranean_building_gfx }
+	clothing_gfx = { dde_abbasid_clothing_gfx mena_clothing_gfx } 
+	unit_gfx = { mena_unit_gfx } 
+
+	ethnicities = {
+		10 = arab
+	}
+}
+
+briton = {
+	color = { 97 129 170 }
+
+	ethos = ethos_bellicose
+	heritage = heritage_brythonic
+	language = language_brythonic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_stand_and_fight # Juli: Britons where really really stubborn on loosing their homelands, (pre-romman and sub-roman)
+		tradition_storytellers # Juli: Strong Celtic Influences of their lore are still present today in Europe, they certainly liked to tell stories :P
+		tradition_quarrelsome # Juli: Britons brought their own demise by constantly fighting each other (goofy ahh)
+		tradition_loyal_soldiers # Juli: Britons where proud to be part of the Roman Empire
+	}
+	
+	name_list = name_list_briton
+	
+	coa_gfx = { celtic_coa_gfx }
+	building_gfx = { western_building_gfx  }
+	clothing_gfx = { northern_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+
+	ethnicities = {
+		25 = caucasian_blond
+		25 = caucasian_ginger
+		25 = caucasian_brown_hair
+		25 = caucasian_dark_hair
+	}
+}

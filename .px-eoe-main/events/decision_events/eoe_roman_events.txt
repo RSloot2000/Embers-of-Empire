@@ -1,0 +1,678 @@
+﻿namespace = eoe_roman_event
+
+eoe_roman_event.0001 = {
+        type = character_event
+        title = eoe_roman_events.0001.title
+        desc = eoe_roman_events.0001.desc
+        theme = byzantine
+    override_background = { reference = throne_room }
+    override_effect_2d = { reference = legend_glow }
+
+    left_portrait = {
+        character = root
+        animation = war_over_win
+    }
+    immediate = {
+        every_culture_global = {              
+            if = {      
+                limit = {
+                    AND = {
+                        has_cultural_pillar = language_latin
+                        has_cultural_pillar = heritage_latin
+                    }
+                }
+            remove_culture_tradition = tradition_sundered_soul
+            }
+        }
+    }
+    option = { 
+        trigger = {
+		    custom_tooltip = {
+			    text = must_be_hellenic
+                OR = {
+                    has_religion = religion:hellenism_religion
+                    faith = {
+                        has_doctrine = tenet_hellenic_syncretism
+                    }
+                }
+            }
+        }  
+        name = eoe_roman_event.0001.a
+        culture = {
+            add_culture_tradition = tradition_imperium
+        }
+        hidden_effect = { # Latins' chance to convert.
+			every_vassal_or_below = {
+				limit = {
+					capital_province = {
+						geographical_region = world_europe_south_italy
+					}
+					is_ai = yes
+				}
+				random = {
+					chance = 60
+					set_culture_same_as = root
+					capital_county = {
+						set_county_culture = root.culture
+                        set_county_faith = root.faith
+					}
+				}
+			}
+		}
+    }
+    option = {
+        trigger = {
+		    custom_tooltip = {
+			    text = must_be_christian
+                has_religion = religion:christianity_religion
+            }
+        } 
+        name = eoe_roman_event.0001.b
+        culture = {
+            add_culture_tradition = tradition_sacrum_imperium
+        }
+    }
+    after = {
+        every_culture_global = {              
+            if = {      
+                limit = {
+                    AND = {
+                        has_cultural_pillar = language_latin
+                        has_cultural_pillar = heritage_latin
+                    }
+                }
+                add_culture_tradition = tradition_molded_architecture
+            }
+        }
+    }
+}
+
+eoe_roman_event.0002 = {
+        type = character_event
+        title = eoe_roman_events.0002.title
+        desc = eoe_roman_events.0002.desc
+        theme = stewardship
+    override_background = { reference = study }
+
+    left_portrait = {
+        character = root
+        animation = steward
+    }
+    option = {    
+        name = eoe_roman_event.0002.a
+        every_culture_global = {              
+            if = {      
+                limit = {
+                    AND = {
+                        has_cultural_pillar = language_latin
+                        has_cultural_pillar = heritage_latin
+                    }
+                }
+                add_culture_tradition = tradition_roman_legalism
+            }
+        }
+    }
+}
+
+eoe_roman_event.0003 = {
+        type = character_event
+        title = eoe_roman_events.0003.title
+        desc = eoe_roman_events.0003.desc
+        theme = martial
+    override_background = { reference = armory }
+
+    left_portrait = {
+        character = root
+        animation = marshal
+    }
+    option = {    
+        name = eoe_roman_event.0003.a
+        every_culture_global = {              
+            if = {      
+                limit = {
+                    AND = {
+                        has_cultural_pillar = language_latin
+                        has_cultural_pillar = heritage_latin
+                    }
+                }
+                add_culture_tradition = tradition_roman_militarism
+            }
+        }
+    }
+}
+
+# Culture Conversion decisions #
+
+eoe_roman_event.0004 = {
+        type = character_event
+        title = eoe_roman_event.0004.title
+        desc = eoe_roman_event.0004.desc
+        theme = emperor
+    override_background = { reference = wilderness_mountains }
+
+    left_portrait = {
+        character = root
+        animation = steward
+    }
+    option = {    
+        name = eoe_roman_event.0004.a
+        hidden_effect ={
+            every_vassal_or_below = {
+			    limit = {
+				    capital_province = {
+					    geographical_region = eoe_raetia_custom
+				    }
+				    is_ai = yes
+			    }
+			    random = {
+				    chance = 60
+                    set_culture = culture:rhaetio_roman
+                    set_character_faith = root.faith
+				    capital_county = {
+					    set_county_culture = culture:rhaetio_roman
+                        set_county_faith = root.faith
+				    }
+        	    }
+		    }
+        }
+    }
+    after = {
+		eoe_clear_resettled_county_resistance_effect = {
+			REGION = eoe_raetia_custom
+			CULTURE = culture:rhaetio_roman
+		}
+        add_character_modifier = {
+            modifier = eoe_forced_migration
+            years = 10
+        }
+    }
+}
+
+eoe_roman_event.0005 = {
+        type = character_event
+        title = eoe_roman_event.0005.title
+        desc = eoe_roman_event.0005.desc
+        theme = emperor
+    override_background = { reference = wilderness_mountains }
+
+    left_portrait = {
+        character = root
+        animation = steward
+    }
+    option = {    
+        name = eoe_roman_event.0005.a
+        hidden_effect = {
+            every_vassal_or_below = {
+			    limit = {
+				    capital_province = {
+					    geographical_region = illyricum_pannoniae_diocese_region
+				    }
+				    is_ai = yes
+			    }
+			    random = {
+				    chance = 60
+                    set_culture = culture:illyro_roman
+                    set_character_faith = root.faith
+				    capital_county = {
+					    set_county_culture = culture:illyro_roman
+                        set_county_faith = root.faith
+				    }
+			    }
+		    }
+        }
+    }
+    after = {
+		eoe_clear_resettled_county_resistance_effect = {
+			REGION = illyricum_pannoniae_diocese_region
+			CULTURE = culture:illyro_roman
+		}
+        add_character_modifier = {
+            modifier = eoe_forced_migration
+            years = 10
+        }
+    }
+}
+
+eoe_roman_event.0006 = {
+        type = character_event
+        title = eoe_roman_event.0006.title
+        desc = eoe_roman_event.0006.desc
+        theme = emperor
+    override_background = { reference = wilderness_forest }
+
+    left_portrait = {
+        character = root
+        animation = steward
+    }
+    option = {    
+        name = eoe_roman_event.0006.a
+        hidden_effect = {
+            every_vassal_or_below = {
+			    limit = {
+				    capital_province = {
+					    geographical_region = septem_provinciae_diocese_region
+				    }
+				    is_ai = yes
+			    }
+			    random = {
+				    chance = 60
+                    set_culture = culture:gallo_roman
+                    set_character_faith = root.faith
+				    capital_county = {
+					    set_county_culture = culture:gallo_roman
+                        set_county_faith = root.faith
+				    }
+			    }
+		    }
+        }
+    }
+    after = {
+		eoe_clear_resettled_county_resistance_effect = {
+			REGION = septem_provinciae_diocese_region
+			CULTURE = culture:gallo_roman
+		}
+        add_character_modifier = {
+            modifier = eoe_forced_migration
+            years = 10
+        }
+    }
+}
+
+eoe_roman_event.0007 = {
+        type = character_event
+        title = eoe_roman_event.0007.title
+        desc = eoe_roman_event.0007.desc
+        theme = emperor
+    override_background = { reference = wilderness_forest }
+
+    left_portrait = {
+        character = root
+        animation = steward
+    }
+    option = {    
+        name = eoe_roman_event.0007.a
+        hidden_effect = {
+            every_vassal_or_below = {
+			    limit = {
+				    capital_province = {
+					    geographical_region = gallia_diocese_region
+				    }
+				    is_ai = yes
+			    }
+			    random = {
+				    chance = 60
+                    set_culture = culture:gallo_roman
+                    set_character_faith = root.faith
+				    capital_county = {
+					    set_county_culture = culture:gallo_roman
+                        set_county_faith = root.faith
+				    }
+			    }
+		    }
+        }
+    }
+    after = {
+		eoe_clear_resettled_county_resistance_effect = {
+			REGION = gallia_diocese_region
+			CULTURE = culture:gallo_roman
+		}
+        add_character_modifier = {
+            modifier = eoe_forced_migration
+            years = 10
+        }
+    }
+}
+
+eoe_roman_event.0008 = {
+        type = character_event
+        title = eoe_roman_event.0008.title
+        desc = eoe_roman_event.0008.desc
+        theme = emperor
+    override_background = { reference = wilderness_desert }
+
+    left_portrait = {
+        character = root
+        animation = steward
+    }
+    option = {    
+        name = eoe_roman_event.0008.a
+        hidden_effect = {
+            every_vassal_or_below = {
+			    limit = {
+				    capital_province = {
+					    geographical_region = africae_diocese_region
+				    }
+				    is_ai = yes
+			    }
+			    random = {
+				    chance = 60
+                    set_culture = culture:afro_roman
+                    set_character_faith = root.faith
+				    capital_county = {
+					    set_county_culture = culture:afro_roman
+                        set_county_faith = root.faith
+				    }
+			    }
+		    }
+        }
+    }
+    after = {
+		eoe_clear_resettled_county_resistance_effect = {
+			REGION = africae_diocese_region
+			CULTURE = culture:afro_roman
+		}
+        add_character_modifier = {
+            modifier = eoe_forced_migration
+            years = 10
+        }
+    }
+}
+
+eoe_roman_event.0009 = {
+        type = character_event
+        title = eoe_roman_event.0009.title
+        desc = eoe_roman_event.0009.desc
+        theme = emperor
+    override_background = { reference = wilderness_forest_pine }
+    override_effect_2d = { reference = rain }
+
+    left_portrait = {
+        character = root
+        animation = steward
+    }
+    option = {    
+        name = eoe_roman_event.0009.a
+        hidden_effect = {
+            every_vassal_or_below = {
+			    limit = {
+				    capital_province = {
+					    geographical_region = britannia_diocese_region
+				    }
+				    is_ai = yes
+			    }
+			    random = {
+				    chance = 60
+                    set_culture = culture:britano_roman
+                    set_character_faith = root.faith
+				    capital_county = {
+					    set_county_culture = culture:britano_roman
+                        set_county_faith = root.faith
+				    }
+			    }
+		    }
+        }
+    }
+    after = {
+		eoe_clear_resettled_county_resistance_effect = {
+			REGION = britannia_diocese_region
+			CULTURE = culture:britano_roman
+		}
+        add_character_modifier = {
+            modifier = eoe_forced_migration
+            years = 10
+        }
+    }
+}
+
+eoe_roman_event.0010 = {
+        type = character_event
+        title = eoe_roman_event.0010.title
+        desc = eoe_roman_event.0010.desc
+        theme = emperor
+    override_background = { reference = wilderness_steppe }
+
+    left_portrait = {
+        character = root
+        animation = steward
+    }
+    option = {    
+        name = eoe_roman_event.0010.a
+        hidden_effect = {
+            every_vassal_or_below = {
+			    limit = {
+				    capital_province = {
+					    geographical_region = eoe_dacia_and_thrace_custom
+				    }
+				    is_ai = yes
+			    }
+			    random = {
+				    chance = 60
+                    set_culture = culture:thracio_roman
+                    set_character_faith = root.faith
+				    capital_county = {
+					    set_county_culture = culture:thracio_roman
+                        set_county_faith = root.faith
+				    }
+			    }
+		    }
+        }
+    }
+    after = {
+		eoe_clear_resettled_county_resistance_effect = {
+			REGION = eoe_dacia_and_thrace_custom
+			CULTURE = culture:thracio_roman
+		}
+        add_character_modifier = {
+            modifier = eoe_forced_migration
+            years = 10
+        }
+    }
+}
+
+eoe_roman_event.0011 = {
+        type = character_event
+        title = eoe_roman_event.0011.title
+        desc = eoe_roman_event.0011.desc
+        theme = emperor
+    override_background = { reference = wilderness_activity }
+
+    left_portrait = {
+        character = root
+        animation = steward
+    }
+    option = {    
+        name = eoe_roman_event.0011.a
+        hidden_effect = {
+            every_vassal_or_below = {
+			    limit = {
+				    capital_province = {
+					    geographical_region = hispania_diocese_region
+				    }
+				    is_ai = yes
+			    }
+			    random = {
+				    chance = 60
+                    set_culture = culture:hispano_roman
+                    set_character_faith = root.faith
+				    capital_county = {
+					    set_county_culture = culture:hispano_roman
+                        set_county_faith = root.faith
+				    }
+			    }
+		    }
+        }
+    }
+    after = {
+		eoe_clear_resettled_county_resistance_effect = {
+			REGION = hispania_diocese_region
+			CULTURE = culture:hispano_roman
+		}
+        add_character_modifier = {
+            modifier = eoe_forced_migration
+            years = 10
+        }
+    }
+}
+
+eoe_roman_event.0012 = {
+        type = character_event
+        title = eoe_roman_event.0012.title
+        desc = eoe_roman_event.0012.desc
+        theme = emperor
+    override_background = {
+        reference = wilderness_desert
+    }
+
+    left_portrait = {
+        character = root
+        animation = war_over_win
+    }
+    option = {
+        name = eoe_roman_event.0012.a
+    }
+}
+
+#additional Dejure events#
+
+eoe_roman_event.0013 = {
+        type = character_event
+        title = eoe_roman_event.0013.title
+        desc = eoe_roman_event.0013.desc
+        theme = emperor
+    override_background = { reference = study }
+
+    left_portrait = {
+        character = root
+        animation = steward
+    }
+    option = {
+        name = eoe_roman_event.0013.a
+        hidden_effect = {
+            if = {
+                limit = {
+                    exists = title:h_roman_empire.holder
+                }
+                title:e_praetorian_albion = {
+                    set_de_jure_liege_title = title:h_roman_empire
+                }
+            }
+            else_if = {
+                limit = {
+                    exists = title:h_western_roman_empire.holder
+                }
+                title:e_praetorian_albion = {
+                    set_de_jure_liege_title = title:h_western_roman_empire
+                }
+            }
+        }
+    }
+}
+
+#eoe_roman_event.0014 = {
+#        type = character_event
+#        title = eoe_roman_event.0014.title
+#        desc = eoe_roman_event.0014.desc
+#        theme = emperor
+#
+#    left_portrait = {
+#        character = root
+#        animation = steward
+#    }
+#    option = {
+#        name = eoe_roman_event.0014.a
+#        hidden_effect = {
+#            if = {
+#                limit = {
+#                    exists = title:h_roman_empire.holder
+#                }
+#                title:e_germania = {
+#                    set_de_jure_liege_title = title:h_roman_empire
+#                }
+#            }
+#            else_if = {
+#                limit = {
+#                    exists = title:h_western_roman_empire.holder
+#                }
+#                title:e_germania = {
+#                    set_de_jure_liege_title = title:h_western_roman_empire
+#                }
+#            }
+#        }
+#    }
+#}
+eoe_roman_event.0015 = {
+        type = character_event
+        title = eoe_roman_event.0015.title
+        desc = eoe_roman_event.0015.desc
+        theme = faith
+    override_background = { reference = temple }
+    override_effect_2d = { reference = smoke }
+
+    left_portrait = {
+        character = root
+        animation = thinking
+    }
+    option = {
+        name = eoe_roman_event.0015.a
+        if = {
+            limit = {
+                has_cp6_dlc_trigger = yes
+            }
+            title:b_vaticano.title_province = {
+                remove_building = holy_site_st_peters_basilica_01
+                add_special_building = circus_of_nero_01
+                set_holding_type = city_holding
+            }
+        }
+        else = {
+            title:b_vaticano.title_province = {
+            remove_building = holy_site_cathedral_01
+            add_special_building = circus_of_nero_01
+            set_holding_type = city_holding
+            }
+        }
+    }
+    option = {
+        name = eoe_roman_event.0015.b
+        if = {
+            limit = {
+                has_cp6_dlc_trigger = yes
+            }
+            title:b_vaticano.title_province = {
+                remove_building = holy_site_st_peters_basilica_01
+                add_special_building = temple_of_sol_invictus_01
+                set_holding_type = church_holding
+            }
+        }
+        else = {
+            title:b_vaticano.title_province = {
+            remove_building = holy_site_cathedral_01
+            add_special_building = temple_of_sol_invictus_01
+            set_holding_type = church_holding
+            }
+        }
+    }
+}
+eoe_roman_event.0016 = {
+        type = character_event
+        title = eoe_roman_event.0016.title
+        desc = eoe_roman_event.0016.desc
+        theme = byzantine
+    override_background = { reference = ep3_constantinople }
+    override_effect_2d = { reference = legend_glow }
+
+    left_portrait = {
+        character = root
+        animation = thinking
+    }
+    option = {
+        name = eoe_roman_event.0016.a
+        if = {
+            limit = {
+                title:b_constantinople.title_province = {
+                    has_building = hagia_sophia_02
+                }
+            }
+            title:b_constantinople.title_province = {
+                remove_building = hagia_sophia_02
+                add_special_building = pantheon_of_constantinople_01
+            }
+        }
+        else = {
+            title:b_constantinople.title_province = {
+            remove_building = hagia_sophia_01
+            add_special_building = pantheon_of_constantinople_02
+            }
+        }
+    }
+}

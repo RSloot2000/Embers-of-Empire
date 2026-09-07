@@ -1,0 +1,10 @@
+﻿eoe_clear_resettled_county_resistance_effect = {
+	every_county_in_region = {
+		region = $REGION$
+		limit = {
+			culture = $CULTURE$
+			has_county_modifier = eoe_wre_imposed_ruler_resistance
+		}
+		remove_county_modifier = eoe_wre_imposed_ruler_resistance
+	}
+}

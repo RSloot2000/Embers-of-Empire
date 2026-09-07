@@ -1,0 +1,306 @@
+﻿@better_than_the_alternatives_score = 50
+@always_primary_score = 1000
+
+#########Roman Empire#########
+h_western_roman_empire = {
+	color = { 124 10 2 }
+	definite_form = yes
+	
+	capital = c_lombardia # Milan
+}
+
+e_western_roman_empire = {
+	color = { 111 5 5 }
+	definite_form = yes
+
+	capital = c_roma
+}
+
+k_pannonia = {
+	color = { 130 20 10 }
+	
+	capital = c_szerem
+
+	d_pannonia_valeria = {
+		color = { 245 125 95 }
+		
+		capital = c_baranya
+	}
+}
+
+k_italia_suburbicariae = {
+	color = { 199 12 12 }
+	
+	capital = c_roma # Rome
+}
+
+k_italia_annonariae = {
+	color = { 144 0 0 }
+	
+	capital = c_lombardia
+}
+
+k_hispania = {
+	color = { 182 88 5 }
+	
+	capital = c_merida #Emerita Augusta
+}
+
+k_septem_provinciae = {
+	color = { 59 108 48 }
+	
+	capital = c_bordeaux
+}
+#
+k_gallia = {
+	color = { 25 65 5 }
+
+	capital = c_ile_de_france
+
+	d_germania_prima = { 
+		color = { 215 205 230 }
+		
+	
+		capital = c_mainz #
+	}
+	d_lugdunensis_prima = { 
+		color = { 40 85 145 }
+		
+
+		capital = c_lyon #
+	}
+	d_lugdunensis_senonia = { 
+		color = { 24 52 226 }
+		
+
+		capital = c_sens #
+	}
+	d_lugdunensis_tertia = { 
+		color = { 30 40 220 }
+		
+
+		capital = c_tourraine 
+	}
+}
+
+
+k_africae = {
+	color = { 97 96 179 }
+	
+	
+	capital = c_tunis #Cartago
+}
+
+k_orientis = {
+	color = { 223 147 76 }
+	
+	
+	capital = c_antiocheia
+}
+
+k_aegyptus = {
+	color = { 14 124 137 }
+	
+	
+	capital = c_alexandria # Turnovo
+
+	d_tobruk = {
+		color = { 40 141 148 }
+		
+
+		capital = c_tobruk
+
+		cultural_names = {
+			name_list_roman = cn_libya_inferior
+		}
+	}
+}
+
+k_thessalonika2 = {
+	color = { 175 30 130 }
+	
+	
+	capital = c_philippopolis
+}
+
+k_macedon = {
+	color = { 105 23 109 }
+	
+	capital = c_thessalonika
+}
+
+k_daciae = {
+	color = { 113 48 101 }
+	
+	
+	capital = c_skopje #Scupi
+}
+
+k_nikaea2 = {
+	color = { 136 37 120 }
+	
+	
+	capital = c_helenopontus
+}
+
+k_asiae = {
+	color = { 200 70 50 }
+	
+	capital = c_ionia # Ephesus
+}
+
+e_praetorian_gallia = {
+	color = { 34 139 34 }
+	definite_form = yes
+
+	capital = c_lyon
+}
+
+e_praetorian_italia = {
+	color = { 128 0 0 }
+	definite_form = yes
+
+	capital = c_roma # Rome
+}
+
+e_praetorian_illyricum = {
+	color = { 255 215 0 }
+	definite_form = yes
+
+	capital = c_szerem
+}
+
+e_praetorian_oriens = {
+	color = { 112 128 144 }
+	definite_form = yes
+	
+	capital = c_byzantion
+}
+
+###########Optiona Titles for Restoration###########
+k_germania = {
+	color = { 112 40 40 }
+	can_be_named_after_dynasty = no
+
+	capital = c_wurzburg
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+}
+e_germania = {
+	color = { 112 40 40 }
+	can_be_named_after_dynasty = no
+
+	capital = c_wurzburg
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+}
+
+k_bosporus = {
+	color = { 62 40 119 }
+	can_be_named_after_dynasty = no
+
+	capital = c_kerch
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+}
+e_bosporus = {
+	color = { 62 40 119 }
+	can_be_named_after_dynasty = no
+
+	capital = c_kerch
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+}
+
+k_roman_dacia = {
+	color = { 112 80 140 }
+	can_be_named_after_dynasty = no
+
+	capital = c_keve
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+}
+
+e_praetorian_albion = {
+	definite_form = yes
+
+	capital = c_middlesex
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+}
+#######Britain#####
+k_britannia = {
+	color = { 192 6 6 }
+	
+	capital = c_middlesex #Londinum
+}
+
+k_hibernia = {
+	color = { 94 138 22 }
+
+	capital= c_ormond
+}
+
+d_hibernia_superior = {
+	color = { 94 138 22 }
+	
+	capital = c_ormond
+}
+
+d_hibernia_inferior = {
+	color = { 114 178 32 }
+	
+	capital = c_oriel
+}
+
+k_caledonia = {
+	color = { 0.04 0.9 0.7 }
+	
+	capital = c_gowrie
+}
+d_caledonia = {
+	color = hsv{ 0.04 0.9 0.7 } 
+	
+	capital = c_gowrie
+}
+##########Dacia and Gaul########
+e_roman_dacia = {
+	color = { 112 80 140 }
+	can_be_named_after_dynasty = no
+
+	capital = c_keve
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+}
+e_gaul = {
+	capital = c_lyon
+	ruler_uses_title_name = yes
+	definite_form = yes
+    
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
+
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = { has_cultural_pillar = heritage_latin }
+			}
+			add = @better_than_the_alternatives_score
+		}
+	}
+
+	color = { 19 57 17 }
+	
+}
+
+k_mesopotamia_roman = {
+	capital = c_baghdad
+}

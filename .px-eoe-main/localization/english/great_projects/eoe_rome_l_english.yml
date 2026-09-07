@@ -1,0 +1,47 @@
+﻿l_english:
+
+ great_project_type_eoe_restore_palatine_hill: "Restore the Palatine"
+ great_project_type_eoe_restore_palatine_hill_desc: "Since the days of Augustus, Palatine Hill has been the representative seat of Roman Emperors in the city of Rome. By restoring it to its former glory, we demonstrate our dedication to Roman tradition, and our imperial ambitions to our rivals. It will also serve as a convenient base of power to establish a centralised administration in Italy and beyond."
+ great_project_type_tooltip_eoe_restore_palatine_hill: "Restore the imperial palace complex on the Palatine Hill"
+ great_project_name_eoe_restore_palatine_hill: "$great_project_type_eoe_restore_palatine_hill$"
+ great_project_name_possessive_eoe_restore_palatine_hill: "the Palatine restoration's"
+
+ great_project_type_eoe_restore_palatine_hill_contribution_cleanse: "Cleanse the Palatine"
+ great_project_type_eoe_restore_palatine_hill_contribution_name_cleanse: "$great_project_type_eoe_restore_palatine_hill_contribution_cleanse$"
+ great_project_type_eoe_restore_palatine_hill_contribution_cleanse_desc: "Clear and secure the ancient palace grounds."
+ great_project_type_eoe_restore_palatine_hill_contribution_survey: "Create plans and surveys"
+ great_project_type_eoe_restore_palatine_hill_contribution_name_survey: "$great_project_type_eoe_restore_palatine_hill_contribution_survey$"
+ great_project_type_eoe_restore_palatine_hill_contribution_survey_desc: "Survey the ruins and prepare plans for their reconstruction."
+ great_project_type_eoe_restore_palatine_hill_contribution_palace: "Rebuild the palace complex"
+ great_project_type_eoe_restore_palatine_hill_contribution_name_palace: "$great_project_type_eoe_restore_palatine_hill_contribution_palace$"
+ great_project_type_eoe_restore_palatine_hill_contribution_palace_desc: "Reconstruct the imperial residences of the Palatine."
+ great_project_type_eoe_restore_palatine_hill_contribution_frescoes: "Restore the ancient frescoes"
+ great_project_type_eoe_restore_palatine_hill_contribution_name_frescoes: "$great_project_type_eoe_restore_palatine_hill_contribution_frescoes$"
+ great_project_type_eoe_restore_palatine_hill_contribution_frescoes_desc: "Restore the frescoes and decoration of the palace complex."
+
+ great_project_type_eoe_restore_temple_of_jupiter: "Restore the Temple of Jupiter Optimus Maximus"
+ great_project_type_eoe_restore_temple_of_jupiter_desc: "It is time to take a historical step and restore the great temple of Jupiter to the Forum Romanum. We will show everyone who still doubts our sucess that our Religion has truly returned to its historical heartland."
+ great_project_type_tooltip_eoe_restore_temple_of_jupiter: "Restore Rome's great temple to Jupiter Optimus Maximus"
+ great_project_name_eoe_restore_temple_of_jupiter: "$great_project_type_eoe_restore_temple_of_jupiter$"
+ great_project_name_possessive_eoe_restore_temple_of_jupiter: "the Temple of Jupiter restoration's"
+
+ great_project_type_eoe_restore_temple_of_jupiter_contribution_cleanse: "Secure the temple ruins"
+ great_project_type_eoe_restore_temple_of_jupiter_contribution_name_cleanse: "$great_project_type_eoe_restore_temple_of_jupiter_contribution_cleanse$"
+ great_project_type_eoe_restore_temple_of_jupiter_contribution_cleanse_desc: "Clear and secure the ancient temple grounds."
+ great_project_type_eoe_restore_temple_of_jupiter_contribution_survey: "Rebuild the damaged collumns"
+ great_project_type_eoe_restore_temple_of_jupiter_contribution_name_survey: "$great_project_type_eoe_restore_temple_of_jupiter_contribution_survey$"
+ great_project_type_eoe_restore_temple_of_jupiter_contribution_survey_desc: "Survey the ruins and rebuild the damaged columns."
+ great_project_type_eoe_restore_temple_of_jupiter_contribution_temple: "Renovate the temple"
+ great_project_type_eoe_restore_temple_of_jupiter_contribution_name_temple: "$great_project_type_eoe_restore_temple_of_jupiter_contribution_temple$"
+ great_project_type_eoe_restore_temple_of_jupiter_contribution_temple_desc: "Reconstruct the main temple and its sacred precinct."
+ great_project_type_eoe_restore_temple_of_jupiter_contribution_sanctum: "Restore the Sanctum"
+ great_project_type_eoe_restore_temple_of_jupiter_contribution_name_sanctum: "$great_project_type_eoe_restore_temple_of_jupiter_contribution_sanctum$"
+ great_project_type_eoe_restore_temple_of_jupiter_contribution_sanctum_desc: "Consecrate and restore the innermost sanctuary."
+
+ eoe_additional_building_slot_palatine:0 "Additional building slot: Palatine Palace"
+ eoe_additional_building_slot_temple_of_jupiter:0 "Additional building slot: Temple of Jupiter"
+
+ roma_LOCATION_1_TOOLTIP:0 "You must control the County of Rome"
+
+
+

@@ -1,0 +1,512 @@
+﻿##########
+# Aurelian Walls
+##########
+
+aurelian_walls_01 = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_aurelian_walls.dds"
+	
+	can_construct_potential = {
+		barony ?= title:b_roma
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 3000
+	
+	max_garrison = 500
+	
+	duchy_capital_county_modifier = {
+		levy_size = 0.15
+		tax_mult = 0.15
+	}
+	county_modifier = {
+		development_growth = 0.3
+		development_growth_factor = 0.1
+		hostile_raid_time = 0.5
+	}
+	province_modifier = {
+		fort_level = 3
+		garrison_size = 0.5
+		travel_danger = -20
+	}
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	next_building = aurelian_walls_02
+	type = duchy_capital
+}
+
+aurelian_walls_02 = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_theodosian_walls.dds"
+	
+	can_construct_potential = {
+		barony ?= title:b_roma
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 3000
+	
+	max_garrison = 1000
+
+	duchy_capital_county_modifier = {
+		levy_size = 0.15
+		tax_mult = 0.15
+	}
+	province_modifier = {
+		monthly_income = 10
+		fort_level = 5
+		garrison_size = 1
+		travel_danger = -20
+	}
+	county_modifier = {
+		development_growth = 0.4
+		development_growth_factor = 0.2
+		levy_size = 0.3
+		tax_mult = 0.3
+		hostile_raid_time = 0.5
+	}
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = duchy_capital
+}
+
+##########
+# The Colosseum
+##########
+
+the_colosseum_01 = {
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_colosseum_mesh"
+	}
+
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_colosseum.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 3000
+
+	character_modifier = {
+		army_maintenance_mult = -0.05 # 'Stealing' the metal from the colosseum building itself
+	}
+	
+	province_modifier = {
+		build_speed = -0.1 # 'Stealing' the metal from the colosseum building itself
+	}
+	
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	next_building = the_colosseum_02
+	
+	type = special
+
+	flag = travel_point_of_interest_diplomatic
+}
+
+the_colosseum_02 = {
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_colosseum_mesh"
+	}
+
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_colosseum.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+		scope:holder = {
+			custom_description = {
+				text = eoe_colosseum_holder_requirement_tt
+				OR = {
+					has_title = title:h_roman_empire
+					has_title = title:e_western_roman_empire
+					has_title = title:h_western_roman_empire
+					is_greek_or_roman = yes
+				}
+			}
+		}
+	}
+		
+	cost_gold = 1500
+	cost_prestige = 1500
+
+	character_modifier = {
+		monthly_prestige = 0.3
+		stress_gain_mult = -0.30
+		monthly_county_control_growth_factor = 0.15
+	}
+
+	county_modifier = {
+		county_opinion_add = 30
+	}
+
+	province_modifier = {
+		monthly_income = good_building_tax_tier_3
+		monthly_income = 5
+	}
+	
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_diplomatic
+}
+
+circus_of_nero_01 = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "construction_site.dds"
+
+	is_enabled = {
+		custom_description = {
+			text = eoe_hellenic_building_enabled_requirement_tt
+			OR = {
+				AND = {
+			        religion = religion:hellenism_religion
+			        scope:holder.religion = religion:hellenism_religion
+				}
+				AND = {
+					faith = {
+						has_doctrine = tenet_hellenic_syncretism
+					}
+					scope:holder.faith = {
+						has_doctrine = tenet_hellenic_syncretism
+					}
+				}
+			}
+		}
+	}
+
+	province_modifier = {
+		build_speed = -0.1
+	}
+
+	next_building = circus_of_nero_02
+	
+	type = special
+}
+
+circus_of_nero_02 = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_circus_of_nero.dds"
+
+	can_construct_potential = {
+		barony = title:b_vaticano
+		building_requirement_tribal = no
+		is_greek_or_roman = yes
+	}
+	can_construct = {
+		custom_description = {
+			text = must_be_city_holding_trigger
+			barony = {
+				title_province = { has_holding_type = city_holding }
+			}
+		}
+		title:k_papal_state = { is_title_created = no }
+	}
+	is_enabled = {
+		custom_description = {
+			text = eoe_hellenic_building_enabled_requirement_tt
+			OR = {
+				AND = {
+			        religion = religion:hellenism_religion
+			        scope:holder.religion = religion:hellenism_religion
+				}
+				AND = {
+					faith = {
+						has_doctrine = tenet_hellenic_syncretism
+					}
+					scope:holder.faith = {
+						has_doctrine = tenet_hellenic_syncretism
+					}
+				}
+			}
+		}
+	}
+
+	show_disabled = yes
+
+	cost_gold = 2500
+
+	character_modifier = {
+		stress_loss_mult = 0.2
+		county_opinion_add = 20
+		monthly_dynasty_prestige_mult = 0.05
+		accolade_glory_gain_mult = 0.2
+		tourney_participant_xp_gain_mult = 0.2
+	}
+	county_modifier = {
+		development_growth_factor = 0.2
+		development_growth = 0.15
+		tax_mult = good_building_tax_mult_tier_2
+	}
+	province_modifier = {
+		monthly_income = 0.3
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+
+	type = special
+
+	flag = travel_point_of_interest_stress_relief
+}
+
+temple_of_sol_invictus_01 = {
+	asset = {
+		type = pdxmesh
+		name = "building_mediterranean_temple_pagan_02_a_ruins_mesh"
+	}
+	construction_time = very_slow_construction_time
+
+	type_icon = "construction_site.dds"
+
+	is_enabled = {
+		custom_description = {
+			text = eoe_hellenic_building_enabled_requirement_tt
+			OR = {
+				AND = {
+			        religion = religion:hellenism_religion
+			        scope:holder.religion = religion:hellenism_religion
+				}
+				AND = {
+					faith = {
+						has_doctrine = tenet_hellenic_syncretism
+					}
+					scope:holder.faith = {
+						has_doctrine = tenet_hellenic_syncretism
+					}
+				}
+			}
+		}
+	}
+
+	province_modifier = {
+		build_speed = -0.1
+	}
+
+	next_building = temple_of_sol_invictus_02
+	
+	type = special
+}
+
+temple_of_sol_invictus_02 = {
+	asset = {
+		type = pdxmesh
+		name = "building_mediterranean_temple_pagan_02_a_mesh"
+	}
+	construction_time = very_slow_construction_time
+	type_icon = "temple_of_sol_invictus.dds"
+
+	can_construct_potential = {
+		barony = title:b_vaticano
+		building_requirement_tribal = no
+		is_greek_or_roman = yes
+	}
+	can_construct = {
+		custom_description = {
+			text = must_be_church_holding_trigger
+			barony = {
+				title_province = { has_holding_type = church_holding }
+			}
+		}
+		title:k_papal_state = { is_title_created = no }
+	}
+	is_enabled = {
+		custom_description = {
+			text = eoe_hellenic_building_enabled_requirement_tt
+			OR = {
+				AND = {
+			        religion = religion:hellenism_religion
+			        scope:holder.religion = religion:hellenism_religion
+				}
+				AND = {
+					faith = {
+						has_doctrine = tenet_hellenic_syncretism
+					}
+					scope:holder.faith = {
+						has_doctrine = tenet_hellenic_syncretism
+					}
+				}
+			}
+		}
+	}
+
+	show_disabled = yes
+
+	cost_gold = 2500
+
+	county_holder_character_modifier = {
+		monthly_prestige = 0.5
+		monthly_piety = 0.2
+		monthly_piety_gain_mult = 0.1
+		diplomacy_per_piety_level = 1
+	}
+	county_modifier = {
+		tax_mult = 0.1
+		development_growth = 0.1
+		development_growth_factor = 0.3
+	}
+	on_complete = {
+		#Regular Mandala Boon
+		mandala_built_piety_duchy_building_t3_effect = yes
+	}
+	ai_value = {
+		base = 100
+		ai_pious_building_preference_modifier = yes
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+
+	type = special
+
+	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
+}
+
+pantheon_of_constantinople_01 = {
+
+	construction_time = very_slow_construction_time
+
+	type_icon = "construction_site.dds"
+
+	is_enabled = {
+		custom_description = {
+			text = eoe_hellenic_building_enabled_requirement_tt
+			OR = {
+				AND = {
+			        religion = religion:hellenism_religion
+			        scope:holder.religion = religion:hellenism_religion
+				}
+				AND = {
+					faith = {
+						has_doctrine = tenet_hellenic_syncretism
+					}
+					scope:holder.faith = {
+						has_doctrine = tenet_hellenic_syncretism
+					}
+				}
+			}
+		}
+	}
+
+	province_modifier = {
+		build_speed = -0.1
+	}
+
+	next_building = pantheon_of_constantinople_02
+	
+	type = special
+}
+
+pantheon_of_constantinople_02 = {
+	asset = {
+		type = pdxmesh
+		name = "building_mediterranean_temple_pagan_02_b_mesh"
+	}
+
+	construction_time = very_slow_construction_time
+
+	type_icon = "temple_of_sol_invictus.dds"
+
+	is_enabled = {
+		custom_description = {
+			text = eoe_hellenic_building_enabled_requirement_tt
+			OR = {
+				AND = {
+			        religion = religion:hellenism_religion
+			        scope:holder.religion = religion:hellenism_religion
+				}
+				AND = {
+					faith = {
+						has_doctrine = tenet_hellenic_syncretism
+					}
+					scope:holder.faith = {
+						has_doctrine = tenet_hellenic_syncretism
+					}
+				}
+			}
+		}
+	}
+
+	show_disabled = yes
+	
+	cost_gold = 1500
+
+	character_modifier = {
+		monthly_piety_gain_per_knight_add = 0.1
+		martial_per_prestige_level = 2
+		learning = 2
+		knight_limit = 2
+		knight_effectiveness_mult = 0.2
+		monthly_dynasty_prestige_mult = 0.05
+	}
+	
+	county_modifier = {
+		development_growth_factor = 0.2
+	}
+
+	on_complete = {
+		#Regular Mandala Boon
+		mandala_built_piety_duchy_building_t3_effect = yes
+	}
+	
+	ai_value = {
+		base = 100
+		ai_pious_building_preference_modifier = yes
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+
+	type = special
+
+	flag = travel_point_of_interest_religious
+	flag = holy_building
+}

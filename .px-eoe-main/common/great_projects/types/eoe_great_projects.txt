@@ -1,0 +1,439 @@
+﻿@combat_map_icon = "gfx/interface/icons/icon_holding_castle.dds"
+@palatine_palace = "gfx/interface/illustrations/great_projects/palatine_palace.dds"
+@jupiter_temple = "gfx/interface/illustrations/great_projects/jupiter_temple.dds"
+
+eoe_restore_palatine_hill = {
+	icon = {
+		reference = @combat_map_icon
+	}
+	illustration = {
+		reference = @palatine_palace
+	}
+	name = {
+		desc = great_project_type_eoe_restore_palatine_hill
+	}
+	cost = {
+		treasury_or_gold = {  
+			value = great_project_base_contribution_cost
+		}
+	}
+	ai_will_do = {
+		value = 10
+	}
+	construction_time = { value = 760 }
+	invite_interaction = request_great_project_contribution_interaction
+	province_filter = geographical_region
+	province_filter_target = eoe_city_of_rome
+	is_shown = {
+		title:c_roma = {
+			holder.top_liege = root.top_liege
+		}
+		NOT = { is_planning_great_project = eoe_restore_palatine_hill }
+		NOT = { has_global_variable = eoe_restore_palatine_hill_cooldown }
+		is_ruler = yes
+		OR = {
+			title:e_byzantium = { holder.top_liege = root.top_liege }
+            title:e_western_roman_empire = { holder.top_liege = root.top_liege }
+            title:h_western_roman_empire = { holder.top_liege = root.top_liege }
+			title:h_roman_empire = { holder.top_liege = root.top_liege }
+			title:h_eastern_roman_empire = { holder.top_liege = root.top_liege }	
+		}
+		OR = {
+            culture = { has_cultural_pillar = heritage_latin }
+			culture = { has_cultural_pillar = heritage_byzantine }
+			culture = { has_cultural_pillar = heritage_ancient_greek }
+		}
+	}
+	can_start_planning = {
+		is_at_war = no
+		custom_tooltip = {
+			text = "roma_LOCATION_1_TOOLTIP"
+			title:c_roma = { holder.top_liege = root.top_liege }
+		}
+	}
+	is_valid = {
+		title:c_roma.holder = { top_liege = scope:owner.top_liege }
+	}
+	on_cancel = {
+		scope:owner = {
+			add_prestige = -500 
+			add_stress = 40
+			trigger_event = eoe_restore_palatine_hill.0007
+		}
+	}
+	on_start_build = { 
+		scope:owner = {
+			add_legitimacy_effect = { LEGITIMACY = minor_legitimacy_gain }
+		}
+		scope:great_project = {
+			every_contribution = {
+				limit = {
+					contribution_is_funded = yes
+				}
+				contributor = {
+					add_prestige = minor_prestige_value 
+				}	
+			}
+		}
+		title:b_roma.title_province = {
+		    add_province_modifier = eoe_additional_building_slot_palatine 
+		}	
+	}
+	on_complete = {
+		great_project_notify_completion = { CHARACTER = scope:owner }
+		scope:owner = {
+			trigger_event = eoe_restore_palatine_hill.0006
+		}
+		title:b_roma.title_province = { add_building = eoe_palatine_palace_01 }
+		set_global_variable = { name = eoe_restore_palatine_hill_cooldown months = 1200 }
+	}
+	project_contributions = {
+		cleanse = {
+			cost = {
+				treasury_or_gold = {
+					value = great_project_base_contribution_cost
+					multiply = 2
+				}
+			}
+			contributor_is_valid = { 
+				OR = {
+					this = scope:owner
+					is_vassal_or_below_of = scope:owner 
+					is_tributary_of = scope:owner 
+				}
+			} 
+			is_required = yes
+			on_contribution_funded = {
+				great_project_notify_contribution = yes
+				great_project_contribution_catalyst_effect = yes
+			}
+			contributor_cooldown = individual_contribution_cooldown_value
+			on_complete = { 
+				if = {
+					limit = { is_alive = yes }
+					trigger_event = eoe_restore_palatine_hill.0001
+				}
+			}
+			ai_check_interval_by_tier = { barony = 0 county = 12 duchy = 9 kingdom = 6 empire = 6 hegemony = 6 }	
+			ai_will_do = {
+				value = 10
+			}
+		}
+		survey = {
+			cost = {
+				treasury_or_gold = {
+					value = great_project_base_contribution_cost
+                    multiply = 2
+				}
+			}
+			contributor_is_valid = { 
+				OR = {
+					this = scope:owner 
+					is_vassal_or_below_of = scope:owner 
+					is_tributary_of = scope:owner 
+				} 	
+			}
+			is_required = yes
+			on_contribution_funded = {
+				great_project_notify_contribution = yes
+				great_project_contribution_catalyst_effect = yes
+			}
+			contributor_cooldown = individual_contribution_cooldown_value
+			on_complete = { 
+				if = {
+					limit = { is_alive = yes }
+					trigger_event = eoe_restore_palatine_hill.0002
+				}
+			}
+			ai_check_interval_by_tier = { barony = 0 county = 12 duchy = 9 kingdom = 6 empire = 6 hegemony = 6 }
+			ai_will_do = {
+				value = 10
+			}	
+		}	
+		palace = {
+			cost = {
+				treasury_or_gold = {
+					value = great_project_base_contribution_cost
+					multiply = 3.5
+				}
+			}
+			contributor_is_valid = { 
+				OR = {
+					this = scope:owner 
+					is_vassal_or_below_of = scope:owner 
+					is_tributary_of = scope:owner 
+				} 	
+			}
+			is_required = yes
+			on_contribution_funded = {
+				great_project_notify_contribution = yes
+				great_project_contribution_catalyst_effect = yes
+			}
+			contributor_cooldown = individual_contribution_cooldown_value
+			on_complete = { 
+				if = {
+					limit = { is_alive = yes }
+					trigger_event = eoe_restore_palatine_hill.0003
+				}
+			}
+			ai_check_interval_by_tier = { barony = 0 county = 12 duchy = 9 kingdom = 6 empire = 6 hegemony = 6 }
+			ai_will_do = {
+				value = 10
+			}
+		}
+		frescoes = {
+			cost = {
+				treasury_or_gold = {
+					value = great_project_base_contribution_cost
+					multiply = 2
+				}
+			}
+			contributor_is_valid = { 
+				OR = {
+					this = scope:owner 
+					is_vassal_or_below_of = scope:owner 
+					is_tributary_of = scope:owner 
+				} 	
+			}
+			is_required = yes
+			on_contribution_funded = {
+				great_project_notify_contribution = yes
+				great_project_contribution_catalyst_effect = yes
+			}
+			contributor_cooldown = individual_contribution_cooldown_value
+			on_complete = {
+				if = {
+					limit = { is_alive = yes }
+					trigger_event = eoe_restore_palatine_hill.0004
+				}
+			}
+			ai_check_interval_by_tier = { barony = 0 county = 12 duchy = 9 kingdom = 6 empire = 6 hegemony = 6 }
+			ai_will_do = {
+				value = 10
+			}
+		}
+	}
+}
+
+eoe_restore_temple_of_jupiter = {
+	icon = {
+		reference = @combat_map_icon
+	}
+	illustration = {
+		reference = @jupiter_temple
+	}
+	name = {
+		desc = great_project_type_eoe_restore_temple_of_jupiter
+	}
+	cost = {
+		treasury_or_gold = {  
+			value = great_project_base_contribution_cost
+		}
+	}
+	ai_will_do = {
+		value = 10
+	}
+	construction_time = { value = 800 }
+	invite_interaction = request_great_project_contribution_interaction
+	province_filter = geographical_region
+	province_filter_target = eoe_city_of_rome
+	is_shown = {
+		title:c_roma = {
+			holder.top_liege = root.top_liege
+		}
+		NOT = { is_planning_great_project = eoe_restore_temple_of_jupiter }
+		NOT = { has_global_variable = eoe_restore_temple_of_jupiter_cooldown }
+		is_ruler = yes
+		OR = {
+			title:e_byzantium = { holder.top_liege = root.top_liege }
+            title:e_western_roman_empire = { holder.top_liege = root.top_liege }
+            title:h_western_roman_empire = { holder.top_liege = root.top_liege }
+			title:h_roman_empire = { holder.top_liege = root.top_liege }
+			title:h_eastern_roman_empire = { holder.top_liege = root.top_liege }	
+		}
+		AND = {
+		    OR = {
+                culture = { has_cultural_pillar = heritage_latin }
+			    culture = { has_cultural_pillar = heritage_byzantine }
+			    culture = { has_cultural_pillar = heritage_ancient_greek }
+		    }
+			OR = {
+				has_religion = religion:hellenism_religion
+				has_religion = religion:druidism_religion
+				has_religion = religion:germanic_religion
+				faith = {
+					has_doctrine = tenet_hellenic_syncretism
+				}
+			}
+		}
+	}
+	can_start_planning = {
+		is_at_war = no
+		custom_tooltip = {
+			text = "roma_LOCATION_1_TOOLTIP"
+			title:c_roma = { holder.top_liege = root.top_liege }
+		}
+	}
+	is_valid = {
+		title:c_roma.holder = { top_liege = scope:owner.top_liege }
+	}
+	on_cancel = {
+		scope:owner = {
+			add_prestige = -500 
+			add_stress = 40
+			trigger_event = eoe_restore_temple_of_jupiter.0007
+		}
+	}
+	on_start_build = { 
+		scope:owner = {
+			add_legitimacy_effect = { LEGITIMACY = minor_legitimacy_gain }
+		}
+		scope:great_project = {
+			every_contribution = {
+				limit = {
+					contribution_is_funded = yes
+				}
+				contributor = {
+					add_prestige = minor_prestige_value 
+				}	
+			}
+		}
+		title:b_roma.title_province = {
+		    add_province_modifier = eoe_additional_building_slot_temple_of_jupiter
+		}
+	}
+	on_complete = {
+		great_project_notify_completion = { CHARACTER = scope:owner }
+		scope:owner = {
+			trigger_event = eoe_restore_temple_of_jupiter.0006
+		}
+		title:b_roma.title_province = { add_building = eoe_temple_of_jupiter_01 }
+		set_global_variable = { name = eoe_restore_temple_of_jupiter_cooldown months = 1200 }
+	}
+	project_contributions = {
+		cleanse = {
+			cost = {
+				treasury_or_gold = {
+					value = great_project_base_contribution_cost
+					multiply = 1.8
+				}
+			}
+			contributor_is_valid = { 
+				OR = {
+					this = scope:owner
+					is_vassal_or_below_of = scope:owner 
+					is_tributary_of = scope:owner 
+				}
+			} 
+			is_required = yes
+			on_contribution_funded = {
+				great_project_notify_contribution = yes
+				great_project_contribution_catalyst_effect = yes
+			}
+			contributor_cooldown = individual_contribution_cooldown_value
+			on_complete = { 
+				if = {
+					limit = { is_alive = yes }
+					trigger_event = eoe_restore_temple_of_jupiter.0001
+				}
+			}
+			ai_check_interval_by_tier = { barony = 0 county = 12 duchy = 9 kingdom = 6 empire = 6 hegemony = 6 }	
+			ai_will_do = {
+				value = 10
+			}
+		}
+		survey = {
+			cost = {
+				treasury_or_gold = {
+					value = great_project_base_contribution_cost
+                    multiply = 2
+				}
+			}
+			contributor_is_valid = { 
+				OR = {
+					this = scope:owner 
+					is_vassal_or_below_of = scope:owner 
+					is_tributary_of = scope:owner 
+				} 	
+			}
+			is_required = yes
+			on_contribution_funded = {
+				great_project_notify_contribution = yes
+				great_project_contribution_catalyst_effect = yes
+			}
+			contributor_cooldown = individual_contribution_cooldown_value
+			on_complete = { 
+				if = {
+					limit = { is_alive = yes }
+					trigger_event = eoe_restore_temple_of_jupiter.0002
+				}
+			}
+			ai_check_interval_by_tier = { barony = 0 county = 12 duchy = 9 kingdom = 6 empire = 6 hegemony = 6 }
+			ai_will_do = {
+				value = 10
+			}	
+		}	
+		temple = {
+			cost = {
+				treasury_or_gold = {
+					value = great_project_base_contribution_cost
+					multiply = 4
+				}
+			}
+			contributor_is_valid = { 
+				OR = {
+					this = scope:owner 
+					is_vassal_or_below_of = scope:owner 
+					is_tributary_of = scope:owner 
+				} 	
+			}
+			is_required = yes
+			on_contribution_funded = {
+				great_project_notify_contribution = yes
+				great_project_contribution_catalyst_effect = yes
+			}
+			contributor_cooldown = individual_contribution_cooldown_value
+			on_complete = { 
+				if = {
+					limit = { is_alive = yes }
+					trigger_event = eoe_restore_temple_of_jupiter.0003
+				}
+			}
+			ai_check_interval_by_tier = { barony = 0 county = 12 duchy = 9 kingdom = 6 empire = 6 hegemony = 6 }
+			ai_will_do = {
+				value = 10
+			}
+		}
+		sanctum = {
+			cost = {
+				piety = {
+					value = great_project_base_contribution_cost
+					multiply = 2
+				}
+			}
+			contributor_is_valid = { 
+				OR = {
+					this = scope:owner 
+					is_vassal_or_below_of = scope:owner 
+					is_tributary_of = scope:owner 
+				} 	
+			}
+			is_required = yes
+			on_contribution_funded = {
+				great_project_notify_contribution = yes
+				great_project_contribution_catalyst_effect = yes
+			}
+			contributor_cooldown = individual_contribution_cooldown_value
+			on_complete = {
+				if = {
+					limit = { is_alive = yes }
+					trigger_event = eoe_restore_temple_of_jupiter.0004
+				}
+			}
+			ai_check_interval_by_tier = { barony = 0 county = 12 duchy = 9 kingdom = 6 empire = 6 hegemony = 6 }
+			ai_will_do = {
+				value = 10
+			}
+		}
+	}
+}

@@ -1,0 +1,802 @@
+﻿namespace = br_augustus_of_wr
+
+br_augustus_of_wr.001 = {
+	type = character_event
+	title = br_augustus_of_wr.001.t
+	desc = br_augustus_of_wr.001.desc
+	theme = byzantine
+	override_background = { reference = temple }
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = br_augustus_of_wr.001.a
+		flavor = br_augustus_of_wr.001.a.flavor
+		hidden_effect = {
+			trigger_event = br_augustus_of_wr.002
+		}
+		
+		ai_chance = {
+			base = 60
+		}
+	}
+	option = {
+		name = br_augustus_of_wr.001.b
+		flavor = br_augustus_of_wr.001.b.flavor
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = title_change
+			add_claim_on_loss = no
+		}
+		title:e_western_roman_empire = {
+			save_scope_as = title_e_western_roman_empire
+		}
+		title:e_western_roman_empire = {
+			change_title_holder = {
+				holder = root
+				change = scope:title_change
+			}
+			save_scope_as = title_e_western_roman_empire
+		}
+		resolve_title_and_vassal_change = scope:title_change
+		hidden_effect = {
+			if = {
+				limit = {
+					title:e_italy = {
+						is_titular = no
+					}
+				}
+				title:e_italy = {
+					every_in_de_jure_hierarchy = {
+						set_de_jure_liege_title = title:e_western_roman_empire
+					}
+				}
+			}
+		}
+
+		ai_chance = {
+			base = 30
+		}
+	}
+	option = {
+		name = br_augustus_of_wr.001.c
+		flavor = br_augustus_of_wr.001.c.flavor
+		
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+br_augustus_of_wr.002 = {
+	type = character_event
+	title = br_augustus_of_wr.002.t
+	desc = br_augustus_of_wr.002.desc
+	theme = war
+	override_background = { reference = army_camp }
+	left_portrait = {
+		character = root
+		animation = marshal
+	}
+	right_portrait = {
+		character = scope:primary_coalition_defender
+		animation = anger
+	}
+
+	immediate = {
+		hidden_effect = {
+            
+            br_find_powerful_opponent_for_wr_effect = yes
+            
+            every_relation = {
+                type = rival
+                limit = {
+                    NOT = {
+                        is_in_list = anti_wr_coalition_members
+                    }
+                    is_ruler = yes
+                    wr_coalition_member_trigger = yes
+                }
+                add_to_list = anti_wr_coalition_members
+            }
+        }
+
+        if = {
+            limit = {
+                any_in_list = {
+                    list = anti_wr_coalition_members
+                    current_military_strength > 0 
+                    NOT = {
+                        this = root
+                    }
+                    is_landed = yes
+                    sub_realm_size >= 20
+                    government_has_flag = government_is_feudal
+                    is_independent_ruler = yes
+                }
+            }
+            ordered_in_list = {
+                list = anti_wr_coalition_members
+                order_by = current_military_strength
+                limit = {
+                    NOT = {
+                        this = root
+                    }
+                    is_landed = yes
+                    sub_realm_size >= 20
+                    government_has_flag = government_is_feudal
+                    is_independent_ruler = yes
+                }
+                save_scope_as = primary_coalition_defender
+            }
+        }
+        else_if = {
+            limit = {
+                any_in_list = {
+                    list = anti_wr_coalition_members
+                    current_military_strength > 0
+                    is_landed = yes
+                    sub_realm_size >= 12
+                    NOT = {
+                        this = root
+                    }
+                    government_has_flag = government_is_feudal
+                    is_independent_ruler = yes
+                }
+            }
+            ordered_in_list = {
+                list = anti_wr_coalition_members
+                order_by = current_military_strength
+                limit = {
+                    is_landed = yes
+                    NOT = {
+                        this = root
+                    }
+                    sub_realm_size >= 12
+                    government_has_flag = government_is_feudal
+                    is_independent_ruler = yes
+                }
+                save_scope_as = primary_coalition_defender
+            }
+        }
+        else = {
+            ordered_in_list = {
+                list = anti_wr_coalition_members
+                order_by = sub_realm_size
+                limit = {
+                    highest_held_title_tier >= tier_duchy
+                    NOT = {
+                        this = root
+                    }
+                    is_independent_ruler = yes
+                }
+                save_scope_as = primary_coalition_defender
+            }
+        }
+        # 确保反西罗联盟成员至少有4个
+        if = {
+            limit = {
+                NOT = {
+                    any_in_list = {
+                        count >= 4
+                        list = anti_wr_coalition_members
+                        NOT = {
+                            this = scope:primary_coalition_defender
+                        }
+                    }
+                }
+            }
+            every_neighboring_and_across_water_top_liege_realm_owner = {
+                limit = {
+                    is_ai = yes
+                    NOT = {
+                        government_has_flag = government_is_herder
+                    }
+                    NOR = {
+                        is_allied_to = root
+                        this = root
+                        top_liege = root
+                        has_relation_friend = root
+                        is_imprisoned_by = root
+                    }
+                }
+                add_to_list = anti_wr_coalition_members
+            }
+            if = {
+                limit = {
+                    exists = title:k_france.holder
+                }
+                title:k_france.holder = {
+                    add_to_list = anti_wr_coalition_members
+                }
+            }
+            if = {
+                limit = {
+                    exists = title:k_hungary.holder
+                }
+                title:k_hungary.holder = {
+                    add_to_list = anti_wr_coalition_members
+                }
+            }
+        }
+
+        trigger_event = br_augustus_of_wr.003
+	}
+
+	option = {
+		name = br_augustus_of_wr.002.a
+		flavor = br_augustus_of_wr.002.a.flavor
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+br_augustus_of_wr.003 = {
+	hidden = yes
+	immediate = {
+		scope:primary_coalition_defender = {
+			if = {
+				limit = {
+					OR = {
+						any_truce_holder = {
+							this = root
+						}
+						any_truce_target = {
+							this = root
+						}
+					}
+				}
+				cancel_truce_both_ways = root
+			}
+			if = {
+				limit = {
+					is_vassal_or_below_of = root
+				}
+				create_title_and_vassal_change = {
+					type = independency
+					save_scope_as = change
+				}
+				becomes_independent = { change = scope:change }
+				resolve_title_and_vassal_change = scope:change
+			}
+			#BEGIN THE WAR!
+			start_war = {
+				cb = great_war_of_restoration_cb
+				target = root
+				target_title = root.primary_title
+			}
+			random_character_war = {
+				limit = {
+					using_cb = great_war_of_restoration_cb
+				}
+				every_in_list = {
+					list = anti_wr_coalition_members
+					limit = {
+						NOR = {
+							is_defender_in_war = prev
+							is_attacker_in_war = prev
+						}
+					}
+					prev = {
+						add_attacker = prev
+					}
+				}
+			}
+		}
+		every_in_list = {
+			list = anti_wr_coalition_members
+			every_character_war = {
+				limit = {
+					NOR = {
+						using_cb = great_war_of_restoration_cb
+						using_cb = crusading_claim_cb
+						AND = {
+							primary_defender = prev
+							NOT = {
+								using_cb = peasant_war
+							}
+						}
+						primary_defender = {
+							is_ai = no
+						}
+					}
+				}
+				if = {
+					limit = {
+						primary_attacker = prev
+					}
+					end_war = white_peace
+				}
+				else = {
+					remove_participant = prev
+				}
+			}
+		}
+		random_character_war = {
+			limit = {
+				using_cb = great_war_of_restoration_cb
+			}
+			save_scope_as = wr_war
+		}
+		if = {
+			limit = {
+				OR = {
+					has_relation_potential_rival = scope:primary_coalition_defender
+					scope:primary_coalition_defender = {
+						opinion = {
+							target = root
+							value < -40
+						}
+					}
+				}
+			}
+			set_relation_rival = {
+				target = scope:primary_coalition_defender
+				reason = rival_attempt_revive_wr
+			}
+		}
+	}
+}
+
+#######胜利，奥古斯都万岁####
+br_augustus_of_wr.004 = {
+	type = character_event
+	title = br_augustus_of_wr.004.t
+	desc = br_augustus_of_wr.004.desc
+	theme = byzantine
+	override_background = { reference = throne_room }
+	override_effect_2d = { reference = legend_glow }
+	left_portrait = {
+		character = root
+		animation = war_over_win
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				prestige_level < 5
+			}
+			add_prestige_level = 1
+		}
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = title_change
+			add_claim_on_loss = no
+		}
+		title:e_western_roman_empire = {
+			change_title_holder = {
+				holder = root
+				change = scope:title_change
+			}
+			save_scope_as = title_e_western_roman_empire
+		}
+		resolve_title_and_vassal_change = scope:title_change
+		set_primary_title_to = title:e_western_roman_empire
+        hidden_effect = {
+			every_held_title = {
+				limit = {
+					tier = tier_empire
+				}
+				every_in_de_jure_hierarchy = {
+					limit = {
+						tier = tier_kingdom
+					}
+					set_de_jure_liege_title = title:e_western_roman_empire
+				}
+			}
+			restore_italia_suburbicariae_dioceses_effect = yes
+			restore_italia_annonariae_dioceses_effect = yes
+			restore_pannonia_dioceses_effect = yes
+			create_title_and_vassal_change = {
+				type = created
+				save_scope_as = title_change
+				add_claim_on_loss = no
+			}
+			title:k_italia_suburbicariae = {
+				set_de_jure_liege_title = root.primary_title
+				change_title_holder = {
+					holder = root
+					change = scope:title_change
+				}				
+			}
+			title:k_italia_annonariae = {
+				set_de_jure_liege_title = root.primary_title
+				change_title_holder = {
+					holder = root
+					change = scope:title_change
+				}
+			}
+			title:k_pannonia = {
+				set_de_jure_liege_title = root.primary_title
+				change_title_holder = {
+					holder = root
+					change = scope:title_change
+				}
+			}
+			resolve_title_and_vassal_change = scope:title_change
+			every_county_in_region = {
+				region = custom_western_roman_empire
+				limit = {
+					NOT = { holder.top_liege = root }
+				}
+				set_variable = {
+					name = eoe_wre_restoration_target
+					value = yes
+				}
+				save_scope_as = western_roman_restoration_county
+				root = {
+					add_pressed_claim = scope:western_roman_restoration_county
+				}
+			}
+		}
+	}
+	
+
+	option = {
+		name = br_augustus_of_wr.004.a
+		flavor = br_augustus_of_wr.004.a.flavor
+		add_trait = augustus
+        trigger_event = {
+            id = conqueror.0001
+            days = 10
+        }
+		spawn_army = {
+			name = western_roman_restoration_field_army
+			location = capital_province
+			uses_supply = yes
+			inheritable = no
+			men_at_arms = {
+				type = comitatenses
+				stacks = 8
+			}
+			men_at_arms = {
+				type = legionary_cohort
+				stacks = 10
+			}
+			men_at_arms = {
+				type = bowmen
+				stacks = 5
+			}
+			men_at_arms = {
+				type = legionary_cavalry
+				stacks = 3
+			}
+			men_at_arms = {
+				type = light_horsemen
+				stacks = 3
+			}
+			men_at_arms = {
+				type = roman_ballista
+				stacks = 1
+			}
+		}
+		if = {
+			limit = { has_dlc_feature = legends }
+			create_legend_seed = {
+				type = heroic
+				quality = famed
+				chronicle = conqueror_chronicle
+			}
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+    option = {
+		name = br_augustus_of_wr.004.b
+		flavor = br_augustus_of_wr.004.b.flavor
+		add_trait = augustus
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+	after = {
+		every_held_title = {
+			limit = {
+				tier = tier_empire
+				NOT = { this = title:e_western_roman_empire }
+			}
+			root = { destroy_title = prev }
+		}
+	}
+}
+
+##########失败###########
+br_augustus_of_wr.005 = {
+	type = character_event
+	title = br_augustus_of_wr.005.t
+	desc = br_augustus_of_wr.005.desc
+	theme = prison
+	left_portrait = {
+		character = root
+		animation = personality_irrational
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = br_augustus_of_wr.005.a
+		flavor = br_augustus_of_wr.005.a.flavor
+		add_trait = lunatic_1
+		add_stress = massive_stress_gain
+		
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+##########西罗马霸权###########
+br_augustus_of_wr.006 = {
+	type = character_event
+	title = br_augustus_of_wr.006.t
+	desc = br_augustus_of_wr.006.desc
+	theme = byzantine
+	override_background = { reference = throne_room }
+	override_effect_2d = { reference = legend_glow }
+	left_portrait = {
+		character = root
+		animation = scepter
+	}
+
+	immediate = {
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = title_change
+			add_claim_on_loss = no
+		}
+		title:h_western_roman_empire = {
+			change_title_holder = {
+				holder = root
+				change = scope:title_change
+			}
+			save_scope_as = title_h_western_roman_empire
+				hidden_effect = {
+				copy_title_history = title:e_western_roman_empire
+			}
+		}
+		set_primary_title_to = title:h_western_roman_empire
+        hidden_effect = {
+		restore_hispania_dioceses_dioceses_effect = yes
+		restore_septem_provinciae_dioceses_effect = yes
+		restore_gallia_dioceses_effect = yes
+		restore_britannia_dioceses_effect = yes
+		title:e_france = {
+			holder = {
+				destroy_title = title:e_france 
+			}
+		}
+		title:e_spain = {
+			holder = {
+				destroy_title = title:e_spain 
+			}
+		}	
+		title:k_gallia = {
+			set_de_jure_liege_title = title:e_praetorian_gallia
+		}
+		title:k_britannia = {
+			set_de_jure_liege_title = title:e_praetorian_gallia
+		}
+		title:k_septem_provinciae = {
+			set_de_jure_liege_title = title:e_praetorian_gallia
+		}
+		title:k_hispania = {
+			set_de_jure_liege_title = title:e_praetorian_gallia
+		}
+		restore_italia_suburbicariae_dioceses_effect = yes
+		restore_italia_annonariae_dioceses_effect = yes
+		restore_africae_dioceses_effect = yes
+		title:e_italy = {
+			holder = {
+				destroy_title = title:e_italy 
+			}
+		}
+		title:k_italia_suburbicariae = {
+			set_de_jure_liege_title = title:e_praetorian_italia
+		}
+		title:k_italia_annonariae = {
+			set_de_jure_liege_title = title:e_praetorian_italia
+		}
+		title:k_africae = {
+			set_de_jure_liege_title = title:e_praetorian_italia
+		}
+		restore_pannonia_dioceses_effect = yes
+		reestablish_macedon_dioceses_effect = yes
+		reestablish_daciae_dioceses_effect = yes
+		title:e_illyria = {
+			holder = {
+				destroy_title = title:e_illyria 
+			}
+		}
+		title:k_daciae = {
+			set_de_jure_liege_title = title:e_praetorian_illyricum
+		}
+		title:k_macedon = {
+			set_de_jure_liege_title = title:e_praetorian_illyricum
+		}
+		title:k_pannonia = {
+			set_de_jure_liege_title = title:e_praetorian_illyricum
+		}
+		if = {
+			limit = {
+				exists = title:k_germania.holder
+			}
+			title:k_germania = {
+				set_de_jure_liege_title = title:e_germania
+			}
+		}
+		if = {
+			limit = {
+				exists = title:k_roman_dacia.holder
+			}
+			title:k_roman_dacia = {
+				set_de_jure_liege_title = title:e_roman_dacia
+			}
+		}
+		resolve_title_and_vassal_change = scope:title_change
+		}		
+	}
+
+	option = {
+		name = br_augustus_of_wr.006.a
+		flavor = br_augustus_of_wr.006.a.flavor
+		
+		ai_chance = {
+			base = 100
+		}
+	}
+	after = {
+		title:e_western_roman_empire = {
+			holder = {
+				destroy_title = title:e_western_roman_empire 
+			}
+		}
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = title_change
+			add_claim_on_loss = no
+		}
+		title:e_praetorian_gallia = {
+			set_de_jure_liege_title = root.primary_title
+			change_title_holder = {
+				holder = root
+				change = scope:title_change
+			}		
+		}
+		title:e_praetorian_italia = {
+			set_de_jure_liege_title = root.primary_title
+			change_title_holder = {
+				holder = root
+				change = scope:title_change
+			}
+		}
+		title:e_praetorian_illyricum = {
+			set_de_jure_liege_title = root.primary_title
+			change_title_holder = {
+				holder = root
+				change = scope:title_change
+			}
+		}
+		if = {
+            limit = {
+                exists = title:k_germania.holder
+            }
+            title:e_germania = {
+                set_de_jure_liege_title = root.primary_title
+				change_title_holder = {
+				    holder = root
+				    change = scope:title_change			    
+				}
+            }
+        }
+		if = {
+            limit = {
+                exists = title:k_roman_dacia.holder
+            }
+            title:e_roman_dacia = {
+                set_de_jure_liege_title = root.primary_title
+				change_title_holder = {
+				    holder = root
+				    change = scope:title_change			    
+				}
+            }
+        }
+		resolve_title_and_vassal_change = scope:title_change
+	}
+}
+
+#######放弃高加索#######
+br_augustus_of_wr.030 = {
+	type = character_event
+	title = br_augustus_of_wr.030.t
+	desc = br_augustus_of_wr.030.desc
+	theme = emperor
+	override_background = { reference = throne_room }
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = br_augustus_of_wr.030.a
+		flavor = br_augustus_of_wr.030.a.flavor
+		
+		ai_chance = {
+			base = 70
+		}
+	}
+	option = {
+		name = br_augustus_of_wr.030.b
+		flavor = br_augustus_of_wr.030.b.flavor
+		stress_impact = {
+		base = medium_stress_impact_gain
+		}
+		add_legitimacy = monumental_legitimacy_loss
+		add_short_term_gold = major_gold_value
+		title:e_persia.holder  = {
+			add_opinion = {
+			target = root
+			modifier = friendliness_opinion
+			opinion = 50
+			}
+			pay_short_term_gold = {
+					target = root 
+					gold = major_gold_value
+			}
+			add_legitimacy = medium_legitimacy_gain
+		}
+		
+		hidden_effect = {
+			every_vassal  = {
+				add_opinion = {
+				target = root
+				modifier = angry_opinion
+				opinion = -35
+				}
+			}
+			add_to_global_variable_list = {
+                name = unavailable_unique_decisions
+                target = flag:flag_relinquish_caucasus_region_decision
+            }
+		}
+		if = {
+			limit = { 
+				exists = title:k_nikaea2.holder
+			}
+			title:d_mesopotamia = {
+				set_de_jure_liege_title = title:k_nikaea2
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					exists = title:k_nikaea2.holder
+				}
+			}
+			title:d_mesopotamia = {
+				set_de_jure_liege_title = title:k_pontus
+			}
+		}		
+		title:k_armenia = {
+		set_de_jure_liege_title = title:e_persia
+		}
+		title:k_georgia = {
+			set_de_jure_liege_title = title:e_persia
+		}
+
+		ai_chance = {
+			base = 30
+		}
+	}
+}

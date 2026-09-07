@@ -1,0 +1,17 @@
+﻿e_gaul = {
+	260.9.1 = {
+		holder = 9800050 # Postumus
+	}
+	269.6.1 = {
+		holder = 9800052 # Marius
+	}
+	269.9.1 = {
+		holder = 9800053 # Victorinus
+	}
+	271.3.1 = {
+		holder = 9800056 # Tetricus
+	}
+	274.3.1 = {
+		holder = 0
+	}
+}
