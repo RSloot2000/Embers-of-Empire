@@ -1,0 +1,222 @@
+﻿evangelize_the_slavs_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+	}
+	ai_check_interval = 80
+
+	sort_order = 120
+
+	desc = evangelize_the_slavs_decision_desc
+	selection_tooltip = evangelize_the_slavs_decision_tooltip
+	decision_group_type = roman
+
+	cooldown = { years = 10 }
+
+	is_shown = {
+		has_ep3_dlc_trigger = yes
+		# Byz emperor or governor
+		OR = {
+			has_title = title:e_byzantium
+			liege = { has_title = title:e_byzantium }
+			has_title = title:e_western_roman_empire
+			liege = { has_title = title:e_western_roman_empire }
+		}
+		faith.religion = religion:christianity_religion
+		# You border with pagans to convert
+		trigger_if = {
+			limit = {
+				has_title = title:e_byzantium
+			}
+			any_neighboring_and_across_water_top_liege_realm_owner = {
+				valid_for_pagan_conversion_trigger = yes
+			}
+		}
+		trigger_else = {
+			any_neighboring_and_across_water_realm_same_rank_owner = {
+				valid_for_pagan_conversion_trigger = yes
+			}
+		}
+	}
+
+	is_valid = {
+		government_has_flag = government_is_administrative
+		trigger_if = {
+			limit = {
+				OR = {
+					has_title = title:e_byzantium
+					has_title = title:e_eastern_roman_empire
+					has_title = title:e_western_roman_empire
+					has_title = title:h_western_roman_empire
+					has_title = title:h_roman_empire
+				}
+			}
+			custom_tooltip = {
+				any_neighboring_and_across_water_top_liege_realm_owner = {
+					valid_for_pagan_conversion_trigger = yes
+				}
+				text = valid_neighboring_and_across_water_top_liege
+			}
+		}
+		trigger_else = {
+			custom_tooltip = {
+				any_neighboring_and_across_water_realm_same_rank_owner = {
+					valid_for_pagan_conversion_trigger = yes
+				}
+				text = valid_neighboring_and_across_water_realm_same_rank
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_at_war = no
+		NOT = { exists = involved_activity }
+		is_imprisoned = no
+		has_contagious_deadly_disease_trigger = no
+	}
+
+	cost = {
+		piety = massive_piety_value #TODO balance
+	}
+
+	effect = {
+		custom_tooltip = evangelize_the_slavs_decision_effect
+		trigger_event = ep3_decisions_event.4020
+	}
+
+	ai_potential = {
+		piety > massive_piety_value
+		has_title = title:e_byzantium
+	}
+
+	ai_will_do = {
+		base = 0
+		ai_value_modifier = {
+			ai_zeal = 1
+		}
+		modifier = {
+			any_neighboring_and_across_water_top_liege_realm_owner = {
+				valid_for_pagan_conversion_trigger = yes
+				NOT = {
+					capital_county.title_province = {
+						geographical_region = world_europe_east
+					}
+				}
+			}
+			factor = 0.5
+		}
+	}
+}
+
+split_roman_empire_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/ep3_decision_hold_triumph.dds"
+	}
+
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 0
+		kingdom = 0
+		empire = 0
+		hegemony = 360
+	}
+	sort_order = 110
+
+	desc = split_roman_empire_decision_desc
+	selection_tooltip = split_roman_empire_decision_selection_tooltip
+	decision_group_type = roman
+
+	is_shown = {
+		has_ep3_dlc_trigger = yes
+		primary_title = title:h_roman_empire
+		NOT = { exists = title:h_eastern_roman_empire.holder }
+		NOT = { exists = title:h_western_roman_empire.holder }
+	}
+
+	is_valid = {
+		realm_size >= 150
+		capital_county = title:c_roma
+		has_title = title:c_byzantion
+	}
+
+	is_valid_showing_failures_only = {
+		NOT = { exists = involved_activity }
+		is_imprisoned = no
+	}
+
+	cost = {}
+
+	effect = {
+		if = {
+			limit = {
+				has_active_diarchy = yes
+				has_diarchy_type = co_emperorship
+			}
+			diarch = { save_scope_as = new_holder }
+		}
+		if = {
+			limit = {
+				any_powerful_family = {
+					this != root.house
+					count >= 1
+					exists = house_head
+				}
+			}
+			ordered_powerful_family = {
+				limit = { this != root.house }
+				order_by = house_power_score
+				house_head = { save_scope_as = new_holder }
+			}
+		}
+		else = {
+			ordered_powerful_vassal = {
+				order_by = max_military_strength
+				save_scope_as = new_holder
+			}
+		}
+		custom_tooltip = {
+			text = form_eastern_roman_empire_tt
+			create_eastern_roman_empire_scripted_effect = yes
+		}
+		title:h_roman_empire = {
+			set_title_name = h_roman_empire_western
+		}
+
+		# Add truce with new Byzantine Emperor
+		add_truce_both_ways = {
+			character = scope:new_holder
+			years = 10
+			name = TRUCE_COLLABORATION
+		}
+
+		# Some additional bonuses
+		change_influence = {
+			value = monumental_influence_gain
+			multiply = 2
+		}
+
+		if = {
+			limit = {
+				any_owned_story = { 
+					type = ep3_story_cycle_restoring_rome 
+					has_variable = roman_empire_hard_mode
+				}
+			}
+			custom_tooltip = {
+				text = ending_of_restore_rome_trials_tt
+				random_owned_story = {
+					limit = { story_type = ep3_story_cycle_restoring_rome }
+					remove_variable = roman_empire_hard_mode
+				}
+			}
+		}
+	}
+
+	ai_potential = {
+		primary_title = title:h_roman_empire
+	}
+
+	ai_will_do = {
+		base = 50
+	}
+}

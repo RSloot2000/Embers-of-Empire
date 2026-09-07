@@ -1,0 +1,179 @@
+﻿d_pontificate = {
+	3.1.1 = {
+		holder = 145290 # Augustus
+	}
+	24.8.19 = {
+		holder = 145075 # Tiberius
+	}
+	37.3.16 = {
+		holder = 145289 # Caligula
+	}
+	41.1.24 = {
+		holder = 145288 # Claudius
+	}
+	54.10.13 = {
+		holder = 145287 # Nero
+	}
+	68.6.9 = {
+		holder = 145286 # Galba
+	}
+	69.1.15 = {
+		holder = 145285 # Otho
+	}
+	69.4.16 = {
+		holder = 145284 # Vitellius
+	}
+	69.12.20 = {
+		holder = 145281 # Vespasian
+	}
+	79.6.23 = {
+		holder = 145282 # Titus
+	}
+	81.9.13 = {
+		holder = 145283 # Domitian
+	}
+	96.9.18 = {
+		holder = 145280 # Nerva
+	}
+	98.1.27 = {
+		holder = 145279 # Trajan
+	}
+	117.8.9 = {
+		holder = 145278 # Hadrian
+	}
+	138.7.10 = {
+		holder = 145277 # Antoninus Pius
+	}
+	161.3.7 = {
+		holder = 145274 # Marcus Aurelius
+	}
+	180.3.17 = {
+		holder = 145275 # Commodus
+	}
+	193.1.1 = {
+		holder = 145273 # Pertinax
+	}
+	193.3.29 = {
+		holder = 145272 # Didius Julianus
+	}
+	193.6.1 = {
+		holder = 145269 # Septimius Severus
+	}
+	211.2.4 = {
+		holder = 145270 # Caracalla
+	}
+	217.4.8 = {
+		holder = 145268 # Macrinus
+	}
+	218.6.8 = {
+		holder = 145267 # Elagabalus
+	}
+	222.3.11 = {
+		holder = 145266 # Severus Alexander
+	}
+	235.3.19 = {
+		holder = 145265 # Maximinus Thrax
+	}
+	238.3.22 = {
+		holder = 145259 # Gordian I
+	}
+	238.4.12 = {
+		holder = 145264 # Pupienus
+	}
+	238.7.29 = {
+		holder = 145262 # Gordian III
+	}
+	244.2.11 = {
+		holder = 70526 # Philip the Arab
+	}
+	249.9.1 = {
+		holder = 145258 # Decius
+	}
+	251.6.1 = {
+		holder = 145257 # Trebonianus Gallus
+	}
+	253.7.1 = {
+		holder = 145256 # Aemilian
+	}
+	253.8.1 = {
+		holder = 145254 # Valerian
+	}
+	260.6.1 = {
+		holder = 145255 # Gallienus
+	}
+	268.8.1 = {
+		holder = 145252 # Claudius Gothicus
+	}
+	270.1.15 = {
+		holder = 145253 # Quintillus
+	}
+	270.5.1 = {
+		holder = 145250 # Aurelian
+	}
+	275.7.1 = {
+		holder = 0
+	}
+	275.9.25 = {
+		holder = 145247 # Tacitus
+	}
+	276.6.1 = {
+		holder = 145248 # Florian
+	}
+	276.9.1 = {
+		holder = 145245 # Probus
+	}
+	282.10.1 = {
+		holder = 145242 # Carus
+	}
+	283.8.1 = {
+		holder = 145243 # Numerian
+	}
+	284.11.1 = {
+		holder = 145244 # Carinus
+	}
+	285.7.1 = {
+		holder = 145241 # Diocletian
+	}
+	305.5.1 = {
+		holder = 70524 # Constantius Chlorus
+	}
+	306.7.25 = {
+		holder = 145240 # Galerius
+	}
+	311.5.5 = {
+		holder = 145294 # Maxentius
+	}
+	311.6.5 = {
+		holder = 145239 # Maximinus Daia
+	}
+	313.8.1 = {
+		holder = 145238 # Licinius
+	}
+	324.9.19 = {
+		holder = 70523 # Constantine the Great
+	}
+	337.5.22 = {
+		holder = 70520 # Constantine II
+	}
+	340.4.1 = {
+		holder = 70522 # Constans
+	}
+	350.2.1 = {
+		holder = 70521 # Constantius II
+	}
+	361.11.3 = {
+		holder = 145237 # Julian
+	}
+	363.6.26 = {
+		holder = 145235 # Jovian
+	}
+	364.2.17 = {
+		holder = 145231 # Valentinian I
+	}
+	375.11.17 = {
+		holder = 145233 # Gratian
+	}
+	383.8.25 = {
+		holder = 0
+	}
+}

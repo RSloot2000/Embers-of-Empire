@@ -1,0 +1,5 @@
+﻿l_english:
+
+ #cultures
+
+ gallo_history_loc: "Formed from [CULTURE.GetName] and [TARGET_CULTURE.GetName] around the year [DATE.GetYear]"

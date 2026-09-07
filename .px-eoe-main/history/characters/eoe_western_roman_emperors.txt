@@ -1,0 +1,184 @@
+﻿9800001 = {
+	name = "EoE_Iohannes"
+	# Ioannes, western emperor 423-425
+	dynasty = eoe_wre_joannes
+	religion = "catholic"
+	culture = "roman"
+	disallow_random_traits = yes
+	380.1.1 = {
+		birth = "380.1.1"
+	}
+	425.5.1 = {
+		death = {
+			death_reason = death_execution
+		}
+	}
+}
+
+9800002 = {
+	name = "Petronius_Maximus"
+	# Flavius Anicius Petronius Maximus
+	dynasty = eoe_wre_anicii
+	religion = "catholic"
+	culture = "roman"
+	disallow_random_traits = yes
+	396.1.1 = {
+		birth = "396.1.1"
+	}
+	455.5.31 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+
+9800003 = {
+	name = "EoE_Eparchius_Avitus"
+	# Eparchius Avitus
+	dynasty = eoe_wre_avitus
+	religion = "catholic"
+	culture = "roman"
+	disallow_random_traits = yes
+	380.1.1 = {
+		birth = "380.1.1"
+	}
+	457.1.1 = {
+		death = "457.1.1"
+	}
+}
+
+9800004 = {
+	name = "EoE_Majorianus"
+	# Julius Valerius Majorianus
+	dynasty = eoe_wre_majorianus
+	religion = "catholic"
+	culture = "roman"
+	trait = diligent
+	disallow_random_traits = yes
+	420.1.1 = {
+		birth = "420.1.1"
+	}
+	461.8.7 = {
+		death = {
+			death_reason = death_execution
+		}
+	}
+}
+
+9800005 = {
+	name = "Libius_Severus"
+	# Libius Severus
+	dynasty = eoe_wre_severus
+	religion = "catholic"
+	culture = "roman"
+	disallow_random_traits = yes
+	420.1.1 = {
+		birth = "420.1.1"
+	}
+	465.11.14 = {
+		death = "465.11.14"
+	}
+}
+
+9800006 = {
+	name = "EoE_Anthemius"
+	# Procopius Anthemius
+	dynasty = eoe_wre_procopii
+	religion = "catholic"
+	culture = "roman"
+	father = 9800022
+	disallow_random_traits = yes
+	420.1.1 = {
+		birth = "420.1.1"
+	}
+	472.7.11 = {
+		death = {
+			death_reason = death_execution
+		}
+	}
+}
+
+9800007 = {
+	name = "Olybrius"
+	# Anicius Olybrius
+	dynasty = eoe_wre_anicii
+	religion = "catholic"
+	culture = "roman"
+	disallow_random_traits = yes
+	420.1.1 = {
+		birth = "420.1.1"
+	}
+	472.11.2 = {
+		death = "472.11.2"
+	}
+}
+
+9800008 = {
+	name = "Glycerius"
+	# Glycerius, later bishop of Salona
+	dynasty = eoe_wre_glycerius
+	religion = "catholic"
+	culture = "roman"
+	disallow_random_traits = yes
+	420.1.1 = {
+		birth = "420.1.1"
+	}
+	480.12.31 = {
+		death = "480.12.31"
+	}
+}
+
+9800009 = {
+	name = "EoE_Iulius_Nepos"
+	# Julius Nepos
+	dynasty = eoe_wre_nepos
+	religion = "catholic"
+	culture = "roman"
+	father = 9800032
+	disallow_random_traits = yes
+	430.1.1 = {
+		birth = "430.1.1"
+	}
+	475.8.28 = {
+		add_pressed_claim = title:e_western_roman_empire
+	}
+	480.5.9 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+
+9800010 = {
+	name = "EoE_Romulus_Augustus"
+	# Romulus Augustus, called Augustulus
+	dynasty = eoe_wre_orestes
+	religion = "catholic"
+	culture = "roman"
+	disallow_random_traits = yes
+	father = 9800011
+	460.1.1 = {
+		birth = "460.1.1"
+		give_nickname = eoe_nick_augustulus
+	}
+	511.1.1 = {
+		death = "511.1.1"
+	}
+}
+
+9800011 = {
+	name = "Orestes"
+	# Flavius Orestes, father and regent of Romulus
+	dynasty = eoe_wre_orestes
+	religion = "catholic"
+	culture = "roman"
+	disallow_random_traits = yes
+	420.1.1 = {
+		birth = "420.1.1"
+	}
+	476.8.28 = {
+		death = {
+			death_reason = death_execution
+		}
+	}
+}

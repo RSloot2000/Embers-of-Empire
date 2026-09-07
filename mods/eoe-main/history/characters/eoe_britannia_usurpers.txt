@@ -1,0 +1,34 @@
+﻿9800119 = {
+	name = "EoE_Marcus_Aurelius_Carausius"
+	dynasty = eoe_britannia_carausius
+	religion = "hellenic_pagan"
+	culture = "roman"
+	disallow_random_traits = yes
+	250.1.1 = {
+		birth = "250.1.1"
+	}
+	286.1.1 = {
+		give_nickname = eoe_nick_restitutor_britanniae
+	}
+	293.1.1 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+
+9800120 = {
+	name = "EoE_Allectus"
+	dynasty = eoe_britannia_allectus
+	religion = "hellenic_pagan"
+	culture = "roman"
+	disallow_random_traits = yes
+	255.1.1 = {
+		birth = "255.1.1"
+	}
+	296.9.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}

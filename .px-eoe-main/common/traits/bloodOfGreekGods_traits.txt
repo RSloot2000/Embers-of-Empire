@@ -1,0 +1,4492 @@
+﻿@greek_t1_chance = 0
+@greek_t2_chance = 0
+@greek_t3_chance = 0
+
+blood_aphrodite_1 = {
+
+	opposites = {
+		blood_aphrodite_2
+		blood_aphrodite_3
+	}
+	
+	health = 0.5
+	negate_health_penalty_add = 0.5
+	life_expectancy = 5
+	years_of_fertility = 5
+	
+	birth = @greek_t1_chance
+	random_creation = @greek_t1_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 100
+	
+	level = 1
+	group = blood_aphrodite
+	flag = blood_greek_gods
+	
+  	intrigue = 3
+	diplomacy = 3
+    	fertility = 0.1
+	attraction_opinion = 10
+	general_opinion = 0
+	owned_personal_scheme_success_chance_add = 10
+	max_personal_schemes_add = 0
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.1
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.1
+	
+	genetic_constraint_all = beauty_1
+	genetic_constraint_men = male_beauty_1
+	genetic_constraint_women = female_beauty_1
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_aphrodite_1_desc
+			}
+			desc = trait_blood_aphrodite_1_character_desc
+		}
+	}
+}
+
+blood_aphrodite_2 = {
+
+	opposites = {
+		blood_aphrodite_1
+		blood_aphrodite_3
+	}
+	
+	health = 0.75
+	negate_health_penalty_add = 0.75
+	life_expectancy = 10
+	years_of_fertility = 10
+	
+	birth = @greek_t2_chance
+	random_creation = @greek_t2_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 200
+	
+	level = 2
+	group = blood_aphrodite
+	flag = blood_greek_gods
+	
+	diplomacy = 6
+	intrigue = 6
+	fertility = 0.25
+	attraction_opinion = 20
+	general_opinion = 10
+	owned_personal_scheme_success_chance_add = 20
+	max_personal_schemes_add = 0
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.2
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.2
+	
+	genetic_constraint_all = beauty_2
+	genetic_constraint_men = male_beauty_2
+	genetic_constraint_women = female_beauty_2
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_aphrodite_2_desc
+			}
+			desc = trait_blood_aphrodite_2_character_desc
+		}
+	}
+}
+
+blood_aphrodite_3 = {
+
+	opposites = {
+		blood_aphrodite_1
+		blood_aphrodite_2
+	}
+	
+	health = 1
+	negate_health_penalty_add = 1
+	life_expectancy = 15
+	years_of_fertility = 15
+	
+	birth = @greek_t3_chance
+	random_creation = @greek_t3_chance	
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 300
+	
+	level = 3
+	group = blood_aphrodite
+	flag = blood_greek_gods
+	
+	diplomacy = 12
+	intrigue = 12
+	fertility = 0.50
+	attraction_opinion = 40
+	general_opinion = 20
+	owned_personal_scheme_success_chance_add = 30
+	max_personal_schemes_add = 1
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.4
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.4
+
+	genetic_constraint_all = beauty_3
+	genetic_constraint_men = male_beauty_3
+	genetic_constraint_women = female_beauty_3
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_aphrodite_3_desc
+			}
+			desc = trait_blood_aphrodite_3_character_desc
+		}
+	}
+}
+
+blood_apollo_1 = {
+
+	opposites = {
+		blood_apollo_2
+		blood_apollo_3
+	}
+	
+	health = 0.5
+	negate_health_penalty_add = 0.5
+	life_expectancy = 5
+	years_of_fertility = 5
+	
+	birth = @greek_t1_chance
+	random_creation = @greek_t1_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 100
+	
+	level = 1
+	group = blood_apollo
+	flag = blood_greek_gods
+	
+	diplomacy = 3
+	learning = 3
+	fertility = 0.1
+	attraction_opinion = 10
+	general_opinion = 0
+	owned_personal_scheme_success_chance_add = 10
+	monthly_prestige_gain_mult = 0
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.1
+	monthly_learning_lifestyle_xp_gain_mult = 0.1		
+
+	genetic_constraint_all = beauty_1
+	genetic_constraint_men = male_beauty_1
+	genetic_constraint_women = female_beauty_1
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_apollo_1_desc
+			}
+			desc = trait_blood_apollo_1_character_desc
+		}
+	}
+}
+
+blood_apollo_2 = {
+
+	opposites = {
+		blood_apollo_1
+		blood_apollo_3
+	}
+	
+	health = 0.75
+	negate_health_penalty_add = 0.75
+	life_expectancy = 10
+	years_of_fertility = 10
+	
+	birth = @greek_t2_chance
+	random_creation = @greek_t2_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 200
+	
+	level = 2
+	group = blood_apollo
+	flag = blood_greek_gods
+	
+	diplomacy = 6
+	learning = 6
+	fertility = 0.25
+	attraction_opinion = 20
+	general_opinion = 10
+	owned_personal_scheme_success_chance_add = 20
+	monthly_prestige_gain_mult = 0.1
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.2
+	monthly_learning_lifestyle_xp_gain_mult = 0.2
+	
+	genetic_constraint_all = beauty_2
+	genetic_constraint_men = male_beauty_2
+	genetic_constraint_women = female_beauty_2
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_apollo_2_desc
+			}
+			desc = trait_blood_apollo_2_character_desc
+		}
+	}
+}
+
+blood_apollo_3 = {
+
+	opposites = {
+		blood_apollo_1
+		blood_apollo_2
+	}
+	
+	health = 1
+	negate_health_penalty_add = 1
+	life_expectancy = 15
+	years_of_fertility = 15
+	
+	birth = @greek_t3_chance
+	random_creation = @greek_t3_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 300
+	
+	level = 3
+	group = blood_apollo
+	flag = blood_greek_gods
+	
+	diplomacy = 12
+	learning = 12
+	fertility = 0.5
+	attraction_opinion = 40
+	general_opinion = 20
+	owned_personal_scheme_success_chance_add = 30
+	monthly_prestige_gain_mult = 0.2
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.4
+	monthly_learning_lifestyle_xp_gain_mult = 0.4
+	
+	genetic_constraint_all = beauty_3
+	genetic_constraint_men = male_beauty_3
+	genetic_constraint_women = female_beauty_3
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_apollo_3_desc
+			}
+			desc = trait_blood_apollo_3_character_desc
+		}
+	}
+}
+
+blood_ares_1 = {
+
+	opposites = {
+		blood_ares_2
+		blood_ares_3
+	}
+	
+	health = 0.5
+	negate_health_penalty_add = 0.5
+	life_expectancy = 5
+	years_of_fertility = 5
+	
+	birth = @greek_t1_chance
+	random_creation = @greek_t1_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 100
+	
+	level = 1
+	group = blood_ares
+	flag = blood_greek_gods
+	
+	martial = 3
+	intrigue = 3
+	prowess = 3
+	fertility = 0.1
+	knight_limit = 2
+	dread_baseline_add = 0
+	monthly_county_control_growth_add = 0.1
+	enemy_hard_casualty_modifier = 0.1
+	raid_speed = 0.2
+	attacker_advantage = 2
+	monthly_martial_lifestyle_xp_gain_mult = 0.1
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.1
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_ares_1_desc
+			}
+			desc = trait_blood_ares_1_character_desc
+		}
+	}
+}
+
+blood_ares_2 = {
+
+	opposites = {
+		blood_ares_1
+		blood_ares_3
+	}
+	
+	health = 0.75
+	negate_health_penalty_add = 0.75
+	life_expectancy = 10
+	years_of_fertility = 10
+	
+	birth = @greek_t2_chance
+	random_creation = @greek_t2_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 200
+	
+	level = 2
+	group = blood_ares
+	flag = blood_greek_gods
+	
+	martial = 6
+	intrigue = 6
+	prowess = 6
+	fertility = 0.25
+	knight_limit = 4
+	dread_baseline_add = 10
+	monthly_county_control_growth_add = 0.25
+	enemy_hard_casualty_modifier = 0.2
+	raid_speed = 0.6
+	attacker_advantage = 4
+	monthly_martial_lifestyle_xp_gain_mult = 0.2
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.2
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_ares_2_desc
+			}
+			desc = trait_blood_ares_2_character_desc
+		}
+	}
+}
+
+blood_ares_3 = {
+
+	opposites = {
+		blood_ares_1
+		blood_ares_2
+	}
+	
+	health = 1
+	negate_health_penalty_add = 1
+	life_expectancy = 15
+	years_of_fertility = 15
+	
+	birth = @greek_t3_chance
+	random_creation = @greek_t3_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 300
+	
+	level = 3
+	group = blood_ares
+	flag = blood_greek_gods
+	
+	martial = 12
+	intrigue = 12
+	prowess = 12
+	fertility = 0.5
+	knight_limit = 8
+	dread_baseline_add = 20
+	monthly_county_control_growth_add = 0.5
+	enemy_hard_casualty_modifier = 0.3
+	raid_speed = 0.8
+	attacker_advantage = 8
+	monthly_martial_lifestyle_xp_gain_mult = 0.4
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.4
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_ares_3_desc
+			}
+			desc = trait_blood_ares_3_character_desc
+		}
+	}
+}
+
+blood_artemis_1 = {
+
+	opposites = {
+		blood_artemis_2
+		blood_artemis_3
+	}
+	
+	health = 0.5
+	negate_health_penalty_add = 0.5
+	life_expectancy = 5
+	years_of_fertility = 5
+	
+	birth = @greek_t1_chance
+	random_creation = @greek_t1_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 100
+	
+	level = 1
+	group = blood_artemis
+	flag = blood_greek_gods
+	
+	martial = 3
+	stewardship = 3
+	prowess = 3	
+	fertility = 0.1
+	dread_baseline_add = 0
+	monthly_prestige_gain_mult = 0
+	controlled_province_advantage = 2
+	stress_gain_mult = -0.05
+	monthly_martial_lifestyle_xp_gain_mult = 0.1
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.1
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_artemis_1_desc
+			}
+			desc = trait_blood_artemis_1_character_desc
+		}
+	}
+}
+
+blood_artemis_2 = {
+
+	opposites = {
+		blood_artemis_1
+		blood_artemis_3
+	}
+	
+	health = 0.75
+	negate_health_penalty_add = 0.75
+	life_expectancy = 10
+	years_of_fertility = 10
+	
+	birth = @greek_t2_chance
+	random_creation = @greek_t2_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 200
+	
+	level = 2
+	group = blood_artemis
+	flag = blood_greek_gods
+	
+	martial = 6
+	stewardship = 6
+	prowess = 6	
+	fertility = 0.25
+	dread_baseline_add = 10
+	monthly_prestige_gain_mult = 0.1
+	controlled_province_advantage = 4
+	stress_gain_mult = -0.1
+	monthly_martial_lifestyle_xp_gain_mult = 0.2
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.2
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_artemis_2_desc
+			}
+			desc = trait_blood_artemis_2_character_desc
+		}
+	}
+}
+
+blood_artemis_3 = {
+
+	opposites = {
+		blood_artemis_1
+		blood_artemis_2
+	}
+	
+	health = 1
+	negate_health_penalty_add = 1
+	life_expectancy = 15
+	years_of_fertility = 15
+	
+	birth = @greek_t3_chance
+	random_creation = @greek_t3_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 300
+	
+	level = 3
+	group = blood_artemis
+	flag = blood_greek_gods
+	
+	martial = 12
+	stewardship = 12
+	prowess = 12
+	fertility = 0.5
+	dread_baseline_add = 20
+	monthly_prestige_gain_mult = 0.2
+	controlled_province_advantage = 8
+	stress_gain_mult = -0.2
+	monthly_martial_lifestyle_xp_gain_mult = 0.4
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.4
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_artemis_3_desc
+			}
+			desc = trait_blood_artemis_3_character_desc
+		}
+	}
+}
+
+blood_athena_1 = {
+
+	opposites = {
+		blood_athena_2
+		blood_athena_3
+	}
+	
+	health = 0.5
+	negate_health_penalty_add = 0.5
+	life_expectancy = 5
+	years_of_fertility = 5
+	
+	birth = @greek_t1_chance
+	random_creation = @greek_t1_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 100
+
+	level = 1
+	group = blood_athena
+	flag = blood_greek_gods
+	
+	martial = 3
+	learning = 3
+	fertility = 0.1
+	attraction_opinion = 0
+	enemy_terrain_advantage = -0.1
+	defender_advantage = 2
+	monthly_martial_lifestyle_xp_gain_mult = 0.1
+	monthly_learning_lifestyle_xp_gain_mult = 0.1
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_athena_1_desc
+			}
+			desc = trait_blood_athena_1_character_desc
+		}
+	}
+}
+
+blood_athena_2 = {
+
+	opposites = {
+		blood_athena_1
+		blood_athena_3
+	}
+	
+	health = 0.75
+	negate_health_penalty_add = 0.75
+	life_expectancy = 10
+	years_of_fertility = 10
+	
+	birth = @greek_t2_chance
+	random_creation = @greek_t2_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 200
+
+	level = 2
+	group = blood_athena
+	flag = blood_greek_gods
+	
+	martial = 6
+	learning = 6
+	fertility = 0.25
+	attraction_opinion = 10
+	enemy_terrain_advantage = -0.25
+	enemy_hard_casualty_modifier = 0.10
+	hard_casualty_modifier = -0.10
+	defender_advantage = 4
+	monthly_martial_lifestyle_xp_gain_mult = 0.2
+	monthly_learning_lifestyle_xp_gain_mult = 0.2
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_athena_2_desc
+			}
+			desc = trait_blood_athena_2_character_desc
+		}
+	}
+}
+
+blood_athena_3 = {
+
+	opposites = {
+		blood_athena_1
+		blood_athena_2
+	}
+	
+	health = 1
+	negate_health_penalty_add = 1
+	life_expectancy = 15
+	years_of_fertility = 15
+	
+	birth = @greek_t3_chance
+	random_creation = @greek_t3_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 300
+
+	level = 3
+	group = blood_athena
+	flag = blood_greek_gods
+	
+	martial = 12
+	learning = 12
+	fertility = 0.5
+	attraction_opinion = 20
+	enemy_terrain_advantage = -0.5
+	enemy_hard_casualty_modifier = 0.2
+	hard_casualty_modifier = -0.2
+	defender_advantage = 8
+	monthly_martial_lifestyle_xp_gain_mult = 0.4
+	monthly_learning_lifestyle_xp_gain_mult = 0.4
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_athena_3_desc
+			}
+			desc = trait_blood_athena_3_character_desc
+		}
+	}
+}
+
+blood_demeter_1 = {
+
+	opposites = {
+		blood_demeter_2
+		blood_demeter_3
+	}
+	
+	health = 0.5
+	negate_health_penalty_add = 0.5
+	life_expectancy = 5
+	years_of_fertility = 5
+	
+	birth = @greek_t1_chance
+	random_creation = @greek_t1_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 100
+	
+	level = 1
+	group = blood_demeter
+	flag = blood_greek_gods
+
+	diplomacy = 3
+	stewardship = 3
+	fertility = 0.1
+	attraction_opinion = 0
+	development_growth_factor = 0
+	close_relative_opinion = 0
+	domain_limit = 0
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.1
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.1
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_demeter_1_desc
+			}
+			desc = trait_blood_demeter_1_character_desc
+		}
+	}
+}
+
+blood_demeter_2 = {
+
+	opposites = {
+		blood_demeter_1
+		blood_demeter_3
+	}
+	
+	health = 0.75
+	negate_health_penalty_add = 0.75
+	life_expectancy = 10
+	years_of_fertility = 10
+	
+	birth = @greek_t2_chance
+	random_creation = @greek_t2_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 200
+	
+	level = 2
+	group = blood_demeter
+	flag = blood_greek_gods
+	
+	diplomacy = 6
+	stewardship = 6
+	fertility = 0.25
+	attraction_opinion = 10
+	development_growth_factor = 0.1
+	close_relative_opinion = 10
+	domain_limit = 1
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.2
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.2
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_demeter_2_desc
+			}
+			desc = trait_blood_demeter_2_character_desc
+		}
+	}
+}
+
+blood_demeter_3 = {
+
+	opposites = {
+		blood_demeter_1
+		blood_demeter_2
+	}
+	
+	health = 1
+	negate_health_penalty_add = 1
+	life_expectancy = 15
+	years_of_fertility = 15
+	
+	birth = @greek_t3_chance
+	random_creation = @greek_t3_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 300
+	
+	level = 3
+	group = blood_demeter
+	flag = blood_greek_gods
+	
+	diplomacy = 12
+	stewardship = 12	
+	fertility = 0.5
+	attraction_opinion = 20
+	development_growth_factor = 0.2
+	close_relative_opinion = 20
+	domain_limit = 2
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.4
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.4
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_demeter_3_desc
+			}
+			desc = trait_blood_demeter_3_character_desc
+		}
+	}
+}
+
+blood_hades_1 = {
+
+	opposites = {
+		blood_hades_2
+		blood_hades_3
+	}
+	
+	health = 0.5
+	negate_health_penalty_add = 0.5
+	life_expectancy = 5
+	years_of_fertility = 5
+	
+	birth = @greek_t1_chance
+	random_creation = @greek_t1_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 100
+	
+	level = 1
+	group = blood_hades
+	flag = blood_greek_gods
+	
+	stewardship = 3
+	intrigue = 3
+	fertility = 0.1
+	dread_baseline_add = 0
+	tyranny_gain_mult = -0.1
+	tyranny_loss_mult = 0.1
+	owned_hostile_scheme_success_chance_add = 10
+	cowed_vassal_tax_contribution_mult = 0.1
+	intimidated_vassal_tax_contribution_mult = 0.05
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.1
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.1
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_hades_1_desc
+			}
+			desc = trait_blood_hades_1_character_desc
+		}
+	}
+}
+
+blood_hades_2 = {
+
+	opposites = {
+		blood_hades_1
+		blood_hades_3
+	}
+	
+	health = 0.75
+	negate_health_penalty_add = 0.75
+	life_expectancy = 10
+	years_of_fertility = 10
+	
+	birth = @greek_t2_chance
+	random_creation = @greek_t2_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 200
+	
+	level = 2
+	group = blood_hades
+	flag = blood_greek_gods
+	
+	stewardship = 6
+	intrigue = 6
+	fertility = 0.25
+	dread_baseline_add = 10
+	tyranny_gain_mult = -0.15
+	tyranny_loss_mult = 0.15
+	owned_hostile_scheme_success_chance_add = 20
+	cowed_vassal_tax_contribution_mult = 0.2
+	intimidated_vassal_tax_contribution_mult = 0.1
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.2
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.2
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_hades_2_desc
+			}
+			desc = trait_blood_hades_2_character_desc
+		}
+	}
+}
+
+blood_hades_3 = {
+
+	opposites = {
+		blood_hades_1
+		blood_hades_2
+	}
+
+	
+	health = 1
+	negate_health_penalty_add = 1
+	life_expectancy = 15
+	years_of_fertility = 15
+	
+	birth = @greek_t3_chance
+	random_creation = @greek_t3_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 300
+	
+	level = 3
+	group = blood_hades
+	flag = blood_greek_gods
+	
+	stewardship = 12
+	intrigue = 12
+	fertility = 0.5
+	dread_baseline_add = 20
+	tyranny_gain_mult = -0.2
+	tyranny_loss_mult = 0.2
+	owned_hostile_scheme_success_chance_add = 30
+	cowed_vassal_tax_contribution_mult = 0.3
+	intimidated_vassal_tax_contribution_mult = 0.15
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.4
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.4
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_hades_3_desc
+			}
+			desc = trait_blood_hades_3_character_desc
+		}
+	}
+}
+
+blood_hephaestus_1 = {
+
+	opposites = {
+		blood_hephaestus_2
+		blood_hephaestus_3
+	}
+	
+	health = 0.5
+	negate_health_penalty_add = 0.5
+	life_expectancy = 5
+	years_of_fertility = 5
+	
+	birth = @greek_t1_chance
+	random_creation = @greek_t1_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 100
+	
+	level = 1
+	group = blood_hephaestus
+	flag = blood_greek_gods
+	
+	stewardship = 3
+	learning = 3
+	fertility = 0.1
+	development_growth_factor = 0
+	build_gold_cost = -0.1
+	build_speed = -0.15
+	holding_build_gold_cost = -0.1
+	holding_build_speed = -0.15
+	siege_phase_time = -0.1
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.1
+	monthly_learning_lifestyle_xp_gain_mult = 0.1
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_hephaestus_1_desc
+			}
+			desc = trait_blood_hephaestus_1_character_desc
+		}
+	}
+}
+
+blood_hephaestus_2 = {
+
+	opposites = {
+		blood_hephaestus_1
+		blood_hephaestus_3
+	}
+	
+	health = 0.75
+	negate_health_penalty_add = 0.75
+	life_expectancy = 10
+	years_of_fertility = 10
+	
+	birth = @greek_t2_chance
+	random_creation = @greek_t2_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 200
+	
+	level = 2
+	group = blood_hephaestus
+	flag = blood_greek_gods
+	
+	stewardship = 6
+	learning = 6
+	fertility = 0.25
+	development_growth_factor = 0.1
+	build_gold_cost = -0.15
+	build_speed = -0.2
+	holding_build_gold_cost = -0.15
+	holding_build_speed = -0.2
+	siege_phase_time = -0.2
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.2
+	monthly_learning_lifestyle_xp_gain_mult = 0.2
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_hephaestus_2_desc
+			}
+			desc = trait_blood_hephaestus_2_character_desc
+		}
+	}
+}
+
+blood_hephaestus_3 = {
+
+	opposites = {
+		blood_hephaestus_1
+		blood_hephaestus_2
+	}
+	
+	health = 1
+	negate_health_penalty_add = 1
+	life_expectancy = 15
+	years_of_fertility = 15
+	
+	birth = @greek_t3_chance
+	random_creation = @greek_t3_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 300
+	
+	level = 3
+	group = blood_hephaestus
+	flag = blood_greek_gods
+	
+	stewardship = 12
+	learning = 12
+	fertility = 0.5
+	development_growth_factor = 0.2
+	build_gold_cost = -0.20
+	build_speed = -0.25
+	holding_build_gold_cost = -0.20
+	holding_build_speed = -0.25
+	siege_phase_time = -0.3
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.4
+	monthly_learning_lifestyle_xp_gain_mult = 0.4
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_hephaestus_3_desc
+			}
+			desc = trait_blood_hephaestus_3_character_desc
+		}
+	}
+}
+
+blood_hera_1 = {
+
+	opposites = {
+		blood_hera_2
+		blood_hera_3
+	}
+	
+	health = 0.5
+	negate_health_penalty_add = 0.5
+	life_expectancy = 5
+	years_of_fertility = 5
+	
+	birth = @greek_t1_chance
+	random_creation = @greek_t1_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 100
+	
+	level = 1
+	group = blood_hera
+	flag = blood_greek_gods
+	
+	diplomacy = 3
+	intrigue = 3
+	fertility = 0.1
+	attraction_opinion = 0
+	dynasty_opinion = 0
+	owned_personal_scheme_success_chance_add = 10
+	owned_hostile_scheme_success_chance_add = 10
+	max_hostile_schemes_add = 0
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.1
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.1
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_hera_1_desc
+			}
+			desc = trait_blood_hera_1_character_desc
+		}
+	}
+}
+
+blood_hera_2 = {
+
+	opposites = {
+		blood_hera_1
+		blood_hera_3
+	}
+	
+	health = 0.75
+	negate_health_penalty_add = 0.75
+	life_expectancy = 10
+	years_of_fertility = 10
+	
+	birth = @greek_t2_chance
+	random_creation = @greek_t2_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 200
+	
+	level = 2
+	group = blood_hera
+	flag = blood_greek_gods
+	
+	diplomacy = 6
+	intrigue = 6
+	fertility = 0.25
+	attraction_opinion = 10
+	dynasty_opinion = 10
+	owned_personal_scheme_success_chance_add = 20
+	owned_hostile_scheme_success_chance_add = 20
+	max_hostile_schemes_add = 0
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.2
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.2
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_hera_2_desc
+			}
+			desc = trait_blood_hera_2_character_desc
+		}
+	}
+}
+
+blood_hera_3 = {
+
+	opposites = {
+		blood_hera_1
+		blood_hera_2
+	}
+	
+	health = 1
+	negate_health_penalty_add = 1
+	life_expectancy = 15
+	years_of_fertility = 15
+	
+	birth = @greek_t3_chance
+	random_creation = @greek_t3_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 300
+	
+	level = 3
+	group = blood_hera
+	flag = blood_greek_gods
+	
+	diplomacy = 12
+	intrigue = 12
+	fertility = 0.5
+	attraction_opinion = 20
+	dynasty_opinion = 20
+	owned_personal_scheme_success_chance_add = 30
+	owned_hostile_scheme_success_chance_add = 30
+	max_hostile_schemes_add = 1
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.4
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.4
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_hera_3_desc
+			}
+			desc = trait_blood_hera_3_character_desc
+		}
+	}
+}
+
+blood_hermes_1 = {
+
+	opposites = {
+		blood_hermes_2
+		blood_hermes_3
+	}
+	
+	health = 0.5
+	negate_health_penalty_add = 0.5
+	life_expectancy = 5
+	years_of_fertility = 5
+	
+	birth = @greek_t1_chance
+	random_creation = @greek_t1_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 100
+	
+	level = 1
+	group = blood_hermes
+	flag = blood_greek_gods
+	
+	stewardship = 3
+	intrigue = 3
+	fertility = 0.1
+	owned_personal_scheme_success_chance_add = 10
+	enemy_hostile_scheme_success_chance_add = -10
+	movement_speed = 0.1
+	domain_tax_mult = 0.05
+	max_combat_roll = 4
+	min_combat_roll = -2
+	development_growth_factor = 0
+	scheme_discovery_chance_mult = 0.1
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.1
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.1
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_hermes_1_desc
+			}
+			desc = trait_blood_hermes_1_character_desc
+		}
+	}
+}
+
+blood_hermes_2 = {
+
+	opposites = {
+		blood_hermes_1
+		blood_hermes_3
+	}
+	
+	health = 0.75
+	negate_health_penalty_add = 0.75
+	life_expectancy = 10
+	years_of_fertility = 10
+	
+	birth = @greek_t2_chance
+	random_creation = @greek_t2_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 200
+	
+	level = 2
+	group = blood_hermes
+	flag = blood_greek_gods
+	
+	stewardship = 6
+	intrigue = 6
+	fertility = 0.25
+	owned_personal_scheme_success_chance_add = 20
+	enemy_hostile_scheme_success_chance_add = -20
+	movement_speed = 0.2
+	domain_tax_mult = 0.1
+	max_combat_roll = 6
+	min_combat_roll = -3
+	development_growth_factor = 0.1
+	scheme_discovery_chance_mult = 0.2
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.2
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.2
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_hermes_2_desc
+			}
+			desc = trait_blood_hermes_2_character_desc
+		}
+	}
+}
+
+blood_hermes_3 = {
+
+	opposites = {
+		blood_hermes_1
+		blood_hermes_2
+	}
+	
+	health = 1
+	negate_health_penalty_add = 1
+	life_expectancy = 15
+	years_of_fertility = 15
+	
+	birth = @greek_t3_chance
+	random_creation = @greek_t3_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 300
+	
+	level = 3
+	group = blood_hermes
+	flag = blood_greek_gods
+	
+	stewardship = 12
+	intrigue = 12
+	fertility = 0.5
+	owned_personal_scheme_success_chance_add = 30
+	enemy_hostile_scheme_success_chance_add = -30
+	movement_speed = 0.3
+	domain_tax_mult = 0.2
+	max_combat_roll = 12
+	min_combat_roll = -6
+	development_growth_factor = 0.2
+	scheme_discovery_chance_mult = 0.3
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.4
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.4
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_hermes_3_desc
+			}
+			desc = trait_blood_hermes_3_character_desc
+		}
+	}
+}
+
+blood_hestia_1 = {
+
+	opposites = {
+		blood_hestia_2
+		blood_hestia_3
+	}
+	
+	health = 0.5
+	negate_health_penalty_add = 0.5
+	life_expectancy = 5
+	years_of_fertility = 5
+	
+	birth = @greek_t1_chance
+	random_creation = @greek_t1_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 100
+	
+	level = 1
+	group = blood_hestia
+	flag = blood_greek_gods
+	
+	diplomacy = 3
+	stewardship = 3
+	fertility = 0.1
+	dynasty_house_opinion = 0
+	courtier_and_guest_opinion = 0
+	supply_duration = 0.5
+	monthly_piety_gain_mult = 0
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.1
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.1
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_hestia_1_desc
+			}
+			desc = trait_blood_hestia_1_character_desc
+		}
+	}
+}
+
+blood_hestia_2 = {
+
+	opposites = {
+		blood_hestia_1
+		blood_hestia_3
+	}
+	
+	health = 0.75
+	negate_health_penalty_add = 0.75
+	life_expectancy = 10
+	years_of_fertility = 10
+	
+	birth = @greek_t2_chance
+	random_creation = @greek_t2_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 200
+	
+	level = 2
+	group = blood_hestia
+	flag = blood_greek_gods
+	
+	diplomacy = 6
+	stewardship = 6
+	fertility = 0.25
+	dynasty_house_opinion = 10
+	courtier_and_guest_opinion = 10
+	supply_duration = 0.75
+	monthly_piety_gain_mult = 0.1
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.2
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.2
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_hestia_2_desc
+			}
+			desc = trait_blood_hestia_2_character_desc
+		}
+	}
+}
+
+blood_hestia_3 = {
+
+	opposites = {
+		blood_hestia_1
+		blood_hestia_2
+	}
+	
+	health = 2
+	negate_health_penalty_add = 1.5
+	life_expectancy = 15
+	years_of_fertility = 15
+	
+	birth = @greek_t3_chance
+	random_creation = @greek_t3_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 300
+	
+	level = 3
+	group = blood_hestia
+	flag = blood_greek_gods
+	
+	diplomacy = 12
+	stewardship = 12
+	fertility = 0.5
+	dynasty_house_opinion = 20
+	courtier_and_guest_opinion = 20
+	supply_duration = 1
+	monthly_piety_gain_mult = 0.2
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.4
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.4
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_hestia_3_desc
+			}
+			desc = trait_blood_hestia_3_character_desc
+		}
+	}
+}
+
+blood_poseidon_1 = {
+
+	opposites = {
+		blood_poseidon_2
+		blood_poseidon_3
+	}
+	
+	health = 0.5
+	negate_health_penalty_add = 0.5
+	life_expectancy = 5
+	years_of_fertility = 5
+	
+	birth = @greek_t1_chance
+	random_creation = @greek_t1_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 100
+	
+	level = 1
+	group = blood_poseidon
+	flag = blood_greek_gods
+	
+	martial = 3
+	stewardship = 3
+	fertility = 0.1
+	knight_effectiveness_mult = 0.25
+	movement_speed = 0.1
+	naval_movement_speed_mult = 0.1
+	development_growth_factor = 0
+	monthly_prestige_gain_mult = 0
+	no_water_crossing_penalty = yes
+	monthly_martial_lifestyle_xp_gain_mult = 0.1
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.1
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_poseidon_1_desc
+			}
+			desc = trait_blood_poseidon_1_character_desc
+		}
+	}
+}
+
+blood_poseidon_2 = {
+
+	opposites = {
+		blood_poseidon_1
+		blood_poseidon_3
+	}
+	
+	health = 0.75
+	negate_health_penalty_add = 0.75
+	life_expectancy = 10
+	years_of_fertility = 10
+	
+	birth = @greek_t2_chance
+	random_creation = @greek_t2_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 200
+	
+	level = 2
+	group = blood_poseidon
+	flag = blood_greek_gods
+	
+	martial = 6
+	stewardship = 6
+	fertility = 0.25
+	knight_effectiveness_mult = 0.5
+	movement_speed = 0.15
+	naval_movement_speed_mult = 0.15
+	development_growth_factor = 0.1
+	monthly_prestige_gain_mult = 0.1
+	no_water_crossing_penalty = yes
+	monthly_martial_lifestyle_xp_gain_mult = 0.2
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.2
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_poseidon_2_desc
+			}
+			desc = trait_blood_poseidon_2_character_desc
+		}
+	}
+}
+
+blood_poseidon_3 = {
+
+	opposites = {
+		blood_poseidon_1
+		blood_poseidon_2
+	}
+	
+	health = 1
+	negate_health_penalty_add = 1
+	life_expectancy = 15
+	years_of_fertility = 15
+	
+	birth = @greek_t3_chance
+	random_creation = @greek_t3_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 300
+	
+	level = 3
+	group = blood_poseidon
+	flag = blood_greek_gods
+	
+	martial = 12
+	stewardship = 12
+	fertility = 0.5
+	knight_effectiveness_mult = 0.75
+	movement_speed = 0.25
+	naval_movement_speed_mult = 0.25
+	development_growth_factor = 0.2
+	monthly_prestige_gain_mult = 0.2
+	no_water_crossing_penalty = yes
+	monthly_martial_lifestyle_xp_gain_mult = 0.4
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.4
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_poseidon_3_desc
+			}
+			desc = trait_blood_poseidon_3_character_desc
+		}
+	}
+}
+
+
+blood_dionysus_1 = {
+
+	opposites = {
+		blood_dionysus_2
+		blood_dionysus_3
+	}
+	
+	health = 0.5
+	negate_health_penalty_add = 0.5
+	life_expectancy = 5
+	years_of_fertility = 5
+	
+	birth = @greek_t1_chance
+	random_creation = @greek_t1_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 100
+	
+	level = 1
+	group = blood_dionysus
+	flag = blood_greek_gods
+	
+	diplomacy = 3
+	stewardship = 3
+	fertility = 0.1
+	courtier_and_guest_opinion = 0
+	owned_personal_scheme_success_chance_add = 10
+	domain_tax_mult = 0.05
+	stress_gain_mult = -0.05
+	development_growth_factor = 0
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.1
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.1
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_dionysus_1_desc
+			}
+			desc = trait_blood_dionysus_1_character_desc
+		}
+	}
+}
+
+blood_dionysus_2 = {
+
+	opposites = {
+		blood_dionysus_1
+		blood_dionysus_3
+	}
+	
+	health = 0.75
+	negate_health_penalty_add = 0.75
+	life_expectancy = 10
+	years_of_fertility = 10
+	
+	birth = @greek_t2_chance
+	random_creation = @greek_t2_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 200
+	
+	level = 2
+	group = blood_dionysus
+	flag = blood_greek_gods
+	
+	diplomacy = 6
+	stewardship = 6
+	fertility = 0.25
+	courtier_and_guest_opinion = 10
+	owned_personal_scheme_success_chance_add = 20
+	domain_tax_mult = 0.1
+	stress_gain_mult = -0.1
+	development_growth_factor = 0.1
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.2
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.2
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_dionysus_2_desc
+			}
+			desc = trait_blood_dionysus_2_character_desc
+		}
+	}
+}
+
+blood_dionysus_3 = {
+
+	opposites = {
+		blood_dionysus_1
+		blood_dionysus_2
+	}
+	
+	health = 1
+	negate_health_penalty_add = 1
+	life_expectancy = 15
+	years_of_fertility = 15
+	
+	birth = @greek_t3_chance
+	random_creation = @greek_t3_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 300
+	
+	level = 3
+	group = blood_dionysus
+	flag = blood_greek_gods
+	
+	diplomacy = 12
+	stewardship = 12
+	fertility = 0.5
+	courtier_and_guest_opinion = 20
+	owned_personal_scheme_success_chance_add = 30
+	domain_tax_mult = 0.2
+	stress_gain_mult = -0.2
+	development_growth_factor = 0.2
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.4
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.4
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_dionysus_3_desc
+			}
+			desc = trait_blood_dionysus_3_character_desc
+		}
+	}
+}
+
+blood_zeus_1 = {
+
+	opposites = {
+		blood_zeus_2
+		blood_zeus_3
+	}
+	
+	health = 0.5
+	negate_health_penalty_add = 0.5
+	life_expectancy = 5
+	years_of_fertility = 5
+	
+	birth = @greek_t1_chance
+	random_creation = @greek_t1_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 100
+	
+	level = 1
+	group = blood_zeus
+	flag = blood_greek_gods
+
+	martial = 3
+	stewardship = 3
+	prowess = 3
+	fertility = 0.1
+	vassal_opinion = 0
+	vassal_limit = 0
+	monthly_prestige_gain_mult = 0.1
+	levy_size = 0.1
+	monthly_martial_lifestyle_xp_gain_mult = 0.1
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.1
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_zeus_1_desc
+			}
+			desc = trait_blood_zeus_1_character_desc
+		}
+	}
+}
+
+blood_zeus_2 = {
+
+	opposites = {
+		blood_zeus_1
+		blood_zeus_3
+	}
+	
+	health = 0.75
+	negate_health_penalty_add = 0.75
+	life_expectancy = 10
+	years_of_fertility = 10
+	
+	birth = @greek_t2_chance
+	random_creation = @greek_t2_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 200
+	
+	level = 2
+	group = blood_zeus
+	flag = blood_greek_gods
+	
+	martial = 6
+	stewardship = 6
+	prowess = 6
+	fertility = 0.25
+	vassal_opinion = 10
+	vassal_limit = 10
+	monthly_prestige_gain_mult = 0.15
+	levy_size = 0.15
+	monthly_martial_lifestyle_xp_gain_mult = 0.2
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.2
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_zeus_2_desc
+			}
+			desc = trait_blood_zeus_2_character_desc
+		}
+	}
+}
+
+blood_zeus_3 = {
+
+	opposites = {
+		blood_zeus_1
+		blood_zeus_2
+	}
+	
+	health = 1
+	negate_health_penalty_add = 1
+	life_expectancy = 15
+	years_of_fertility = 15
+	
+	birth = @greek_t3_chance
+	random_creation = @greek_t3_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 300
+	
+	level = 3
+	group = blood_zeus
+	flag = blood_greek_gods
+	
+	martial = 12
+	stewardship = 12
+	prowess = 12
+	fertility = 0.5
+	vassal_opinion = 20
+	vassal_limit = 20
+	monthly_prestige_gain_mult = 0.2
+	levy_size = 0.2
+	monthly_martial_lifestyle_xp_gain_mult = 0.4
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.4
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_zeus_3_desc
+			}
+			desc = trait_blood_zeus_3_character_desc
+		}
+	}
+}
+
+blood_eris_1 = {
+
+	opposites = {
+		blood_eris_2
+		blood_eris_3
+	}
+	
+	health = 0.5
+	negate_health_penalty_add = 0.5
+	life_expectancy = 5
+	years_of_fertility = 5
+	
+	birth = @greek_t1_chance
+	random_creation = @greek_t1_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 100
+	
+	level = 1
+	group = blood_eris
+	flag = blood_greek_gods
+
+  	intrigue = 3
+	prowess = 3
+	intrigue_per_prestige_level = 0
+    fertility = 0.1
+	dread_baseline_add = 10
+	owned_hostile_scheme_success_chance_add = 10
+	owned_personal_scheme_success_chance_add = 10
+	max_hostile_schemes_add = 0
+	max_personal_schemes_add = 0
+	monthly_martial_lifestyle_xp_gain_mult = 0.1
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.1
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_eris_1_desc
+			}
+			desc = trait_blood_eris_1_character_desc
+		}
+	}
+}
+
+blood_eris_2 = {
+
+	opposites = {
+		blood_eris_1
+		blood_eris_3
+	}
+	
+	health = 0.75
+	negate_health_penalty_add = 0.75
+	life_expectancy = 10
+	years_of_fertility = 10
+	
+	birth = @greek_t2_chance
+	random_creation = @greek_t2_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 200
+	
+	level = 2
+	group = blood_eris
+	flag = blood_greek_gods
+	
+  	intrigue = 6
+	prowess = 6
+	intrigue_per_prestige_level = 1
+	fertility = 0.25
+	dread_baseline_add = 20
+	owned_hostile_scheme_success_chance_add = 20
+	owned_personal_scheme_success_chance_add = 20
+	max_hostile_schemes_add = 0
+	max_personal_schemes_add = 0
+	monthly_martial_lifestyle_xp_gain_mult = 0.2
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.2
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_eris_2_desc
+			}
+			desc = trait_blood_eris_2_character_desc
+		}
+	}
+}
+
+blood_eris_3 = {
+
+	opposites = {
+		blood_eris_1
+		blood_eris_2
+	}
+
+	health = 1
+	negate_health_penalty_add = 1
+	life_expectancy = 15
+	years_of_fertility = 15
+	
+	birth = @greek_t3_chance
+	random_creation = @greek_t3_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 300
+	
+	level = 3
+	group = blood_eris
+	flag = blood_greek_gods
+	
+  	intrigue = 12
+	prowess = 12
+	intrigue_per_prestige_level = 2
+	fertility = 0.5
+	dread_baseline_add = 40
+	owned_hostile_scheme_success_chance_add = 40
+	owned_personal_scheme_success_chance_add = 40
+	max_hostile_schemes_add = 1
+	max_personal_schemes_add = 1
+	monthly_martial_lifestyle_xp_gain_mult = 0.4
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.4
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_eris_3_desc
+			}
+			desc = trait_blood_eris_3_character_desc
+		}
+	}
+}
+
+#Roman Gods Begin here
+
+blood_venus_1 = {
+
+	opposites = {
+		blood_venus_2
+		blood_venus_3
+	}
+	
+	health = 0.5
+	negate_health_penalty_add = 0.5
+	life_expectancy = 5
+	years_of_fertility = 5
+	
+	birth = @greek_t1_chance
+	random_creation = @greek_t1_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 100
+	
+	level = 1
+	group = blood_venus
+	flag = blood_roman_gods
+	
+  	intrigue = 3
+	diplomacy = 3
+    	fertility = 0.1
+	attraction_opinion = 10
+	general_opinion = 0
+	owned_personal_scheme_success_chance_add = 10
+	max_personal_schemes_add = 0
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.1
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.1
+	
+	genetic_constraint_all = beauty_1
+	genetic_constraint_men = male_beauty_1
+	genetic_constraint_women = female_beauty_1
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_venus_1_desc
+			}
+			desc = trait_blood_venus_1_character_desc
+		}
+	}
+}
+
+blood_venus_2 = {
+
+	opposites = {
+		blood_venus_1
+		blood_venus_3
+	}
+	
+	health = 0.75
+	negate_health_penalty_add = 0.75
+	life_expectancy = 10
+	years_of_fertility = 10
+	
+	birth = @greek_t2_chance
+	random_creation = @greek_t2_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 200
+	
+	level = 2
+	group = blood_venus
+	flag = blood_roman_gods
+	
+	diplomacy = 6
+	intrigue = 6
+	fertility = 0.25
+	attraction_opinion = 20
+	general_opinion = 10
+	owned_personal_scheme_success_chance_add = 20
+	max_personal_schemes_add = 0
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.2
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.2
+	
+	genetic_constraint_all = beauty_2
+	genetic_constraint_men = male_beauty_2
+	genetic_constraint_women = female_beauty_2
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_venus_2_desc
+			}
+			desc = trait_blood_venus_2_character_desc
+		}
+	}
+}
+
+blood_venus_3 = {
+
+	opposites = {
+		blood_venus_1
+		blood_venus_2
+	}
+	
+	health = 1
+	negate_health_penalty_add = 1
+	life_expectancy = 15
+	years_of_fertility = 15
+	
+	birth = @greek_t3_chance
+	random_creation = @greek_t3_chance	
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 300
+	
+	level = 3
+	group = blood_venus
+	flag = blood_roman_gods
+	
+	diplomacy = 12
+	intrigue = 12
+	fertility = 0.50
+	attraction_opinion = 40
+	general_opinion = 20
+	owned_personal_scheme_success_chance_add = 30
+	max_personal_schemes_add = 1
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.4
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.4
+
+	genetic_constraint_all = beauty_3
+	genetic_constraint_men = male_beauty_3
+	genetic_constraint_women = female_beauty_3
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_venus_3_desc
+			}
+			desc = trait_blood_venus_3_character_desc
+		}
+	}
+}
+
+blood_phoebus_1 = {
+
+	opposites = {
+		blood_phoebus_2
+		blood_phoebus_3
+	}
+	
+	health = 0.5
+	negate_health_penalty_add = 0.5
+	life_expectancy = 5
+	years_of_fertility = 5
+	
+	birth = @greek_t1_chance
+	random_creation = @greek_t1_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 100
+	
+	level = 1
+	group = blood_phoebus
+	flag = blood_roman_gods
+	
+	diplomacy = 3
+	learning = 3
+	fertility = 0.1
+	attraction_opinion = 10
+	general_opinion = 0
+	owned_personal_scheme_success_chance_add = 10
+	monthly_prestige_gain_mult = 0
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.1
+	monthly_learning_lifestyle_xp_gain_mult = 0.1		
+
+	genetic_constraint_all = beauty_1
+	genetic_constraint_men = male_beauty_1
+	genetic_constraint_women = female_beauty_1
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_phoebus_1_desc
+			}
+			desc = trait_blood_phoebus_1_character_desc
+		}
+	}
+}
+
+blood_phoebus_2 = {
+
+	opposites = {
+		blood_phoebus_1
+		blood_phoebus_3
+	}
+	
+	health = 0.75
+	negate_health_penalty_add = 0.75
+	life_expectancy = 10
+	years_of_fertility = 10
+	
+	birth = @greek_t2_chance
+	random_creation = @greek_t2_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 200
+	
+	level = 2
+	group = blood_phoebus
+	flag = blood_roman_gods
+	
+	diplomacy = 6
+	learning = 6
+	fertility = 0.25
+	attraction_opinion = 20
+	general_opinion = 10
+	owned_personal_scheme_success_chance_add = 20
+	monthly_prestige_gain_mult = 0.1
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.2
+	monthly_learning_lifestyle_xp_gain_mult = 0.2
+	
+	genetic_constraint_all = beauty_2
+	genetic_constraint_men = male_beauty_2
+	genetic_constraint_women = female_beauty_2
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_phoebus_2_desc
+			}
+			desc = trait_blood_phoebus_2_character_desc
+		}
+	}
+}
+
+blood_phoebus_3 = {
+
+	opposites = {
+		blood_phoebus_1
+		blood_phoebus_2
+	}
+	
+	health = 1
+	negate_health_penalty_add = 1
+	life_expectancy = 15
+	years_of_fertility = 15
+	
+	birth = @greek_t3_chance
+	random_creation = @greek_t3_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 300
+	
+	level = 3
+	group = blood_phoebus
+	flag = blood_roman_gods
+	
+	diplomacy = 12
+	learning = 12
+	fertility = 0.5
+	attraction_opinion = 40
+	general_opinion = 20
+	owned_personal_scheme_success_chance_add = 30
+	monthly_prestige_gain_mult = 0.2
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.4
+	monthly_learning_lifestyle_xp_gain_mult = 0.4
+	
+	genetic_constraint_all = beauty_3
+	genetic_constraint_men = male_beauty_3
+	genetic_constraint_women = female_beauty_3
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_phoebus_3_desc
+			}
+			desc = trait_blood_phoebus_3_character_desc
+		}
+	}
+}
+
+blood_mars_1 = {
+
+	opposites = {
+		blood_mars_2
+		blood_mars_3
+	}
+	
+	health = 0.5
+	negate_health_penalty_add = 0.5
+	life_expectancy = 5
+	years_of_fertility = 5
+	
+	birth = @greek_t1_chance
+	random_creation = @greek_t1_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 100
+	
+	level = 1
+	group = blood_mars
+	flag = blood_roman_gods
+	
+	martial = 3
+	intrigue = 3
+	prowess = 3
+	fertility = 0.1
+	knight_limit = 2
+	dread_baseline_add = 0
+	monthly_county_control_growth_add = 0.1
+	enemy_hard_casualty_modifier = 0.1
+	raid_speed = 0.2
+	attacker_advantage = 2
+	monthly_martial_lifestyle_xp_gain_mult = 0.1
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.1
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_mars_1_desc
+			}
+			desc = trait_blood_mars_1_character_desc
+		}
+	}
+}
+
+blood_mars_2 = {
+
+	opposites = {
+		blood_mars_1
+		blood_mars_3
+	}
+	
+	health = 0.75
+	negate_health_penalty_add = 0.75
+	life_expectancy = 10
+	years_of_fertility = 10
+	
+	birth = @greek_t2_chance
+	random_creation = @greek_t2_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 200
+	
+	level = 2
+	group = blood_mars
+	flag = blood_roman_gods
+	
+	martial = 6
+	intrigue = 6
+	prowess = 6
+	fertility = 0.25
+	knight_limit = 4
+	dread_baseline_add = 10
+	monthly_county_control_growth_add = 0.25
+	enemy_hard_casualty_modifier = 0.2
+	raid_speed = 0.6
+	attacker_advantage = 4
+	monthly_martial_lifestyle_xp_gain_mult = 0.2
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.2
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_mars_2_desc
+			}
+			desc = trait_blood_mars_2_character_desc
+		}
+	}
+}
+
+blood_mars_3 = {
+
+	opposites = {
+		blood_mars_1
+		blood_mars_2
+	}
+	
+	health = 1
+	negate_health_penalty_add = 1
+	life_expectancy = 15
+	years_of_fertility = 15
+	
+	birth = @greek_t3_chance
+	random_creation = @greek_t3_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 300
+	
+	level = 3
+	group = blood_mars
+	flag = blood_roman_gods
+	
+	martial = 12
+	intrigue = 12
+	prowess = 12
+	fertility = 0.5
+	knight_limit = 8
+	dread_baseline_add = 20
+	monthly_county_control_growth_add = 0.5
+	enemy_hard_casualty_modifier = 0.3
+	raid_speed = 0.8
+	attacker_advantage = 8
+	monthly_martial_lifestyle_xp_gain_mult = 0.4
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.4
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_mars_3_desc
+			}
+			desc = trait_blood_mars_3_character_desc
+		}
+	}
+}
+
+blood_diana_1 = {
+
+	opposites = {
+		blood_diana_2
+		blood_diana_3
+	}
+	
+	health = 0.5
+	negate_health_penalty_add = 0.5
+	life_expectancy = 5
+	years_of_fertility = 5
+	
+	birth = @greek_t1_chance
+	random_creation = @greek_t1_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 100
+	
+	level = 1
+	group = blood_diana
+	flag = blood_roman_gods
+	
+	martial = 3
+	stewardship = 3
+	prowess = 3	
+	fertility = 0.1
+	dread_baseline_add = 0
+	monthly_prestige_gain_mult = 0
+	controlled_province_advantage = 2
+	stress_gain_mult = -0.05
+	monthly_martial_lifestyle_xp_gain_mult = 0.1
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.1
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_diana_1_desc
+			}
+			desc = trait_blood_diana_1_character_desc
+		}
+	}
+}
+
+blood_diana_2 = {
+
+	opposites = {
+		blood_diana_1
+		blood_diana_3
+	}
+	
+	health = 0.75
+	negate_health_penalty_add = 0.75
+	life_expectancy = 10
+	years_of_fertility = 10
+	
+	birth = @greek_t2_chance
+	random_creation = @greek_t2_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 200
+	
+	level = 2
+	group = blood_diana
+	flag = blood_roman_gods
+	
+	martial = 6
+	stewardship = 6
+	prowess = 6	
+	fertility = 0.25
+	dread_baseline_add = 10
+	monthly_prestige_gain_mult = 0.1
+	controlled_province_advantage = 4
+	stress_gain_mult = -0.1
+	monthly_martial_lifestyle_xp_gain_mult = 0.2
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.2
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_diana_2_desc
+			}
+			desc = trait_blood_diana_2_character_desc
+		}
+	}
+}
+
+blood_diana_3 = {
+
+	opposites = {
+		blood_diana_1
+		blood_diana_2
+	}
+	
+	health = 1
+	negate_health_penalty_add = 1
+	life_expectancy = 15
+	years_of_fertility = 15
+	
+	birth = @greek_t3_chance
+	random_creation = @greek_t3_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 300
+	
+	level = 3
+	group = blood_diana
+	flag = blood_roman_gods
+	
+	martial = 12
+	stewardship = 12
+	prowess = 12
+	fertility = 0.5
+	dread_baseline_add = 20
+	monthly_prestige_gain_mult = 0.2
+	controlled_province_advantage = 8
+	stress_gain_mult = -0.2
+	monthly_martial_lifestyle_xp_gain_mult = 0.4
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.4
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_diana_3_desc
+			}
+			desc = trait_blood_diana_3_character_desc
+		}
+	}
+}
+
+blood_minerva_1 = {
+
+	opposites = {
+		blood_minerva_2
+		blood_minerva_3
+	}
+	
+	health = 0.5
+	negate_health_penalty_add = 0.5
+	life_expectancy = 5
+	years_of_fertility = 5
+	
+	birth = @greek_t1_chance
+	random_creation = @greek_t1_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 100
+
+	level = 1
+	group = blood_minerva
+	flag = blood_roman_gods
+	
+	martial = 3
+	learning = 3
+	fertility = 0.1
+	attraction_opinion = 0
+	enemy_terrain_advantage = -0.1
+	defender_advantage = 2
+	monthly_martial_lifestyle_xp_gain_mult = 0.1
+	monthly_learning_lifestyle_xp_gain_mult = 0.1
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_minerva_1_desc
+			}
+			desc = trait_blood_minerva_1_character_desc
+		}
+	}
+}
+
+blood_minerva_2 = {
+
+	opposites = {
+		blood_minerva_1
+		blood_minerva_3
+	}
+	
+	health = 0.75
+	negate_health_penalty_add = 0.75
+	life_expectancy = 10
+	years_of_fertility = 10
+	
+	birth = @greek_t2_chance
+	random_creation = @greek_t2_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 200
+
+	level = 2
+	group = blood_minerva
+	flag = blood_roman_gods
+	
+	martial = 6
+	learning = 6
+	fertility = 0.25
+	attraction_opinion = 10
+	enemy_terrain_advantage = -0.25
+	enemy_hard_casualty_modifier = 0.10
+	hard_casualty_modifier = -0.10
+	defender_advantage = 4
+	monthly_martial_lifestyle_xp_gain_mult = 0.2
+	monthly_learning_lifestyle_xp_gain_mult = 0.2
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_minerva_2_desc
+			}
+			desc = trait_blood_minerva_2_character_desc
+		}
+	}
+}
+
+blood_minerva_3 = {
+
+	opposites = {
+		blood_minerva_1
+		blood_minerva_2
+	}
+	
+	health = 1
+	negate_health_penalty_add = 1
+	life_expectancy = 15
+	years_of_fertility = 15
+	
+	birth = @greek_t3_chance
+	random_creation = @greek_t3_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 300
+
+	level = 3
+	group = blood_minerva
+	flag = blood_roman_gods
+	
+	martial = 12
+	learning = 12
+	fertility = 0.5
+	attraction_opinion = 20
+	enemy_terrain_advantage = -0.5
+	enemy_hard_casualty_modifier = 0.2
+	hard_casualty_modifier = -0.2
+	defender_advantage = 8
+	monthly_martial_lifestyle_xp_gain_mult = 0.4
+	monthly_learning_lifestyle_xp_gain_mult = 0.4
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_minerva_3_desc
+			}
+			desc = trait_blood_minerva_3_character_desc
+		}
+	}
+}
+
+blood_ceres_1 = {
+
+	opposites = {
+		blood_ceres_2
+		blood_ceres_3
+	}
+	
+	health = 0.5
+	negate_health_penalty_add = 0.5
+	life_expectancy = 5
+	years_of_fertility = 5
+	
+	birth = @greek_t1_chance
+	random_creation = @greek_t1_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 100
+	
+	level = 1
+	group = blood_ceres
+	flag = blood_roman_gods
+
+	diplomacy = 3
+	stewardship = 3
+	fertility = 0.1
+	attraction_opinion = 0
+	development_growth_factor = 0
+	close_relative_opinion = 0
+	domain_limit = 0
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.1
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.1
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_ceres_1_desc
+			}
+			desc = trait_blood_ceres_1_character_desc
+		}
+	}
+}
+
+blood_ceres_2 = {
+
+	opposites = {
+		blood_ceres_1
+		blood_ceres_3
+	}
+	
+	health = 0.75
+	negate_health_penalty_add = 0.75
+	life_expectancy = 10
+	years_of_fertility = 10
+	
+	birth = @greek_t2_chance
+	random_creation = @greek_t2_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 200
+	
+	level = 2
+	group = blood_ceres
+	flag = blood_roman_gods
+	
+	diplomacy = 6
+	stewardship = 6
+	fertility = 0.25
+	attraction_opinion = 10
+	development_growth_factor = 0.1
+	close_relative_opinion = 10
+	domain_limit = 1
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.2
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.2
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_ceres_2_desc
+			}
+			desc = trait_blood_ceres_2_character_desc
+		}
+	}
+}
+
+blood_ceres_3 = {
+
+	opposites = {
+		blood_ceres_1
+		blood_ceres_2
+	}
+	
+	health = 1
+	negate_health_penalty_add = 1
+	life_expectancy = 15
+	years_of_fertility = 15
+	
+	birth = @greek_t3_chance
+	random_creation = @greek_t3_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 300
+	
+	level = 3
+	group = blood_ceres
+	flag = blood_roman_gods
+	
+	diplomacy = 12
+	stewardship = 12	
+	fertility = 0.5
+	attraction_opinion = 20
+	development_growth_factor = 0.2
+	close_relative_opinion = 20
+	domain_limit = 2
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.4
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.4
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_ceres_3_desc
+			}
+			desc = trait_blood_ceres_3_character_desc
+		}
+	}
+}
+
+blood_pluto_1 = {
+
+	opposites = {
+		blood_pluto_2
+		blood_pluto_3
+	}
+	
+	health = 0.5
+	negate_health_penalty_add = 0.5
+	life_expectancy = 5
+	years_of_fertility = 5
+	
+	birth = @greek_t1_chance
+	random_creation = @greek_t1_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 100
+	
+	level = 1
+	group = blood_pluto
+	flag = blood_roman_gods
+	
+	stewardship = 3
+	intrigue = 3
+	fertility = 0.1
+	dread_baseline_add = 0
+	tyranny_gain_mult = -0.1
+	tyranny_loss_mult = 0.1
+	owned_hostile_scheme_success_chance_add = 10
+	cowed_vassal_tax_contribution_mult = 0.1
+	intimidated_vassal_tax_contribution_mult = 0.05
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.1
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.1
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_pluto_1_desc
+			}
+			desc = trait_blood_pluto_1_character_desc
+		}
+	}
+}
+
+blood_pluto_2 = {
+
+	opposites = {
+		blood_pluto_1
+		blood_pluto_3
+	}
+	
+	health = 0.75
+	negate_health_penalty_add = 0.75
+	life_expectancy = 10
+	years_of_fertility = 10
+	
+	birth = @greek_t2_chance
+	random_creation = @greek_t2_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 200
+	
+	level = 2
+	group = blood_pluto
+	flag = blood_roman_gods
+	
+	stewardship = 6
+	intrigue = 6
+	fertility = 0.25
+	dread_baseline_add = 10
+	tyranny_gain_mult = -0.15
+	tyranny_loss_mult = 0.15
+	owned_hostile_scheme_success_chance_add = 20
+	cowed_vassal_tax_contribution_mult = 0.2
+	intimidated_vassal_tax_contribution_mult = 0.1
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.2
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.2
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_pluto_2_desc
+			}
+			desc = trait_blood_pluto_2_character_desc
+		}
+	}
+}
+
+blood_pluto_3 = {
+
+	opposites = {
+		blood_pluto_1
+		blood_pluto_2
+	}
+	
+	health = 1
+	negate_health_penalty_add = 1
+	life_expectancy = 15
+	years_of_fertility = 15
+	
+	birth = @greek_t3_chance
+	random_creation = @greek_t3_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 300
+	
+	level = 3
+	group = blood_pluto
+	flag = blood_roman_gods
+	
+	stewardship = 12
+	intrigue = 12
+	fertility = 0.5
+	dread_baseline_add = 20
+	tyranny_gain_mult = -0.2
+	tyranny_loss_mult = 0.2
+	owned_hostile_scheme_success_chance_add = 30
+	cowed_vassal_tax_contribution_mult = 0.3
+	intimidated_vassal_tax_contribution_mult = 0.15
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.4
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.4
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_pluto_3_desc
+			}
+			desc = trait_blood_pluto_3_character_desc
+		}
+	}
+}
+
+blood_vulcan_1 = {
+
+	opposites = {
+		blood_vulcan_2
+		blood_vulcan_3
+	}
+	
+	health = 0.5
+	negate_health_penalty_add = 0.5
+	life_expectancy = 5
+	years_of_fertility = 5
+	
+	birth = @greek_t1_chance
+	random_creation = @greek_t1_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 100
+	
+	level = 1
+	group = blood_vulcan
+	flag = blood_roman_gods
+	
+	stewardship = 3
+	learning = 3
+	fertility = 0.1
+	development_growth_factor = 0
+	build_gold_cost = -0.1
+	build_speed = -0.15
+	holding_build_gold_cost = -0.1
+	holding_build_speed = -0.15
+	siege_phase_time = -0.1
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.1
+	monthly_learning_lifestyle_xp_gain_mult = 0.1
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_vulcan_1_desc
+			}
+			desc = trait_blood_vulcan_1_character_desc
+		}
+	}
+}
+
+blood_vulcan_2 = {
+
+	opposites = {
+		blood_vulcan_1
+		blood_vulcan_3
+	}
+	
+	health = 0.75
+	negate_health_penalty_add = 0.75
+	life_expectancy = 10
+	years_of_fertility = 10
+	
+	birth = @greek_t2_chance
+	random_creation = @greek_t2_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 200
+	
+	level = 2
+	group = blood_vulcan
+	flag = blood_roman_gods
+	
+	stewardship = 6
+	learning = 6
+	fertility = 0.25
+	development_growth_factor = 0.1
+	build_gold_cost = -0.15
+	build_speed = -0.2
+	holding_build_gold_cost = -0.15
+	holding_build_speed = -0.2
+	siege_phase_time = -0.2
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.2
+	monthly_learning_lifestyle_xp_gain_mult = 0.2
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_vulcan_2_desc
+			}
+			desc = trait_blood_vulcan_2_character_desc
+		}
+	}
+}
+
+blood_vulcan_3 = {
+
+	opposites = {
+		blood_vulcan_1
+		blood_vulcan_2
+	}
+	
+	health = 1
+	negate_health_penalty_add = 1
+	life_expectancy = 15
+	years_of_fertility = 15
+	
+	birth = @greek_t3_chance
+	random_creation = @greek_t3_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 300
+	
+	level = 3
+	group = blood_vulcan
+	flag = blood_roman_gods
+	
+	stewardship = 12
+	learning = 12
+	fertility = 0.5
+	development_growth_factor = 0.2
+	build_gold_cost = -0.20
+	build_speed = -0.25
+	holding_build_gold_cost = -0.20
+	holding_build_speed = -0.25
+	siege_phase_time = -0.3
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.4
+	monthly_learning_lifestyle_xp_gain_mult = 0.4
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_vulcan_3_desc
+			}
+			desc = trait_blood_vulcan_3_character_desc
+		}
+	}
+}
+
+blood_juno_1 = {
+
+	opposites = {
+		blood_juno_2
+		blood_juno_3
+	}
+	
+	health = 0.5
+	negate_health_penalty_add = 0.5
+	life_expectancy = 5
+	years_of_fertility = 5
+	
+	birth = @greek_t1_chance
+	random_creation = @greek_t1_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 100
+	
+	level = 1
+	group = blood_juno
+	flag = blood_roman_gods
+	
+	diplomacy = 3
+	intrigue = 3
+	fertility = 0.1
+	attraction_opinion = 0
+	dynasty_opinion = 0
+	owned_personal_scheme_success_chance_add = 10
+	owned_hostile_scheme_success_chance_add = 10
+	max_hostile_schemes_add = 0
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.1
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.1
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_juno_1_desc
+			}
+			desc = trait_blood_juno_1_character_desc
+		}
+	}
+}
+
+blood_juno_2 = {
+
+	opposites = {
+		blood_juno_1
+		blood_juno_3
+	}
+	
+	health = 0.75
+	negate_health_penalty_add = 0.75
+	life_expectancy = 10
+	years_of_fertility = 10
+	
+	birth = @greek_t2_chance
+	random_creation = @greek_t2_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 200
+	
+	level = 2
+	group = blood_juno
+	flag = blood_roman_gods
+	
+	diplomacy = 6
+	intrigue = 6
+	fertility = 0.25
+	attraction_opinion = 10
+	dynasty_opinion = 10
+	owned_personal_scheme_success_chance_add = 20
+	owned_hostile_scheme_success_chance_add = 20
+	max_hostile_schemes_add = 0
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.2
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.2
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_juno_2_desc
+			}
+			desc = trait_blood_juno_2_character_desc
+		}
+	}
+}
+
+blood_juno_3 = {
+
+	opposites = {
+		blood_juno_1
+		blood_juno_2
+	}
+	
+	health = 1
+	negate_health_penalty_add = 1
+	life_expectancy = 15
+	years_of_fertility = 15
+	
+	birth = @greek_t3_chance
+	random_creation = @greek_t3_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 300
+	
+	level = 3
+	group = blood_juno
+	flag = blood_roman_gods
+	
+	diplomacy = 12
+	intrigue = 12
+	fertility = 0.5
+	attraction_opinion = 20
+	dynasty_opinion = 20
+	owned_personal_scheme_success_chance_add = 30
+	owned_hostile_scheme_success_chance_add = 30
+	max_hostile_schemes_add = 1
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.4
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.4
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_juno_3_desc
+			}
+			desc = trait_blood_juno_3_character_desc
+		}
+	}
+}
+
+blood_mercury_1 = {
+
+	opposites = {
+		blood_mercury_2
+		blood_mercury_3
+	}
+	
+	health = 0.5
+	negate_health_penalty_add = 0.5
+	life_expectancy = 5
+	years_of_fertility = 5
+	
+	birth = @greek_t1_chance
+	random_creation = @greek_t1_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 100
+	
+	level = 1
+	group = blood_mercury
+	flag = blood_roman_gods
+	
+	stewardship = 3
+	intrigue = 3
+	fertility = 0.1
+	owned_personal_scheme_success_chance_add = 10
+	enemy_hostile_scheme_success_chance_add = -10
+	movement_speed = 0.1
+	domain_tax_mult = 0.05
+	max_combat_roll = 4
+	min_combat_roll = -2
+	development_growth_factor = 0
+	scheme_discovery_chance_mult = 0.1
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.1
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.1
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_mercury_1_desc
+			}
+			desc = trait_blood_mercury_1_character_desc
+		}
+	}
+}
+
+blood_mercury_2 = {
+
+	opposites = {
+		blood_mercury_1
+		blood_mercury_3
+	}
+	
+	health = 0.75
+	negate_health_penalty_add = 0.75
+	life_expectancy = 10
+	years_of_fertility = 10
+	
+	birth = @greek_t2_chance
+	random_creation = @greek_t2_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 200
+	
+	level = 2
+	group = blood_mercury
+	flag = blood_roman_gods
+	
+	stewardship = 6
+	intrigue = 6
+	fertility = 0.25
+	owned_personal_scheme_success_chance_add = 20
+	enemy_hostile_scheme_success_chance_add = -20
+	movement_speed = 0.2
+	domain_tax_mult = 0.1
+	max_combat_roll = 6
+	min_combat_roll = -3
+	development_growth_factor = 0.1
+	scheme_discovery_chance_mult = 0.2
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.2
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.2
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_mercury_2_desc
+			}
+			desc = trait_blood_mercury_2_character_desc
+		}
+	}
+}
+
+blood_mercury_3 = {
+
+	opposites = {
+		blood_mercury_1
+		blood_mercury_2
+	}
+	
+	health = 1
+	negate_health_penalty_add = 1
+	life_expectancy = 15
+	years_of_fertility = 15
+	
+	birth = @greek_t3_chance
+	random_creation = @greek_t3_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 300
+	
+	level = 3
+	group = blood_mercury
+	flag = blood_roman_gods
+	
+	stewardship = 12
+	intrigue = 12
+	fertility = 0.5
+	owned_personal_scheme_success_chance_add = 30
+	enemy_hostile_scheme_success_chance_add = -30
+	movement_speed = 0.3
+	domain_tax_mult = 0.2
+	max_combat_roll = 12
+	min_combat_roll = -6
+	development_growth_factor = 0.2
+	scheme_discovery_chance_mult = 0.3
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.4
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.4
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_mercury_3_desc
+			}
+			desc = trait_blood_mercury_3_character_desc
+		}
+	}
+}
+
+blood_vesta_1 = {
+
+	opposites = {
+		blood_vesta_2
+		blood_vesta_3
+	}
+	
+	health = 0.5
+	negate_health_penalty_add = 0.5
+	life_expectancy = 5
+	years_of_fertility = 5
+	
+	birth = @greek_t1_chance
+	random_creation = @greek_t1_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 100
+	
+	level = 1
+	group = blood_vesta
+	flag = blood_roman_gods
+	
+	diplomacy = 3
+	stewardship = 3
+	fertility = 0.1
+	dynasty_house_opinion = 0
+	courtier_and_guest_opinion = 0
+	supply_duration = 0.5
+	monthly_piety_gain_mult = 0
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.1
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.1
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_vesta_1_desc
+			}
+			desc = trait_blood_vesta_1_character_desc
+		}
+	}
+}
+
+blood_vesta_2 = {
+
+	opposites = {
+		blood_vesta_1
+		blood_vesta_3
+	}
+	
+	health = 0.75
+	negate_health_penalty_add = 0.75
+	life_expectancy = 10
+	years_of_fertility = 10
+	
+	birth = @greek_t2_chance
+	random_creation = @greek_t2_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 200
+	
+	level = 2
+	group = blood_vesta
+	flag = blood_roman_gods
+	
+	diplomacy = 6
+	stewardship = 6
+	fertility = 0.25
+	dynasty_house_opinion = 10
+	courtier_and_guest_opinion = 10
+	supply_duration = 0.75
+	monthly_piety_gain_mult = 0.1
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.2
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.2
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_vesta_2_desc
+			}
+			desc = trait_blood_vesta_2_character_desc
+		}
+	}
+}
+
+blood_vesta_3 = {
+
+	opposites = {
+		blood_vesta_1
+		blood_vesta_2
+	}
+	
+	health = 2
+	negate_health_penalty_add = 1.5
+	life_expectancy = 15
+	years_of_fertility = 15
+	
+	birth = @greek_t3_chance
+	random_creation = @greek_t3_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 300
+	
+	level = 3
+	group = blood_vesta
+	flag = blood_roman_gods
+	
+	diplomacy = 12
+	stewardship = 12
+	fertility = 0.5
+	dynasty_house_opinion = 20
+	courtier_and_guest_opinion = 20
+	supply_duration = 1
+	monthly_piety_gain_mult = 0.2
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.4
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.4
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_vesta_3_desc
+			}
+			desc = trait_blood_vesta_3_character_desc
+		}
+	}
+}
+
+blood_neptune_1 = {
+
+	opposites = {
+		blood_neptune_2
+		blood_neptune_3
+	}
+	
+	health = 0.5
+	negate_health_penalty_add = 0.5
+	life_expectancy = 5
+	years_of_fertility = 5
+	
+	birth = @greek_t1_chance
+	random_creation = @greek_t1_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 100
+	
+	level = 1
+	group = blood_neptune
+	flag = blood_roman_gods
+	
+	martial = 3
+	stewardship = 3
+	fertility = 0.1
+	knight_effectiveness_mult = 0.25
+	movement_speed = 0.1
+	naval_movement_speed_mult = 0.1
+	development_growth_factor = 0
+	monthly_prestige_gain_mult = 0
+	no_water_crossing_penalty = yes
+	monthly_martial_lifestyle_xp_gain_mult = 0.1
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.1
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_neptune_1_desc
+			}
+			desc = trait_blood_neptune_1_character_desc
+		}
+	}
+}
+
+blood_neptune_2 = {
+
+	opposites = {
+		blood_neptune_1
+		blood_neptune_3
+	}
+	
+	health = 0.75
+	negate_health_penalty_add = 0.75
+	life_expectancy = 10
+	years_of_fertility = 10
+	
+	birth = @greek_t2_chance
+	random_creation = @greek_t2_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 200
+	
+	level = 2
+	group = blood_neptune
+	flag = blood_roman_gods
+	
+	martial = 6
+	stewardship = 6
+	fertility = 0.25
+	knight_effectiveness_mult = 0.5
+	movement_speed = 0.15
+	naval_movement_speed_mult = 0.15
+	development_growth_factor = 0.1
+	monthly_prestige_gain_mult = 0.1
+	no_water_crossing_penalty = yes
+	monthly_martial_lifestyle_xp_gain_mult = 0.2
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.2
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_neptune_2_desc
+			}
+			desc = trait_blood_neptune_2_character_desc
+		}
+	}
+}
+
+blood_neptune_3 = {
+
+	opposites = {
+		blood_neptune_1
+		blood_neptune_2
+	}
+	
+	health = 1
+	negate_health_penalty_add = 1
+	life_expectancy = 15
+	years_of_fertility = 15
+	
+	birth = @greek_t3_chance
+	random_creation = @greek_t3_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 300
+	
+	level = 3
+	group = blood_neptune
+	flag = blood_roman_gods
+	
+	martial = 12
+	stewardship = 12
+	fertility = 0.5
+	knight_effectiveness_mult = 0.75
+	movement_speed = 0.25
+	naval_movement_speed_mult = 0.25
+	development_growth_factor = 0.2
+	monthly_prestige_gain_mult = 0.2
+	no_water_crossing_penalty = yes
+	monthly_martial_lifestyle_xp_gain_mult = 0.4
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.4
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_neptune_3_desc
+			}
+			desc = trait_blood_neptune_3_character_desc
+		}
+	}
+}
+
+
+blood_bacchus_1 = {
+
+	opposites = {
+		blood_bacchus_2
+		blood_bacchus_3
+	}
+	
+	health = 0.5
+	negate_health_penalty_add = 0.5
+	life_expectancy = 5
+	years_of_fertility = 5
+	
+	birth = @greek_t1_chance
+	random_creation = @greek_t1_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 100
+	
+	level = 1
+	group = blood_bacchus
+	flag = blood_roman_gods
+	
+	diplomacy = 3
+	stewardship = 3
+	fertility = 0.1
+	courtier_and_guest_opinion = 0
+	owned_personal_scheme_success_chance_add = 10
+	domain_tax_mult = 0.05
+	stress_gain_mult = -0.05
+	development_growth_factor = 0
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.1
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.1
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_bacchus_1_desc
+			}
+			desc = trait_blood_bacchus_1_character_desc
+		}
+	}
+}
+
+blood_bacchus_2 = {
+
+	opposites = {
+		blood_bacchus_1
+		blood_bacchus_3
+	}
+	
+	health = 0.75
+	negate_health_penalty_add = 0.75
+	life_expectancy = 10
+	years_of_fertility = 10
+	
+	birth = @greek_t2_chance
+	random_creation = @greek_t2_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 200
+	
+	level = 2
+	group = blood_bacchus
+	flag = blood_roman_gods
+	
+	diplomacy = 6
+	stewardship = 6
+	fertility = 0.25
+	courtier_and_guest_opinion = 10
+	owned_personal_scheme_success_chance_add = 20
+	domain_tax_mult = 0.1
+	stress_gain_mult = -0.1
+	development_growth_factor = 0.1
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.2
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.2
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_bacchus_2_desc
+			}
+			desc = trait_blood_bacchus_2_character_desc
+		}
+	}
+}
+
+blood_bacchus_3 = {
+
+	opposites = {
+		blood_bacchus_1
+		blood_bacchus_2
+	}
+	
+	health = 1
+	negate_health_penalty_add = 1
+	life_expectancy = 15
+	years_of_fertility = 15
+	
+	birth = @greek_t3_chance
+	random_creation = @greek_t3_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 300
+	
+	level = 3
+	group = blood_bacchus
+	flag = blood_roman_gods
+	
+	diplomacy = 12
+	stewardship = 12
+	fertility = 0.5
+	courtier_and_guest_opinion = 20
+	owned_personal_scheme_success_chance_add = 30
+	domain_tax_mult = 0.2
+	stress_gain_mult = -0.2
+	development_growth_factor = 0.2
+	monthly_diplomacy_lifestyle_xp_gain_mult = 0.4
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.4
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_bacchus_3_desc
+			}
+			desc = trait_blood_bacchus_3_character_desc
+		}
+	}
+}
+
+blood_jupiter_1 = {
+
+	opposites = {
+		blood_jupiter_2
+		blood_jupiter_3
+	}
+	
+	health = 0.5
+	negate_health_penalty_add = 0.5
+	life_expectancy = 5
+	years_of_fertility = 5
+	
+	birth = @greek_t1_chance
+	random_creation = @greek_t1_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 100
+	
+	level = 1
+	group = blood_jupiter
+	flag = blood_roman_gods
+
+	martial = 3
+	stewardship = 3
+	prowess = 3
+	fertility = 0.1
+	vassal_opinion = 0
+	vassal_limit = 0
+	monthly_prestige_gain_mult = 0.1
+	levy_size = 0.1
+	monthly_martial_lifestyle_xp_gain_mult = 0.1
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.1
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_jupiter_1_desc
+			}
+			desc = trait_blood_jupiter_1_character_desc
+		}
+	}
+}
+
+blood_jupiter_2 = {
+
+	opposites = {
+		blood_jupiter_1
+		blood_jupiter_3
+	}
+	
+	health = 0.75
+	negate_health_penalty_add = 0.75
+	life_expectancy = 10
+	years_of_fertility = 10
+	
+	birth = @greek_t2_chance
+	random_creation = @greek_t2_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 200
+	
+	level = 2
+	group = blood_jupiter
+	flag = blood_roman_gods
+	
+	martial = 6
+	stewardship = 6
+	prowess = 6
+	fertility = 0.25
+	vassal_opinion = 10
+	vassal_limit = 10
+	monthly_prestige_gain_mult = 0.15
+	levy_size = 0.15
+	monthly_martial_lifestyle_xp_gain_mult = 0.2
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.2
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_jupiter_2_desc
+			}
+			desc = trait_blood_jupiter_2_character_desc
+		}
+	}
+}
+
+blood_jupiter_3 = {
+
+	opposites = {
+		blood_jupiter_1
+		blood_jupiter_2
+	}
+	
+	health = 1
+	negate_health_penalty_add = 1
+	life_expectancy = 15
+	years_of_fertility = 15
+	
+	birth = @greek_t3_chance
+	random_creation = @greek_t3_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 300
+	
+	level = 3
+	group = blood_jupiter
+	flag = blood_roman_gods
+	
+	martial = 12
+	stewardship = 12
+	prowess = 12
+	fertility = 0.5
+	vassal_opinion = 20
+	vassal_limit = 20
+	monthly_prestige_gain_mult = 0.2
+	levy_size = 0.2
+	monthly_martial_lifestyle_xp_gain_mult = 0.4
+	monthly_stewardship_lifestyle_xp_gain_mult = 0.4
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_jupiter_3_desc
+			}
+			desc = trait_blood_jupiter_3_character_desc
+		}
+	}
+}
+
+blood_discordia_1 = {
+
+	opposites = {
+		blood_discordia_2
+		blood_discordia_3
+	}
+	
+	health = 0.5
+	negate_health_penalty_add = 0.5
+	life_expectancy = 5
+	years_of_fertility = 5
+	
+	birth = @greek_t1_chance
+	random_creation = @greek_t1_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 100
+	
+	level = 1
+	group = blood_discordia
+	flag = blood_roman_gods
+
+  	intrigue = 3
+	prowess = 3
+	intrigue_per_prestige_level = 0
+    fertility = 0.1
+	dread_baseline_add = 10
+	owned_hostile_scheme_success_chance_add = 10
+	owned_personal_scheme_success_chance_add = 10
+	max_hostile_schemes_add = 0
+	max_personal_schemes_add = 0
+	monthly_martial_lifestyle_xp_gain_mult = 0.1
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.1
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_discordia_1_desc
+			}
+			desc = trait_blood_discordia_1_character_desc
+		}
+	}
+}
+
+blood_discordia_2 = {
+
+	opposites = {
+		blood_discordia_1
+		blood_discordia_3
+	}
+	
+	health = 0.75
+	negate_health_penalty_add = 0.75
+	life_expectancy = 10
+	years_of_fertility = 10
+	
+	birth = @greek_t2_chance
+	random_creation = @greek_t2_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 200
+	
+	level = 2
+	group = blood_discordia
+	flag = blood_roman_gods
+	
+  	intrigue = 6
+	prowess = 6
+	intrigue_per_prestige_level = 1
+	fertility = 0.25
+	dread_baseline_add = 20
+	owned_hostile_scheme_success_chance_add = 20
+	owned_personal_scheme_success_chance_add = 20
+	max_hostile_schemes_add = 0
+	max_personal_schemes_add = 0
+	monthly_martial_lifestyle_xp_gain_mult = 0.2
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.2
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_discordia_2_desc
+			}
+			desc = trait_blood_discordia_2_character_desc
+		}
+	}
+}
+
+blood_discordia_3 = {
+
+	opposites = {
+		blood_discordia_1
+		blood_discordia_2
+	}
+
+	health = 1
+	negate_health_penalty_add = 1
+	life_expectancy = 15
+	years_of_fertility = 15
+	
+	birth = @greek_t3_chance
+	random_creation = @greek_t3_chance
+	
+	physical = yes
+	
+	genetic = yes
+	good = yes
+	ruler_designer_cost = 300
+	
+	level = 3
+	group = blood_discordia
+	flag = blood_roman_gods
+	
+  	intrigue = 12
+	prowess = 12
+	intrigue_per_prestige_level = 2
+	fertility = 0.5
+	dread_baseline_add = 40
+	owned_hostile_scheme_success_chance_add = 40
+	owned_personal_scheme_success_chance_add = 40
+	max_hostile_schemes_add = 1
+	max_personal_schemes_add = 1
+	monthly_martial_lifestyle_xp_gain_mult = 0.4
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.4
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_discordia_3_desc
+			}
+			desc = trait_blood_discordia_3_character_desc
+		}
+	}
+}

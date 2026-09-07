@@ -1,0 +1,210 @@
+﻿l_english:
+
+eoe_restore_roman_soul:0 "Restore the Roman Soul"
+eoe_restore_roman_soul_tooltip:0 "Restore Roman pride and renew the traditions of the Latin world."
+eoe_restore_roman_soul_decision_effect_tooltip:0 "Every Latin speaking culture will either gain the [GetCultureTradition('tradition_imperium').GetName]or the [GetCultureTradition('tradition_sacrum_imperium').GetName] cultural tradition, depending on your religion. As well as the [GetCultureTradition('tradition_molded_architecture').GetName] tradition"
+eoe_restore_roman_soul_desc:0 "For centuries our people have suffered without hope, their souls broken and their pride sullied, no more! I have achieved the impossible I have restored the rightful Empire of the West. Once again the eagle standart flies proudly over Rome our broken pride shall be mended and our destiny continued."
+eoe_restore_roman_soul_confirm:0 "Whole once more"
+
+eoe_roman_events.0001.title:0 "The Roman Soul Renewed"
+eoe_roman_events.0001.desc:0 "The imperial court gathers beneath standards once thought lost to history. Jurists speak of continuity, soldiers of victory, and priests of providence; beyond the palace, the bells and acclamations of Rome answer them all.\n\nThe West has recovered more than territory. A people long divided by fallen frontiers may again understand themselves as heirs to one Roman order. What remains is to declare the sacred language through which that renewal will be remembered."
+eoe_roman_event.0001.a:0 "The gods have restored the Roman world"
+eoe_roman_event.0001.b:0 "By God's providence, Rome stands renewed"
+
+eoe_roman_law:0 "Restore the Roman Bureaucracy"
+eoe_roman_law_tooltip:0 "Restore Roman law and bureaucracy throughout the Empire."
+eoe_roman_law_decision_effect_tooltip:0 "Every Latin speaking culture will gain the [GetCultureTradition('tradition_roman_legalism').GetName] cultural tradition."
+eoe_roman_law_desc:0 "To ensure our achievements are long lasting we must put them on save legal ground. To this end we must restore the rule of Roman law throughout our empire."
+eoe_roman_law_confirm:0 "Get me the Quill."
+
+eoe_roman_events.0002.title:0 "The Law of the Restored Empire"
+eoe_roman_events.0002.desc:0 "For months, jurists and provincial secretaries have compared contradictory customs, royal capitularies, and fragments of the old imperial law. Today their work is laid before me in ordered volumes.\n\nCourts from the Alps to Africa will again judge beneath one legal tradition, while trained officials carry the emperor's rescripts into every province. The sword restored our borders; law must make them endure."
+eoe_roman_event.0002.a:0 "Seal the codices and send copies to every court"
+
+eoe_roman_militarism:0 "Restore the Roman Legionary System"
+eoe_roman_militarism_tooltip:0 "Restore the military traditions and organization of the Roman legions."
+eoe_roman_militarism_decision_effect_tooltip:0 "Every Latin speaking culture will gain the [GetCultureTradition('tradition_roman_militarism').GetName] cultural tradition."
+eoe_roman_militarism_desc:0 "Rome's greatest strenght has always been its impecable military. To ensure we are never driven to the brink of extinction again, we must ensure that only the formidability of our military but also the readiness to fight within our people's spirits remains as kindled as ever."
+eoe_roman_militarism_confirm:0 "Legio Aeterna victrix!"
+
+eoe_roman_events.0003.title:0 "The Army of the Roman West"
+eoe_roman_events.0003.desc:0 "The inspection ground answers with the measured strike of spear against shield. Recruitment, drill, supply, and command have been recast around the traditions of the old field armies.\n\nThis is not an antique legion raised for ceremony. It is a new [Glossary( 'comitatus', 'EOE_COMITATUS_GLOSS' )], equipped to cross the empire, reinforce threatened frontiers, and carry the eagle wherever imperial authority is challenged."
+eoe_roman_event.0003.a:0 "Let discipline make the army eternal"
+
+#Restoration decisions and Events#
+
+eoe_forced_migration:0 "Major internal migration"
+
+eoe_convert_culture_raetia:0 "Resettle Raetia"
+eoe_convert_culture_raetia_tooltip:0 "Promote Roman resettlement throughout Raetia."
+eoe_convert_culture_raetia_desc:0 "Now that the mountainous slopes and green valleys of Raetia are once again in our hands we can begin to revitalise the region by promoting Roman settlements as well as our way of life."
+eoe_convert_culture_raetia_decision_effect_tooltip:0 "Most of the region will convert to [GetCultureByKey('rhaetio_roman').GetName]. Counties that convert will lose their resistance to imposed governors."
+eoe_convert_culture_raetia_confirm:0 "Reclaim what was lost"
+eoe_raetia_custom:0 "Raetia"
+
+eoe_roman_event.0004.title:0 "Raetia Reclaimed"
+eoe_roman_event.0004.desc:0 "Surveyors have crossed Raetia's passes, marking roads, estates, and defensible valleys for new settlements. Roman-speaking families arrive beside merchants and veterans, while local communities negotiate their place beneath the restored administration.\n\nThe work will take generations, but the Alpine approaches are again tied to Italy by more than military occupation."
+eoe_roman_event.0004.a:0 "Let the Alpine roads bind Raetia to Rome"
+
+eoe_convert_culture_illyria:0 "Resettle Illyria"
+eoe_convert_culture_illyria_tooltip:0 "Promote Roman resettlement throughout Illyria."
+eoe_convert_culture_illyria_desc:0 "The rugged shores and mountains of Illyria are once again under our control. It is time to begin the revitalisation of the region by promoting Roman resettlement."
+eoe_convert_culture_illyria_decision_effect_tooltip:0 "Most of the region will convert to [GetCultureByKey('illyro_roman').GetName]. Counties that convert will lose their resistance to imposed governors."
+eoe_convert_culture_illyria_confirm:0 "Reclaim what was lost"
+
+eoe_roman_event.0005.title:0 "Illyria Reclaimed"
+eoe_roman_event.0005.desc:0 "Along the Adriatic roads and Danubian valleys, imperial officials restore the towns and mustering grounds that once supplied Rome with emperors and armies. The homeland of Diocletian is again woven into the western state.\n\nIllyria's soldiers will guard the frontier, but its harbors and roads may prove no less important to the empire's survival."
+eoe_roman_event.0005.a:0 "Raise the eagle again above the Danube"
+
+eoe_convert_culture_septem_provinciae:0 "Resettle Septimania"
+eoe_convert_culture_septem_provinciae_tooltip:0 "Promote Roman resettlement throughout Septem Provinciae."
+eoe_convert_culture_septem_provinciae_desc:0 "The seven provinces of southern Gaul are once again under our control. Now we must secure them by resettleing them with our people once more."
+eoe_convert_culture_septem_provinciae_decision_effect_tooltip:0 "Most of the region will convert to [GetCultureByKey('gallo_roman').GetName]. Counties that convert will lose their resistance to imposed governors."
+eoe_convert_culture_septem_provinciae_confirm:0 "Reclaim what was lost"
+
+eoe_roman_event.0006.title:0 "Septem Provinciae Reclaimed"
+eoe_roman_event.0006.desc:0 "From the Rhône to the Pyrenean approaches, charters are issued to towns, estates are resurveyed, and Roman-speaking settlers join communities whose laws still preserve traces of the old provinces.\n\nThe Seven Provinces once joined Italy to Hispania. Restored roads and loyal cities may make them that bridge again."
+eoe_roman_event.0006.a:0 "Restore the cities of the Seven Provinces"
+
+eoe_convert_culture_gallia:0 "Resettle Gallia"
+eoe_convert_culture_gallia_tooltip:0 "Promote Roman resettlement throughout Gallia."
+eoe_convert_culture_gallia_desc:0 "From Lutetia to Colonia, the old province of Gallia is once more in our hands. It is time to secure our claims by promoting the Roman ways of life."
+eoe_convert_culture_gallia_decision_effect_tooltip:0 "Most of the region will convert to [GetCultureByKey('gallo_roman').GetName]. Counties that convert will lose their resistance to imposed governors."
+eoe_convert_culture_gallia_confirm:0 "Reclaim what was lost"
+
+eoe_roman_event.0007.title:0 "Gallia Reclaimed"
+eoe_roman_event.0007.desc:0 "Imperial commissioners report from the river cities and old coloniae of Gaul. New settlers have arrived, Latin schools and courts are reopening, and the local aristocracy must decide whether to serve the restored order or stand apart from it.\n\nGallia will not become Roman through proclamation alone, but the institutions of that transformation are now in place."
+eoe_roman_event.0007.a:0 "Let law and language follow the eagle"
+
+eoe_convert_culture_africae:0 "Resettle Africa"
+eoe_convert_culture_africae_tooltip:0 "Promote Roman resettlement throughout Africa."
+eoe_convert_culture_africae_desc:0 "If your southern campaign is successful, we can enforce roman law once again. The resettlement will follow in due time."
+eoe_convert_culture_africae_decision_effect_tooltip:0 "Most of the region will convert to [GetCultureByKey('afro_roman').GetName]. Counties that convert will lose their resistance to imposed governors."
+eoe_convert_culture_africae_confirm:0 "Reclaim what was lost"
+
+eoe_roman_event.0008.title:0 "Africa Reclaimed"
+eoe_roman_event.0008.desc:0 "The harbors of Africa again dispatch grain beneath imperial seals. Around Carthage, surveyors restore neglected estates while merchants measure the distance to Rome in sailing days and cargo holds.\n\nThe province is more than a granary: it is a wealthy Mediterranean heartland whose allegiance can feed the capital and finance the empire."
+eoe_roman_event.0008.a:0 "Carthage and Rome shall prosper together"
+
+eoe_convert_culture_britannia:0 "Resettle Britannia"
+eoe_convert_culture_britannia_tooltip:0 "Promote Roman resettlement throughout Britannia."
+eoe_convert_culture_britannia_desc:0 "After our successful campaign in Gaul the logical next step will be to reclaim the island of Britannia for the empire."
+eoe_convert_culture_britannia_decision_effect_tooltip:0 "Most of the region will convert to [GetCultureByKey('britano_roman').GetName]. Counties that convert will lose their resistance to imposed governors."
+eoe_convert_culture_britannia_confirm:0 "Reclaim what was lost"
+
+eoe_roman_event.0009.title:0 "Britannia Reclaimed"
+eoe_roman_event.0009.desc:0 "Rain passes over repaired roads, fortified towns, and estates abandoned since the old legions withdrew. Across Britannia, settlers and local communities rebuild a Roman civic life at the far edge of the western world.\n\nThe island remains distant and costly to defend, but its ports command the northern seas and its renewed cities proclaim that Rome's reach has crossed the Channel once more."
+eoe_roman_event.0009.a:0 "The northern provinces are Roman again"
+
+eoe_convert_culture_dacia_and_thracia:0 "Resettle Dacia and Thracia"
+eoe_convert_culture_dacia_and_thracia_tooltip:0 "Promote Roman resettlement throughout Dacia and Thracia."
+eoe_convert_culture_dacia_and_thracia_desc:0 "In order to fully secure the Danubian frontier, we must rebuild the old Roman provinces of Dacia and Thracia."
+eoe_convert_culture_dacia_and_thracia_decision_effect_tooltip:0 "Most of the region will convert to [GetCultureByKey('thracio_roman').GetName]. Counties that convert will lose their resistance to imposed governors."
+eoe_convert_culture_dacia_and_thracia_confirm:0 "Reclaim what was lost"
+
+eoe_roman_event.0010.title:0 "Dacia and Thracia Reclaimed"
+eoe_roman_event.0010.desc:0 "Watchtowers, river ports, and military roads once again form a chain along the Danube. In Dacia and Thracia, resettled communities support the garrisons while imperial officials restore the flow of taxes and supplies.\n\nThe frontier is not merely a line on a map. It is a living system of forts, markets, and loyalties, and Rome again commands its southern bank."
+eoe_roman_event.0010.a:0 "Make the Danube an imperial frontier once more"
+
+eoe_convert_culture_hispania:0 "Resettle Hispania"
+eoe_convert_culture_hispania_tooltip:0 "Promote Roman resettlement throughout Hispania."
+eoe_convert_culture_hispania_desc:0 "To fully secure our western border we must rebuild the old province of Hispania."
+eoe_convert_culture_hispania_decision_effect_tooltip:0 "Most of the region will convert to [GetCultureByKey('hispano_roman').GetName]. Counties that convert will lose their resistance to imposed governors."
+eoe_convert_culture_hispania_confirm:0 "For the Glory of Rome!"
+
+eoe_roman_event.0011.title:0 "Hispania Reclaimed"
+eoe_roman_event.0011.desc:0 "From the Pyrenees to the Pillars of Hercules, imperial charters and new settlements spread through Hispania. Artisans return to old urban centers, roads reconnect inland estates with the coast, and the peninsula's rulers learn to reckon with Roman courts.\n\nIts peoples retain many traditions, but the civic language of the restored provinces is again unmistakably Roman."
+eoe_roman_event.0011.a:0 "Hispania shall anchor the western sea"
+
+###New Provinces###
+
+recreate_the_province_of_mesopotamia_decision:0 "Recreate the Roman province of Mesopotamia"
+recreate_the_province_of_mesopotamia_decision_desc:0 "Now that our Empire has been firmly reestablished, it is time to consider expansion once more. Our first step should be to take back the old Roman province of Mesopotamia established by emperor Trajan in 116 CE."
+recreate_the_province_of_mesopotamia_decision_tooltip:0 "Reestablish Roman rule and provincial government in Mesopotamia."
+recreate_the_province_of_mesopotamia_decision_confirm:0 "Reestablish Roman rule at the Euphrates"
+
+eoe_roman_event.0012.title:0 "Trajan's Legacy Restored"
+eoe_roman_event.0012.desc:0 "Roman standards stand beside the Euphrates once more. Where Trajan advanced and later emperors struggled to remain, forts and tax stations now secure a lasting imperial foothold.\n\nMesopotamia opens the roads of eastern commerce, but it also faces Persia across an exposed frontier. The achievement is worthy of triumph; preserving it will demand judgment equal to ambition."
+eoe_roman_event.0012.a:0 "Honor Trajan, and fortify the Euphrates"
+
+create_the_diocese_of_albion_decision:0 "Create the Prefecture of Albion"
+create_the_diocese_of_albion_decision_desc:0 "With our new aquisistions in Hibernia and Caledonia the Prefecture of Gallia has become too large to be governed effectively. Many voices at court argue that it would be wise to split the Prefecture in two creating a new one, the Prefecture of Albion."
+create_the_diocese_of_albion_decision_tooltip:0 "Establish the Prefecture of Albion from the northern territories of the Prefecture of Gallia."
+create_the_diocese_of_albion_decision_confirm:0 "It shall be done"
+
+eoe_roman_event.0013.title:0 "A New Prefecture"
+eoe_roman_event.0013.desc:0 "Maps of Britannia, Hibernia, and Caledonia cover the council table. Governed from Gallia, these lands burden distant officials and delay every petition that must cross the Channel.\n\nA separate prefecture will give the northern provinces their own fiscal and military command while preserving their place within the imperial hierarchy."
+eoe_roman_event.0013.a:0 "Establish the Prefecture of Albion"
+
+###Destroy the Vatican###
+
+eoe_roman_event.0015.title:0 "One Final Triumph"
+eoe_roman_event.0015.desc:0 "Night settles over the Tiber as smoke rises from Vatican Hill. The old sanctuary has fallen by imperial decree, leaving a scar of fire where generations worshiped. Priests, senators, and architects now wait among the ruins for a decision that will define the hill for centuries.\n\nIt may become a place of public spectacle recalling Nero's circus, or a sacred precinct dedicated to Sol Invictus. Whatever rises here will proclaim which memory of Rome the restored empire has chosen to honor."
+eoe_roman_event.0015.a:0 "Raise the Circus of Nero upon the hill"
+eoe_roman_event.0015.b:0 "Consecrate the hill to the Unconquered Sun"
+
+must_be_hellenic:0 "You must follow a Hellenic faith"
+must_be_christian:0 "You must follow a Christian faith"
+eoe_roman_event.0016.title:0 "A Pantheon for Constantinople"
+eoe_roman_event.0016.desc:0 "The great sanctuary of Constantinople stands at the heart of the eastern capital. Its vaults, marbles, and imperial galleries can now be rededicated as a pantheon for the restored cults of the Roman world.\n\nSuch an act will be read throughout the [Glossary( 'Basileia ton Rhomaion', 'EOE_BASILEIA_ROMAION_GLOSS' )]: not merely as a change of worship, but as a declaration that the emperor commands the sacred landscape of New Rome."
+eoe_roman_event.0016.a:0 "Consecrate the imperial Pantheon"
+
+###Great Projects###
+
+eoe_restore_palatine_hill.0001.t:0 "The Cleansing of the Palatine"
+eoe_restore_palatine_hill.0001.desc:0 "In the centuries after the fall of the western empire the Palatine Hill has unfortunately been largely abandoned by the Roman elites. This has led to an increasing overgrowth and disarray in the area. Now, the dirt has been cleared and the overgrowth uprooted. The foundations for the restoration has been laid."
+eoe_restore_palatine_hill.0001.a:0 "More work still needs to be done"
+
+eoe_restore_palatine_hill.0002.t:0 "Laying the Foundations"
+eoe_restore_palatine_hill.0002.desc:0 "The ground work has been layed. The plans for the restoration have commenced. It is time to begin the great reconstruction."
+eoe_restore_palatine_hill.0002.a:0 "Rome shall regain its historical centre of power!"
+
+eoe_restore_palatine_hill.0003.t:0 "Rebuilding the Main Palace"
+eoe_restore_palatine_hill.0003.desc:0 "After a long and laborious process, the main palace complex has been rebuild. Its beautiful facades and columns a marvel of classical architecture and a spendour for both Romans and Barbarians alike."
+eoe_restore_palatine_hill.0003.a:0 "Some work still remains"
+
+eoe_restore_palatine_hill.0004.t:0 "Restoring Ancient Art"
+eoe_restore_palatine_hill.0004.desc:0 "From frescoes to vases and busts, the palace's interior has been restored at last. We have successfully restored the interior grandeur of our administrative seat."
+eoe_restore_palatine_hill.0004.a:0 "The project nears completion"
+
+eoe_restore_palatine_hill.0005.t:0 "The Imperial Palace Reborn"
+eoe_restore_palatine_hill.0005.desc:0 "The rebuilt palace complex once again dominates the Palatine. Its restored halls are ready to serve as the administrative heart of Roman rule."
+eoe_restore_palatine_hill.0005.a:0 "Rome's emperors have a home once more"
+
+eoe_restore_palatine_hill.0006.t:0 "Palatine Hill Restored"
+eoe_restore_palatine_hill.0006.desc:0 "At long last, the great Palatine Palace complex has been restored. The administrative heart of the old empire stands once more and our claim to Rome's ancient legacy stands stronger than ever before."
+eoe_restore_palatine_hill.0006.a:0 "We are so back!"
+
+eoe_restore_palatine_hill.0007.t:0 "Project Aborted"
+eoe_restore_palatine_hill.0007.desc:0 "Unfortunately, our great project to restore the Palatine Hill has to be abandoned for now."
+eoe_restore_palatine_hill.0007.a:0 "Nothing ever happens..."
+
+###
+
+eoe_restore_temple_of_jupiter.0001.t:0 "Cleansing the Forum Romanum"
+eoe_restore_temple_of_jupiter.0001.desc:0 "Since the destruction of Rome's polytrheist priesthood the Temple of Jupiter has been in a terrible shape. Stripped of its golden roof and many of its collumns and statues only an empty ruin remains. If we wish to restore it, we must first remove dirt, debris and later buildings erected next to or within it."
+eoe_restore_temple_of_jupiter.0001.a:0 "The house of Jupiter will be cleansed"
+
+eoe_restore_temple_of_jupiter.0002.t:0 "Foundations Secured"
+eoe_restore_temple_of_jupiter.0002.desc:0 "The foundations of the empty ruin have been secured and new plans are drawn. With this, our restoration can begin in earnest."
+eoe_restore_temple_of_jupiter.0002.a:0 "There is still a long way ahead"
+
+eoe_restore_temple_of_jupiter.0003.t:0 "Outer Temple Restored"
+eoe_restore_temple_of_jupiter.0003.desc:0 "Thanks to our unrelenting efforts, the Temples outer structure has been completely restored. The impressive building now thrones atop the Forum once more."
+eoe_restore_temple_of_jupiter.0003.a:0 "Romes true centre has been rebuild"
+
+eoe_restore_temple_of_jupiter.0004.t:0 "Inner Sanctum Restored"
+eoe_restore_temple_of_jupiter.0004.desc:0 "The most important element has been restored. With the temple's inner sanctum intact the priesthood are finally able to perform the ancient rites of our forefathers once more in the proper fashion."
+eoe_restore_temple_of_jupiter.0004.a:0 "A truly monumental achievement"
+
+eoe_restore_temple_of_jupiter.0005.t:0 "The Capitoline Temple Reborn"
+eoe_restore_temple_of_jupiter.0005.desc:0 "The great temple rises over Rome once more. Its columns, precinct, and sacred chambers now stand ready for the final rites of restoration."
+eoe_restore_temple_of_jupiter.0005.a:0 "Prepare the temple for consecration"
+
+eoe_restore_temple_of_jupiter.0006.t:0 "Temple of Jupiter Restored"
+eoe_restore_temple_of_jupiter.0006.desc:0 "The deed is done, the Temple of Jupiter Optimus Maximus has been restored as the true heart of the ancient cults. With this, we have proven our strength and determination to the Abrahamics, our holy city shall never again fall to their fale god."
+eoe_restore_temple_of_jupiter.0006.a:0 "It is done"
+
+eoe_restore_temple_of_jupiter.0007.t:0 "Project Aborted"
+eoe_restore_temple_of_jupiter.0007.desc:0 "Unfortunately, our great project to restore the Temple of Jupiter has to be abandoned for now."
+eoe_restore_temple_of_jupiter.0007.a:0 "Nothing ever happens..."

@@ -1,0 +1,18 @@
+﻿restitutor_orbis = {
+	vassal_opinion = 20
+	category = fame
+	monthly_prestige = 2
+	martial = 2
+	stewardship = 2
+	diplomacy = 2
+	monthly_influence = 5
+	icon = restitutor_orbis.dds
+	
+	shown_in_ruler_designer = no
+
+	desc = {
+		first_valid = {
+			desc = trait_restitutor_orbis_desc
+		}
+	}
+}

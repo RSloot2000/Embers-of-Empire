@@ -1,0 +1,512 @@
+﻿roman = {
+	color = { 143 0 0 }
+	
+	ethos = ethos_bellicose
+	heritage = heritage_latin
+	language = language_latin
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+
+	dlc_tradition = {
+		trait = tradition_ep3_roman_ceremonies
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_byzantine_succession
+	}
+	dlc_tradition = {
+		trait = tradition_ep3_cultivated_sophistication
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_legalistic
+	}
+	traditions = {
+		tradition_sundered_soul
+		tradition_pantheon_integration
+	}
+	
+	name_list = name_list_roman
+
+	coa_gfx = { latin_group_coa_gfx western_coa_gfx } 
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { byzantine_clothing_gfx } 
+	clothing_gfx = { western_clothing_gfx } 
+	unit_gfx = { eastern_unit_gfx } 		
+	house_coa_frame = house_frame_22
+	house_coa_mask_offset = { 0.0 0.11 }
+	house_coa_mask_scale = { 0.85 0.85 }
+
+	ethnicities = {
+		10 = mediterranean
+		10 = mediterranean_byzantine
+	}
+}
+
+illyro_roman = {
+	color = { 0.68 0.05 0.15 }
+	created = 9.1.1 # Illyrian Revolt was quelched
+	parents = { roman illyrian }
+
+	ethos = ethos_bellicose # Illyro romans made good soliders uwu
+	heritage = heritage_latin
+	language = language_latin
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		#tradition_strength_in_numbers # Juli: Illyria was the source for most of the Roman Army
+		tradition_formation_fighting # swapped from Strengh in Numbers because Illyrians not being able to use heavy infantry is stupid
+		tradition_loyal_soldiers # Juli: Illyria was the source for most of the Roman Army
+		tradition_hill_dwellers # Juli: Illyria is a hilly area
+		#tradition_roman_legacy # Juli: Standard Roman
+		tradition_sundered_soul
+		tradition_pantheon_integration
+	}
+	dlc_tradition = {
+		trait = tradition_ep3_roman_ceremonies
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_byzantine_succession
+	}
+	
+	name_list = name_list_roman
+	name_list = name_list_illyro_roman
+	
+	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { byzantine_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+
+	ethnicities = {
+		10 = mediterranean
+	}
+}
+
+hispano_roman = {
+	color = { 0.8 0.2 0.1 }
+	created = 2.1.1
+	parents = { roman cantabrian }
+	history_loc_override = hispano_roman_history_loc
+
+	ethos = ethos_spiritual # Juli: Hispania was home to several religious moments and identities during our timeframe and also housed a lot of important early christian saints and figures
+	heritage = heritage_latin
+	language = language_latin
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_fp2_ritualised_friendship # Juli: A lot of Hispano Roman aristorcatic families where friends of imperial officers and Emperors, and Vanilla Spanish cultures have this so cheks out
+		tradition_ancient_miners # Juli: Hispania means land of metals lmao, no seriously Iberian cultures had long and strong ties to metalurgy and Iberian Peninsula is still a very minerally rich culture
+		#tradition_roman_legacy # Juli: Standard Roman
+		tradition_sundered_soul
+		tradition_pantheon_integration
+	}
+	dlc_tradition = {
+		trait = tradition_ep3_roman_ceremonies
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_byzantine_succession
+	}
+	
+	name_list = name_list_roman
+	name_list = name_list_hispano_roman
+	
+	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	clothing_gfx = { byzantine_clothing_gfx }
+	unit_gfx = { eastern_unit_gfx }
+
+	ethnicities = {
+		10 = mediterranean
+	}
+}
+
+gallo_roman = {
+	color = { 0.5 0.1 0.1 }
+	created = 2.1.1
+	parents = { roman gaul }
+	history_loc_override = gallo_roman_history_loc
+
+	ethos = ethos_spiritual # Juli: Gaull was home to several religious moments and identities during our timeframe and also housed a lot of important early christian saints and figures
+	heritage = heritage_latin
+	language = language_latin
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_zealous_people # Juli: A lot of Gaullish noblemen where notable scholars and poets during our timeframe
+		tradition_poetry # Juli: A lot of Gaullish noblemen where notable scholars and poets during our timeframe
+		#tradition_roman_legacy # Juli: Standard Roman
+		tradition_chanson_de_geste
+		tradition_stand_and_fight
+		tradition_sundered_soul
+		tradition_pantheon_integration
+	}
+	dlc_tradition = {
+		trait = tradition_ep3_roman_ceremonies
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_byzantine_succession
+	}
+	
+	name_list = name_list_gallo_roman
+	
+	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { byzantine_clothing_gfx }
+	unit_gfx = { eastern_unit_gfx }
+
+	ethnicities = {
+		10 = mediterranean
+	}
+}
+
+afro_roman = {
+	color = { 0.8 0.1 0.1 }
+	created = 2.1.1
+	parents = { roman punic }
+	history_loc_override = afro_roman_history_loc
+
+	ethos = ethos_spiritual # Juli: Africa was home to several religious moments and identities during our timeframe and also housed a lot of important early christian saints and figures
+	heritage = heritage_latin
+	language = language_latin
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_maritime_mercantilism # Juli: Africa and Cartago where important maritime mercantile stopping points
+		# tradition_agrarian # Juli: Africa was the agrarian powerhouse of the cell, i mean of the western roman empire
+		# Shatzi: replaced agrarian for a tailored tradition. love y'all
+		tradition_african_agriculture
+		#tradition_religion_blending # Juli: Africa was home to many many different christian sects, pagan cults and jewish
+		tradition_philosopher_culture # Cybr: Replacing Religion Blending per Huriale's suggestion
+		#tradition_roman_legacy # Juli: Standard Roman
+		tradition_sundered_soul
+		tradition_pantheon_integration
+	}
+	dlc_tradition = {
+		trait = tradition_ep3_roman_ceremonies
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_byzantine_succession
+	}
+	
+	name_list = name_list_roman	
+	name_list = name_list_afro_roman
+	
+	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { byzantine_clothing_gfx }
+	unit_gfx = { eastern_unit_gfx }
+
+	ethnicities = {
+		5 = african
+		35 = arab
+		60 = mediterranean
+	}
+}
+
+britano_roman = {
+	color = { 160 32 29 }
+	created = 43.1.1
+	parents = { roman briton }
+
+	ethos = ethos_bellicose # Juli: Britano Romans where fiesty during the 4th and 5th century
+	heritage = heritage_latin
+	language = language_latin
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_quarrelsome # Juli: Britano-Romans brought their own demise by constantly fighting each other (goofy ahh)
+		tradition_loyal_soldiers # Juli: Britano-Romans where proud to be part of the Roman Empire and where later quickly assimilated by the Anglo-Saxon overlords
+		tradition_martial_admiration # Juli: To represent the constant Usurpers and Britannia being a powerhouse for soldiers
+		#tradition_roman_legacy # Juli: Standard Roman
+		tradition_hird # Cybr: Roman/Celtic veneration in the region
+		tradition_sundered_soul
+		tradition_pantheon_integration
+	}
+	dlc_tradition = {
+		trait = tradition_ep3_roman_ceremonies
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_byzantine_succession
+	}
+
+	name_list = name_list_roman	
+	name_list = name_list_britano_roman
+	
+	coa_gfx = { latin_group_coa_gfx welsh_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	clothing_gfx = { byzantine_clothing_gfx }
+	unit_gfx = { eastern_unit_gfx }
+
+	ethnicities = {
+		50 = mediterranean
+		5 = caucasian_blond
+		10 = caucasian_ginger
+		20 = caucasian_brown_hair
+		15 = caucasian_dark_hair
+	}
+}
+
+rhaetio_roman = {
+	color = { 0.6 0.1 0.1 }
+	created = 2.1.1
+	parents = { roman rhaetian }
+
+	history_loc_override = roman_rhaetian_history_loc
+
+	ethos = ethos_communal
+	heritage = heritage_latin
+	language = language_latin
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_stalwart_defenders # Cybr: Described as savage warriors by Strabo, but could be bias from the Roman POV
+		tradition_mountain_homes # Cybr: They're in the Alps
+		tradition_mountaineers # Cybr: Alpine legions
+		#tradition_roman_legacy # Juli: Standard Roman
+		tradition_sundered_soul
+	}
+	dlc_tradition = {
+		trait = tradition_ep3_roman_ceremonies
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_byzantine_succession
+	}
+
+	name_list = name_list_roman	
+	name_list = name_list_rhaetian
+	
+	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	clothing_gfx = { byzantine_clothing_gfx }
+	unit_gfx = { eastern_unit_gfx }
+
+	ethnicities = {
+		10 = mediterranean
+	}
+}
+
+thracio_roman = {
+	color = { 142 65 86 }
+	created = 46.1.1
+	parents = { roman thracian }
+
+	ethos = ethos_bellicose # Juli: Only thing remarkable about Thracio-Romans i can find is that their lands where constatnly occupied by Legions and that they where part of the army
+	heritage = heritage_latin
+	language = language_latin
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_highland_warriors # Juli: Thracians lived in Highlands all the time lmao # Cybr: Decided to replace this one with the Orpheus tradition for now
+		tradition_orpheus # Cybr: Orpheus was an important figure in Thracian culture and religion
+		tradition_stalwart_defenders # Juli: Thracians are noted for taking care of their land
+		tradition_loyal_soldiers # Juli: Thracians are and where mainly noted for being part of the army lmao goofy
+		tradition_sundered_soul
+	}
+
+	name_list = name_list_roman	
+	name_list = name_list_thracio_roman
+	
+	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
+	building_gfx = { byzantine_building_gfx }
+	clothing_gfx = { byzantine_clothing_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	unit_gfx = { eastern_unit_gfx }
+
+	ethnicities = {
+		10 = mediterranean
+	}
+}
+
+italian = {
+	color = italian
+
+	parents = { roman }
+
+	created = 476.11.4
+	
+	ethos = ethos_spiritual
+	heritage = heritage_latin
+	language = language_italian
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_formation_fighting
+		tradition_republican_legacy
+		tradition_poetry
+	}
+	
+	name_list = name_list_italian
+	
+	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	house_coa_frame = house_frame_22
+	house_coa_mask_offset = { 0.0 0.11 }
+	house_coa_mask_scale = { 0.85 0.85 }
+
+	ethnicities = {
+		10 = mediterranean
+	}
+}
+
+cisalpine = {
+	color = { 0.95 0.95 0.55 }
+
+	created = 800.1.1
+
+	parents = { frankish lombard }
+	
+	ethos = ethos_communal
+	heritage = heritage_latin
+	language = language_italian
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_republican_legacy
+		tradition_mountain_homes
+		tradition_maritime_mercantilism
+	}
+	
+	name_list = name_list_cisalpine
+	
+	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	house_coa_frame = house_frame_22
+	house_coa_mask_offset = { 0.0 0.11 }
+	house_coa_mask_scale = { 0.85 0.85 }
+
+	ethnicities = {
+		10 = mediterranean
+	}
+}
+
+sardinian = {
+	color = sardinian
+
+	parents = { roman }
+
+	created = 100.1.1
+	
+	ethos = ethos_communal
+	heritage = heritage_latin
+	language = language_sardinian
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_stalwart_defenders
+		tradition_isolationist
+	}
+	
+	name_list = name_list_sardinian
+	
+	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	house_coa_frame = house_frame_22
+	house_coa_mask_offset = { 0.0 0.11 }
+	house_coa_mask_scale = { 0.85 0.85 }
+
+	ethnicities = {
+		10 = mediterranean
+	}
+}
+
+sicilian = {
+	color = { 0.65 0.65 0.2 }
+
+	parents = { lombard greek }
+
+	created = 950.1.1
+	
+	ethos = ethos_courtly
+	heritage = heritage_latin
+	language = language_italian
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_xenophilic
+		tradition_swords_for_hire
+		tradition_ruling_caste
+		tradition_poetry
+		tradition_republican_legacy
+	}
+	
+	name_list = name_list_sicilian
+	
+	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	house_coa_frame = house_frame_22
+	house_coa_mask_offset = { 0.0 0.11 }
+	house_coa_mask_scale = { 0.85 0.85 }
+
+	ethnicities = {
+		10 = mediterranean
+	}	
+}
+
+lombard = { #Italo-Lombards
+	color = { 0.8 0.8 0.5 }
+
+	created = 650.1.1
+
+	parents = { langobard italian }
+	
+	ethos = ethos_stoic
+	heritage = heritage_latin
+	language = language_italian
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_isolationist
+		tradition_martial_admiration
+		tradition_stand_and_fight
+		tradition_republican_legacy
+	}
+	
+	name_list = name_list_lombard
+	
+	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	house_coa_frame = house_frame_22
+	house_coa_mask_offset = { 0.0 0.11 }
+	house_coa_mask_scale = { 0.85 0.85 }
+
+	ethnicities = {
+		10 = mediterranean
+	}
+}
+
+langobard = { #Germanic Ancestor culture
+	color = langobard
+	
+	ethos = ethos_stoic
+	heritage = heritage_central_germanic
+	language = language_central_germanic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_isolationist
+		tradition_martial_admiration
+		tradition_stand_and_fight
+	}
+	
+	dlc_tradition = {
+		trait = tradition_malleable_invaders
+		requires_dlc_flag = hybridize_culture
+	}
+	
+	name_list = name_list_lombard
+	
+	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	house_coa_frame = house_frame_22
+	house_coa_mask_offset = { 0.0 0.11 }
+	house_coa_mask_scale = { 0.85 0.85 }
+
+	ethnicities = {
+		10 = mediterranean
+	}
+}

@@ -1,0 +1,65 @@
+k_bosporus = {
+	8.1.1 = {
+		holder = 9800101 # Aspurgus
+	}
+	38.1.1 = {
+		holder = 9800102 # Gepaepyris
+	}
+	39.1.1 = {
+		holder = 9800103 # Mithridates
+	}
+	45.1.1 = {
+		holder = 9800104 # Cotys I
+	}
+	63.1.1 = {
+		holder = 0 # Annexed to Roman Moesia Inferior
+	}
+	68.1.1 = {
+		holder = 9800105 # Rhescuporis I
+	}
+	93.1.1 = {
+		holder = 9800106 # Sauromates I
+	}
+	123.1.1 = {
+		holder = 9800107 # Cotys II
+	}
+	132.1.1 = {
+		holder = 9800108 # Rhoemetalces
+	}
+	154.1.1 = {
+		holder = 9800109 # Eupator
+	}
+	170.1.1 = {
+		holder = 0 # Chronological gap
+	}
+	172.1.1 = {
+		holder = 9800110 # Sauromates II
+	}
+	211.1.1 = {
+		holder = 9800111 # Rhescuporis III
+	}
+	228.1.1 = {
+		holder = 9800112 # Cotys III
+	}
+	234.1.1 = {
+		holder = 9800113 # Ininthimeus
+	}
+	240.1.1 = {
+		holder = 9800114 # Rhescuporis V
+	}
+	276.1.1 = {
+		holder = 9800115 # Teiranes
+	}
+	279.1.1 = {
+		holder = 9800116 # Theothorses
+	}
+	309.1.1 = {
+		holder = 9800117 # Rhadamsades
+	}
+	322.1.1 = {
+		holder = 9800118 # Rhescuporis VI
+	}
+	342.1.1 = {
+		holder = 0 # Coin sequence and secure continuous succession end
+	}
+}

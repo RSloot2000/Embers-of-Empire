@@ -1,0 +1,202 @@
+﻿eoe_is_valid_wre_restoration_target = {
+	has_variable = eoe_wre_restoration_target
+	scope:attacker = {
+		has_claim_on = prev
+	}
+	OR = {
+		holder = scope:defender
+		holder = {
+			is_vassal_or_below_of = scope:defender
+		}
+	}
+}
+
+eoe_wre_restoration_targets_at_least = {
+	any_county_in_region = {
+		region = custom_western_roman_empire
+		count >= $COUNT$
+		eoe_is_valid_wre_restoration_target = yes
+	}
+}
+
+eoe_wre_restoration_targets_in_region_at_least = {
+	any_county_in_region = {
+		region = $REGION$
+		count >= $COUNT$
+		eoe_is_valid_wre_restoration_target = yes
+	}
+}
+
+eoe_is_wre_restoration_war = {
+	OR = {
+		using_cb = eoe_wre_restoration_claim_cb
+		using_cb = eoe_wre_restoration_illyricum_pannoniae_cb
+		using_cb = eoe_wre_restoration_italia_suburbicariae_cb
+		using_cb = eoe_wre_restoration_italia_annonariae_cb
+		using_cb = eoe_wre_restoration_hispania_cb
+		using_cb = eoe_wre_restoration_septem_provinciae_cb
+		using_cb = eoe_wre_restoration_gallia_cb
+		using_cb = eoe_wre_restoration_britannia_cb
+		using_cb = eoe_wre_restoration_africae_cb
+	}
+}
+
+eoe_wre_coalition_dynastic_relevance = {
+	exists = dynasty
+	exists = scope:defender.dynasty
+	dynasty = scope:defender.dynasty
+}
+
+eoe_wre_coalition_neighbor_relevance = {
+	save_temporary_scope_as = eoe_wre_coalition_neighbor
+	scope:defender = {
+		any_neighboring_top_liege_realm_owner = {
+			this = scope:eoe_wre_coalition_neighbor
+		}
+	}
+}
+
+eoe_wre_coalition_same_front_relevance = {
+	OR = {
+		AND = {
+			scope:defender = {
+				any_realm_county = {
+					has_variable = eoe_wre_restoration_target
+					title_province = {
+						OR = {
+							geographical_region = gallia_diocese_region
+							geographical_region = septem_provinciae_diocese_region
+						}
+					}
+				}
+			}
+			any_realm_county = {
+				title_province = {
+					OR = {
+						geographical_region = gallia_diocese_region
+						geographical_region = septem_provinciae_diocese_region
+						geographical_region = italia_annonariae_diocese_region
+					}
+				}
+			}
+		}
+		AND = {
+			scope:defender = {
+				any_realm_county = {
+					has_variable = eoe_wre_restoration_target
+					title_province = { geographical_region = hispania_diocese_region }
+				}
+			}
+			any_realm_county = {
+				title_province = {
+					OR = {
+						geographical_region = hispania_diocese_region
+						geographical_region = septem_provinciae_diocese_region
+					}
+				}
+			}
+		}
+		AND = {
+			scope:defender = {
+				any_realm_county = {
+					has_variable = eoe_wre_restoration_target
+					title_province = { geographical_region = britannia_diocese_region }
+				}
+			}
+			any_realm_county = {
+				title_province = {
+					OR = {
+						geographical_region = britannia_diocese_region
+						geographical_region = gallia_diocese_region
+					}
+				}
+			}
+		}
+		AND = {
+			scope:defender = {
+				any_realm_county = {
+					has_variable = eoe_wre_restoration_target
+					title_province = { geographical_region = africae_diocese_region }
+				}
+			}
+			any_realm_county = {
+				title_province = {
+					OR = {
+						geographical_region = africae_diocese_region
+						geographical_region = italia_suburbicariae_diocese_region
+					}
+				}
+			}
+		}
+		AND = {
+			scope:defender = {
+				any_realm_county = {
+					has_variable = eoe_wre_restoration_target
+					title_province = {
+						OR = {
+							geographical_region = italia_suburbicariae_diocese_region
+							geographical_region = italia_annonariae_diocese_region
+						}
+					}
+				}
+			}
+			any_realm_county = {
+				title_province = {
+					OR = {
+						geographical_region = italia_suburbicariae_diocese_region
+						geographical_region = italia_annonariae_diocese_region
+						geographical_region = illyricum_pannoniae_diocese_region
+						geographical_region = africae_diocese_region
+					}
+				}
+			}
+		}
+		AND = {
+			scope:defender = {
+				any_realm_county = {
+					has_variable = eoe_wre_restoration_target
+					title_province = { geographical_region = illyricum_pannoniae_diocese_region }
+				}
+			}
+			any_realm_county = {
+				title_province = {
+					OR = {
+						geographical_region = illyricum_pannoniae_diocese_region
+						geographical_region = italia_annonariae_diocese_region
+					}
+				}
+			}
+		}
+	}
+}
+
+eoe_valid_wre_coalition_candidate = {
+	save_temporary_scope_as = eoe_wre_coalition_candidate
+	is_landed = yes
+	is_independent_ruler = yes
+	in_diplomatic_range = scope:defender
+	NOT = { this = scope:attacker }
+	NOT = { this = scope:defender }
+	NOT = { is_imprisoned = yes }
+	NOT = { has_character_flag = eoe_wre_coalition_invitation_cooldown }
+	NOT = { is_attacker_in_war = scope:war }
+	NOT = { is_defender_in_war = scope:war }
+	NOT = { is_allied_to = scope:attacker }
+	OR = {
+		eoe_wre_coalition_dynastic_relevance = yes
+		eoe_wre_coalition_neighbor_relevance = yes
+		AND = {
+			eoe_wre_coalition_same_front_relevance = yes
+			realm_to_title_distance_squared = {
+				target = scope:defender.capital_county
+				value < 30000
+			}
+			OR = {
+				is_allied_to = scope:defender
+				any_realm_county = {
+					has_variable = eoe_wre_restoration_target
+				}
+			}
+		}
+	}
+}

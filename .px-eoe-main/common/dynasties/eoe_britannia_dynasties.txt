@@ -1,0 +1,9 @@
+﻿eoe_britannia_carausius = {
+	name = "dynn_eoe_britannia_Carausius"
+	culture = "roman"
+}
+
+eoe_britannia_allectus = {
+	name = "dynn_eoe_britannia_Allectus"
+	culture = "roman"
+}

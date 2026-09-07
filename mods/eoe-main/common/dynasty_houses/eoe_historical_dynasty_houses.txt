@@ -1,0 +1,4 @@
+﻿house_eoe_bosporan_sapaean = {
+	name = "dynn_eoe_bosporan_Sapaean"
+	dynasty = eoe_bosporan_odrysian
+}

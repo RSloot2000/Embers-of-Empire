@@ -1,0 +1,1112 @@
+﻿custom_theodosian_ere = {
+	regions = {
+		thessalonika_diocese_region
+		macedon_diocese_region
+		daciae_diocese_region
+		nikaea_diocese_region
+		asiae_diocese_region
+		orientis_diocese_region
+		aegyptus_diocese_region
+	}
+}
+
+
+illyricum_pannoniae_diocese_region = {
+	counties = {
+		c_zadar
+		c_knin
+		c_cetina
+		c_gacka
+		c_lika
+		c_cherso
+		c_modrus
+		c_zagreb
+		c_zagorje
+		c_pozega
+		c_vukovar
+		c_rama
+		c_donjikraji
+		c_vhrbosna
+		c_pset
+		c_soli
+		c_usora
+		c_vodica
+		c_vrbas
+		c_zachlumia
+		c_zelengora
+		c_zavrsje
+		c_pagania
+		c_ragusa
+		c_salzburg
+		c_berchtesgaden
+		c_hallstatt
+		c_linz
+		c_schaumberg
+		c_karnten
+		c_kammersberg
+		c_knittelfeld
+		c_villach
+		c_graz
+		c_pitten
+		c_liebnitz
+		c_murzzuschlag
+		c_gyor
+		c_sopron
+		c_vas
+		c_veszprem
+		c_somogy
+		c_kolon
+		c_tolna
+		c_baranya
+		c_amstetten
+		c_sankt_polten
+		c_vienna
+		c_komarom
+		c_esztergom
+		c_szekesfehervar
+		c_visegrad
+		c_szerem
+	}
+}
+###########Southern Italy########
+italia_suburbicariae_diocese_region = {
+	counties = {
+		c_palermo
+		c_messina
+		c_siracusa
+		c_agrigento
+		c_malta
+		c_benevento
+		c_foggia
+		c_capua
+		c_napoli
+		c_apulia
+		c_bari
+		c_lecce
+		c_salerno
+		c_camarda
+		c_reggio_calabria
+		c_cosenza
+		c_rossano
+		c_ajaccio
+		c_bastia
+		c_vecchio
+		c_cagliari
+		c_arborea
+		c_gallura
+		c_logudoro
+		c_tortoli
+		c_pisa
+		c_firenze
+		c_lucca
+		c_arezzo
+		c_siena
+		c_orbetello
+		c_ancona
+		c_urbino
+		c_fermo
+		c_spoleto
+		c_orvieto
+		c_teramo
+		c_lanciano
+		c_abruzzi
+		c_roma
+		c_viterbo
+		c_tivoli
+	}
+}
+###########Northern Italy########
+italia_annonariae_diocese_region = {
+	counties = {
+		c_ravenna
+		c_bologna
+		c_ferrara
+		c_casentino
+		c_modena
+		c_mantua
+		c_genoa
+		c_luni
+		c_monferrato
+		c_turin
+		c_novara
+		c_cuneo
+		c_lombardia
+		c_brescia
+		c_como
+		c_trent
+		c_pavia
+		c_cremona
+		c_parma
+		c_tortona
+		c_verona
+		c_treviso
+		c_padua
+		c_polesine
+		c_venezia
+		c_veneto
+		c_aquileia
+		c_friuli
+		c_gorz
+		c_pula
+		c_kranj
+		c_ljubljana
+		c_grisons
+		c_sankt_gallen
+		c_zurich
+		c_augsburg
+		c_alpsee
+		c_kempten
+		c_ravensburg
+		c_burgau
+		c_innsbruck
+		c_brixen
+		c_lienz
+		c_regensburg
+		c_munchen
+		c_eschenlohe
+		c_rothenburg
+		c_geisenhausen
+		c_frontenhausen
+		c_falkenstein
+		c_ingolstadt
+		c_passau
+		c_grunningen
+	}
+}
+###Spain#####
+hispania_diocese_region = {
+	counties = {
+		c_cordoba
+		c_calatrava
+		c_almader
+		c_andujar
+		c_granada
+		c_almeria
+		c_cabra
+		c_malaga
+		c_sevilla
+		c_cadiz
+		c_algeciras
+		c_niebla
+		c_moura
+		c_toledo
+		c_madrid
+		c_molina
+		c_cuenca
+		c_malagon
+		c_mora
+		c_lisboa
+		c_beja
+		c_alcacer_do_sal
+		c_elvas
+		c_badajoz
+		c_plasencia
+		c_caceres
+		c_merida
+		c_medellin
+		c_faro
+		c_silves
+		c_valencia
+		c_castellon
+		c_teruel
+		c_denia
+		c_alicante
+		c_mallorca
+		c_menorca
+		c_iviza
+		c_murcia
+		c_alcaraz
+		c_alarcon
+		c_burgos
+		c_valladolid
+		c_soria
+		c_cuellar
+		c_olmedo
+		c_asturias_de_santillana
+		c_amaya
+		c_zaragoza
+		c_albarracin
+		c_alto_aragon
+		c_sobrarbe
+		c_huesca
+		c_calatayud
+		c_fraga
+		c_alcaniz
+		c_barcelona
+		c_urgell
+		c_pallas
+		c_puigcerda
+		c_girona
+		c_rossello
+		c_lleida
+		c_tarragona
+		c_navarra
+		c_najera
+		c_tudela
+		c_viscaya
+		c_ipuskoa
+		c_leon
+		c_benavente
+		c_zamora
+		c_salamanca
+		c_avila
+		c_asturias_de_oviedo
+		c_pravia
+		c_coruna
+		c_santiago
+		c_tui
+		c_astorga
+		c_monterrei
+		c_porto
+		c_braganza
+		c_coimbra
+		c_viseu
+		c_aveiro
+		c_castelo_branco
+		c_tangiers
+		c_ceuta
+		c_melilla
+		c_fes
+		c_muluya
+		c_taza
+		c_meknes
+		c_gharb
+	}
+}
+####Southern France#####
+septem_provinciae_diocese_region = {
+	counties = {
+		c_bordeaux
+		c_labourd
+		c_albret
+		c_marsan
+		c_agenais
+		c_armagnac
+		c_bigorre
+		c_bearn
+		c_comminges
+		c_albi
+		c_uses
+		c_montpellier
+		c_carcassonne
+		c_beziers
+		c_foix
+		c_venaissin
+		c_provence
+		c_nice
+		c_forcalquier
+		c_toulouse
+		c_quercy
+		c_gevaudan
+		c_rouergue
+		c_millau
+		c_angouleme
+		c_perigord
+		c_limousin
+		c_saintonge
+		c_aunis
+		c_poitiers
+		c_lusignan
+		c_montaigu
+		c_thouars
+		c_bourbon
+		c_bellac
+		c_jaligny
+		c_la_marche
+		c_savoie
+		c_geneva
+		c_saumur
+		c_berry
+		c_issoudun
+		c_viviers
+		c_viennois
+		c_valentinois
+		c_auvergne
+		c_clermont_sur_allier
+	}
+}
+######Northern France####
+gallia_diocese_region = {
+	counties = {
+		c_vannes
+		c_nantes
+		c_cornouaille
+		c_french_leon
+		c_penthievre
+		c_rennes
+		c_rouen
+		c_evreux
+		c_bayeux
+		c_avranches
+		c_alencon
+		c_lisieux
+		c_eu
+		c_ile_de_france
+		c_brie_francaise
+		c_vermandois
+		c_valois
+		c_amiens
+		c_beaumont
+		c_clermont
+		c_reims
+		c_troyes
+		c_coulommiers
+		c_meaux
+		c_chalons
+		c_rethel
+		c_sens
+		c_dijon
+		c_chalon
+		c_auxerre
+		c_tonnerrois
+		c_avalois
+		c_macon
+		c_nevers
+		c_langres
+		c_besancon
+		c_bresse
+		c_dole
+		c_bern
+		c_aargau
+		c_neuchatel
+		c_brugge
+		c_yperen
+		c_guines
+		c_lille
+		c_boulogne
+		c_brabant
+		c_antwerpen
+		c_hainaut
+		c_cambray
+		c_luxembourg
+		c_bouillon
+		c_liege
+		c_namur
+		c_trier
+		c_nancy
+		c_metz
+		c_saarbrucken
+		c_puttlingen
+		c_neufchateau
+		c_aachen
+		c_cleves
+		c_maastricht
+		c_strassburg
+		c_colmar
+		c_sundgau
+		c_anjou
+		c_maine
+		c_sable
+		c_canavese
+		c_aosta
+		c_tourraine
+		c_blois
+		c_lyon
+		c_zeeland
+		c_guelders
+		c_cologne
+		c_koblenz
+		c_kaiserslautern
+		c_speyer
+		c_worms
+		c_orleans
+		c_montargis
+		c_vendome
+		c_chartres
+		c_sancerre
+		c_bar
+		c_briey
+		c_vaucouleurs
+		c_forez
+		c_thiers
+		c_velay
+	}
+}
+######England and Wales#####
+britannia_diocese_region = {
+	counties = {
+		c_middlesex
+		c_essex
+		c_bedford
+		c_hertfordshire
+		c_buckinghamshire
+		c_northumberland
+		c_durham
+		c_cumberland
+		c_lancashire
+		c_westmorland
+		c_cheshire
+		c_derby
+		c_north_riding
+		c_east_riding
+		c_west_riding
+		c_lincolnshire
+		c_norfolk
+		c_suffolk
+		c_cambridgeshire
+		c_warwickshire
+		c_leicestershire
+		c_nottinghamshire
+		c_staffordshire
+		c_worcestershire
+		c_huntingdonshire
+		c_northamptonshire
+		c_shropshire
+		c_gloucestershire
+		c_wiltshire
+		c_oxfordshire
+		c_berkshire
+		c_kent
+		c_surrey
+		c_sussex
+		c_hampton
+		c_isle_of_wight
+		c_dorset
+		c_somerset
+		c_devon
+		c_cornwall
+		c_hereford
+		c_cardiganshire
+		c_merioneth
+		c_caernarfonshire
+		c_anglesey
+		c_denbighshire
+		c_maldwyn
+		c_sir_faesyfed
+		c_hereford
+		c_carmarthenshire
+		c_pembrokeshire
+		c_glamorgan
+		c_monmouthshire
+		c_brecknockshire
+	}
+}
+#######Magreb########
+africae_diocese_region = {
+	counties = {
+		c_tunis
+		c_satfura
+		c_medjerda
+		c_mahdiya
+		c_constantine
+		c_annaba
+		c_bejaia
+		c_satif
+		c_algier
+		c_tanas
+		c_tlemcen
+		c_wajda
+		c_orania
+		c_hunyan
+		c_kairwan
+		c_west_qamuda
+		c_tabassa
+		c_gabes
+		c_sfax
+		c_yalala
+		c_tahert
+		c_ashir
+		c_bilizma
+		c_djerba
+		c_tripolitana
+		c_labda
+		c_syrte
+		c_hodna
+		c_biskra
+		c_bilizma
+		c_qashtiliya
+	}
+}
+###########Syria and Palestine########
+orientis_diocese_region = {
+	counties = {
+		c_aleppo
+		c_suriya
+		c_syrrusafa
+		c_qinnasrin
+		c_antiocheia
+		c_alexandretta
+		c_homs
+		c_shayzar
+		c_hama
+		c_damascus
+		c_juwair
+		c_baalbek
+		c_hauran
+		c_beirut
+		c_tripoli
+		c_kerak
+		c_negev
+		c_jerusalem
+		c_ghazza
+		c_jaffa
+		c_tiberias
+		c_acre
+		c_irbid
+		c_palmyra
+		c_sukhna
+		c_qaryatan
+		c_raqqa
+		c_harran
+		c_dausar
+		c_balqa
+		c_maab
+		c_jilat
+		c_sinai
+		c_firaun
+		c_edessa
+		c_samosata
+		c_marash
+		c_aintab
+		c_cilicia
+		c_seleucia
+		c_tall_hamid
+		c_nicosia
+		c_famagusta
+		c_amida
+		c_tall_basma
+		c_upper_khabur
+		c_khabur
+		c_al_aqabah
+	}
+}
+##########Egypt#######
+aegyptus_diocese_region = {
+	counties = {
+		c_cairo
+		c_barqa
+		c_derna
+		c_tobruk
+		c_alexandria
+		c_sullum
+		c_siwa
+		c_damietta
+		c_al-buhaira
+		c_al-gharbiya
+		c_sharkiya
+		c_giza
+		c_fayyum
+		c_bahriya
+		c_farafra
+		c_dakhla
+		c_kharga
+		c_qus
+		c_bahnasa
+		c_ushmun
+		c_asyut
+		c_aswan
+		c_qusayr
+		c_jabal_quzlum
+		c_farama
+	}
+}
+##########Thrace###########
+thessalonika_diocese_region = {
+	counties = {
+		c_constanta
+		c_mesembria
+		c_byzantion
+		c_kalliopolis
+		c_brysis
+		c_mosynopolis
+		c_philippopolis
+		c_kran
+		c_beroe
+		c_burgas
+		c_adrianopolis
+		c_zherkovo
+		c_rhodopes
+		c_turnovo
+		c_sredets
+		c_nikopolis
+		c_dorostorum
+		c_aytos
+	}
+}
+##########Macedonia#######
+macedon_diocese_region = {
+	counties = {
+		c_ohrid
+		c_serres
+		c_dyrrachion
+		c_arbanon
+		c_debar
+		c_antipatreia
+		c_avlonas
+		c_nicopolis
+		c_epeiros
+		c_aetolia
+		c_metzovo
+		c_thessalonika
+		c_chalkidike
+		c_veria
+		c_thessalia
+		c_demetrias
+		c_neopatras
+		c_thessaliotis
+		c_attica
+		c_boeotia
+		c_euboea
+		c_achaia
+		c_korinthos
+		c_messenia
+		c_laconia
+		c_chania
+		c_chandax
+		c_cephalonia
+		c_buthrotum
+	}
+}
+########Romania##########
+daciae_diocese_region = {
+	counties = {
+		c_vratsa
+		c_duklja
+		c_pomorje
+		c_travunia
+		c_rashka
+		c_zlatibor
+		c_sumadija
+		c_podrinje
+		c_hvosno
+		c_macva
+		c_beograd
+		c_vidin
+		c_branicevo
+		c_naissus
+		c_pomoravlje
+		c_velbazhd
+		c_pirin
+		c_strumica
+		c_skopje
+	}
+}
+###########Asia Minor########
+nikaea_diocese_region = {
+	counties = {
+		c_phrygia
+		c_galatia_salutaris
+		c_lycandus
+		c_bakriya
+		c_bithynia
+		c_tarsos
+		c_honorias
+		c_galatia
+		c_hadrianopolis
+		c_paphlagonia
+		c_pompeiopolis
+		c_helenopontus
+		c_sinope
+		c_euchaita
+		c_zela
+		c_sebasteia
+		c_azysia
+		c_ablastha
+		c_trebizond
+		c_cerasus
+		c_colonea
+		c_satala
+		c_cappadocia
+		c_lower_galatia
+		c_charsianon
+		c_kaisereia
+		c_kyzistra
+		c_theodosiopolis
+		c_melitene
+		c_mesopotamia
+		c_mayyafariqin
+	}
+}
+#########Asia Minor 2#####
+asiae_diocese_region = {
+	counties = {
+		c_naxos
+		c_abydos
+		c_lesbos
+		c_chios
+		c_rhodos
+		c_lydia
+		c_thyatira
+		c_hadrianeia
+		c_chonae
+		c_lycia
+		c_caria
+		c_pamphylia
+		c_lycaonia
+		c_pacatiana
+		c_pisidia
+		c_selge
+		c_philomelium
+		c_isauria
+		c_ionia
+		c_aeolis
+		c_nikaea
+		c_mysia
+		c_prusa
+	}
+}
+
+#########Caucasus#######
+br_caucasus_region = {
+	counties = {
+		c_tbilisi
+		c_tao
+		c_klarjeti
+		c_kartli
+		c_acampse
+		c_abkhazia
+		c_odishi
+		c_svaneti
+		c_guria
+		c_lori
+		c_kakheti
+		c_hereti
+		c_hayk
+		c_vaspurakan
+		c_turuberan
+		c_apahunik
+		c_hayk
+		c_bagrewand
+		c_vanand
+		c_khachen
+		c_suenik
+		c_dvin
+	}
+}
+
+custom_better_roman_full_borders = {
+	regions = {
+		illyricum_pannoniae_diocese_region
+		italia_suburbicariae_diocese_region
+		italia_annonariae_diocese_region
+		hispania_diocese_region
+		septem_provinciae_diocese_region
+		gallia_diocese_region
+		britannia_diocese_region
+		africae_diocese_region
+		orientis_diocese_region
+		aegyptus_diocese_region
+		thessalonika_diocese_region
+		macedon_diocese_region
+		daciae_diocese_region
+		nikaea_diocese_region
+		asiae_diocese_region
+	}
+}
+
+custom_western_roman_empire = {
+	regions = {
+		africae_diocese_region 
+		hispania_diocese_region  
+		italia_suburbicariae_diocese_region
+		italia_annonariae_diocese_region
+		illyricum_pannoniae_diocese_region
+		gallia_diocese_region
+		britannia_diocese_region
+		septem_provinciae_diocese_region
+	}
+}
+
+world_europe_east_minus_hungary = {
+	duchies = {
+		#Wendish minus Pomerania minus Bohemia
+		d_mazovia d_upper_silesia d_lower_silesia d_lesser_poland d_wielkopolska d_kuyavia d_livonia d_prussia d_masuria d_grodno d_pinsk d_minsk d_polotsk d_smolensk d_lithuanians d_courland d_latgalians d_samogitia
+		# d_greater_poland d_silesia d_yatviags
+		#Russia
+		d_novgorod d_vepsia d_luki d_kiev d_karachev d_novosil d_opolye d_nizhny_novgorod d_turov d_chernigov d_ryazan d_pereyaslavl
+		# d_beloozero d_pskov
+		#Bjarmaland
+		d_biarmia d_vologda d_chudia d_ustyug
+		#Galicia-Volhynia
+		d_volhynia d_halych d_cherven_cities
+		#West Perm
+		#Estonia
+		d_esthonia
+		#Wallachia
+		d_oltenia d_muntenia d_transylvanian_alps d_moldova d_bugeac d_bukovina
+	}
+}
+
+praetorian_gallia_region = {
+	regions = {
+		gallia_diocese_region
+		septem_provinciae_diocese_region
+		hispania_diocese_region
+		britannia_diocese_region
+	}
+}
+
+praetorian_italia_region = {
+	regions = {
+		italia_suburbicariae_diocese_region
+		italia_annonariae_diocese_region
+		africae_diocese_region
+	}
+}
+
+praetorian_illyricum_region = {
+	regions = {
+		illyricum_pannoniae_diocese_region
+		macedon_diocese_region
+		daciae_diocese_region
+	}
+}
+
+praetorian_oriens_region = {
+	regions = {
+		thessalonika_diocese_region
+		nikaea_diocese_region
+		asiae_diocese_region
+		orientis_diocese_region
+		aegyptus_diocese_region
+	}
+}
+
+custom_potential_wre = {
+	regions = {
+		world_europe_west
+		world_europe_south_italy
+		world_africa_north_west
+		world_africa_west
+	}
+	duchies = {
+		d_somogy d_visegrad d_slavonia d_syrmia d_dalmatia
+	}
+}
+custom_potential_ere = {
+	regions = {
+		world_europe_east_minus_hungary
+		world_europe_south_east
+		world_asia_minor
+		world_india
+		world_middle_east
+		world_steppe
+		world_tibet
+		world_africa_east
+	}
+}
+
+custom_roman_hibernia = {
+	duchies = {
+		d_ireland
+		d_meath
+		d_ulster
+		d_connacht
+		d_leinster
+		d_munster
+	}
+}
+
+custom_roman_caledonia = {
+	duchies = {
+		d_albany
+		d_the_isles
+		d_galloway
+		d_western_isles
+		d_lothian
+		d_moray
+	}
+}
+
+custom_roman_dacia = {
+	duchies = {
+		d_oltenia d_transylvania d_temes d_bihar
+	}
+	counties = {
+		c_polovragi
+	}
+}
+
+custom_roman_germania = {
+	duchies = {
+		d_westfalen
+		d_thuringia
+		d_angria
+		d_ostfalen
+		d_hesse
+		d_east_franconia
+		d_nordgau
+		d_frisia
+		d_utrecht
+		d_anhalt
+	}
+	counties = {
+		c_ulm
+		c_wurttemberg
+		c_baden
+		c_zollern
+		c_hohenberg
+		c_furstenberg
+		c_stade
+		c_osterland
+		c_meissen
+		c_wolkenstein
+		c_naumburg
+		c_vogtland
+		c_brene
+		c_breisgau
+		c_frankfurt
+		c_mainz
+		c_klingenberg
+		c_erbach
+		c_vaihingen
+		c_durne
+		c_dortmund
+		c_arnsberg
+		c_mark
+		c_bergh
+		c_sayn
+		c_arnhem
+		c_zutphen
+		c_holland
+		c_westfriesland
+	}
+}
+
+custom_core_bosporus = {
+	
+	duchies = {
+		d_crimea d_azov
+	}
+	counties = {
+		c_zichia c_oleshye c_tana
+	}
+}
+
+custom_gaul = {
+	regions = {
+		septem_provinciae_diocese_region
+		gallia_diocese_region
+	}
+}
+custom_roman_britannia = {
+	regions = {
+		britannia_diocese_region
+	}
+}
+
+TFE_kemet_traditional_borders = {
+	duchies = {
+		#Egypt
+		d_cyrenaica d_alexandria d_delta d_cairo d_al-wahat d_al-said d_eastern_desert d_sinai
+	}
+}
+
+eoe_raetia_custom = {
+	counties = {
+		c_lienz
+		c_brixen
+		c_innsbruck
+		c_eschenlohe
+		c_falkenstein
+		c_geisenhausen
+		c_frontenhausen
+		c_passau
+		c_regensburg
+		c_ingolstadt
+		c_rothenburg
+		c_burgau
+		c_munchen
+		c_augsburg
+		c_kempten
+		c_alpsee
+		c_ravensburg
+		c_grunningen
+		c_grisons
+		c_sankt_gallen
+		c_zurich
+		c_como
+		c_trent
+	}
+}
+
+eoe_dacia_and_thrace_custom = {
+	counties = {
+		c_vratsa
+		c_duklja
+		c_pomorje
+		c_travunia
+		c_rashka
+		c_zlatibor
+		c_sumadija
+		c_podrinje
+		c_hvosno
+		c_macva
+		c_beograd
+		c_vidin
+		c_branicevo
+		c_naissus
+		c_pomoravlje
+		c_velbazhd
+		c_pirin
+		c_strumica
+		c_skopje
+		c_constanta
+		c_mesembria
+		c_kalliopolis
+		c_brysis
+		c_mosynopolis
+		c_philippopolis
+		c_kran
+		c_beroe
+		c_burgas
+		c_adrianopolis
+		c_zherkovo
+		c_rhodopes
+		c_turnovo
+		c_sredets
+		c_nikopolis
+		c_dorostorum
+		c_aytos
+	}
+}
+
+eoe_mesopotamia_custom = {
+	counties = {
+		c_mayyafariqin
+		c_amida
+		c_tall_basma
+		c_upper_khabur
+		c_harran
+		c_dausar
+		c_raqqa
+		c_khabur
+		c_rahba
+		c_hadithat-ana
+		c_al-haditha
+		c_sinjar
+		c_mosul
+		c_nasibin
+		c_hakkari
+		c_kurdistan
+		c_ninive
+		c_irbil
+		c_shahrazur
+		c_takrit
+		c_kirkuk
+		c_samarra
+		c_anbar 
+		c_karbala
+		c_baghdad
+		c_hulwan
+		c_badaraya
+		c_iskaf
+		c_wasit
+		c_tib
+		c_rusafa
+		c_batiha
+		c_akhadid
+		c_ubulla
+		c_basra
+		c_qadisiya
+		c_kufa
+		c_safata
+		c_waqisa
+	}
+}
+
+eoe_city_of_rome = { 
+	counties = {
+		c_roma
+	}
+}

@@ -1,0 +1,216 @@
+﻿br_find_powerful_opponent_for_wr_effect = {
+	every_land_neighboring_realm_with_tributaries_owner = {
+		limit = {
+			wr_coalition_member_trigger = yes
+		}
+		add_to_list = potential_wr_opponents
+	}
+	every_land_neighboring_realm_with_tributaries_owner = {
+		limit = {
+			is_tributary = yes
+			top_suzerain = {
+				wr_coalition_member_trigger = yes
+			}
+		}
+		top_suzerain = {
+			add_to_list = potential_wr_opponents
+		}
+	}
+	every_relation = {
+		type = rival
+		limit = {
+			is_ruler = yes
+			wr_coalition_member_trigger = yes
+		}
+		add_to_list = potential_wr_opponents
+	}
+	capital_county ?= {
+		empire = {
+			every_de_jure_county = {
+				limit = {
+					holder.top_Liege = {
+						wr_coalition_member_trigger = yes
+					}
+				}
+				holder.top_liege = {
+					add_to_list = potential_wr_opponents
+				}
+			}
+			every_de_jure_county = {
+				limit = {
+					holder.top_suzerain = {
+						wr_coalition_member_trigger = yes
+					}
+				}
+				holder.top_suzerain = {
+					add_to_list = potential_wr_opponents
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			any_independent_ruler = {
+				current_military_strength > 0
+			}
+		}
+		every_independent_ruler = {
+			limit = {
+				highest_held_title_tier >= tier_duchy
+				exists = root.capital_county
+				realm_to_title_distance_squared = {
+					target = root.capital_county
+					value <= squared_distance_almost_massive
+				}
+				
+				wr_coalition_member_trigger = yes
+			}
+			add_to_list = potential_wr_opponents
+		}
+	}
+	else = {
+		every_independent_ruler = {
+			limit = {
+				highest_held_title_tier >= tier_duchy
+				exists = root.capital_county
+				realm_to_title_distance_squared = {
+					target = root.capital_county
+					value <= squared_distance_almost_massive
+				}
+				wr_coalition_member_trigger = yes
+			}
+			add_to_list = potential_wr_opponents
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				any_in_list = {
+					list = potential_wr_opponents
+					confederation_worthy_foe_strength_ratio_value_root <= 2
+				}
+			}
+		}
+		if = {
+			limit = {
+				any_independent_ruler = {
+					current_military_strength > 0
+				}
+			}
+			every_independent_ruler = {
+				limit = {
+					highest_held_title_tier >= tier_duchy
+					exists = root.capital_county
+					realm_to_title_distance_squared = {
+						target = root.capital_county
+						value <= squared_distance_massive
+					}
+					
+					wr_coalition_member_trigger = yes
+				}
+				add_to_list = potential_wr_opponents
+			}
+		}
+		else = {
+			every_independent_ruler = {
+				limit = {
+					highest_held_title_tier >= tier_duchy
+					exists = root.capital_county
+					realm_to_title_distance_squared = {
+						target = root.capital_county
+						value <= squared_distance_massive
+					}
+					wr_coalition_member_trigger = yes
+				}
+				add_to_list = potential_wr_opponents
+			}
+		}
+	}
+	if = {
+		limit = {
+			any_in_list = {
+				list = potential_wr_opponents
+				current_military_strength > 0
+			}
+		}
+		ordered_in_list = {
+			list = potential_wr_opponents
+			limit = {
+				NOT = {
+					this = root
+				}
+			}
+			order_by = current_military_strength
+			add_to_list = anti_wr_coalition_members
+			save_scope_as = wr_opponent 
+		}
+	}
+	else = {
+		ordered_in_list = {
+			list = potential_wr_opponents
+			limit = {
+				NOT = {
+					this = root
+				}
+			}
+			order_by = sub_realm_size
+			add_to_list = anti_wr_coalition_members
+			save_scope_as = wr_opponent 
+		}
+	}
+}
+
+br_cleanup_effect = {
+	scope:defender = {
+		remove_character_modifier = aspiring_wr_augustus_modifier
+	}
+}
+
+wr_reinstitute_grain_dole_decision_effect = {
+	if = {
+		limit = {
+			NOT = { capital_county = { has_variable = unlocked_grain_dole } }
+		}
+		custom_tooltip = {
+			text = half_price_chariot_race_tooltip
+			add_character_flag = half_price_chariot_race_flag
+		}
+	}
+	every_county_in_region = {
+		region = africae_diocese_region
+		limit = {
+			any_county_province = {
+				has_building_or_higher = cereal_fields_05
+			}
+		}
+		add_county_modifier = {
+			modifier = grain_providers_county_modifier
+			years = 25
+		}
+	}
+	capital_county = {
+		add_county_modifier = {
+			modifier = panem_et_circenses_county_modifier
+			years = 25
+		}
+	}
+	add_legitimacy = medium_legitimacy_gain
+	if = {
+		limit = {
+			NOT = { capital_county = { has_variable = unlocked_grain_dole } }
+		}
+		add_prestige = {
+			value = massive_prestige_gain
+			multiply = 3
+		}
+		change_influence = {
+			value = massive_influence_gain
+			multiply = 3
+		}
+		capital_county = { set_variable = unlocked_grain_dole }
+	}
+	else = {
+		add_prestige = massive_prestige_gain
+		change_influence = massive_influence_gain
+	}
+}

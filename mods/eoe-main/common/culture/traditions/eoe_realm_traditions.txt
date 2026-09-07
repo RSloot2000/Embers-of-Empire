@@ -1,0 +1,241 @@
+﻿tradition_sundered_soul = {
+	category = realm
+
+	layers = {
+		0 = eoe_bottom_layer_gold.dds
+		1 = eoe_pattern_3.dds
+		2 = rec3.dds
+		4 = sundered_legacy.dds
+	}
+
+	is_shown = {
+		always = no
+	}
+	can_pick = {
+		always = no
+	}
+
+	parameters = {
+		unlock_maa_western_roman = yes
+		charming_trait_more_common = yes
+		content_trait_more_common = yes
+		reduced_bodyguard_aptitude = yes
+		cultrad_unlocks_t2_countermeasures = yes
+		palace_politics_trait_bonuses = yes
+		palace_politics_trait_maluses = yes
+	}
+	character_modifier = {
+		monthly_income_mult = -0.02
+		monthly_prestige_gain_mult = -0.10
+		monthly_piety_gain_mult = -0.10
+		monthly_influence_mult = -0.10
+		diplomatic_range_mult = -0.1
+		cultural_head_fascination_mult = -0.10
+	}
+	culture_modifier = {
+		cultural_acceptance_gain_mult = 0.2
+	}
+	ai_will_do = { value = 0 }
+}
+
+tradition_imperium = {
+	category = realm
+
+	layers = {
+		0 = eoe_bottom_layer_white.dds
+		1 = eoe_pattern_1.dds
+		2 = rec3.dds
+		4 = roman_eagle.dds 
+	}
+
+	is_shown = {
+		OR = {
+			this = culture:roman
+			scope:character = {
+				has_title = title:e_western_roman_empire
+			}
+		}
+		# DLC check.
+		has_ep3_dlc_trigger = yes
+		NOT = {
+			has_cultural_tradition = tradition_byzantine_succession
+		}
+	}
+	
+	can_pick = {
+		always = no
+	}
+
+	parameters = { 
+		unlock_maa_praetorian_cohort = yes
+		reduced_bodyguard_aptitude = yes
+		can_blind_prisoners = yes
+		can_castrate_prisoners = yes
+		ambitious_trait_more_common = yes
+		cultrad_unlocks_t2_countermeasures = yes
+		physical_disfigurement_blocks_inheritance = yes
+		palace_politics_trait_bonuses = yes
+		palace_politics_trait_maluses = yes
+	}
+
+	character_modifier = {
+		monthly_court_grandeur_change_mult = 0.2
+		political_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
+		personal_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
+	}
+	ai_will_do = { value = 0 }
+}
+
+tradition_sacrum_imperium = {
+	category = realm
+
+	layers = {
+		0 = eoe_bottom_layer_gold.dds
+		1 = eoe_pattern_3.dds
+		2 = rec3.dds
+		4 = chi_roh.dds 
+	}
+
+	is_shown = {
+		AND = {
+			this = culture:roman
+			scope:character = {
+				has_religion = religion:christianity_religion
+			}
+		}
+		# DLC check.
+		has_ep3_dlc_trigger = yes
+		NOT = {
+			has_cultural_tradition = tradition_byzantine_succession
+		}
+	}
+	
+	can_pick = {
+		always = no
+	}
+
+	can_pick_for_hybridization = {
+		custom_tooltip = {
+			text = only_one_roman_politics_tradition_allowed
+			NOT = {
+				culture_tradition:tradition_ep3_palace_politics = { is_in_list = traits }
+			}
+		}
+	}
+
+	parameters = {
+		unlock_maa_western_roman = yes
+		unlock_maa_palatinae = yes
+		reduced_bodyguard_aptitude = yes
+		can_blind_prisoners = yes
+		can_castrate_prisoners = yes
+		zealous_trait_more_common = yes
+		cultrad_unlocks_t2_countermeasures = yes
+		physical_disfigurement_blocks_inheritance = yes
+		palace_politics_trait_bonuses = yes
+		palace_politics_trait_maluses = yes
+	}
+
+	character_modifier = {
+		monthly_court_grandeur_change_mult = 0.2
+		political_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
+		personal_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
+	}
+	ai_will_do = { value = 0 }
+}
+
+############Legalism##########
+tradition_roman_legalism = {
+	category = realm
+
+	layers = {
+		0 = eoe_bottom_layer_gold.dds
+		1 = eoe_pattern_3.dds
+		2 = rec3.dds
+		4 = roman_law.dds
+	}
+
+	is_shown = {
+		OR = {
+			this = culture:roman
+			scope:character = {
+				has_title = title:h_roman_empire
+			}
+		}
+		# DLC check.
+		has_ep3_dlc_trigger = yes
+	}
+	can_pick = {
+		always = no
+	}
+	
+	parameters = {
+		cheaper_to_change_laws = yes
+		just_trait_more_common = yes
+		just_trait_gives_bonuses = yes
+		vassals_more_likely_accept_punishments = yes
+		legalistic_administrator_bonuses = yes
+		consolidate_rule_decision = yes
+	}
+	character_modifier = {
+		title_creation_cost_mult = -0.3
+		vassal_limit = 30
+		monthly_prestige_gain_per_dread_mult = -0.01
+		long_reign_bonus_mult = 0.5
+		tyranny_gain_mult = 0.25
+		tax_slot_add  = 1
+		different_culture_opinion = -20
+		same_culture_opinion = 10
+	}
+	ai_will_do = { value = 0 }
+}
+
+##########Architecture############
+tradition_molded_architecture = {
+	category = realm
+
+	layers = {
+		0 = eoe_bottom_layer_gold.dds
+		1 = eoe_pattern_3.dds
+		2 = rec3.dds
+		4 = roman_temple.dds 
+	}
+
+	is_shown = {
+		OR = {
+			this = culture:roman
+			scope:character = {
+				has_title = title:h_roman_empire
+			}
+		}
+		# DLC check.
+		has_ep3_dlc_trigger = yes
+	}
+	
+	can_pick = {
+		always = no
+	}
+
+	parameters = { 
+		enable_roman_duchy_buildings = yes
+		development_gain_on_building_complete = yes
+		architect_trait_prestige = yes
+		development_gain_on_building_complete = yes
+		bonuses_from_architect_trait = yes
+		bonuses_from_military_engineer_trait = yes
+	}
+
+	county_modifier = {
+		development_growth_factor = 0.15
+		tax_mult = -0.1
+		county_opinion_add = 10
+
+	}
+
+	character_modifier = {
+		build_speed = -0.15
+		build_gold_cost = -0.15
+		monthly_learning_lifestyle_xp_gain_mult = 0.1
+	}
+	ai_will_do = { value = 0 }
+}

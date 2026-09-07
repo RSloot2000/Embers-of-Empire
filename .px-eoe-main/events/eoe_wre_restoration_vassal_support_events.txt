@@ -1,0 +1,154 @@
+﻿namespace = eoe_wre_restoration_coalition
+
+eoe_wre_restoration_coalition.002 = {
+	type = character_event
+	title = eoe_wre_restoration_coalition.002.t
+	desc = eoe_wre_restoration_coalition.002.desc
+	theme = byzantine
+	override_background = { reference = throne_room }
+	left_portrait = {
+		character = root
+		animation = anger
+	}
+	right_portrait = {
+		character = scope:defender
+		animation = marshal
+	}
+
+	trigger = {
+		exists = scope:war
+		scope:war = {
+			has_variable = eoe_wre_coalition_formed
+		}
+	}
+
+	option = {
+		name = eoe_wre_restoration_coalition.002.a
+		trigger = {
+			scope:war = {
+				war_attacker_total_current_strength_value < war_defender_total_current_strength_halved_value
+				var:eoe_wre_vassal_military_responses < 1
+			}
+			any_vassal = {
+				is_landed = yes
+				is_capable_adult = yes
+				is_imprisoned = no
+				current_military_strength > 0
+				NOT = { is_attacker_in_war = scope:war }
+				NOT = { is_defender_in_war = scope:war }
+			}
+		}
+		ordered_vassal = {
+			limit = {
+				is_landed = yes
+				is_capable_adult = yes
+				is_imprisoned = no
+				current_military_strength > 0
+				NOT = { is_attacker_in_war = scope:war }
+				NOT = { is_defender_in_war = scope:war }
+			}
+			order_by = current_military_strength
+			max = 3
+			trigger_event = eoe_wre_restoration_coalition.003
+		}
+		ai_chance = { base = 80 }
+	}
+
+	option = {
+		name = eoe_wre_restoration_coalition.002.b
+		ai_chance = { base = 20 }
+	}
+}
+
+eoe_wre_restoration_coalition.003 = {
+	type = character_event
+	title = eoe_wre_restoration_coalition.003.t
+	desc = eoe_wre_restoration_coalition.003.desc
+	theme = emperor
+	override_background = { reference = throne_room }
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+	right_portrait = {
+		character = scope:attacker
+		animation = scepter
+	}
+
+	option = {
+		name = eoe_wre_restoration_coalition.003.a
+		trigger = {
+			NOT = { is_attacker_in_war = scope:war }
+			NOT = { is_defender_in_war = scope:war }
+			scope:war = {
+				war_attacker_total_current_strength_value < war_defender_total_current_strength_halved_value
+				var:eoe_wre_vassal_military_responses < 1
+			}
+		}
+		scope:war = {
+			add_attacker = root
+			change_variable = {
+				name = eoe_wre_vassal_military_responses
+				add = 1
+			}
+		}
+		add_prestige = 100
+		ai_chance = {
+			base = 35
+			modifier = {
+				add = 40
+				opinion = {
+					target = scope:attacker
+					value >= 50
+				}
+			}
+			modifier = {
+				add = -50
+				opinion = {
+					target = scope:attacker
+					value < 0
+				}
+			}
+			modifier = {
+				add = -35
+				has_relation_rival = scope:attacker
+			}
+		}
+	}
+
+	option = {
+		name = eoe_wre_restoration_coalition.003.b
+		trigger = { gold >= 50 }
+		remove_short_term_gold = 50
+		scope:attacker = { add_gold = 50 }
+		ai_chance = {
+			base = 35
+			modifier = {
+				add = 25
+				opinion = {
+					target = scope:attacker
+					value >= 25
+				}
+			}
+		}
+	}
+
+	option = {
+		name = eoe_wre_restoration_coalition.003.c
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = 50
+				opinion = {
+					target = scope:attacker
+					value < 0
+				}
+			}
+			modifier = {
+				add = 40
+				has_relation_rival = scope:attacker
+			}
+		}
+	}
+}
+

@@ -1,0 +1,329 @@
+﻿eoe_wre_restoration_gallia_cb = {
+	icon = claim_cb
+	group = claim
+	combine_into_one = yes
+	should_show_war_goal_subview = no
+	mutually_exclusive_titles = { always = yes }
+
+	allowed_for_character = {
+		OR = {
+			has_title = title:e_western_roman_empire
+			has_title = title:h_western_roman_empire
+		}
+		custom_description = {
+			text = eoe_wre_imperial_recovery_blocks_cb
+			NOR = {
+				title:e_western_roman_empire = { has_variable = eoe_wre_imperial_recovery }
+				title:h_western_roman_empire = { has_variable = eoe_wre_imperial_recovery }
+			}
+		}
+		custom_description = {
+			text = eoe_wre_restoration_war_active_blocks_cb
+			NOR = {
+				title:e_western_roman_empire = { has_variable = eoe_wre_restoration_war_active }
+				title:h_western_roman_empire = { has_variable = eoe_wre_restoration_war_active }
+			}
+		}
+	}
+
+	allowed_against_character = {
+		is_landed = yes
+		is_independent_ruler = yes
+		scope:attacker.top_liege != scope:defender.top_liege
+		eoe_wre_restoration_targets_in_region_at_least = {
+			REGION = gallia_diocese_region
+			COUNT = 1
+		}
+	}
+
+	target_titles = all
+	target_title_tier = all
+	valid_to_start = { scope:target = { this = scope:defender.primary_title } }
+
+	war_name = "EOE_WRE_RESTORATION_GALLIA_WAR_NAME"
+	my_war_name = "EOE_WRE_RESTORATION_GALLIA_WAR_NAME_MY"
+	war_name_base = "EOE_WRE_RESTORATION_GALLIA_WAR_NAME_BASE"
+	cb_name = "eoe_wre_restoration_gallia_cb"
+	interface_priority = 110
+	ticking_war_score_targets_entire_realm = yes
+
+	cost = {
+		prestige = {
+			value = eoe_wre_restoration_gallia_prestige_cost_value
+			multiply = common_cb_prestige_cost_multiplier
+		}
+		gold = { value = eoe_wre_restoration_gallia_gold_cost_value }
+	}
+
+	on_declaration = {
+		eoe_declare_wre_restoration_war_effect = { REGION = gallia_diocese_region }
+	}
+
+	should_invalidate = {
+		OR = {
+			scope:defender = { OR = { is_independent_ruler = no is_landed = no } }
+			NOT = { eoe_wre_restoration_targets_in_region_at_least = { REGION = gallia_diocese_region COUNT = 1 } }
+		}
+	}
+
+	on_invalidated_desc = { desc = eoe_wre_restoration_claim_cb_invalidated_desc }
+	on_invalidated = { eoe_invalidate_wre_restoration_war_effect = yes }
+
+	on_victory_desc = { desc = eoe_wre_restoration_gallia_cb_victory_desc }
+	on_victory = { eoe_resolve_wre_diocesan_victory_effect = { REGION = gallia_diocese_region } }
+
+	on_white_peace_desc = { desc = eoe_wre_restoration_claim_cb_white_peace_desc }
+	on_white_peace = { eoe_white_peace_wre_restoration_war_effect = yes }
+
+	on_defeat_desc = { desc = eoe_wre_restoration_claim_cb_defeat_desc }
+	on_defeat = { eoe_defeat_wre_restoration_war_effect = yes }
+}
+
+eoe_wre_restoration_illyricum_pannoniae_cb = {
+	icon = claim_cb
+	group = claim
+	combine_into_one = yes
+	should_show_war_goal_subview = no
+	mutually_exclusive_titles = { always = yes }
+	allowed_for_character = {
+		OR = { has_title = title:e_western_roman_empire has_title = title:h_western_roman_empire }
+		custom_description = {
+			text = eoe_wre_imperial_recovery_blocks_cb
+			NOR = { title:e_western_roman_empire = { has_variable = eoe_wre_imperial_recovery } title:h_western_roman_empire = { has_variable = eoe_wre_imperial_recovery } }
+		}
+		custom_description = {
+			text = eoe_wre_restoration_war_active_blocks_cb
+			NOR = { title:e_western_roman_empire = { has_variable = eoe_wre_restoration_war_active } title:h_western_roman_empire = { has_variable = eoe_wre_restoration_war_active } }
+		}
+	}
+	allowed_against_character = {
+		is_landed = yes
+		is_independent_ruler = yes
+		scope:attacker.top_liege != scope:defender.top_liege
+		eoe_wre_restoration_targets_in_region_at_least = { REGION = illyricum_pannoniae_diocese_region COUNT = 1 }
+	}
+	target_titles = all
+	target_title_tier = all
+	valid_to_start = { scope:target = { this = scope:defender.primary_title } }
+	war_name = "EOE_WRE_RESTORATION_ILLYRICUM_PANNONIAE_WAR_NAME"
+	my_war_name = "EOE_WRE_RESTORATION_ILLYRICUM_PANNONIAE_WAR_NAME_MY"
+	war_name_base = "EOE_WRE_RESTORATION_ILLYRICUM_PANNONIAE_WAR_NAME_BASE"
+	cb_name = "eoe_wre_restoration_illyricum_pannoniae_cb"
+	interface_priority = 110
+	ticking_war_score_targets_entire_realm = yes
+	cost = { prestige = { value = eoe_wre_restoration_illyricum_pannoniae_prestige_cost_value multiply = common_cb_prestige_cost_multiplier } gold = { value = eoe_wre_restoration_illyricum_pannoniae_gold_cost_value } }
+	on_declaration = { eoe_declare_wre_restoration_war_effect = { REGION = illyricum_pannoniae_diocese_region } }
+	should_invalidate = { OR = { scope:defender = { OR = { is_independent_ruler = no is_landed = no } } NOT = { eoe_wre_restoration_targets_in_region_at_least = { REGION = illyricum_pannoniae_diocese_region COUNT = 1 } } } }
+	on_invalidated_desc = { desc = eoe_wre_restoration_claim_cb_invalidated_desc }
+	on_invalidated = { eoe_invalidate_wre_restoration_war_effect = yes }
+	on_victory_desc = { desc = eoe_wre_restoration_illyricum_pannoniae_cb_victory_desc }
+	on_victory = { eoe_resolve_wre_diocesan_victory_effect = { REGION = illyricum_pannoniae_diocese_region } }
+	on_white_peace_desc = { desc = eoe_wre_restoration_claim_cb_white_peace_desc }
+	on_white_peace = { eoe_white_peace_wre_restoration_war_effect = yes }
+	on_defeat_desc = { desc = eoe_wre_restoration_claim_cb_defeat_desc }
+	on_defeat = { eoe_defeat_wre_restoration_war_effect = yes }
+}
+
+eoe_wre_restoration_italia_suburbicariae_cb = {
+	icon = claim_cb
+	group = claim
+	combine_into_one = yes
+	should_show_war_goal_subview = no
+	mutually_exclusive_titles = { always = yes }
+	allowed_for_character = {
+		OR = { has_title = title:e_western_roman_empire has_title = title:h_western_roman_empire }
+		custom_description = { text = eoe_wre_imperial_recovery_blocks_cb NOR = { title:e_western_roman_empire = { has_variable = eoe_wre_imperial_recovery } title:h_western_roman_empire = { has_variable = eoe_wre_imperial_recovery } } }
+		custom_description = { text = eoe_wre_restoration_war_active_blocks_cb NOR = { title:e_western_roman_empire = { has_variable = eoe_wre_restoration_war_active } title:h_western_roman_empire = { has_variable = eoe_wre_restoration_war_active } } }
+	}
+	allowed_against_character = { is_landed = yes is_independent_ruler = yes scope:attacker.top_liege != scope:defender.top_liege eoe_wre_restoration_targets_in_region_at_least = { REGION = italia_suburbicariae_diocese_region COUNT = 1 } }
+	target_titles = all
+	target_title_tier = all
+	valid_to_start = { scope:target = { this = scope:defender.primary_title } }
+	war_name = "EOE_WRE_RESTORATION_ITALIA_SUBURBICARIAE_WAR_NAME"
+	my_war_name = "EOE_WRE_RESTORATION_ITALIA_SUBURBICARIAE_WAR_NAME_MY"
+	war_name_base = "EOE_WRE_RESTORATION_ITALIA_SUBURBICARIAE_WAR_NAME_BASE"
+	cb_name = "eoe_wre_restoration_italia_suburbicariae_cb"
+	interface_priority = 110
+	ticking_war_score_targets_entire_realm = yes
+	cost = { prestige = { value = eoe_wre_restoration_italia_suburbicariae_prestige_cost_value multiply = common_cb_prestige_cost_multiplier } gold = { value = eoe_wre_restoration_italia_suburbicariae_gold_cost_value } }
+	on_declaration = { eoe_declare_wre_restoration_war_effect = { REGION = italia_suburbicariae_diocese_region } }
+	should_invalidate = { OR = { scope:defender = { OR = { is_independent_ruler = no is_landed = no } } NOT = { eoe_wre_restoration_targets_in_region_at_least = { REGION = italia_suburbicariae_diocese_region COUNT = 1 } } } }
+	on_invalidated_desc = { desc = eoe_wre_restoration_claim_cb_invalidated_desc }
+	on_invalidated = { eoe_invalidate_wre_restoration_war_effect = yes }
+	on_victory_desc = { desc = eoe_wre_restoration_italia_suburbicariae_cb_victory_desc }
+	on_victory = { eoe_resolve_wre_diocesan_victory_effect = { REGION = italia_suburbicariae_diocese_region } }
+	on_white_peace_desc = { desc = eoe_wre_restoration_claim_cb_white_peace_desc }
+	on_white_peace = { eoe_white_peace_wre_restoration_war_effect = yes }
+	on_defeat_desc = { desc = eoe_wre_restoration_claim_cb_defeat_desc }
+	on_defeat = { eoe_defeat_wre_restoration_war_effect = yes }
+}
+
+eoe_wre_restoration_italia_annonariae_cb = {
+	icon = claim_cb
+	group = claim
+	combine_into_one = yes
+	should_show_war_goal_subview = no
+	mutually_exclusive_titles = { always = yes }
+	allowed_for_character = {
+		OR = { has_title = title:e_western_roman_empire has_title = title:h_western_roman_empire }
+		custom_description = { text = eoe_wre_imperial_recovery_blocks_cb NOR = { title:e_western_roman_empire = { has_variable = eoe_wre_imperial_recovery } title:h_western_roman_empire = { has_variable = eoe_wre_imperial_recovery } } }
+		custom_description = { text = eoe_wre_restoration_war_active_blocks_cb NOR = { title:e_western_roman_empire = { has_variable = eoe_wre_restoration_war_active } title:h_western_roman_empire = { has_variable = eoe_wre_restoration_war_active } } }
+	}
+	allowed_against_character = { is_landed = yes is_independent_ruler = yes scope:attacker.top_liege != scope:defender.top_liege eoe_wre_restoration_targets_in_region_at_least = { REGION = italia_annonariae_diocese_region COUNT = 1 } }
+	target_titles = all
+	target_title_tier = all
+	valid_to_start = { scope:target = { this = scope:defender.primary_title } }
+	war_name = "EOE_WRE_RESTORATION_ITALIA_ANNONARIAE_WAR_NAME"
+	my_war_name = "EOE_WRE_RESTORATION_ITALIA_ANNONARIAE_WAR_NAME_MY"
+	war_name_base = "EOE_WRE_RESTORATION_ITALIA_ANNONARIAE_WAR_NAME_BASE"
+	cb_name = "eoe_wre_restoration_italia_annonariae_cb"
+	interface_priority = 110
+	ticking_war_score_targets_entire_realm = yes
+	cost = { prestige = { value = eoe_wre_restoration_italia_annonariae_prestige_cost_value multiply = common_cb_prestige_cost_multiplier } gold = { value = eoe_wre_restoration_italia_annonariae_gold_cost_value } }
+	on_declaration = { eoe_declare_wre_restoration_war_effect = { REGION = italia_annonariae_diocese_region } }
+	should_invalidate = { OR = { scope:defender = { OR = { is_independent_ruler = no is_landed = no } } NOT = { eoe_wre_restoration_targets_in_region_at_least = { REGION = italia_annonariae_diocese_region COUNT = 1 } } } }
+	on_invalidated_desc = { desc = eoe_wre_restoration_claim_cb_invalidated_desc }
+	on_invalidated = { eoe_invalidate_wre_restoration_war_effect = yes }
+	on_victory_desc = { desc = eoe_wre_restoration_italia_annonariae_cb_victory_desc }
+	on_victory = { eoe_resolve_wre_diocesan_victory_effect = { REGION = italia_annonariae_diocese_region } }
+	on_white_peace_desc = { desc = eoe_wre_restoration_claim_cb_white_peace_desc }
+	on_white_peace = { eoe_white_peace_wre_restoration_war_effect = yes }
+	on_defeat_desc = { desc = eoe_wre_restoration_claim_cb_defeat_desc }
+	on_defeat = { eoe_defeat_wre_restoration_war_effect = yes }
+}
+
+eoe_wre_restoration_hispania_cb = {
+	icon = claim_cb
+	group = claim
+	combine_into_one = yes
+	should_show_war_goal_subview = no
+	mutually_exclusive_titles = { always = yes }
+	allowed_for_character = {
+		OR = { has_title = title:e_western_roman_empire has_title = title:h_western_roman_empire }
+		custom_description = { text = eoe_wre_imperial_recovery_blocks_cb NOR = { title:e_western_roman_empire = { has_variable = eoe_wre_imperial_recovery } title:h_western_roman_empire = { has_variable = eoe_wre_imperial_recovery } } }
+		custom_description = { text = eoe_wre_restoration_war_active_blocks_cb NOR = { title:e_western_roman_empire = { has_variable = eoe_wre_restoration_war_active } title:h_western_roman_empire = { has_variable = eoe_wre_restoration_war_active } } }
+	}
+	allowed_against_character = { is_landed = yes is_independent_ruler = yes scope:attacker.top_liege != scope:defender.top_liege eoe_wre_restoration_targets_in_region_at_least = { REGION = hispania_diocese_region COUNT = 1 } }
+	target_titles = all
+	target_title_tier = all
+	valid_to_start = { scope:target = { this = scope:defender.primary_title } }
+	war_name = "EOE_WRE_RESTORATION_HISPANIA_WAR_NAME"
+	my_war_name = "EOE_WRE_RESTORATION_HISPANIA_WAR_NAME_MY"
+	war_name_base = "EOE_WRE_RESTORATION_HISPANIA_WAR_NAME_BASE"
+	cb_name = "eoe_wre_restoration_hispania_cb"
+	interface_priority = 110
+	ticking_war_score_targets_entire_realm = yes
+	cost = { prestige = { value = eoe_wre_restoration_hispania_prestige_cost_value multiply = common_cb_prestige_cost_multiplier } gold = { value = eoe_wre_restoration_hispania_gold_cost_value } }
+	on_declaration = { eoe_declare_wre_restoration_war_effect = { REGION = hispania_diocese_region } }
+	should_invalidate = { OR = { scope:defender = { OR = { is_independent_ruler = no is_landed = no } } NOT = { eoe_wre_restoration_targets_in_region_at_least = { REGION = hispania_diocese_region COUNT = 1 } } } }
+	on_invalidated_desc = { desc = eoe_wre_restoration_claim_cb_invalidated_desc }
+	on_invalidated = { eoe_invalidate_wre_restoration_war_effect = yes }
+	on_victory_desc = { desc = eoe_wre_restoration_hispania_cb_victory_desc }
+	on_victory = { eoe_resolve_wre_diocesan_victory_effect = { REGION = hispania_diocese_region } }
+	on_white_peace_desc = { desc = eoe_wre_restoration_claim_cb_white_peace_desc }
+	on_white_peace = { eoe_white_peace_wre_restoration_war_effect = yes }
+	on_defeat_desc = { desc = eoe_wre_restoration_claim_cb_defeat_desc }
+	on_defeat = { eoe_defeat_wre_restoration_war_effect = yes }
+}
+
+eoe_wre_restoration_septem_provinciae_cb = {
+	icon = claim_cb
+	group = claim
+	combine_into_one = yes
+	should_show_war_goal_subview = no
+	mutually_exclusive_titles = { always = yes }
+	allowed_for_character = {
+		OR = { has_title = title:e_western_roman_empire has_title = title:h_western_roman_empire }
+		custom_description = { text = eoe_wre_imperial_recovery_blocks_cb NOR = { title:e_western_roman_empire = { has_variable = eoe_wre_imperial_recovery } title:h_western_roman_empire = { has_variable = eoe_wre_imperial_recovery } } }
+		custom_description = { text = eoe_wre_restoration_war_active_blocks_cb NOR = { title:e_western_roman_empire = { has_variable = eoe_wre_restoration_war_active } title:h_western_roman_empire = { has_variable = eoe_wre_restoration_war_active } } }
+	}
+	allowed_against_character = { is_landed = yes is_independent_ruler = yes scope:attacker.top_liege != scope:defender.top_liege eoe_wre_restoration_targets_in_region_at_least = { REGION = septem_provinciae_diocese_region COUNT = 1 } }
+	target_titles = all
+	target_title_tier = all
+	valid_to_start = { scope:target = { this = scope:defender.primary_title } }
+	war_name = "EOE_WRE_RESTORATION_SEPTEM_PROVINCIAE_WAR_NAME"
+	my_war_name = "EOE_WRE_RESTORATION_SEPTEM_PROVINCIAE_WAR_NAME_MY"
+	war_name_base = "EOE_WRE_RESTORATION_SEPTEM_PROVINCIAE_WAR_NAME_BASE"
+	cb_name = "eoe_wre_restoration_septem_provinciae_cb"
+	interface_priority = 110
+	ticking_war_score_targets_entire_realm = yes
+	cost = { prestige = { value = eoe_wre_restoration_septem_provinciae_prestige_cost_value multiply = common_cb_prestige_cost_multiplier } gold = { value = eoe_wre_restoration_septem_provinciae_gold_cost_value } }
+	on_declaration = { eoe_declare_wre_restoration_war_effect = { REGION = septem_provinciae_diocese_region } }
+	should_invalidate = { OR = { scope:defender = { OR = { is_independent_ruler = no is_landed = no } } NOT = { eoe_wre_restoration_targets_in_region_at_least = { REGION = septem_provinciae_diocese_region COUNT = 1 } } } }
+	on_invalidated_desc = { desc = eoe_wre_restoration_claim_cb_invalidated_desc }
+	on_invalidated = { eoe_invalidate_wre_restoration_war_effect = yes }
+	on_victory_desc = { desc = eoe_wre_restoration_septem_provinciae_cb_victory_desc }
+	on_victory = { eoe_resolve_wre_diocesan_victory_effect = { REGION = septem_provinciae_diocese_region } }
+	on_white_peace_desc = { desc = eoe_wre_restoration_claim_cb_white_peace_desc }
+	on_white_peace = { eoe_white_peace_wre_restoration_war_effect = yes }
+	on_defeat_desc = { desc = eoe_wre_restoration_claim_cb_defeat_desc }
+	on_defeat = { eoe_defeat_wre_restoration_war_effect = yes }
+}
+
+eoe_wre_restoration_britannia_cb = {
+	icon = claim_cb
+	group = claim
+	combine_into_one = yes
+	should_show_war_goal_subview = no
+	mutually_exclusive_titles = { always = yes }
+	allowed_for_character = {
+		OR = { has_title = title:e_western_roman_empire has_title = title:h_western_roman_empire }
+		custom_description = { text = eoe_wre_imperial_recovery_blocks_cb NOR = { title:e_western_roman_empire = { has_variable = eoe_wre_imperial_recovery } title:h_western_roman_empire = { has_variable = eoe_wre_imperial_recovery } } }
+		custom_description = { text = eoe_wre_restoration_war_active_blocks_cb NOR = { title:e_western_roman_empire = { has_variable = eoe_wre_restoration_war_active } title:h_western_roman_empire = { has_variable = eoe_wre_restoration_war_active } } }
+	}
+	allowed_against_character = { is_landed = yes is_independent_ruler = yes scope:attacker.top_liege != scope:defender.top_liege eoe_wre_restoration_targets_in_region_at_least = { REGION = britannia_diocese_region COUNT = 1 } }
+	target_titles = all
+	target_title_tier = all
+	valid_to_start = { scope:target = { this = scope:defender.primary_title } }
+	war_name = "EOE_WRE_RESTORATION_BRITANNIA_WAR_NAME"
+	my_war_name = "EOE_WRE_RESTORATION_BRITANNIA_WAR_NAME_MY"
+	war_name_base = "EOE_WRE_RESTORATION_BRITANNIA_WAR_NAME_BASE"
+	cb_name = "eoe_wre_restoration_britannia_cb"
+	interface_priority = 110
+	ticking_war_score_targets_entire_realm = yes
+	cost = { prestige = { value = eoe_wre_restoration_britannia_prestige_cost_value multiply = common_cb_prestige_cost_multiplier } gold = { value = eoe_wre_restoration_britannia_gold_cost_value } }
+	on_declaration = { eoe_declare_wre_restoration_war_effect = { REGION = britannia_diocese_region } }
+	should_invalidate = { OR = { scope:defender = { OR = { is_independent_ruler = no is_landed = no } } NOT = { eoe_wre_restoration_targets_in_region_at_least = { REGION = britannia_diocese_region COUNT = 1 } } } }
+	on_invalidated_desc = { desc = eoe_wre_restoration_claim_cb_invalidated_desc }
+	on_invalidated = { eoe_invalidate_wre_restoration_war_effect = yes }
+	on_victory_desc = { desc = eoe_wre_restoration_britannia_cb_victory_desc }
+	on_victory = { eoe_resolve_wre_diocesan_victory_effect = { REGION = britannia_diocese_region } }
+	on_white_peace_desc = { desc = eoe_wre_restoration_claim_cb_white_peace_desc }
+	on_white_peace = { eoe_white_peace_wre_restoration_war_effect = yes }
+	on_defeat_desc = { desc = eoe_wre_restoration_claim_cb_defeat_desc }
+	on_defeat = { eoe_defeat_wre_restoration_war_effect = yes }
+}
+
+eoe_wre_restoration_africae_cb = {
+	icon = claim_cb
+	group = claim
+	combine_into_one = yes
+	should_show_war_goal_subview = no
+	mutually_exclusive_titles = { always = yes }
+	allowed_for_character = {
+		OR = { has_title = title:e_western_roman_empire has_title = title:h_western_roman_empire }
+		custom_description = { text = eoe_wre_imperial_recovery_blocks_cb NOR = { title:e_western_roman_empire = { has_variable = eoe_wre_imperial_recovery } title:h_western_roman_empire = { has_variable = eoe_wre_imperial_recovery } } }
+		custom_description = { text = eoe_wre_restoration_war_active_blocks_cb NOR = { title:e_western_roman_empire = { has_variable = eoe_wre_restoration_war_active } title:h_western_roman_empire = { has_variable = eoe_wre_restoration_war_active } } }
+	}
+	allowed_against_character = { is_landed = yes is_independent_ruler = yes scope:attacker.top_liege != scope:defender.top_liege eoe_wre_restoration_targets_in_region_at_least = { REGION = africae_diocese_region COUNT = 1 } }
+	target_titles = all
+	target_title_tier = all
+	valid_to_start = { scope:target = { this = scope:defender.primary_title } }
+	war_name = "EOE_WRE_RESTORATION_AFRICAE_WAR_NAME"
+	my_war_name = "EOE_WRE_RESTORATION_AFRICAE_WAR_NAME_MY"
+	war_name_base = "EOE_WRE_RESTORATION_AFRICAE_WAR_NAME_BASE"
+	cb_name = "eoe_wre_restoration_africae_cb"
+	interface_priority = 110
+	ticking_war_score_targets_entire_realm = yes
+	cost = { prestige = { value = eoe_wre_restoration_africae_prestige_cost_value multiply = common_cb_prestige_cost_multiplier } gold = { value = eoe_wre_restoration_africae_gold_cost_value } }
+	on_declaration = { eoe_declare_wre_restoration_war_effect = { REGION = africae_diocese_region } }
+	should_invalidate = { OR = { scope:defender = { OR = { is_independent_ruler = no is_landed = no } } NOT = { eoe_wre_restoration_targets_in_region_at_least = { REGION = africae_diocese_region COUNT = 1 } } } }
+	on_invalidated_desc = { desc = eoe_wre_restoration_claim_cb_invalidated_desc }
+	on_invalidated = { eoe_invalidate_wre_restoration_war_effect = yes }
+	on_victory_desc = { desc = eoe_wre_restoration_africae_cb_victory_desc }
+	on_victory = { eoe_resolve_wre_diocesan_victory_effect = { REGION = africae_diocese_region } }
+	on_white_peace_desc = { desc = eoe_wre_restoration_claim_cb_white_peace_desc }
+	on_white_peace = { eoe_white_peace_wre_restoration_war_effect = yes }
+	on_defeat_desc = { desc = eoe_wre_restoration_claim_cb_defeat_desc }
+	on_defeat = { eoe_defeat_wre_restoration_war_effect = yes }
+}

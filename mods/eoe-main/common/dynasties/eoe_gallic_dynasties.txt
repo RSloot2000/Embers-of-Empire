@@ -1,0 +1,29 @@
+﻿eoe_gallic_postumus = {
+	name = "dynn_eoe_gallic_Cassianii"
+	culture = "roman"
+}
+
+eoe_gallic_laelianus = {
+	name = "dynn_eoe_gallic_Laeliani"
+	culture = "roman"
+}
+
+eoe_gallic_marius = {
+	name = "dynn_eoe_gallic_Marii"
+	culture = "roman"
+}
+
+eoe_gallic_piavonii = {
+	name = "dynn_eoe_gallic_Piavonii"
+	culture = "roman"
+}
+
+eoe_gallic_domitianus = {
+	name = "dynn_eoe_gallic_Domitianus"
+	culture = "roman"
+}
+
+eoe_gallic_esuvii = {
+	name = "dynn_eoe_gallic_Esuvii"
+	culture = "roman"
+}

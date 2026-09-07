@@ -1,0 +1,65 @@
+e_western_roman_empire = {
+	395.1.17 = {
+		holder = 145227 # Honorius
+	}
+	423.8.15 = {
+		holder = 0
+	}
+	423.11.20 = {
+		holder = 9800001 # Joannes
+	}
+	425.5.1 = {
+		holder = 0
+	}
+	425.10.23 = {
+		holder = 145229 # Valentinian III
+	}
+	455.3.17 = {
+		holder = 9800002 # Petronius Maximus
+	}
+	455.5.31 = {
+		holder = 0
+	}
+	455.7.9 = {
+		holder = 9800003 # Avitus
+	}
+	456.10.18 = {
+		holder = 0
+	}
+	457.4.1 = {
+		holder = 9800004 # Majorian
+	}
+	461.8.7 = {
+		holder = 0
+	}
+	461.11.19 = {
+		holder = 9800005 # Libius Severus
+	}
+	465.11.14 = {
+		holder = 0
+	}
+	467.4.12 = {
+		holder = 9800006 # Anthemius
+	}
+	472.7.11 = {
+		holder = 9800007 # Olybrius
+	}
+	472.11.2 = {
+		holder = 0
+	}
+	473.3.5 = {
+		holder = 9800008 # Glycerius
+	}
+	474.6.24 = {
+		holder = 9800009 # Julius Nepos
+	}
+	475.8.28 = {
+		holder = 0
+	}
+	475.10.31 = {
+		holder = 9800010 # Romulus Augustulus
+	}
+	476.9.4 = {
+		holder = 0
+	}
+}

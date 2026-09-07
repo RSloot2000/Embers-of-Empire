@@ -1,0 +1,59 @@
+﻿wr_defeated_defiance_war = {
+	categories = { negative major war martial war_ended }
+	icon = "war_ended_negative.dds"
+	description = { random_valid = { desc = wr_defeated_defiance_war_desc } }
+	second_perspective_description = { random_valid = { desc = wr_defeated_defiance_war_desc_second_perspective } }
+	third_perspective_description = { random_valid = { desc = wr_defeated_defiance_war_desc_third_perspective } }
+	participants = { opponent }
+	duration = { years = memory_default_duration }
+}
+
+wr_defeated_defiance_war_defenders = {
+	categories = { negative major war martial war_ended }
+	icon = "war_ended_negative.dds"
+	description = { random_valid = { desc = wr_defeated_defiance_war_defenders_desc } }
+	second_perspective_description = { random_valid = { desc = wr_defeated_defiance_war_defenders_desc_second_perspective } }
+	third_perspective_description = { random_valid = { desc = wr_defeated_defiance_war_defenders_desc_third_perspective } }
+	participants = { western_roman_emperor }
+	duration = { years = memory_default_duration }
+}
+
+wr_defeated_defiance_war_attackers = {
+	categories = { positive war_ended major war martial }
+	icon = "war_ended_positive.dds"
+	description = { random_valid = { desc = wr_defeated_defiance_war_attackers_desc } }
+	second_perspective_description = { random_valid = { desc = wr_defeated_defiance_war_attackers_desc_second_perspective } }
+	third_perspective_description = { random_valid = { desc = wr_defeated_defiance_war_attackers_desc_third_perspective } }
+	participants = { western_roman_emperor }
+	duration = { years = memory_default_duration }
+}
+
+wr_won_defiance_war = {
+	categories = { positive war_ended major war martial }
+	icon = "war_ended_positive.dds"
+	description = { random_valid = { desc = wr_won_defiance_war_desc } }
+	second_perspective_description = { random_valid = { desc = wr_won_defiance_war_desc_second_perspective } }
+	third_perspective_description = { random_valid = { desc = wr_won_defiance_war_desc_third_perspective } }
+	participants = { opponent }
+	duration = { years = memory_default_duration }
+}
+
+wr_won_defiance_war_defenders = {
+	categories = { positive war_ended major war martial }
+	icon = "war_ended_positive.dds"
+	description = { random_valid = { desc = wr_won_defiance_war_defenders_desc } }
+	second_perspective_description = { random_valid = { desc = wr_won_defiance_war_defenders_desc_second_perspective } }
+	third_perspective_description = { random_valid = { desc = wr_won_defiance_war_defenders_desc_third_perspective } }
+	participants = { western_roman_emperor }
+	duration = { years = memory_default_duration }
+}
+
+wr_won_defiance_war_attackers = {
+	categories = { negative war_ended major war martial }
+	icon = "war_ended_negative.dds"
+	description = { random_valid = { desc = wr_won_defiance_war_attackers_desc } }
+	second_perspective_description = { random_valid = { desc = wr_won_defiance_war_attackers_desc_second_perspective } }
+	third_perspective_description = { random_valid = { desc = wr_won_defiance_war_attackers_desc_third_perspective } }
+	participants = { western_roman_emperor }
+	duration = { years = memory_default_duration }
+}

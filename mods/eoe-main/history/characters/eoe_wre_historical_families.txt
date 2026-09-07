@@ -1,0 +1,181 @@
+﻿9800020 = {
+	name = "EoE_Placidia"
+	female = yes
+	dynasty = 1022192
+	religion = "catholic"
+	culture = "roman"
+	father = 145229
+	mother = 9800034
+	disallow_random_traits = yes
+	441.1.1 = { birth = "441.1.1" }
+	455.1.1 = { add_spouse = 9800007 }
+	484.1.1 = { death = "484.1.1" }
+}
+
+9800021 = {
+	name = "EoE_Anicia_Juliana"
+	female = yes
+	dynasty = eoe_wre_anicii
+	religion = "orthodox"
+	culture = "roman"
+	father = 9800007
+	mother = 9800020
+	disallow_random_traits = yes
+	462.1.1 = { birth = "462.1.1" }
+	527.1.1 = { death = "527.1.1" }
+}
+
+9800022 = {
+	name = "EoE_Procopius"
+	dynasty = eoe_wre_procopii
+	religion = "orthodox"
+	culture = "roman"
+	disallow_random_traits = yes
+	380.1.1 = { birth = "380.1.1" }
+	450.1.1 = { death = "450.1.1" }
+}
+
+9800023 = {
+	name = "EoE_Marcia_Euphemia"
+	female = yes
+	dynasty = 1022190
+	religion = "orthodox"
+	culture = "roman"
+	father = 70518
+	disallow_random_traits = yes
+	430.1.1 = { birth = "430.1.1" }
+	453.1.1 = { add_spouse = 9800006 }
+	480.1.1 = { death = "480.1.1" }
+}
+
+9800024 = {
+	name = "EoE_Alypia"
+	female = yes
+	dynasty = eoe_wre_procopii
+	religion = "orthodox"
+	culture = "roman"
+	father = 9800006
+	mother = 9800023
+	disallow_random_traits = yes
+	455.1.1 = { birth = "455.1.1" }
+	485.1.1 = { death = "485.1.1" }
+}
+
+9800025 = {
+	name = "EoE_Marcianus"
+	dynasty = eoe_wre_procopii
+	religion = "orthodox"
+	culture = "roman"
+	father = 9800006
+	mother = 9800023
+	disallow_random_traits = yes
+	450.1.1 = { birth = "450.1.1" }
+	484.1.1 = { death = "484.1.1" }
+}
+
+9800026 = {
+	name = "EoE_Anthemiolus"
+	dynasty = eoe_wre_procopii
+	religion = "orthodox"
+	culture = "roman"
+	father = 9800006
+	mother = 9800023
+	disallow_random_traits = yes
+	451.1.1 = { birth = "451.1.1" }
+	471.1.1 = { death = { death_reason = death_battle } }
+}
+
+9800027 = {
+	name = "EoE_Romulus_Anthemius"
+	dynasty = eoe_wre_procopii
+	religion = "orthodox"
+	culture = "roman"
+	father = 9800006
+	mother = 9800023
+	disallow_random_traits = yes
+	452.1.1 = { birth = "452.1.1" }
+	490.1.1 = { death = "490.1.1" }
+}
+
+9800028 = {
+	name = "EoE_Agricola"
+	dynasty = eoe_wre_avitus
+	religion = "catholic"
+	culture = "roman"
+	father = 9800003
+	disallow_random_traits = yes
+	425.1.1 = { birth = "425.1.1" }
+	507.1.1 = { death = "507.1.1" }
+}
+
+9800029 = {
+	name = "EoE_Ecdicius"
+	dynasty = eoe_wre_avitus
+	religion = "catholic"
+	culture = "roman"
+	trait = education_martial_3
+	father = 9800003
+	disallow_random_traits = yes
+	430.1.1 = { birth = "430.1.1" }
+	500.1.1 = { death = "500.1.1" }
+}
+
+9800030 = {
+	name = "EoE_Papianilla"
+	female = yes
+	dynasty = eoe_wre_avitus
+	religion = "catholic"
+	culture = "roman"
+	father = 9800003
+	disallow_random_traits = yes
+	435.1.1 = { birth = "435.1.1" }
+	452.1.1 = { add_spouse = 9800031 }
+	485.1.1 = { death = "485.1.1" }
+}
+
+9800031 = {
+	name = "EoE_Sidonius_Apollinaris"
+	dynasty = eoe_wre_sidonius
+	religion = "catholic"
+	culture = "roman"
+	trait = scholar
+	disallow_random_traits = yes
+	430.1.1 = { birth = "430.1.1" }
+	489.1.1 = { death = "489.1.1" }
+}
+
+9800032 = {
+	name = "EoE_Nepotianus"
+	dynasty = eoe_wre_nepos
+	religion = "catholic"
+	culture = "roman"
+	disallow_random_traits = yes
+	395.1.1 = { birth = "395.1.1" }
+	465.1.1 = { death = "465.1.1" }
+}
+
+9800034 = {
+	name = "EoE_Licinia_Eudoxia"
+	female = yes
+	dynasty = 1022191
+	religion = "orthodox"
+	culture = "roman"
+	father = 70533
+	disallow_random_traits = yes
+	422.1.1 = { birth = "422.1.1" }
+	437.10.29 = { add_spouse = 145229 }
+	493.1.1 = { death = "493.1.1" }
+}
+
+9800035 = {
+	name = "EoE_Eudocia"
+	female = yes
+	dynasty = 1022192
+	religion = "catholic"
+	culture = "roman"
+	father = 145229
+	mother = 9800034
+	disallow_random_traits = yes
+	439.1.1 = { birth = "439.1.1" }
+	474.1.1 = { death = "474.1.1" }
+}

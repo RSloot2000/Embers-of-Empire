@@ -1,0 +1,406 @@
+﻿tribute_mission_decision_effect = {
+	if = {
+		#Are you a tributary of a Hegemon?
+		limit = { subject_standing >= 0 }
+		if = {
+			limit = { is_tributary = yes }
+			#If it's China, flavorize Imperial Grace
+			if = {
+				limit = { suzerain = { primary_title = title:h_china } }
+				custom_tooltip = tribute_mission_interaction_anticipated_rewards_tt_imperial_grace
+			}
+			#Else standard stuff
+			else = {
+				custom_tooltip = tribute_mission_interaction_anticipated_rewards_tt_generic_hegemon
+			}
+		}
+	}
+	else = {
+		if = {
+			limit = { $TARGET$ = { primary_title = title:h_china } }
+			custom_tooltip = tribute_mission_interaction_anticipated_rewards_tt_china
+		}
+		else_if = {
+			limit = { $TARGET$ = { primary_title = title:h_roman_empire } }
+			custom_tooltip = tribute_mission_interaction_anticipated_rewards_tt_roman_empire
+		}
+		else_if = {
+			limit = { $TARGET$ = { primary_title = title:h_eastern_roman_empire } }
+			custom_tooltip = tribute_mission_interaction_anticipated_rewards_tt_eastern_roman_empire
+		}
+		else_if = {
+			limit = { $TARGET$ = { primary_title = title:h_western_roman_empire } }
+			custom_tooltip = tribute_mission_interaction_anticipated_rewards_tt_western_roman_empire
+		}
+		else_if = {
+			limit = { $TARGET$ = { primary_title = title:h_dar_al_islam } }
+			custom_tooltip = tribute_mission_interaction_anticipated_rewards_tt_dar_al_islam
+		}
+		else_if = {
+			limit = { $TARGET$ = { primary_title = title:h_india } }
+			custom_tooltip = tribute_mission_interaction_anticipated_rewards_tt_india
+		}
+		else = { custom_tooltip = tribute_mission_interaction_anticipated_rewards_tt }
+	}
+
+	hidden_effect = { 
+		tribute_mission_clean_up_variables_effect = yes
+
+		if = {
+			limit = { is_tributary = yes }
+			suzerain = { 
+				save_scope_as = tribute_mission_target
+				add_character_flag = {
+					flag = pay_tribute_cooldown
+					years = 3
+				}
+			}
+		}
+		else = {
+			 $TARGET$ = {
+				save_scope_as = tribute_mission_target
+			}
+		}
+
+		set_variable = { # persist for later interactions
+			name = tribute_mission_target_scope
+			value = scope:tribute_mission_target
+		}
+	}
+
+	#Your Suzerain requested this specifically
+	if = {
+		limit = {	
+			has_variable = requested_tribute_mission
+			is_ai = yes
+		}
+		switch = {
+			trigger = has_variable
+			requested_tribute_mission_type_gold = { # Gold
+				run_interaction = {
+					interaction = tribute_mission_gold_interaction
+					actor = root
+					recipient = scope:tribute_mission_target
+					execute_threshold = accept
+				}
+			}
+			requested_tribute_mission_type_herd = { # Herd
+				run_interaction = {
+					interaction = tribute_mission_herd_interaction
+					actor = root
+					recipient = scope:tribute_mission_target
+					execute_threshold = accept
+				}
+			}
+			requested_tribute_mission_type_artifact = { # Artifact
+				var:predetermined_artifact_tribute ?= { save_scope_as = predetermined_artifact_tribute_scope }
+				#Do the things from the interaction
+				scope:predetermined_artifact_tribute_scope = {
+					set_variable = is_tribute_mission_artifact
+				}
+				#Save the Artifact
+				set_variable = {
+					name = tribute_mission_type
+					value = flag:artifact_tribute
+				}
+				set_variable = {
+					name = offered_artifact
+					value = scope:predetermined_artifact_tribute_scope
+				}
+				#Travel
+				tribute_mission_set_up_tribute_travel_effect = yes
+			}
+			requested_tribute_mission_type_concubine = { # Concubine
+				var:predetermined_concubine_tribute ?= { 
+					save_scope_as = predetermined_concubine_tribute_scope 
+				}
+				scope:predetermined_concubine_tribute_scope = {
+					add_character_flag = {
+						flag = cannot_be_diarch # just enough to make sure they don't succeed to the diarchy while en route
+						years = 2
+					}
+				}
+				run_interaction = {
+					interaction = tribute_mission_concubine_interaction
+					actor = root
+					recipient = scope:tribute_mission_target
+					secondary_recipient = scope:predetermined_concubine_tribute_scope
+					execute_threshold = accept
+				}
+			}
+			requested_tribute_mission_type_eunuch = { # Eunuch	
+				var:predetermined_eunuch_tribute ?= { save_scope_as = predetermined_eunuch_tribute_scope }
+				run_interaction = {
+					interaction = tribute_mission_eunuch_interaction
+					actor = root
+					recipient = scope:tribute_mission_target
+					secondary_recipient = scope:predetermined_eunuch_tribute_scope
+					execute_threshold = accept
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = { is_ai = yes }
+		switch = {
+			trigger = yes
+
+			scope:tribute_mission_gold = { # Gold
+				run_interaction = {
+					interaction = tribute_mission_gold_interaction
+					actor = root
+					recipient = scope:tribute_mission_target
+					execute_threshold = accept
+				}
+			}
+			
+			scope:tribute_mission_herd = { # Herd
+				run_interaction = {
+					interaction = tribute_mission_herd_interaction
+					actor = root
+					recipient = scope:tribute_mission_target
+					execute_threshold = accept
+				}
+			}
+
+			scope:tribute_mission_artifact = { # Artifact
+				random_character_artifact = { 
+					limit = { is_suitable_artifact_tribute_trigger = yes }
+					save_scope_as = decision_predetermined_artifact_tribute
+				}
+				#Do the things from the interaction
+				scope:decision_predetermined_artifact_tribute = {
+					set_variable = is_tribute_mission_artifact
+				}
+				#Save the Artifact
+				set_variable = {
+					name = tribute_mission_type
+					value = flag:artifact_tribute
+				}
+				set_variable = {
+					name = offered_artifact
+					value = scope:decision_predetermined_artifact_tribute
+				}
+				#Travel
+				tribute_mission_set_up_tribute_travel_effect = yes
+			}
+
+			scope:tribute_mission_concubine = { # Concubine
+				every_courtier_or_guest = {
+					limit = {
+						can_be_offered_as_concubine_to_character_trigger = {
+							GIVER = root
+							CHARACTER = scope:tribute_mission_target
+						}
+						has_any_disease_trigger = no
+						has_easily_mocked_physical_attribute_trigger = no
+						NOT = { is_heir_of = root }
+					}
+					add_to_list = potential_concubine_tribute_list
+					random_in_list = {
+						list = potential_concubine_tribute_list
+						weight = {
+							#Let's try to make a sane choice here
+							base = 0
+							#No marginally relevant court people
+							modifier = {
+								add = 10
+								NOR = {
+									is_councillor = yes
+									has_any_court_position = yes
+								}
+							}
+							#No knights
+							modifier = {
+								add = 5
+								is_knight = no
+							}
+							#No inspired people?
+							modifier = {
+								add = 20
+								NOT = { exists = inspiration }
+							}
+							#No close family
+							modifier = {
+								add = 15
+								NOT = { is_close_or_extended_family_of = root }
+							}
+							#No friends?
+							modifier = {
+								add = 20
+								NOT = { has_relation_friend = root }
+							}
+							#No children
+							modifier = {
+								add = 25
+								NOT = { is_child_of = root }
+							}
+						}
+						save_scope_as = decision_predetermined_concubine_tribute
+					}
+				}
+				scope:decision_predetermined_concubine_tribute = {
+					add_character_flag = {
+						flag = cannot_be_diarch # just enough to make sure they don't succeed to the diarchy while en route
+						years = 2
+					}
+				}
+				run_interaction = {
+					interaction = tribute_mission_concubine_interaction
+					actor = root
+					recipient = scope:tribute_mission_target
+					secondary_recipient = scope:decision_predetermined_concubine_tribute
+					execute_threshold = accept
+				}
+			}
+
+			scope:tribute_mission_eunuch = { # Eunuch
+				every_courtier = {
+					limit = { 
+						tribute_mission_is_available_eunuch_trigger = yes
+						NOT = { is_heir_of = root }
+					}
+					add_to_list = potential_eunuch_tribute_list
+					random_in_list = {
+						list = potential_eunuch_tribute_list
+						weight = {
+							#Let's try to make a sane choice here
+							base = 0
+							#No marginally relevant court people
+							modifier = {
+								add = 10
+								NOR = {
+									is_councillor = yes
+									has_any_court_position = yes
+								}
+							}
+							#No knights
+							modifier = {
+								add = 5
+								is_knight = no
+							}
+							#No inspired people?
+							modifier = {
+								add = 20
+								NOT = { exists = inspiration }
+							}
+							#No close family
+							modifier = {
+								add = 15
+								NOT = { is_close_or_extended_family_of = scope:tribute_mission_target }
+							}
+							#No friends?
+							modifier = {
+								add = 20
+								NOT = { has_relation_friend = scope:tribute_mission_target }
+							}
+							#No children
+							modifier = {
+								add = 25
+								NOT = { is_child_of = scope:tribute_mission_target }
+							}
+						}
+						save_scope_as = decision_predetermined_eunuch_tribute
+					}
+				}
+				run_interaction = {
+					interaction = tribute_mission_eunuch_interaction
+					actor = root
+					recipient = scope:tribute_mission_target
+					secondary_recipient = scope:decision_predetermined_eunuch_tribute
+					execute_threshold = accept
+				}
+			}
+
+			scope:tribute_mission_bunga_mas = { # Bunga Mas
+				random_character_artifact = { 
+					limit = { var:bunga_mas_created_by ?= root }
+					save_scope_as = decision_predetermined_bunga_mas_tribute
+				}
+				#Do the things from the interaction
+				scope:decision_predetermined_bunga_mas_tribute = {
+					set_variable = is_tribute_mission_artifact
+				}
+				#Save the Artifact
+				set_variable = {
+					name = tribute_mission_type
+					value = flag:bunga_mas_tribute
+				}
+				set_variable = {
+					name = offered_bunga_mas
+					value = scope:decision_predetermined_bunga_mas_tribute
+				}
+				#Travel
+				tribute_mission_set_up_tribute_travel_effect = yes
+			}
+		}
+	}
+	#Natural flow of the decision
+	else_if = {
+		limit = { is_ai = no }
+		switch = {
+			trigger = yes
+
+			scope:tribute_mission_gold = { # Gold
+				open_interaction_window = {
+					interaction = tribute_mission_gold_interaction
+					actor = root
+					recipient = scope:tribute_mission_target
+				}
+			}
+			
+			scope:tribute_mission_herd = { # Herd
+				open_interaction_window = {
+					interaction = tribute_mission_herd_interaction
+					actor = root
+					recipient = scope:tribute_mission_target
+				}
+			}
+
+			scope:tribute_mission_artifact = { # Artifact
+				open_interaction_window = {
+					interaction = tribute_mission_artifact_interaction
+					actor = root
+					recipient = scope:tribute_mission_target
+				}
+			}
+
+			scope:tribute_mission_concubine = { # Concubine 
+				open_interaction_window = {
+					interaction = tribute_mission_concubine_interaction
+					actor = root
+					recipient = scope:tribute_mission_target
+				}
+			}
+
+			scope:tribute_mission_eunuch = { # Eunuch
+				open_interaction_window = {
+					interaction = tribute_mission_eunuch_interaction
+					actor = root
+					recipient = scope:tribute_mission_target
+				}
+			}
+
+			scope:tribute_mission_bunga_mas = { # Bunga Mas
+				open_interaction_window = {
+					interaction = tribute_mission_bunga_mas_interaction
+					actor = root
+					recipient = scope:tribute_mission_target
+				}
+			}
+		}
+	}
+
+	if = {
+		limit = { 
+			is_ai = yes
+			scope:tribute_mission_target = { highest_held_title_tier = tier_hegemony }
+		}
+		scope:tribute_mission_target = {
+			set_variable = {
+				name = ai_tribute_mission_cooldown
+				years = 1
+			}
+		}
+	}
+}

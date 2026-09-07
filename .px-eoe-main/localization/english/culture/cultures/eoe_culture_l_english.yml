@@ -1,0 +1,93 @@
+﻿l_english:
+
+#####################
+ # cultures
+
+ illyro_roman:0 "Illyro-Roman"
+ illyro_roman_prefix:0 "Illyro-Romano"
+ illyro_roman_collective_noun:0 "Illyro-Romans"
+
+ hispano_roman:0 "Hispano-Roman"
+ hispano_roman_prefix:0 "Hispano-Romano"
+ hispano_roman_collective_noun:0 "Hispano-Romans"
+
+ gallo_roman:0 "Gallo-Roman"
+ gallo_roman_prefix:0 "Gallo-Romano"
+ gallo_roman_collective_noun:0 "Gallo-Romans"
+
+ britano_roman:0 "Britano-Roman"
+ britano_roman_prefix:0 "Britano-Romano"
+ britano_roman_collective_noun:0 "Britano-Romans"
+
+ helleno_roman:0 "Helleno-Roman"
+ helleno_roman_prefix:0 "Helleno-Romano"
+ helleno_roman_collective_noun:0 "Helleno-Romans"
+
+ afro_roman:0 "Afro-Roman"
+ afro_roman_prefix:0 "Afro-Romano"
+ afro_roman_collective_noun:0 "Afro-Romans"
+
+ illyrian:0 "Illyrian"
+ illyrian_prefix:0 "Illyro"
+ illyrian_collective_noun:0 "Illyrians"
+
+ rhaetian:0 "Rhaetian"
+ rhaetian_prefix:0 "Rhaeto"
+ rhaetian_collective_noun:0 "Rhaetians"
+
+ rhaetio_roman:0 "Rhaetio-Roman"
+ rhaetio_roman_prefix:0 "Rhaetio-Romano"
+ rhaetio_roman_collective_noun:0 "Rhaetio-Romans"
+
+ etruscan:0 "Etruscan"
+ etruscan_prefix:0 "Etrusco"
+ etruscan_collective_noun:0 "Etruscans"
+
+ cantabrian:0 "Cantabrian"
+ cantabrian_prefix:0 "Cantabro"
+ cantabrian_collective_noun:0 "Cantabrians"
+
+ gaul:0 "Gallic"
+ gaul_prefix:0 "Gallo"
+ gaul_collective_noun:0 "Gauls"
+
+ briton:0 "Brittonic"
+ briton_prefix:0 "Britto"
+ briton_collective_noun:0 "Brittons"
+
+ punic:0 "Punic"
+ punic_prefix:0 "Puno"
+ punic_collective_noun:0 "Punics"
+
+ nuragic:0 "Nuragic"
+ nuragic_prefix:0 "Nuragic"
+ nuragic_collective_noun:0 "Nuragics"
+
+ thracio_roman:0 "Thracio-Roman"
+ thracio_roman_prefix:0 "Thracio-Romano"
+ thracio_roman_collective_noun:0 "Thracio-Romans"
+
+ thracian:0 "Thracian"
+ thracian_prefix:0 "Thraco"
+ thracian_collective_noun:0 "Thracians"
+ 
+ name_list_britano_roman:0 "Britano-Roman"
+ name_list_gallo_roman:0 "Gallo-Roman"
+ name_list_illyro_roman:0 "Illyro-Roman"
+ name_list_afro_roman:0 "Afro-Roman"
+ name_list_hispano_roman:0 "Hispano-Roman"
+ name_list_cantabrian:0 "Cantabrian"
+ name_list_gaul:0 "Gallic"
+ name_list_briton:0 "Briton"
+ name_list_rhaetian:0 "Rhaetian"
+ name_list_thracio_roman:0 "Thracio-Roman"
+
+ celtic_coa_gfx:0 "Celtic"
+ levantine_building_gfx:0 "Levantine"
+
+ hispano_roman_history_loc:0 "Formed from [CULTURE.GetName] and several cultures of $heritage_celtiberian_name$ [heritage|E] in the year [DATE.GetYear]"
+ gallo_roman_history_loc:0 "Formed from [CULTURE.GetName] and [TARGET_CULTURE.GetName] in the year 58 BC"
+ afro_roman_history_loc:0 "Formed from [CULTURE.GetName] and [TARGET_CULTURE.GetName] in the year 146 BC"
+ roman_rhaetian_history_loc:0 "Formed from [CULTURE.GetName] and [TARGET_CULTURE.GetName] in the year 15 BC"
+
+ rhaetian_history_loc:0 "Diverged from [CULTURE.GetName] around the year 500 BC"

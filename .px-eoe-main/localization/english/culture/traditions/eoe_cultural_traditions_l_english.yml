@@ -1,0 +1,59 @@
+﻿l_english:
+
+# Traditions
+ tradition_sundered_soul_name:0 "Sundered Soul"
+ tradition_sundered_soul_desc:1 "The Romans considered themselves a shining beacon of civilisation and other barbaric cultures as inferior. But now, the empire lies shattered. The Roman spirit is broken and rapant defeatism rages among the few who retain the Roman ways of life."
+ tradition_imperium_name:0 "#bold IMPERIVM #!"
+ tradition_imperium_desc:0 "The Gods have granted us Victory. Her sacred name rings within the ears of our soldiers and her sweet kiss guides our victorious generals once again. Never again shall our strenght or the faith in our Gods wane."
+ tradition_sacrum_imperium_name:0 "Sacrum Imperium"
+ tradition_sacrum_imperium_desc:0 "By the grace of God, our holy empire was restored, let it once again be a shining beacon of civilisation against the darkness of our Lord's enemies."
+
+ tradition_pantheon_integration_name:0 "Ordered Pantheon"
+ tradition_pantheon_integration_desc:0 "Rome's religious domain was as vast as its empire. We were not the originators of theology, but the undisputed masters of divine order."
+ tradition_roman_legalism_name:0 "Roman Jurisprudence"
+ tradition_roman_legalism_desc:0 "Legions forged Rome's borders, but its Jurisprudence granted them permanence. To us, law was the supreme engineering—the very embodiment of reason and order."
+ tradition_baths_and_arena_name:0 "Baths and Arena"
+ tradition_baths_and_arena_desc:0 "Baths and the Arena held profound significance in Roman life. More than mere public structures, they were vital crucibles of social interaction, political expression, and cultural identity."
+ tradition_african_agriculture_name:0 "Granary of Africa"
+ tradition_african_agriculture_desc:0 "The province of Africa was often nicknamed "the granary of the Empire", in ferocious competition with Egypt. Africa would not only produce enormous amounts of wheat but also figs, dates and even a variety of animal produce."
+ tradition_molded_architecture_name: "Moulded Architecture"
+ tradition_molded_architecture_desc: "The romans believed that architecture should always be far more than one stone placed atop another. By perfecting concrete, a plentiful and cheap building material, they were able to build structures quickly, efficient and without the need for vast teams of skilled craftsmen."
+ tradition_roman_militarism_name:0 "Roman Militarism"
+ tradition_roman_militarism_desc:0 "Our military is once again the pride and joy of our nation, the people of Rome can sleep solemnly knowing the empire's borders are protected by the best soldiers in the world."
+ tradition_orpheus_name:0 "Songs of Orpheus"
+ tradition_orpheus_desc:0 "The legendary Orpheus was the son of a Thracian king. The people of this culture, as the cultural heirs of Orpheus, continue to honor his memory through their ability in song and poetry."
+ culture_parameter_enable_grand_aqueduct_building:0 "[rulers|E] can construct the #high Grand Aqueduct#! [duchy_building|E]\n#F Grand Aqueducts increase Development growth and Popular Opinion throughout the whole Duchy, and raise the maximum [existing_development|E] in all Counties within the Duchy.#!"
+ culture_parameter_bonuses_from_architect_trait:0 "The [GetTrait('architect').GetName( GetNullCharacter )] [traits|E] have additional bonuses"
+ culture_parameter_bonuses_from_military_engineer_trait:0 "The [GetTrait('military_engineer').GetName( GetNullCharacter )] [traits|E] have additional bonuses"
+ culture_parameter_cheaper_better_roman_bathhouse_decision:0 "The [decision|E] to $TFE_build_roman_bathhouse$ is cheaper and provides more [prestige|E]"
+ culture_parameter_more_stress_loss_from_roman_baths:0 "The [decision|E] to $TFE_visit_roman_bathhouse$ reduces even more [stress|E] than usual"
+ culture_parameter_enable_roman_duchy_buildings:0 "[rulers|E] can construct Roman #high Amphiteatres, Libraries, and Aqueducts#! [duchy_building|E]."
+
+
+#MAA Cultural Parameters
+ culture_parameter_unlock_maa_legionary_cohort: "Can recruit [GetMaA('legionary_cohort').GetName] as [men_at_arms|E]"
+ culture_parameter_unlock_maa_legionary_cavalry: "Can recruit [GetMaA('legionary_cavalry').GetName] as [men_at_arms|E]"
+ culture_parameter_unlock_maa_praetorian_cohort: "Can recruit [GetMaA('praetorian_cohort').GetName] as [men_at_arms|E], when holding the $h_roman_empire$ [title|E]" 
+ culture_parameter_unlock_maa_roman_ballista: "Can recruit [GetMaA('roman_ballista').GetName] as [men_at_arms|E]"
+ culture_parameter_unlock_maa_palatinae: "Can recruit "[GetMaA('palatinae').GetName] as [men_at_arms|E]"
+ culture_parameter_unlock_maa_western_roman:0 "Can recruit, [GetMaA('comitatenses').GetName] as [men_at_arms|E]"
+
+#Court Positions
+ pretorian_prefect_court_position:0 "Praetorian prefect"
+ pretorian_prefect_employer_custom_effect_description: "$BULLET$Increases [GetTrait('varangian').GetName( GetNullCharacter )] [GetCourtPositionType('bodyguard_court_position').GetName()] [aptitude|E] (based on [aptitude|E])\n$BULLET$More eligible [courtiers|E] gain the [GetTrait('varangian').GetName( GetNullCharacter )] and [GetTrait('loyal').GetName( GetNullCharacter )] [traits|E]\n$BULLET$More Varangians will appear\n@warning_icon! #X The Varangians will claim some [gold_i] Gold after the Basileus's death.#!"
+ pretorian_prefect_court_position_desc: "The $pretorian_prefect_court_position$ is the supreme commander of the Pretorian Guard."
+
+
+#MAA
+ comitatenses:0 "Comitatenses"
+ comitatenses_flavor:0 "#F Comitatenses were the backbone of the Roman field army after the reforms under Emperor Diocletian. They are experienced elite units that can beat back any barbarian horde - if they are given their pay.#!"
+ palatinae:0 "Palatinae"
+ palatinae_flavor:0 "#F Palatinae, or Palace Guards, were the most experienced and elite troops fielded by the Empire. They can outmatch anyone, given enough support.#!"
+ legionary_cohort:0 "Legionary Cohort"
+ legionary_cohort_flavor:0 "A foremost force of professional soldiers, the Cohort is the heart and soul of the Roman imperial legions."
+ legionary_cavalry:0 "Legionary Cavalry"
+ legionary_cavalry_flavor:0 "Cavalry support is vital to all infantry work, even in the Legions."
+ roman_ballista:0 "Ballista"
+ roman_ballista_flavor:0 "Spear-sized bolts soar from these torsion-based machines into besieged settlements and enemy formations alike, causing fear and disorder."
+ praetorian_cohort:0 "Praetorian Cohort"
+ praetorian_cohort_flavor:0 "Hand-picked heavy infantry, the Praetorian Cohorts were the Imperial bodyguards, serving in military campaigns only when the Emperor himself was present."

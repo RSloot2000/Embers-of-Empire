@@ -1,0 +1,122 @@
+﻿on_game_start = {
+	on_actions = {
+		br_on_action_game_start
+	}
+}
+
+br_on_action_game_start = {
+	effect = {
+		if = {
+			limit = {
+				NOT = { exists = global_var:br_show_decisions }
+			}
+			set_global_variable = {
+				name = br_show_decisions
+				value = no
+			}
+		}
+		every_player = {
+			limit = {
+				OR = {
+					has_title = title:e_western_roman_empire
+					has_title = title:h_western_roman_empire
+				}
+				NOT = { has_variable = eoe_wre_settlement_bootstrapped }
+			}
+			save_scope_as = eoe_wre_bootstrap_ruler
+			every_county_in_region = {
+				region = custom_western_roman_empire
+				limit = {
+					NOT = { holder.top_liege = scope:eoe_wre_bootstrap_ruler }
+					scope:eoe_wre_bootstrap_ruler = {
+						has_claim_on = prev
+					}
+				}
+				set_variable = {
+					name = eoe_wre_restoration_target
+					value = yes
+				}
+			}
+			set_variable = {
+				name = eoe_wre_settlement_bootstrapped
+				value = yes
+			}
+		}
+		every_player = {
+			limit = {
+				OR = {
+					has_title = title:e_western_roman_empire
+					has_title = title:h_western_roman_empire
+				}
+			}
+			if = {
+				limit = {
+					any_realm_county = {
+						holder = prev
+						has_variable = eoe_wre_pending_settlement
+					}
+					NOT = { has_variable = eoe_wre_settlement_scheduled }
+				}
+				set_variable = { name = eoe_wre_settlement_scheduled value = yes }
+				trigger_event = { id = eoe_wre_settlement.0001 days = 1 }
+			}
+			else_if = {
+				limit = {
+					any_realm_county = { has_variable = eoe_wre_pending_provincial_settlement }
+					NOT = { has_variable = eoe_wre_settlement_scheduled }
+				}
+				set_variable = { name = eoe_wre_settlement_scheduled value = yes }
+				trigger_event = { id = eoe_wre_settlement.0002 days = 1 }
+			}
+			if = {
+				limit = {
+					NOR = {
+						any_character_war = { eoe_is_wre_restoration_war = yes }
+					}
+				}
+				eoe_clear_wre_restoration_war_active_effect = yes
+			}
+		}
+	}
+}
+
+on_title_gain = {
+	on_actions = {
+		eoe_wre_restoration_on_title_gain
+	}
+}
+
+eoe_wre_restoration_on_title_gain = {
+	trigger = {
+		scope:title = {
+			tier = tier_county
+			has_variable = eoe_wre_restoration_target
+			title_province = {
+				geographical_region = custom_western_roman_empire
+			}
+		}
+		OR = {
+			has_title = title:e_western_roman_empire
+			has_title = title:h_western_roman_empire
+		}
+	}
+	effect = {
+		scope:title = {
+			set_variable = { name = eoe_wre_pending_settlement value = yes }
+			set_variable = { name = eoe_wre_pending_provincial_settlement value = yes }
+		}
+		if = {
+			limit = {
+				NOT = { has_variable = eoe_wre_settlement_scheduled }
+			}
+			set_variable = {
+				name = eoe_wre_settlement_scheduled
+				value = yes
+			}
+			trigger_event = {
+				id = eoe_wre_settlement.0001
+				days = 1
+			}
+		}
+	}
+}

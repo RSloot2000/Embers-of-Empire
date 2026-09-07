@@ -1,0 +1,49 @@
+﻿eoe_wre_joannes = {
+	name = "dynn_eoe_wre_Joannes"
+	culture = "roman"
+}
+
+eoe_wre_anicii = {
+	name = "dynn_eoe_wre_Anicii"
+	culture = "roman"
+}
+
+eoe_wre_avitus = {
+	name = "dynn_eoe_wre_Avitus"
+	culture = "roman"
+}
+
+eoe_wre_majorianus = {
+	name = "dynn_eoe_wre_Majorianus"
+	culture = "roman"
+}
+
+eoe_wre_severus = {
+	name = "dynn_eoe_wre_Severus"
+	culture = "roman"
+}
+
+eoe_wre_procopii = {
+	name = "dynn_eoe_wre_Procopii"
+	culture = "roman"
+}
+
+eoe_wre_glycerius = {
+	name = "dynn_eoe_wre_Glycerius"
+	culture = "roman"
+}
+
+eoe_wre_nepos = {
+	name = "dynn_eoe_wre_Nepos"
+	culture = "roman"
+}
+
+eoe_wre_orestes = {
+	name = "dynn_eoe_wre_Orestes"
+	culture = "roman"
+}
+
+eoe_wre_sidonius = {
+	name = "dynn_eoe_wre_Sidonius"
+	culture = "roman"
+}

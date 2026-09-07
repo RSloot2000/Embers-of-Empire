@@ -1,0 +1,30 @@
+﻿eoe_tiberian_julian = {
+	name = "dynn_eoe_Tiberian_Julian"
+	culture = "greek"
+	motto = dynn_eoe_Tiberian_Julian_motto
+}
+
+eoe_bosporan_odrysian = {
+	name = "dynn_eoe_bosporan_Odrysian"
+	culture = "thracian"
+}
+
+eoe_bosporan_ininthimeus = {
+	name = "dynn_eoe_bosporan_Ininthimeus"
+	culture = "greek"
+}
+
+eoe_bosporan_theothorses = {
+	name = "dynn_eoe_bosporan_Theothorses"
+	culture = "greek"
+}
+
+eoe_bosporan_rhadamsades = {
+	name = "dynn_eoe_bosporan_Rhadamsades"
+	culture = "greek"
+}
+
+eoe_bosporan_eunike = {
+	name = "dynn_eoe_bosporan_Eunike"
+	culture = "greek"
+}

@@ -1,0 +1,49 @@
+﻿heritage_celtic = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_celtic
+		}
+	}
+	audio_parameter = european
+}
+
+heritage_levantine = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_levantine
+		}
+	}
+	audio_parameter = mena
+}
+
+heritage_celtiberian = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_celtiberian
+		}
+	}
+	audio_parameter = european
+}
+
+heritage_old_italic = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+		    HERITAGE = heritage_old_italic
+		}
+	}
+	audio_parameter = european
+}
+
+heritage_daco_thracian = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_daco_thracian
+		}
+	}
+	audio_parameter = european
+}

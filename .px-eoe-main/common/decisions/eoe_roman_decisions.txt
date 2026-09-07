@@ -1,0 +1,540 @@
+﻿eoe_restore_roman_soul = {
+            picture = { reference = "gfx/interface/illustrations/decisions/roman_restoration.dds" }
+            decision_group_type = roman
+
+            ai_check_interval = 120
+
+            is_shown = {
+                     AND = {
+                             culture = { has_cultural_pillar = language_latin }
+                             OR = {
+                                    has_religion = religion:hellenism_religion
+                                    has_religion = religion:christianity_religion
+                                    faith = {
+                                        has_doctrine = tenet_hellenic_syncretism
+                                    }
+                             }
+                     }
+		     NOT = {  #Can only do it once.
+			    is_target_in_global_variable_list = {
+				     name = unavailable_unique_decisions
+				     target = flag:flag_restored_roman_soul
+                            }
+		     }
+             }
+
+             is_valid = {
+                      AND = {
+                              prestige_level >=max_prestige_level
+                              culture = { has_cultural_pillar = language_latin }
+                              has_trait = august
+                              diplomacy >= 20
+                             OR = {
+                                    has_title = title:h_roman_empire
+                                    has_title = title:h_western_roman_empire
+                                    has_title = title:e_western_roman_empire
+                             }                            
+                      }
+             }
+
+             is_valid_showing_failures_only = {
+                     is_landed = yes
+                     is_capable_adult = yes
+                     is_imprisoned = no
+                     is_independent_ruler = yes
+             }
+
+             effect = {
+                     custom_tooltip = eoe_restore_roman_soul_decision_effect_tooltip
+                     trigger_event = eoe_roman_event.0001
+		
+		     hidden_effect = {
+			     add_to_global_variable_list = {
+				     name = unavailable_unique_decisions
+				     target = flag:flag_restored_roman_soul
+			     }
+			     set_global_variable = {
+				     name = flag_restored_roman_soul
+				     value = root
+			     }
+		     }
+             }
+	
+             cost = {
+		prestige = 5000
+		gold = 500
+	     }
+
+             ai_potential = {
+                     always = yes
+             }
+             
+             ai_will_do = {
+                     base = 100
+             }
+}
+
+eoe_roman_law = {
+        picture = { reference = "gfx/interface/illustrations/decisions/roman_law.dds" }
+        decision_group_type = roman
+
+        ai_check_interval = 120 
+
+        is_shown = {
+                AND = {
+                        is_target_in_global_variable_list = {
+		        name = unavailable_unique_decisions
+		        target = flag:flag_restored_roman_soul
+                        }
+
+                        NOT = {  #Can only do it once.
+			        is_target_in_global_variable_list = {
+			        name = unavailable_unique_decisions
+			        target = flag:flag_reformed_roman_law
+                                }
+                        }		
+                }
+        }
+
+        is_valid = {
+                AND = {
+                        prestige_level >=max_prestige_level
+                        has_trait = administrator
+                        stewardship >= 20
+
+                        OR = {
+                                has_title = title:h_roman_empire
+                                has_title = title:h_western_roman_empire
+                                has_title = title:e_western_roman_empire
+                        }                            
+                }
+        }
+        is_valid_showing_failures_only = {
+                is_landed = yes
+                is_capable_adult = yes
+                is_imprisoned = no
+                is_independent_ruler = yes
+        }
+        effect = {
+                custom_tooltip = eoe_roman_law_decision_effect_tooltip
+                trigger_event = eoe_roman_event.0002
+		
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_reformed_roman_law
+			}
+			set_global_variable = {
+				name = flag_reformed_roman_law
+				value = root
+			}
+		}
+        }        
+}
+eoe_roman_militarism = {
+        picture = { reference = "gfx/interface/illustrations/decisions/eoe_army_decision.dds" }
+        decision_group_type = roman
+
+        ai_check_interval = 120 
+
+        is_shown = {
+                AND = {
+                        is_target_in_global_variable_list = {
+		        name = unavailable_unique_decisions
+		        target = flag:flag_restored_roman_soul
+                        }
+
+                        NOT = {  #Can only do it once.
+			        is_target_in_global_variable_list = {
+			        name = unavailable_unique_decisions
+			        target = flag:flag_reformed_roman_military
+                                }
+                        }		
+                }
+        }
+
+        is_valid = {
+                AND = {
+                        prestige_level >=max_prestige_level
+                        has_trait = overseer
+                        martial >= 20
+                        OR = {
+                                has_title = title:h_roman_empire
+                                has_title = title:h_western_roman_empire
+                                has_title = title:e_western_roman_empire
+                        }                            
+                }
+        }
+        is_valid_showing_failures_only = {
+                is_landed = yes
+                is_capable_adult = yes
+                is_imprisoned = no
+                is_independent_ruler = yes
+        }
+        effect = {
+                custom_tooltip = eoe_roman_militarism_decision_effect_tooltip
+                trigger_event = eoe_roman_event.0003
+		
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_reformed_roman_military
+			}
+			set_global_variable = {
+				name = flag_reformed_roman_military
+				value = root
+			}
+		}
+        }        
+}
+eoe_destroy_the_vatican_decision = {
+        picture = {
+                reference = "gfx/interface/illustrations/decisions/destroy_the_vatican.dds"
+        }
+        decision_group_type = roman
+
+        desc = eoe_destroy_the_vatican_decision_desc
+        selection_tooltip = eoe_destroy_the_vatican_decision_tooltip
+
+        is_shown = {
+                is_ruler = yes
+                is_landed = yes
+		AND = {
+                        OR = {
+			        religion = religion:hellenism_religion
+                                faith = {
+                                        has_doctrine = tenet_hellenic_syncretism
+                                }
+                        }
+			is_greek_or_roman = yes
+                        NOT = {
+                                is_target_in_global_variable_list = {
+			                name = unavailable_unique_decisions
+			                target = flag:flag_destroyed_the_vatican
+                                }
+                        }
+		}
+        }
+
+        is_valid = {      
+                AND = {
+                        completely_controls = title:d_latium
+
+                        custom_tooltip = {
+                        text = eoe_vatican_must_not_exist_tooltip
+			        NOT = { 
+                                        exists = title:k_papal_state.holder
+                                }
+                        }
+                        OR = {
+		                has_title = title:e_western_roman_empire
+			        has_title = title:h_western_roman_empire
+			        has_title = title:h_eastern_roman_empire
+			        has_title = title:h_roman_empire
+                        }
+                }
+        }
+
+        is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+        effect = {
+                custom_tooltip = eoe_destroy_the_vatican_decision_effect_tooltip
+                trigger_event = eoe_roman_event.0015
+
+                hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_destroyed_the_vatican
+			}
+			set_global_variable = {
+				name = flag_destroyed_the_vatican
+				value = root
+			}
+		}
+        }
+}
+#eoe_destroy_hagia_sophia_decision = {
+#        picture = {
+#                reference = "gfx/interface/illustrations/decisions/destroy_hagia_sophia.dds"
+#        }
+#        decision_group_type = roman
+#
+#        desc = eoe_destroy_hagia_sophia_decision_desc
+#        selection_tooltip = eoe_destroy_the_hagia_sophia_decision_tooltip
+#
+#        is_shown = {
+#                is_ruler = yes
+#                is_landed = yes
+#		AND = {
+#                        OR = {
+#			        religion = religion:hellenism_religion
+#                                faith = {
+#                                        has_doctrine = tenet_hellenic_syncretism
+#                                }
+#                        }
+#			is_greek_or_roman = yes
+#                        NOT = {
+#                                is_target_in_global_variable_list = {
+#			                name = unavailable_unique_decisions
+#			                target = flag:flag_destroyed_hagia_sophia
+#                                }
+#                        }
+#		}
+#        }
+#
+#        is_valid = {      
+#                AND = {
+#                        completely_controls = title:d_thrace
+#
+#                        custom_tooltip = {
+#                        text = eoe_byzantium_must_not_exist_tooltip
+#			        NOT = { 
+#                                        exists = title:e_byzantium.holder
+#                                }
+#                        }
+#                        OR = {
+#		                has_title = title:e_western_roman_empire
+#			        has_title = title:h_western_roman_empire
+#			        has_title = title:h_eastern_roman_empire
+#			        has_title = title:h_roman_empire
+#                        }
+#                }
+#        }
+#
+#        is_valid_showing_failures_only = {
+#		is_capable_adult = yes
+#		is_imprisoned = no
+#		is_independent_ruler = yes
+#	}
+#
+#        effect = {
+#                custom_tooltip = eoe_destroy_the_hagia_sophia_decision_effect_tooltip
+#                trigger_event = eoe_roman_event.0016
+#
+#                hidden_effect = {
+#			add_to_global_variable_list = {
+#				name = unavailable_unique_decisions
+#				target = flag:flag_destroyed_hagia_sophia
+#			}
+#			set_global_variable = {
+#				name = flag_destroyed_hagia_sophia
+#				value = root
+#			}
+#		}
+#        }
+#}
+
+recreate_the_province_of_mesopotamia_decision = {
+        picture = {
+                reference = "gfx/interface/illustrations/decisions/mesopotamia_provisional.dds"
+        }
+        decision_group_type = roman
+
+        desc = recreate_the_province_of_mesopotamia_decision_desc
+        selection_tooltip = recreate_the_province_of_mesopotamia_decision_tooltip
+
+        is_shown = {
+                is_ruler = yes
+                is_landed = yes
+                OR = {
+		        has_title = title:e_western_roman_empire
+			has_title = title:h_western_roman_empire
+			has_title = title:h_eastern_roman_empire
+			has_title = title:h_roman_empire
+		}
+                NOT = {
+                        is_target_in_global_variable_list = {
+                                name = unavailable_unique_decisions
+                                target = flag:recreated_province_of_mesopotamia
+                        }
+                }
+        }
+
+        is_valid = {
+                prestige_level >= medium_prestige_level
+
+                has_title = title:h_roman_empire
+                completely_controls_region = eoe_mesopotamia_custom
+
+                OR = {
+                        any_vassal = {
+                                has_title = title:k_orientis
+                        }
+                        has_title = title:k_orientis
+                }
+        }
+        is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+        effect = {
+                create_title_and_vassal_change = {
+                        type = revoked
+                        save_scope_as = title_change
+                        add_claim_on_loss = no
+                }
+                title:k_mesopotamia_roman = {
+                        save_scope_as = title_k_mesopotamia_roman
+                }
+                title:k_mesopotamia_roman = {
+                        change_title_holder = {
+                                holder = root
+                                change = scope:title_change
+                        }
+                        save_scope_as = title_k_mesopotamia_roman
+                }
+                resolve_title_and_vassal_change = scope:title_change
+
+                hidden_effect = {
+                        title:k_jazira = {
+                                holder = {
+                                        destroy_title = title:k_jazira
+                                }
+                        }
+                        title:k_mesopotamia = {
+                                holder = {
+                                        destroy_title = title:k_mesopotamia
+                                }
+                        }
+                        title:d_diyarrabia = {
+                                set_de_jure_liege_title = title:k_mesopotamia_roman
+                        }
+                        title:d_kurdistan = {
+                                set_de_jure_liege_title = title:k_mesopotamia_roman
+                        }
+                        title:d_samarra = {
+                                set_de_jure_liege_title = title:k_mesopotamia_roman
+                        }
+                        title:d_baghdad = {
+                                set_de_jure_liege_title = title:k_mesopotamia_roman
+                        }
+                        title:d_euphrates = {
+                                set_de_jure_liege_title = title:k_mesopotamia_roman
+                        }
+                        title:d_kufa = {
+                                set_de_jure_liege_title = title:k_mesopotamia_roman
+                        }
+                        title:d_wasit = {
+                                set_de_jure_liege_title = title:k_mesopotamia_roman
+                        }
+                        title:d_basra = {
+                                set_de_jure_liege_title = title:k_mesopotamia_roman
+                        }
+
+                        trigger_event = {
+				id = eoe_roman_event.0012
+			}
+
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:recreated_province_of_mesopotamia
+			}
+                }
+        }
+}
+
+create_the_diocese_of_albion_decision = {
+        picture = {
+                reference = "gfx/interface/illustrations/decisions/decision_britannia_abandon.dds"
+        }
+        decision_group_type = roman
+
+        desc = create_the_diocese_of_albion_decision_desc
+	selection_tooltip = create_the_diocese_of_albion_decision_tooltip
+
+        is_shown = {
+                is_ruler = yes
+                is_landed = yes
+                OR = {
+			has_title = title:e_western_roman_empire
+			has_title = title:h_western_roman_empire
+			has_title = title:h_eastern_roman_empire
+			has_title = title:h_roman_empire
+		}
+		OR = {
+			religion = religion:christianity_religion
+			religion = religion:hellenism_religion
+			is_greek_or_roman  = yes
+		}
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:created_diocese_of_albion
+			}
+		}
+                OR = {
+                       any_vassal = {
+                        has_title = title:e_praetorian_gallia
+                       }
+                       has_title = title:e_praetorian_gallia 
+                }
+        }
+
+        is_valid = {
+                prestige_level >= medium_prestige_level
+                 AND = {
+                        OR = {
+                                any_vassal = {
+                                        has_title = title:k_hibernia
+                                }
+                                has_title = title:k_hibernia
+                        }
+                        OR = {
+                                any_vassal = {
+                                        has_title = title:k_caledonia
+                                }
+                                has_title = title:k_caledonia
+                        }
+                }
+        }
+        is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+        effect = {
+		create_title_and_vassal_change = {
+			type = revoked
+			save_scope_as = title_change
+			add_claim_on_loss = no
+		}
+		title:e_praetorian_albion = {
+			save_scope_as = title_e_praetorian_albion
+		}
+		title:e_praetorian_albion = {
+			change_title_holder = {
+				holder = root
+				change = scope:title_change
+			}
+			save_scope_as = title_e_praetorian_albion
+		}
+		resolve_title_and_vassal_change = scope:title_change
+
+                hidden_effect = {
+                        title:k_britannia = {
+                                set_de_jure_liege_title = title:e_praetorian_albion
+                        }
+                        title:k_hibernia = {
+                                set_de_jure_liege_title = title:e_praetorian_albion
+                        }
+                        title:k_caledonia = {
+                                set_de_jure_liege_title = title:e_praetorian_albion
+                        }
+
+                        trigger_event = {
+                                id = eoe_roman_event.0013
+                        }
+
+                        add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:created_diocese_of_albion
+			}
+                }
+        }
+}

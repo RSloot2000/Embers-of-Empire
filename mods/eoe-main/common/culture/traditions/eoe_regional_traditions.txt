@@ -1,0 +1,148 @@
+﻿##############TFE###############
+tradition_orpheus = {
+	category = regional
+
+	layers = {
+		0 = eoe_bottom_layer_gold.dds
+		1 = eoe_pattern_3.dds
+		2 = rec3.dds
+		4 = orphic.dds
+	}
+
+	is_shown = {
+		AND = {
+			has_ep1_court_positions_dlc_trigger = yes
+			OR = {
+				this = culture:thracian
+				any_parent_culture_or_above = {
+					this = culture:thracian
+				}
+			}
+		}
+	}
+
+	can_pick = {
+		custom_tooltip = {
+			text = cannot_have_tradition_poetry
+			NOT = {culture_tradition:tradition_poetry = { is_in_list = traits }}
+		}
+	}
+	
+	parameters = {
+		#gregarious_trait_gives_bonuses = yes
+		characters_are_better_court_musicians = yes # Also hooked in to increase the Feast opinion bonus
+		poet_trait_gives_bonuses = yes
+		poet_trait_more_common = yes
+		characters_are_better_court_poets = yes
+	}
+
+	character_modifier = {
+		monthly_diplomacy_lifestyle_xp_gain_mult = 0.05
+		monthly_learning_lifestyle_xp_gain_mult = 0.05
+	}
+	
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						culture_pillar:ethos_courtly = { is_in_list = traits }
+						culture_pillar:ethos_communal = { is_in_list = traits }
+						culture_pillar:ethos_spiritual = { is_in_list = traits }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_courtly_communal_or_spiritual_desc
+				}
+			}
+			if = {
+				limit = {
+					culture_tradition_reduction_trigger = { TRADITION = tradition_orpheus }
+				}
+				multiply = {
+					value = 0.5
+					desc = inspired_by_culture_desc
+				}
+			}
+			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	
+	ai_will_do = {
+		value = 200
+	}
+}
+
+# Africagrarian
+tradition_african_agriculture = {
+	category = regional
+
+	layers = { 
+		0 = steward
+		1 = mena
+		4 = farmland.dds
+	}
+
+	is_shown = {
+		OR = {
+			this = culture:afro_roman
+			any_parent_culture_or_above = {
+				this = culture:afro_roman
+			}
+		}
+	}
+	
+	can_pick = {
+		NOT = { has_cultural_tradition = tradition_dryland_dwellers }
+		custom_description = {
+			text = culture_in_dryland_desc
+			any_culture_county = {
+				any_county_province = {
+					terrain = drylands
+				}
+			}
+		}
+		custom_tooltip = {
+			text = cultrad_not_nomadic_government_type
+			scope:character = {
+				NOT = {
+					government_has_flag = government_is_nomadic
+				}
+			}
+		}
+	}
+	
+	parameters = {
+		plantations_building_bonuses = yes
+	}
+	character_modifier = {
+		drylands_travel_danger = drylands_medium_danger_reduction
+	}
+	county_modifier = {
+		drylands_development_growth_factor = 0.25
+	}
+	province_modifier = {
+		drylands_tax_mult = 0.25
+		drylands_holding_construction_gold_cost = -0.15
+		drylands_construction_gold_cost = -0.15
+	}
+	
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			multiply = 20
+		}
+	}
+	ai_will_do = { value = 0 }
+}

@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "retrievedAt": "2026-09-03T07:41:27.4142976+00:00",
+  "source": "https://api.steampowered.com/ISteamRemoteStorage/GetPublishedFileDetails/v1/",
+  "items": [
+    {
+      "id": "3679840613",
+      "repositoryPath": "mods/eoe-main",
+      "pageUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3679840613&l=english",
+      "result": 1,
+      "title": "Embers of Empire - A Roman Restoration",
+      "descriptorName": "Embers of Empire - A Roman Restoration",
+      "descriptorVersion": "1.18.2",
+      "descriptorSupportedVersion": "1.19.0.6",
+      "visibility": 0,
+      "timeCreated": "2026-03-06T17:14:34.0000000+00:00",
+      "timeUpdated": "2026-09-01T22:17:03.0000000+00:00",
+      "previewUrl": "https://images.steamusercontent.com/ugc/13395969409121595029/B7E37EDA1E01810C6691BB42D3FB3AB17115ADE4/",
+      "tags": [
+        "1.19 'Scribe'",
+        "Alternative History",
+        "Decisions",
+        "Religion",
+        "Map",
+        "Events",
+        "Culture"
+      ],
+      "pageMetadataAvailable": true,
+      "changeNoteCount": 20,
+      "dependenciesVerifiedFromPage": false,
+      "dependencies": [],
+      "description": "[h1] Embers of Empire - A Roman Restoration mod [/h1]\r\n\r\n[i] Over the past view years since the release of Crusader Kings 3 there have been many mods aiming to bring the glory of Rome to the base game and I enjoyed playing a great many of them. However, none of them was exactly the type of restoration I wanted, so I decided to make my own. [/i]\r\n\r\n[h2] Content Update 2.1 [/h2]\r\n\r\n[b] New buildings and decisions [/b]\r\n\r\n[*] Temple of Jupiter Optimus Maximus\r\n[*] Temple of Sol Invictus\r\n[*] Circus of Nero\r\n[*] Palatine Palace\r\n\r\n[*] Great Projects: [b] Restore the Temple of Jupiter Optimus Maximus [/b]; [b] Restore the Palatine Hill [/b]\r\n[*] Decision: Destroy the Church of Saint Peter\r\n\r\n[b] New faith and tenets [/b]\r\n\r\n[*] New Faith: [b] Orphism [/b]\r\n[*] New Tenets: [b] Sophrosynia; Bacchanalia; Eleusinia [/b]\r\n\r\n[h3] Fixes [h3]\r\n\r\n[*] Fixed Germania not getting properly integrated when forming the Western Roman Empire\r\n[*] Fixed Dacia not getting properly integrated when forming the Western Roman Empire\r\n\r\n[i] I am planning on making more special buildings and possibly a few more great projects. [/i]\r\n\r\n[b] THIS UPDATE IS NOT SAVEGAME COMPATIBLE! [/b]\r\n\r\n[h2] What is this mod? [/h2]\r\n\r\nEoE brings new flavour to the Roman restoration of the [b] base game [/b] by:\r\n\r\n1. Combining elements from existing Roman flavour mods such as TFE\r\n\r\n2. Creating new original content to fill in the gaps and give it it's own unique vision\r\n\r\n[h3] From other mods [/h3]\r\n\r\nThe Fallen Eagle:\r\n[*] TFE mechanics form the basis of this mod. This includes cultures, icons, the Province restoration system, etc.\r\n\r\nRoma Invicta (@skela):\r\n[*] The Born in Red framework so children of Emperors residing in Rome will have an equivalent to the Born in Purple framework\r\n\r\nBetter Roman Empire Map (@洛山达的法师):\r\n[*] The western reconquest event chain for Western Roman Emperors\r\n\r\nTrue Romans (@Adaelaetus):\r\n[*] Icons\r\n\r\nTraits of the Greek Gods (@Caracus):\r\n[*] Roman flavoured Demi-God traits\r\n\r\nMore Holding Graphics (@Scratchmen):\r\n[*] Unique GFX\r\n\r\nLux Renata (@Cameron122 and team)\r\n\r\n[*] Unique Roman and Hellenic CoA\r\n\r\n[h3] Original Content [/h3]\r\n\r\n[*] New Greco-Roman faiths\r\n[*] New unique faith tenets\r\n[*] New cultural traditions for western Rome\r\n[*] New decisions to repopulate the old western provinces with loyal Romans\r\n[*] Various smaller decisions involving the addition of new Imperial Provinces\r\n[*] New formable titles, religious and secular\r\n[*] New MAA\r\n[*] New Great Projects and special buildings\r\n\r\n[b] I aim to expand on this in the future by creating new ahistorical options of conquest for Rome [/b]\r\n\r\n[hr][/hr]\r\n[h2] Compatibility [/h2]\r\nThis mod modifies [b]00_landed_titles [/b] anything that overwrites this file will result in a CTD\r\n\r\n[b]THIS MOD IS COMPATIBLE WITH RICE!!!! I HAVE TESTED THAT A DOZEN TIMES.[/b] Any issues you experience are most likely related to another mod conflicting with EoE.\r\n\r\n[h3] Compatches [/h3]\r\n\r\n[b] Compatches for the following mods are provided [/b]\r\n\r\n[*] [b]Ethnicities and Portraits Expanded:[/b]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3679849030] [img]https://i.imgur.com/XlydGGS.png[/img] [/url]\r\n\r\n[*] [b]Culture Expanded:[/b]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3679850009] [img]https://i.imgur.com/7Y3Cb6j.png[/img] [/url]\r\n\r\n[*] [b]Communion and Denotations:[/b]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3679849819] [img]https://i.imgur.com/dghj9vn.png[/img] [/url]\r\n\r\n[*] [b]Immersive Toponyms:[/b]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3679849283] [img]https://i.imgur.com/XYyfee2.png[/img] [/url]\r\n\r\n[*] [b]More Holding Graphics:[/b]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3791600555] [img]https://i.imgur.com/FSYwNfY.png[/img] [/url]\r\n\r\n[h3][b]Since I made quite a lot of stuff in the past few years, I have decided to make a discord server for all my stuff so I don't have to jump in between servers all the time.[/b][/h3]\r\n \r\n[h3] https://discord.gg/zDtwQxBjY [/h3]"
+    },
+    {
+      "id": "3679849030",
+      "repositoryPath": "mods/eoe-compat-epe",
+      "pageUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3679849030&l=english",
+      "result": 1,
+      "title": "EoE + EPE",
+      "descriptorName": "EoE + EPE",
+      "descriptorVersion": "1.18.3.1",
+      "descriptorSupportedVersion": "1.19.0.6",
+      "visibility": 0,
+      "timeCreated": "2026-03-06T17:29:07.0000000+00:00",
+      "timeUpdated": "2026-09-01T22:17:29.0000000+00:00",
+      "previewUrl": "https://images.steamusercontent.com/ugc/14485934531488777824/1906AD1B5845CD06D214515E1462618A53855320/",
+      "tags": [
+        "1.18 'Crane'",
+        "Fixes",
+        "Culture",
+        "Graphics",
+        "Alternative History"
+      ],
+      "pageMetadataAvailable": true,
+      "changeNoteCount": 8,
+      "dependenciesVerifiedFromPage": true,
+      "dependencies": [
+        {
+          "id": "3679840613",
+          "title": "Embers of Empire - A Roman Restoration"
+        },
+        {
+          "id": "2507209632",
+          "title": "Ethnicities & Portraits Expanded"
+        }
+      ],
+      "description": "This is the compatch for [b]Embers of Empire[/b] and [b]Ethnicities and Portraits expanded[/b]\r\n\r\nLoad this mod after both"
+    },
+    {
+      "id": "3679849283",
+      "repositoryPath": "mods/eoe-compat-it",
+      "pageUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3679849283&l=english",
+      "result": 1,
+      "title": "EoE + Immersive Toponyms",
+      "descriptorName": "EoE + Immersive Toponyms",
+      "descriptorVersion": "1.18.3",
+      "descriptorSupportedVersion": "1.19.0.6",
+      "visibility": 0,
+      "timeCreated": "2026-03-06T17:29:41.0000000+00:00",
+      "timeUpdated": "2026-08-19T12:07:54.0000000+00:00",
+      "previewUrl": "https://images.steamusercontent.com/ugc/11717359422953238607/EBBB6B6FBFF706D876DF40DB49C75226E8ABEDD0/",
+      "tags": [
+        "1.18 'Crane'",
+        "Culture",
+        "Fixes",
+        "Historical",
+        "Religion",
+        "Map"
+      ],
+      "pageMetadataAvailable": true,
+      "changeNoteCount": 3,
+      "dependenciesVerifiedFromPage": true,
+      "dependencies": [
+        {
+          "id": "3679840613",
+          "title": "Embers of Empire - A Roman Restoration"
+        },
+        {
+          "id": "2255229872",
+          "title": "Immersive Toponyms"
+        }
+      ],
+      "description": "This is the compatch for [b]Embers of Empire[/b] and [b]Immersive Toponyms[/b]\r\n\r\nLoad this mod after both"
+    },
+    {
+      "id": "3679850009",
+      "repositoryPath": "mods/eoe-compat-ce",
+      "pageUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3679850009&l=english",
+      "result": 1,
+      "title": "EoE + CE Flavour Patch",
+      "descriptorName": "EoE + CE Flavour Patch",
+      "descriptorVersion": "1.18.2",
+      "descriptorSupportedVersion": "1.19.0.6",
+      "visibility": 0,
+      "timeCreated": "2026-03-06T17:31:00.0000000+00:00",
+      "timeUpdated": "2026-06-09T20:14:41.0000000+00:00",
+      "previewUrl": "https://images.steamusercontent.com/ugc/14365974664695606739/F02B318DA9353F5A8DFAC5FA96379AD46457945F/",
+      "tags": [
+        "Culture",
+        "Fixes",
+        "Map",
+        "1.18 'Crane'"
+      ],
+      "pageMetadataAvailable": true,
+      "changeNoteCount": 5,
+      "dependenciesVerifiedFromPage": true,
+      "dependencies": [
+        {
+          "id": "3679840613",
+          "title": "Embers of Empire - A Roman Restoration"
+        },
+        {
+          "id": "2829397295",
+          "title": "Culture Expanded"
+        }
+      ],
+      "description": "This is the compatch for [b]Embers of Empire[/b] and [b]Culture Expanded[/b]\r\n\r\nLoad this mod after both"
+    }
+  ]
+}
