@@ -35,9 +35,7 @@
 	doctrine = doctrine_clerical_marriage_allowed
 	doctrine = doctrine_clerical_succession_temporal_appointment
 	doctrine = doctrine_pilgrimage_encouraged
-
-	#Funeral tradition
-	doctrine = doctrine_funeral_bewailment # Ancient Greeks were encouraged to grieve publicly
+	doctrine = doctrine_funeral_stoic
 
 	#Coronation tradition
 	doctrine = doctrine_no_anointment

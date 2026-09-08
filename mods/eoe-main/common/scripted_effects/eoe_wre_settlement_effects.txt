@@ -101,6 +101,49 @@ eoe_create_and_grant_wre_imperial_package_effect = {
 	}
 }
 
+# Fallback: alle nog niet verdeelde counties van het anchor-hertogdom gaan naar
+# een nieuw gegenereerd personage (cultuur + religie van de keizer). Wordt gebruikt
+# als er geen kandidaten zijn of iedereen weigert, zodat er geen counties overblijven.
+eoe_grant_wre_imperial_fallback_package_effect = {
+	create_character = {
+		age = 30
+		gender_female_chance = 20
+		culture = scope:eoe_wre_settlement_emperor.culture
+		faith = scope:eoe_wre_settlement_emperor.faith
+		dynasty = generate
+		random_traits = yes
+		location = scope:eoe_wre_package_anchor.title_province
+		save_scope_as = eoe_wre_generated_settlement_ruler
+	}
+	create_title_and_vassal_change = {
+		type = granted
+		save_scope_as = eoe_wre_settlement_change
+		add_claim_on_loss = no
+	}
+	scope:eoe_wre_settlement_emperor = {
+		every_realm_county = {
+			limit = {
+				holder = scope:eoe_wre_settlement_emperor
+				has_variable = eoe_wre_pending_settlement
+				de_jure_liege = scope:eoe_wre_package_duchy
+			}
+			change_title_holder = {
+				holder = scope:eoe_wre_generated_settlement_ruler
+				change = scope:eoe_wre_settlement_change
+			}
+			remove_variable = eoe_wre_pending_settlement
+			remove_variable = eoe_wre_restoration_target
+			remove_variable = eoe_wre_previous_holder
+			remove_variable = eoe_wre_package_refusals
+		}
+	}
+	change_liege = {
+		liege = scope:eoe_wre_settlement_emperor
+		change = scope:eoe_wre_settlement_change
+	}
+	resolve_title_and_vassal_change = scope:eoe_wre_settlement_change
+}
+
 eoe_clear_wre_provincial_package_effect = {
 	scope:eoe_wre_settlement_emperor = {
 		every_realm_county = {
@@ -148,4 +191,39 @@ eoe_grant_wre_provincial_governorship_effect = {
 	}
 	resolve_title_and_vassal_change = scope:eoe_wre_provincial_change
 	eoe_clear_wre_provincial_package_effect = yes
+}
+
+eoe_clear_wre_settlement_chain_effect = {
+	every_realm_county = {
+		limit = {
+			OR = {
+				has_variable = eoe_wre_pending_settlement
+				has_variable = eoe_wre_pending_provincial_settlement
+			}
+		}
+		remove_variable = eoe_wre_pending_settlement
+		remove_variable = eoe_wre_pending_provincial_settlement
+		remove_variable = eoe_wre_previous_holder
+		remove_variable = eoe_wre_package_refusals
+		remove_variable = eoe_wre_provincial_refusals
+	}
+	every_realm_county = {
+		limit = { de_jure_liege = { has_variable = eoe_wre_duchy_refusals } }
+		de_jure_liege = { remove_variable = eoe_wre_duchy_refusals }
+	}
+	every_courtier_or_guest = {
+		limit = { has_character_flag = eoe_wre_provincial_offer_pending }
+		remove_character_flag = eoe_wre_provincial_offer_pending
+	}
+	every_vassal = {
+		limit = { is_landed = yes }
+		every_courtier_or_guest = {
+			limit = { has_character_flag = eoe_wre_provincial_offer_pending }
+			remove_character_flag = eoe_wre_provincial_offer_pending
+		}
+	}
+	remove_variable = eoe_wre_settlement_scheduled
+	remove_character_flag = eoe_wre_imperial_settlement_policy
+	remove_character_flag = eoe_wre_local_settlement_policy
+	remove_character_flag = eoe_wre_combined_settlement_policy
 }

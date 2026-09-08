@@ -55,6 +55,30 @@ eoe_valid_wre_provincial_governor_candidate = {
 	}
 }
 
+eoe_valid_wre_imperial_provincial_governor_candidate = {
+	is_alive = yes
+	is_capable_adult = yes
+	is_imprisoned = no
+	can_be_granted_titles_by = { RULER = scope:eoe_wre_settlement_emperor }
+	top_liege = scope:eoe_wre_settlement_emperor
+	culture = scope:eoe_wre_settlement_emperor.culture
+	faith = scope:eoe_wre_settlement_emperor.faith
+	OR = {
+		dynasty = scope:eoe_wre_settlement_emperor.dynasty
+		AND = {
+			exists = dynasty
+			dynasty = { prestige_level >= 3 }
+		}
+	}
+	NOT = { has_character_flag = eoe_wre_provincial_office_refused }
+	NOR = {
+		father = scope:eoe_wre_settlement_emperor
+		mother = scope:eoe_wre_settlement_emperor
+		is_heir_of = scope:eoe_wre_settlement_emperor
+		any_heir_title = { tier >= tier_duchy }
+	}
+}
+
 eoe_wre_provincial_title_available = {
 	tier = tier_duchy
 	is_titular = no

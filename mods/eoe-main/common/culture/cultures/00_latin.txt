@@ -24,14 +24,14 @@
 	
 	name_list = name_list_roman
 
-	coa_gfx = { latin_group_coa_gfx western_coa_gfx } 
+	coa_gfx = { roman_group_coa_gfx } 
 	building_gfx = { mediterranean_building_gfx }
 	clothing_gfx = { byzantine_clothing_gfx } 
 	clothing_gfx = { western_clothing_gfx } 
 	unit_gfx = { eastern_unit_gfx } 		
-	house_coa_frame = house_frame_22
-	house_coa_mask_offset = { 0.0 0.11 }
-	house_coa_mask_scale = { 0.85 0.85 }
+	house_coa_frame = house_frame_05
+	#house_coa_mask_offset = { 0.0 0.11 }
+	#house_coa_mask_scale = { 0.85 0.85 }
 
 	ethnicities = {
 		10 = mediterranean
@@ -67,10 +67,11 @@ illyro_roman = {
 	name_list = name_list_roman
 	name_list = name_list_illyro_roman
 	
-	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
+	coa_gfx = { roman_group_coa_gfx }
 	building_gfx = { mediterranean_building_gfx }
 	clothing_gfx = { byzantine_clothing_gfx }
 	unit_gfx = { western_unit_gfx }
+	house_coa_frame = house_frame_05
 
 	ethnicities = {
 		10 = mediterranean
@@ -104,11 +105,12 @@ hispano_roman = {
 	name_list = name_list_roman
 	name_list = name_list_hispano_roman
 	
-	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
+	coa_gfx = { roman_group_coa_gfx }
 	building_gfx = { mediterranean_building_gfx }
 	clothing_gfx = { western_clothing_gfx }
 	clothing_gfx = { byzantine_clothing_gfx }
 	unit_gfx = { eastern_unit_gfx }
+	house_coa_frame = house_frame_05
 
 	ethnicities = {
 		10 = mediterranean
@@ -143,10 +145,11 @@ gallo_roman = {
 	
 	name_list = name_list_gallo_roman
 	
-	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
+	coa_gfx = { roman_group_coa_gfx }
 	building_gfx = { mediterranean_building_gfx }
 	clothing_gfx = { byzantine_clothing_gfx }
 	unit_gfx = { eastern_unit_gfx }
+	house_coa_frame = house_frame_05
 
 	ethnicities = {
 		10 = mediterranean
@@ -184,10 +187,11 @@ afro_roman = {
 	name_list = name_list_roman	
 	name_list = name_list_afro_roman
 	
-	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
+	coa_gfx = { roman_group_coa_gfx }
 	building_gfx = { mediterranean_building_gfx }
 	clothing_gfx = { byzantine_clothing_gfx }
 	unit_gfx = { eastern_unit_gfx }
+	house_coa_frame = house_frame_05
 
 	ethnicities = {
 		5 = african
@@ -224,11 +228,12 @@ britano_roman = {
 	name_list = name_list_roman	
 	name_list = name_list_britano_roman
 	
-	coa_gfx = { latin_group_coa_gfx welsh_coa_gfx }
+	coa_gfx = { roman_group_coa_gfx welsh_coa_gfx }
 	building_gfx = { mediterranean_building_gfx }
 	clothing_gfx = { western_clothing_gfx }
 	clothing_gfx = { byzantine_clothing_gfx }
 	unit_gfx = { eastern_unit_gfx }
+	house_coa_frame = house_frame_05
 
 	ethnicities = {
 		50 = mediterranean
@@ -267,11 +272,12 @@ rhaetio_roman = {
 	name_list = name_list_roman	
 	name_list = name_list_rhaetian
 	
-	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
+	coa_gfx = { roman_group_coa_gfx }
 	building_gfx = { mediterranean_building_gfx }
 	clothing_gfx = { western_clothing_gfx }
 	clothing_gfx = { byzantine_clothing_gfx }
 	unit_gfx = { eastern_unit_gfx }
+	house_coa_frame = house_frame_05
 
 	ethnicities = {
 		10 = mediterranean
@@ -299,11 +305,12 @@ thracio_roman = {
 	name_list = name_list_roman	
 	name_list = name_list_thracio_roman
 	
-	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
+	coa_gfx = { roman_group_coa_gfx byzantine_group_coa_gfx }
 	building_gfx = { byzantine_building_gfx }
 	clothing_gfx = { byzantine_clothing_gfx }
 	clothing_gfx = { western_clothing_gfx }
 	unit_gfx = { eastern_unit_gfx }
+	house_coa_frame = house_frame_05
 
 	ethnicities = {
 		10 = mediterranean

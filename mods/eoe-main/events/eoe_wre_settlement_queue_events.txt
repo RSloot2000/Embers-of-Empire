@@ -15,6 +15,7 @@ eoe_wre_settlement.0001 = {
 		name = eoe_wre_settlement.0001.a
 		custom_tooltip = eoe_wre_settlement.0001.a.tt
 		remove_character_flag = eoe_wre_local_settlement_policy
+		remove_character_flag = eoe_wre_combined_settlement_policy
 		add_character_flag = eoe_wre_imperial_settlement_policy
 		trigger_event = { id = eoe_wre_settlement.0002 days = 1 }
 		ai_chance = { base = 0 }
@@ -23,9 +24,25 @@ eoe_wre_settlement.0001 = {
 		name = eoe_wre_settlement.0001.b
 		custom_tooltip = eoe_wre_settlement.0001.b.tt
 		remove_character_flag = eoe_wre_imperial_settlement_policy
+		remove_character_flag = eoe_wre_combined_settlement_policy
 		add_character_flag = eoe_wre_local_settlement_policy
 		trigger_event = { id = eoe_wre_settlement.0002 days = 1 }
 		ai_chance = { base = 100 }
+	}
+	option = {
+		name = eoe_wre_settlement.0001.c
+		custom_tooltip = eoe_wre_settlement.0001.c.tt
+		remove_character_flag = eoe_wre_imperial_settlement_policy
+		remove_character_flag = eoe_wre_local_settlement_policy
+		add_character_flag = eoe_wre_combined_settlement_policy
+		trigger_event = { id = eoe_wre_settlement.0002 days = 1 }
+		ai_chance = { base = 0 }
+	}
+	option = {
+		name = eoe_wre_settlement.0001.d
+		custom_tooltip = eoe_wre_settlement.0001.d.tt
+		eoe_clear_wre_settlement_chain_effect = yes
+		ai_chance = { base = 0 }
 	}
 }
 
@@ -48,9 +65,20 @@ eoe_wre_settlement.0002 = {
 					limit = { NOT = { has_variable = eoe_wre_package_refusals } }
 					set_variable = { name = eoe_wre_package_refusals value = 0 }
 				}
+				scope:eoe_wre_package_duchy = {
+					if = {
+						limit = { NOT = { has_variable = eoe_wre_duchy_refusals } }
+						set_variable = { name = eoe_wre_duchy_refusals value = 0 }
+					}
+				}
 			}
 			if = {
-				limit = { has_character_flag = eoe_wre_local_settlement_policy }
+				limit = {
+					OR = {
+						has_character_flag = eoe_wre_local_settlement_policy
+						has_character_flag = eoe_wre_combined_settlement_policy
+					}
+				}
 				scope:eoe_wre_package_anchor.var:eoe_wre_previous_holder ?= { save_scope_as = eoe_wre_settlement_candidate }
 				if = {
 					limit = {
@@ -97,8 +125,8 @@ eoe_wre_settlement.0002 = {
 			}
 			else = {
 				if = {
-					limit = { scope:eoe_wre_package_anchor.var:eoe_wre_package_refusals >= 2 }
-					eoe_create_and_grant_wre_imperial_package_effect = yes
+					limit = { scope:eoe_wre_package_duchy.var:eoe_wre_duchy_refusals >= 2 }
+					eoe_grant_wre_imperial_fallback_package_effect = yes
 					trigger_event = { id = eoe_wre_settlement.0002 days = 1 }
 				}
 				else = {
@@ -135,7 +163,7 @@ eoe_wre_settlement.0002 = {
 					}
 					if = {
 						limit = { NOT = { has_character_flag = eoe_wre_settlement_candidate_found } }
-						eoe_create_and_grant_wre_imperial_package_effect = yes
+						eoe_grant_wre_imperial_fallback_package_effect = yes
 						trigger_event = { id = eoe_wre_settlement.0002 days = 1 }
 					}
 					remove_character_flag = eoe_wre_settlement_candidate_found
@@ -144,7 +172,10 @@ eoe_wre_settlement.0002 = {
 		}
 		else = {
 			if = {
-				limit = { any_realm_county = { has_variable = eoe_wre_pending_provincial_settlement } }
+				limit = {
+					has_character_flag = eoe_wre_combined_settlement_policy
+					any_realm_county = { has_variable = eoe_wre_pending_provincial_settlement }
+				}
 				save_scope_as = eoe_wre_settlement_emperor
 				random_realm_county = {
 					limit = { has_variable = eoe_wre_pending_provincial_settlement }
@@ -160,27 +191,16 @@ eoe_wre_settlement.0002 = {
 						scope:eoe_wre_package_duchy = { eoe_wre_provincial_title_available = yes }
 						scope:eoe_wre_provincial_anchor.var:eoe_wre_provincial_refusals < 2
 					}
-					every_realm_county = {
-						limit = {
-							has_variable = eoe_wre_pending_provincial_settlement
-							de_jure_liege = scope:eoe_wre_package_duchy
-							holder = {
-								eoe_valid_wre_provincial_governor_candidate = yes
-								OR = {
-									scope:eoe_wre_settlement_emperor = { has_character_flag = eoe_wre_local_settlement_policy }
-									AND = {
-										scope:eoe_wre_settlement_emperor = { has_character_flag = eoe_wre_imperial_settlement_policy }
-										culture = scope:eoe_wre_settlement_emperor.culture
-										faith = scope:eoe_wre_settlement_emperor.faith
-										OR = {
-											dynasty = scope:eoe_wre_settlement_emperor.dynasty
-											prestige_level >= 3
-										}
-									}
-								}
-							}
+					every_courtier_or_guest = {
+						limit = { eoe_valid_wre_imperial_provincial_governor_candidate = yes }
+						add_to_list = eoe_wre_provincial_candidates
+					}
+					every_vassal = {
+						limit = { is_landed = yes }
+						every_courtier_or_guest = {
+							limit = { eoe_valid_wre_imperial_provincial_governor_candidate = yes }
+							add_to_list = eoe_wre_provincial_candidates
 						}
-						holder = { add_to_list = eoe_wre_provincial_candidates }
 					}
 					if = {
 						limit = { any_in_list = { list = eoe_wre_provincial_candidates always = yes } }
@@ -193,7 +213,6 @@ eoe_wre_settlement.0002 = {
 								modifier = { add = stewardship }
 								modifier = {
 									add = 25
-									scope:eoe_wre_settlement_emperor = { has_character_flag = eoe_wre_imperial_settlement_policy }
 									dynasty = scope:eoe_wre_settlement_emperor.dynasty
 								}
 							}
@@ -213,9 +232,19 @@ eoe_wre_settlement.0002 = {
 				}
 			}
 			else = {
+				every_realm_county = {
+					limit = { has_variable = eoe_wre_pending_provincial_settlement }
+					remove_variable = eoe_wre_pending_provincial_settlement
+					remove_variable = eoe_wre_provincial_refusals
+				}
+				every_realm_county = {
+					limit = { de_jure_liege = { has_variable = eoe_wre_duchy_refusals } }
+					de_jure_liege = { remove_variable = eoe_wre_duchy_refusals }
+				}
 				remove_variable = eoe_wre_settlement_scheduled
 				remove_character_flag = eoe_wre_imperial_settlement_policy
 				remove_character_flag = eoe_wre_local_settlement_policy
+				remove_character_flag = eoe_wre_combined_settlement_policy
 				trigger_event = eoe_wre_settlement.0020
 			}
 		}
@@ -296,7 +325,7 @@ eoe_wre_settlement.0011 = {
 		name = eoe_wre_settlement.0011.b
 		remove_character_flag = eoe_wre_settlement_offer_pending
 		add_character_flag = { flag = eoe_wre_settlement_refused years = 10 }
-		scope:eoe_wre_package_anchor = { change_variable = { name = eoe_wre_package_refusals add = 1 } }
+		scope:eoe_wre_package_duchy = { change_variable = { name = eoe_wre_duchy_refusals add = 1 } }
 		scope:eoe_wre_settlement_emperor = { trigger_event = { id = eoe_wre_settlement.0002 days = 1 } }
 		ai_chance = { base = 25 }
 	}

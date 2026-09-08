@@ -1,0 +1,415 @@
+﻿l_english:
+
+#Physical Greek Gods Traits Begin Here
+
+#Aphrodite's Bloodline
+
+ trait_blood_aphrodite_1:0 "Exalted Blood - Aphrodite"
+ trait_blood_aphrodite_1_desc:0 "Somewhere in the lineage of this character must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_aphrodite_1_character_desc:0 "Somewhere in the lineage of [ROOT.GetCharacter.GetFirstNameNoTooltip] must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_aphrodite_2:0 "Heroic Blood - Aphrodite"
+ trait_blood_aphrodite_2_desc:0 "Genetic markers within the DNA of this character strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_aphrodite_2_character_desc:0 "Genetic markers within the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_aphrodite_3:0 "Blood of Legend - Aphrodite"
+ trait_blood_aphrodite_3_desc:0 "Genetic markers indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+ trait_blood_aphrodite_3_character_desc:0 "Genetic markers in the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+
+#Apollo's Bloodline
+
+ trait_blood_apollo_1:0 "Exalted Blood - Apollo"
+ trait_blood_apollo_1_desc:0 "Somewhere in the lineage of this character must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_apollo_1_character_desc:0 "Somewhere in the lineage of [ROOT.GetCharacter.GetFirstNameNoTooltip] must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_apollo_2:0 "Heroic Blood - Apollo"
+ trait_blood_apollo_2_desc:0 "Genetic markers within the DNA of this character strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_apollo_2_character_desc:0 "Genetic markers within the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_apollo_3:0 "Blood of Legend - Apollo"
+ trait_blood_apollo_3_desc:0 "Genetic markers indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+ trait_blood_apollo_3_character_desc:0 "Genetic markers in the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+
+#Ares' Bloodline
+
+ trait_blood_ares_1:0 "Exalted Blood - Ares"
+ trait_blood_ares_1_desc:0 "Somewhere in the lineage of this character must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_ares_1_character_desc:0 "Somewhere in the lineage of [ROOT.GetCharacter.GetFirstNameNoTooltip] must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_ares_2:0 "Heroic Blood - Ares"
+ trait_blood_ares_2_desc:0 "Genetic markers within the DNA of this character strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_ares_2_character_desc:0 "Genetic markers within the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_ares_3:0 "Blood of Legend - Ares"
+ trait_blood_ares_3_desc:0 "Genetic markers indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+ trait_blood_ares_3_character_desc:0 "Genetic markers in the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+
+#Artemis' Bloodline
+
+ trait_blood_artemis_1:0 "Exalted Blood - Artemis"
+ trait_blood_artemis_1_desc:0 "Somewhere in the lineage of this character must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_artemis_1_character_desc:0 "Somewhere in the lineage of [ROOT.GetCharacter.GetFirstNameNoTooltip] must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_artemis_2:0 "Heroic Blood - Artemis"
+ trait_blood_artemis_2_desc:0 "Genetic markers within the DNA of this character strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_artemis_2_character_desc:0 "Genetic markers within the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_artemis_3:0 "Blood of Legend - Artemis"
+ trait_blood_artemis_3_desc:0 "Genetic markers indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+ trait_blood_artemis_3_character_desc:0 "Genetic markers in the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+
+#Athena's Bloodline
+
+ trait_blood_athena_1:0 "Exalted Blood - Athena"
+ trait_blood_athena_1_desc:0 "Somewhere in the lineage of this character must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_athena_1_character_desc:0 "Somewhere in the lineage of [ROOT.GetCharacter.GetFirstNameNoTooltip] must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_athena_2:0 "Heroic Blood - Athena"
+ trait_blood_athena_2_desc:0 "Genetic markers within the DNA of this character strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_athena_2_character_desc:0 "Genetic markers within the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_athena_3:0 "Blood of Legend - Athena"
+ trait_blood_athena_3_desc:0 "Genetic markers indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+ trait_blood_athena_3_character_desc:0 "Genetic markers in the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+
+#Demeter's Bloodline
+
+ trait_blood_demeter_1:0 "Exalted Blood - Demeter"
+ trait_blood_demeter_1_desc:0 "Somewhere in the lineage of this character must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_demeter_1_character_desc:0 "Somewhere in the lineage of [ROOT.GetCharacter.GetFirstNameNoTooltip] must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_demeter_2:0 "Heroic Blood - Demeter"
+ trait_blood_demeter_2_desc:0 "Genetic markers within the DNA of this character strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_demeter_2_character_desc:0 "Genetic markers within the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_demeter_3:0 "Blood of Legend - Demeter"
+ trait_blood_demeter_3_desc:0 "Genetic markers indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+ trait_blood_demeter_3_character_desc:0 "Genetic markers in the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+
+#Hades' Bloodline
+
+ trait_blood_hades_1:0 "Exalted Blood - Hades"
+ trait_blood_hades_1_desc:0 "Somewhere in the lineage of this character must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_hades_1_character_desc:0 "Somewhere in the lineage of [ROOT.GetCharacter.GetFirstNameNoTooltip] must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_hades_2:0 "Heroic Blood - Hades"
+ trait_blood_hades_2_desc:0 "Genetic markers within the DNA of this character strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_hades_2_character_desc:0 "Genetic markers within the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_hades_3:0 "Blood of Legend - Hades"
+ trait_blood_hades_3_desc:0 "Genetic markers indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+ trait_blood_hades_3_character_desc:0 "Genetic markers in the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+
+#Hephaestus' Bloodline
+
+ trait_blood_hephaestus_1:0 "Exalted Blood - Hephaestus"
+ trait_blood_hephaestus_1_desc:0 "Somewhere in the lineage of this character must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_hephaestus_1_character_desc:0 "Somewhere in the lineage of [ROOT.GetCharacter.GetFirstNameNoTooltip] must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_hephaestus_2:0 "Heroic Blood - Hephaestus"
+ trait_blood_hephaestus_2_desc:0 "Genetic markers within the DNA of this character strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_hephaestus_2_character_desc:0 "Genetic markers within the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_hephaestus_3:0 "Blood of Legend - Hephaestus"
+ trait_blood_hephaestus_3_desc:0 "Genetic markers indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+ trait_blood_hephaestus_3_character_desc:0 "Genetic markers in the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+
+#Hera's Bloodline
+
+ trait_blood_hera_1:0 "Exalted Blood - Hera"
+ trait_blood_hera_1_desc:0 "Somewhere in the lineage of this character must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_hera_1_character_desc:0 "Somewhere in the lineage of [ROOT.GetCharacter.GetFirstNameNoTooltip] must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_hera_2:0 "Heroic Blood - Hera"
+ trait_blood_hera_2_desc:0 "Genetic markers within the DNA of this character strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_hera_2_character_desc:0 "Genetic markers within the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_hera_3:0 "Blood of Legend - Hera"
+ trait_blood_hera_3_desc:0 "Genetic markers indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+ trait_blood_hera_3_character_desc:0 "Genetic markers in the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+
+#Hermes' Bloodline
+
+ trait_blood_hermes_1:0 "Exalted Blood - Hermes"
+ trait_blood_hermes_1_desc:0 "Somewhere in the lineage of this character must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_hermes_1_character_desc:0 "Somewhere in the lineage of [ROOT.GetCharacter.GetFirstNameNoTooltip] must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_hermes_2:0 "Heroic Blood - Hermes"
+ trait_blood_hermes_2_desc:0 "Genetic markers within the DNA of this character strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_hermes_2_character_desc:0 "Genetic markers within the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_hermes_3:0 "Blood of Legend - Hermes"
+ trait_blood_hermes_3_desc:0 "Genetic markers indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+ trait_blood_hermes_3_character_desc:0 "Genetic markers in the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+
+#Hestia's Bloodline
+
+ trait_blood_hestia_1:0 "Exalted Blood - Hestia"
+ trait_blood_hestia_1_desc:0 "Somewhere in the lineage of this character must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_hestia_1_character_desc:0 "Somewhere in the lineage of [ROOT.GetCharacter.GetFirstNameNoTooltip] must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_hestia_2:0 "Heroic Blood - Hestia"
+ trait_blood_hestia_2_desc:0 "Genetic markers within the DNA of this character strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_hestia_2_character_desc:0 "Genetic markers within the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_hestia_3:0 "Blood of Legend - Hestia"
+ trait_blood_hestia_3_desc:0 "Genetic markers indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+ trait_blood_hestia_3_character_desc:0 "Genetic markers in the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+
+#Poseidon's Bloodline
+
+ trait_blood_poseidon_1:0 "Exalted Blood - Poseidon"
+ trait_blood_poseidon_1_desc:0 "Somewhere in the lineage of this character must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_poseidon_1_character_desc:0 "Somewhere in the lineage of [ROOT.GetCharacter.GetFirstNameNoTooltip] must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_poseidon_2:0 "Heroic Blood - Poseidon"
+ trait_blood_poseidon_2_desc:0 "Genetic markers within the DNA of this character strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_poseidon_2_character_desc:0 "Genetic markers within the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_poseidon_3:0 "Blood of Legend - Poseidon"
+ trait_blood_poseidon_3_desc:0 "Genetic markers indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+ trait_blood_poseidon_3_character_desc:0 "Genetic markers in the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+
+#Dionysus' Bloodline
+
+ trait_blood_dionysus_1:0 "Exalted Blood - Dionysus"
+ trait_blood_dionysus_1_desc:0 "Somewhere in the lineage of this character must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_dionysus_1_character_desc:0 "Somewhere in the lineage of [ROOT.GetCharacter.GetFirstNameNoTooltip] must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_dionysus_2:0 "Heroic Blood - Dionysus"
+ trait_blood_dionysus_2_desc:0 "Genetic markers within the DNA of this character strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_dionysus_2_character_desc:0 "Genetic markers within the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_dionysus_3:0 "Blood of Legend - Dionysus"
+ trait_blood_dionysus_3_desc:0 "Genetic markers indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+ trait_blood_dionysus_3_character_desc:0 "Genetic markers in the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+
+#Zeus' Bloodline
+
+ trait_blood_zeus_1:0 "Exalted Blood - Zeus"
+ trait_blood_zeus_1_desc:0 "Somewhere in the lineage of this character must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_zeus_1_character_desc:0 "Somewhere in the lineage of [ROOT.GetCharacter.GetFirstNameNoTooltip] must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_zeus_2:0 "Heroic Blood - Zeus"
+ trait_blood_zeus_2_desc:0 "Genetic markers within the DNA of this character strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_zeus_2_character_desc:0 "Genetic markers within the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_zeus_3:0 "Blood of Legend - Zeus"
+ trait_blood_zeus_3_desc:0 "Genetic markers indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+ trait_blood_zeus_3_character_desc:0 "Genetic markers in the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+
+#Eris' Bloodline
+
+ trait_blood_eris_1:0 "Exalted Blood - Eris"
+ trait_blood_eris_1_desc:0 "Somewhere in the lineage of this character must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_eris_1_character_desc:0 "Somewhere in the lineage of [ROOT.GetCharacter.GetFirstNameNoTooltip] must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_eris_2:0 "Heroic Blood - Eris"
+ trait_blood_eris_2_desc:0 "Genetic markers within the DNA of this character strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_eris_2_character_desc:0 "Genetic markers within the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_eris_3:0 "Blood of Legend - Eris"
+ trait_blood_eris_3_desc:0 "Genetic markers indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+ trait_blood_eris_3_character_desc:0 "Genetic markers in the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+
+#Physical Roman Gods Traits Begin Here
+
+#Venus' Bloodline
+
+ trait_blood_venus_1:0 "Exalted Blood - Venus"
+ trait_blood_venus_1_desc:0 "Somewhere in the lineage of this character must have been a descendant of one of the ancient Roman gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_venus_1_character_desc:0 "Somewhere in the lineage of [ROOT.GetCharacter.GetFirstNameNoTooltip] must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_venus_2:0 "Heroic Blood - Venus"
+ trait_blood_venus_2_desc:0 "Genetic markers within the DNA of this character strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_venus_2_character_desc:0 "Genetic markers within the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_venus_3:0 "Blood of Legend - Venus"
+ trait_blood_venus_3_desc:0 "Genetic markers indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+ trait_blood_venus_3_character_desc:0 "Genetic markers in the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+
+ trait_blood_phoebus_1:0 "Exalted Blood - Phoebus"
+ trait_blood_phoebus_1_desc:0 "Somewhere in the lineage of this character must have been a descendant of one of the ancient Roman gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_phoebus_1_character_desc:0 "Somewhere in the lineage of [ROOT.GetCharacter.GetFirstNameNoTooltip] must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_phoebus_2:0 "Heroic Blood - Phoebus"
+ trait_blood_phoebus_2_desc:0 "Genetic markers within the DNA of this character strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_phoebus_2_character_desc:0 "Genetic markers within the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_phoebus_3:0 "Blood of Legend - Phoebus"
+ trait_blood_phoebus_3_desc:0 "Genetic markers indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+ trait_blood_phoebus_3_character_desc:0 "Genetic markers in the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+
+#Mars' Bloodline
+
+ trait_blood_mars_1:0 "Exalted Blood - Mars"
+ trait_blood_mars_1_desc:0 "Somewhere in the lineage of this character must have been a descendant of one of the ancient Roman gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_mars_1_character_desc:0 "Somewhere in the lineage of [ROOT.GetCharacter.GetFirstNameNoTooltip] must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_mars_2:0 "Heroic Blood - Mars"
+ trait_blood_mars_2_desc:0 "Genetic markers within the DNA of this character strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_mars_2_character_desc:0 "Genetic markers within the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_mars_3:0 "Blood of Legend - Mars"
+ trait_blood_mars_3_desc:0 "Genetic markers indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+ trait_blood_mars_3_character_desc:0 "Genetic markers in the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+
+#Diana's Bloodline
+
+ trait_blood_diana_1:0 "Exalted Blood - Diana"
+ trait_blood_diana_1_desc:0 "Somewhere in the lineage of this character must have been a descendant of one of the ancient Roman gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_diana_1_character_desc:0 "Somewhere in the lineage of [ROOT.GetCharacter.GetFirstNameNoTooltip] must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_diana_2:0 "Heroic Blood - Diana"
+ trait_blood_diana_2_desc:0 "Genetic markers within the DNA of this character strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_diana_2_character_desc:0 "Genetic markers within the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_diana_3:0 "Blood of Legend - Diana"
+ trait_blood_diana_3_desc:0 "Genetic markers indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+ trait_blood_diana_3_character_desc:0 "Genetic markers in the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+
+#Minerva's Bloodline
+
+ trait_blood_minerva_1:0 "Exalted Blood - Minerva"
+ trait_blood_minerva_1_desc:0 "Somewhere in the lineage of this character must have been a descendant of one of the ancient Roman gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_minerva_1_character_desc:0 "Somewhere in the lineage of [ROOT.GetCharacter.GetFirstNameNoTooltip] must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_minerva_2:0 "Heroic Blood - Minerva"
+ trait_blood_minerva_2_desc:0 "Genetic markers within the DNA of this character strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_minerva_2_character_desc:0 "Genetic markers within the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_minerva_3:0 "Blood of Legend - Minerva"
+ trait_blood_minerva_3_desc:0 "Genetic markers indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+ trait_blood_minerva_3_character_desc:0 "Genetic markers in the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+
+#Ceres' Bloodline
+
+ trait_blood_ceres_1:0 "Exalted Blood - Ceres"
+ trait_blood_ceres_1_desc:0 "Somewhere in the lineage of this character must have been a descendant of one of the ancient Roman gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_ceres_1_character_desc:0 "Somewhere in the lineage of [ROOT.GetCharacter.GetFirstNameNoTooltip] must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_ceres_2:0 "Heroic Blood - Ceres"
+ trait_blood_ceres_2_desc:0 "Genetic markers within the DNA of this character strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_ceres_2_character_desc:0 "Genetic markers within the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_ceres_3:0 "Blood of Legend - Ceres"
+ trait_blood_ceres_3_desc:0 "Genetic markers indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+ trait_blood_ceres_3_character_desc:0 "Genetic markers in the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+
+#Pluto's Bloodline
+
+ trait_blood_pluto_1:0 "Exalted Blood - Pluto"
+ trait_blood_pluto_1_desc:0 "Somewhere in the lineage of this character must have been a descendant of one of the ancient Roman gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_pluto_1_character_desc:0 "Somewhere in the lineage of [ROOT.GetCharacter.GetFirstNameNoTooltip] must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_pluto_2:0 "Heroic Blood - Pluto"
+ trait_blood_pluto_2_desc:0 "Genetic markers within the DNA of this character strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_pluto_2_character_desc:0 "Genetic markers within the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_pluto_3:0 "Blood of Legend - Pluto"
+ trait_blood_pluto_3_desc:0 "Genetic markers indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+ trait_blood_pluto_3_character_desc:0 "Genetic markers in the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+
+#Vulcan's Bloodline
+
+ trait_blood_vulcan_1:0 "Exalted Blood - Vulcan"
+ trait_blood_vulcan_1_desc:0 "Somewhere in the lineage of this character must have been a descendant of one of the ancient Roman gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_vulcan_1_character_desc:0 "Somewhere in the lineage of [ROOT.GetCharacter.GetFirstNameNoTooltip] must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_vulcan_2:0 "Heroic Blood - Vulcan"
+ trait_blood_vulcan_2_desc:0 "Genetic markers within the DNA of this character strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_vulcan_2_character_desc:0 "Genetic markers within the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_vulcan_3:0 "Blood of Legend - Vulcan"
+ trait_blood_vulcan_3_desc:0 "Genetic markers indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+ trait_blood_vulcan_3_character_desc:0 "Genetic markers in the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+
+#Juno's Bloodline
+
+ trait_blood_juno_1:0 "Exalted Blood - Juno"
+ trait_blood_juno_1_desc:0 "Somewhere in the lineage of this character must have been a descendant of one of the ancient Roman gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_juno_1_character_desc:0 "Somewhere in the lineage of [ROOT.GetCharacter.GetFirstNameNoTooltip] must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_juno_2:0 "Heroic Blood - Juno"
+ trait_blood_juno_2_desc:0 "Genetic markers within the DNA of this character strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_juno_2_character_desc:0 "Genetic markers within the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_juno_3:0 "Blood of Legend - Juno"
+ trait_blood_juno_3_desc:0 "Genetic markers indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+ trait_blood_juno_3_character_desc:0 "Genetic markers in the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+
+#Mercury's Bloodline
+
+ trait_blood_mercury_1:0 "Exalted Blood - Mercury"
+ trait_blood_mercury_1_desc:0 "Somewhere in the lineage of this character must have been a descendant of one of the ancient Roman gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_mercury_1_character_desc:0 "Somewhere in the lineage of [ROOT.GetCharacter.GetFirstNameNoTooltip] must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_mercury_2:0 "Heroic Blood - Mercury"
+ trait_blood_mercury_2_desc:0 "Genetic markers within the DNA of this character strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_mercury_2_character_desc:0 "Genetic markers within the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_mercury_3:0 "Blood of Legend - Mercury"
+ trait_blood_mercury_3_desc:0 "Genetic markers indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+ trait_blood_mercury_3_character_desc:0 "Genetic markers in the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+
+#Vesta's Bloodline
+
+ trait_blood_vesta_1:0 "Exalted Blood - Vesta"
+ trait_blood_vesta_1_desc:0 "Somewhere in the lineage of this character must have been a descendant of one of the ancient Roman gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_vesta_1_character_desc:0 "Somewhere in the lineage of [ROOT.GetCharacter.GetFirstNameNoTooltip] must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_vesta_2:0 "Heroic Blood - Vesta"
+ trait_blood_vesta_2_desc:0 "Genetic markers within the DNA of this character strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_vesta_2_character_desc:0 "Genetic markers within the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_vesta_3:0 "Blood of Legend - Vesta"
+ trait_blood_vesta_3_desc:0 "Genetic markers indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+ trait_blood_vesta_3_character_desc:0 "Genetic markers in the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+
+#Neptune's Bloodline
+
+ trait_blood_neptune_1:0 "Exalted Blood - Neptune"
+ trait_blood_neptune_1_desc:0 "Somewhere in the lineage of this character must have been a descendant of one of the ancient Roman gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_neptune_1_character_desc:0 "Somewhere in the lineage of [ROOT.GetCharacter.GetFirstNameNoTooltip] must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_neptune_2:0 "Heroic Blood - Neptune"
+ trait_blood_neptune_2_desc:0 "Genetic markers within the DNA of this character strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_neptune_2_character_desc:0 "Genetic markers within the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_neptune_3:0 "Blood of Legend - Neptune"
+ trait_blood_neptune_3_desc:0 "Genetic markers indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+ trait_blood_neptune_3_character_desc:0 "Genetic markers in the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+
+#Bacchus' Bloodline
+
+ trait_blood_bacchus_1:0 "Exalted Blood - Bacchus"
+ trait_blood_bacchus_1_desc:0 "Somewhere in the lineage of this character must have been a descendant of one of the ancient Roman gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_bacchus_1_character_desc:0 "Somewhere in the lineage of [ROOT.GetCharacter.GetFirstNameNoTooltip] must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_bacchus_2:0 "Heroic Blood - Bacchus"
+ trait_blood_bacchus_2_desc:0 "Genetic markers within the DNA of this character strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_bacchus_2_character_desc:0 "Genetic markers within the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_bacchus_3:0 "Blood of Legend - Bacchus"
+ trait_blood_bacchus_3_desc:0 "Genetic markers indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+ trait_blood_bacchus_3_character_desc:0 "Genetic markers in the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+
+#Jupiter's Bloodline
+
+ trait_blood_jupiter_1:0 "Exalted Blood - Jupiter"
+ trait_blood_jupiter_1_desc:0 "Somewhere in the lineage of this character must have been a descendant of one of the ancient Roman gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_jupiter_1_character_desc:0 "Somewhere in the lineage of [ROOT.GetCharacter.GetFirstNameNoTooltip] must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_jupiter_2:0 "Heroic Blood - Jupiter"
+ trait_blood_jupiter_2_desc:0 "Genetic markers within the DNA of this character strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_jupiter_2_character_desc:0 "Genetic markers within the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_jupiter_3:0 "Blood of Legend - Jupiter"
+ trait_blood_jupiter_3_desc:0 "Genetic markers indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+ trait_blood_jupiter_3_character_desc:0 "Genetic markers in the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+
+#Discordia's Bloodline
+
+ trait_blood_discordia_1:0 "Exalted Blood - Discordia"
+ trait_blood_discordia_1_desc:0 "Somewhere in the lineage of this character must have been a descendant of one of the ancient Roman gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_discordia_1_character_desc:0 "Somewhere in the lineage of [ROOT.GetCharacter.GetFirstNameNoTooltip] must have been a descendant of one of the ancient Greek gods. The genetic markers must have lain dormant for generations. Although the bloodline is highly diluted, the effects on the individual albeit subtle can not be denied."
+ trait_blood_discordia_2:0 "Heroic Blood - Discordia"
+ trait_blood_discordia_2_desc:0 "Genetic markers within the DNA of this character strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_discordia_2_character_desc:0 "Genetic markers within the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] strongly suggest that somewhere along his ancestry must have been an individual which was kin to one of the old gods. Great achievements are to be expected from such sublime ancestry."
+ trait_blood_discordia_3:0 "Blood of Legend - Discordia"
+ trait_blood_discordia_3_desc:0 "Genetic markers indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+ trait_blood_discordia_3_character_desc:0 "Genetic markers in the DNA of [ROOT.GetCharacter.GetFirstNameNoTooltip] indicate a strong kinship with the gods themselves. It is unclear whether it was a happy coincidence that brought together two carriers of powerful genes or whether one of the old gods was directly involved in the conception. Future generations will certainly tell tales of deeds accomplished by this demigod."
+
+##############
+#Trait Groups#
+##############
+
+#Physical Groups
+
+#Greeks Gods
+
+trait_blood_aphrodite:0 "Aphrodite's Bloodline"
+trait_blood_apollo:0 "Apollos's Bloodline"
+trait_blood_ares:0 "Ares' Bloodline"
+trait_blood_artemis:0 "Artemis' Bloodline"
+trait_blood_athena:0 "Athena's Bloodline"
+trait_blood_demeter:0 "Demeter's Bloodline"
+trait_blood_hades:0 "Hades' Bloodline"
+trait_blood_hephaestus:0 "Hephaestus Bloodline"
+trait_blood_hera:0 "Hera's Bloodline"
+trait_blood_hermes:0 "Hermes Bloodline"
+trait_blood_hestia:0 "Hestia's Bloodline"
+trait_blood_poseidon:0 "Poseidon's Bloodline"
+trait_blood_dionysus:0 "Dionysus' Bloodline"
+trait_blood_zeus:0 "Zeus' Bloodline"
+trait_blood_eris:0 "Eris' Bloodline"
+
+#Roman Gods
+
+trait_blood_venus:0 "Venus' Bloodline"
+trait_blood_phoebus:0 "Phoebus' Bloodline"
+trait_blood_mars:0 "Mars' Bloodline"
+trait_blood_diana:0 "Diana's Bloodline"
+trait_blood_minerva:0 "Minerva's Bloodline"
+trait_blood_ceres:0 "Ceres' Bloodline"
+trait_blood_pluto:0 "Pluto's Bloodline"
+trait_blood_vulcan:0 "Vulcan's Bloodline"
+trait_blood_juno:0 "Juno's Bloodline"
+trait_blood_mercury:0 "Mercury's Bloodline"
+trait_blood_vesta:0 "Vesta's Bloodline"
+trait_blood_neptune:0 "Neptune's Bloodline"
+trait_blood_bacchus:0 "Bacchus's Bloodline"
+trait_blood_jupiter:0 "Jupiter's Bloodline"
+trait_blood_discordia:0 "Discordia's Bloodline"
+
+#Immortality Trait
+
+ trait_divinely_immortal:0 "Eternal"
+ trait_divinely_immortal_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is blessed with eternal youth."
+
+# Septem Colles
+
+ born_in_the_septem_colles:0 "Born in Septem Colles"
+

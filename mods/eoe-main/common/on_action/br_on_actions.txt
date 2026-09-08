@@ -56,13 +56,24 @@ br_on_action_game_start = {
 						has_variable = eoe_wre_pending_settlement
 					}
 					NOT = { has_variable = eoe_wre_settlement_scheduled }
+					NOR = {
+						has_character_flag = eoe_wre_imperial_settlement_policy
+						has_character_flag = eoe_wre_local_settlement_policy
+						has_character_flag = eoe_wre_combined_settlement_policy
+					}
 				}
 				set_variable = { name = eoe_wre_settlement_scheduled value = yes }
 				trigger_event = { id = eoe_wre_settlement.0001 days = 1 }
 			}
 			else_if = {
 				limit = {
-					any_realm_county = { has_variable = eoe_wre_pending_provincial_settlement }
+					OR = {
+						any_realm_county = {
+							holder = prev
+							has_variable = eoe_wre_pending_settlement
+						}
+						any_realm_county = { has_variable = eoe_wre_pending_provincial_settlement }
+					}
 					NOT = { has_variable = eoe_wre_settlement_scheduled }
 				}
 				set_variable = { name = eoe_wre_settlement_scheduled value = yes }
