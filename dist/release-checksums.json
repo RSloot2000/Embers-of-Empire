@@ -2,20 +2,20 @@
   "schemaVersion": 1,
   "artifacts": [
     {
-      "artifact": "embers-of-empire-v1.18.3.zip",
+      "artifact": "embers-of-empire-v1.18.4.zip",
       "mod": "mods/eoe-main",
       "workshopId": "3679840613",
-      "version": "1.18.3",
-      "size": 101234628,
-      "sha256": "90d09ea67934b5eb1321459033dcc3eb76d693ec20919b6476d77a9fa63ea6da"
+      "version": "1.18.4",
+      "size": 101239695,
+      "sha256": "8754482544b8f55a89a0f43a93534a752f78ff61bad1b8ab809fe48e70ec4aa7"
     },
     {
-      "artifact": "eoe-compat-epe-v1.18.3.1.zip",
+      "artifact": "eoe-compat-epe-v1.18.4.zip",
       "mod": "mods/eoe-compat-epe",
       "workshopId": "3679849030",
-      "version": "1.18.3.1",
-      "size": 815925,
-      "sha256": "fc97c8cc0a6366bbb45e210ec3d31d6f900ca33d87abf443616e42413697b0d4"
+      "version": "1.18.4",
+      "size": 815893,
+      "sha256": "a88002c992d19a326f2e8e66a60d4557c43d979c1c26abdb8ba9d707317162bb"
     },
     {
       "artifact": "eoe-compat-it-v1.18.3.zip",
@@ -31,7 +31,7 @@
       "workshopId": "3679850009",
       "version": "1.18.2",
       "size": 794536,
-      "sha256": "45622de0f86f76bef418801efb423a15b4571eb497644a55355b9616fe8c9393"
+      "sha256": "2fee0daeca4737cbe3678a222a87a3ed797604c4f59cddd77e63ebfe7bc40781"
     }
   ]
 }

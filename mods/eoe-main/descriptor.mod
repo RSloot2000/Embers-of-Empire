@@ -1,4 +1,4 @@
-version="1.18.3"
+version="1.18.4"
 tags={
 	"1.19 'Scribe'"
 	"Alternative History"
