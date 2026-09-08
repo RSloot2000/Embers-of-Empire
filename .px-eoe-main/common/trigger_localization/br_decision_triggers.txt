@@ -1,3 +1,0 @@
-﻿BR_has_won_amount_wars = {
-    first = BR_HAS_WON_AMOUNT_WARS
-}
