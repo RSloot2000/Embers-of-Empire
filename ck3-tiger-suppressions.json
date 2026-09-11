@@ -10,7 +10,7 @@
         "fullpath": ".\\mods\\eoe-main\\events\\BR_events.txt",
         "length": 1,
         "line": "\t\t\tcreate_legend_seed = {",
-        "linenr": 503,
+        "linenr": 481,
         "path": "events\\BR_events.txt",
         "stage": null,
         "tag": null
