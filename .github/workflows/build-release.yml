@@ -1,0 +1,57 @@
+name: Build release zips
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: build-release-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Generate release zips
+    runs-on: windows-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Validate descriptors and localization
+        shell: pwsh
+        run: ./scripts/validate-repository.ps1
+
+      - name: Clear dist directory
+        shell: pwsh
+        run: |
+          $dist = Join-Path (Get-Location) 'dist'
+          if (Test-Path $dist) {
+            Remove-Item $dist -Recurse -Force
+            Write-Host "Cleared $dist"
+          } else {
+            Write-Host "dist directory does not exist yet"
+          }
+
+      - name: Build release archives
+        shell: pwsh
+        run: ./scripts/build-release.ps1
+
+      - name: Show generated artifacts
+        shell: pwsh
+        run: Get-ChildItem dist | Format-Table Name, Length
+
+      - name: Upload dist as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-zips
+          path: dist/
+          if-no-files-found: error
+          retention-days: 14
