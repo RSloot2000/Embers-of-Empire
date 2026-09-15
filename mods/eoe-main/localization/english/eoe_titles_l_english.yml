@@ -91,6 +91,9 @@
  cn_raetia_II_adj:0 "Raetian"
  cn_venetia:0 "Venetia et Histria"
  cn_venetia_adj:0 "Venetian"
+ cn_hibernia:0 "Hibernia"
+ cn_valentia:0 "Valentia"
+ cn_valentia_adj:0 "Valentian"
 
 #Praetorian Prefectures and Hegemonies
  praetorian_gallia_region:0 "Praefectura Gallia"

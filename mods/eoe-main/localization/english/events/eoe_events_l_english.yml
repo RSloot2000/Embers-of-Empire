@@ -143,11 +143,13 @@ eoe_roman_event.0015.desc:0 "Night settles over the Tiber as smoke rises from Va
 eoe_roman_event.0015.a:0 "Raise the Circus of Nero upon the hill"
 eoe_roman_event.0015.b:0 "Consecrate the hill to the Unconquered Sun"
 
+###Repurpose Hagia Sophia###
+
 must_be_hellenic:0 "You must follow a Hellenic faith"
 must_be_christian:0 "You must follow a Christian faith"
-eoe_roman_event.0016.title:0 "A Pantheon for Constantinople"
-eoe_roman_event.0016.desc:0 "The great sanctuary of Constantinople stands at the heart of the eastern capital. Its vaults, marbles, and imperial galleries can now be rededicated as a pantheon for the restored cults of the Roman world.\n\nSuch an act will be read throughout the [Glossary( 'Basileia ton Rhomaion', 'EOE_BASILEIA_ROMAION_GLOSS' )]: not merely as a change of worship, but as a declaration that the emperor commands the sacred landscape of New Rome."
-eoe_roman_event.0016.a:0 "Consecrate the imperial Pantheon"
+eoe_roman_event.0016.title:0 "The Temple of Holy Wisdom"
+eoe_roman_event.0016.desc:0 "The great sanctuary of Constantinople stands at the heart of the eastern capital. Its vaults, marbles, and imperial galleries can now be rededicated as a temple for the restored cult of Helios Pantokrator.\n\nSuch an act will be read throughout the [Glossary( 'Basileia ton Rhomaion', 'EOE_BASILEIA_ROMAION_GLOSS' )]: not merely as a change of worship, but as a declaration that the emperor commands the sacred landscape of New Rome."
+eoe_roman_event.0016.a:0 "Consecrate the Temple of Holy Wisdom"
 
 ###Great Projects###
 

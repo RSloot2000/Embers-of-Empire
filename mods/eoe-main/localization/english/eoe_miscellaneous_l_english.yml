@@ -4,6 +4,7 @@
  great_war_of_restoration_cb:0 "Great War of Restoration"
  WR_GREAT_WAR_OF_DEFIANCE_NAME: "Great War of Restoration against [DEFENDER.GetShortUINameNotMe]"
  WR_GREAT_WAR_OF_DEFIANCE_NAME_MY: "$ORDER$ War of Restoration against [DEFENDER.GetShortUIName]"
+ WR_GREAT_WAR_OF_DEFIANCE_NAME: "Great War of Restoration"
  
  br_war_of_defiance_wr_loses_defender: "You have been imprisoned by [attacker.GetShortUIName]. All your landed [titles|E], [vassals|E] and [tributaries|E] become independent. You lose most of your [prestige|E], [gold|E] and [legitimacy|E]."
  br_war_of_defiance_wr_loses_attacker: "[defender.GetShortUIName] has been imprisoned, humiliated and stripped of all possessions. All [defender.GetHerHis|U] landed [titles|E] are lost. [defender.GetHerHis|U] [vassals|E] and [counties|E] become independent."

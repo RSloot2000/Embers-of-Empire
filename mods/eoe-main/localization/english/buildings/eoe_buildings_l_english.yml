@@ -56,12 +56,9 @@
   building_temple_of_sol_invictus_02:0 "Temple of Sol Invictus"
   building_temple_of_sol_invictus_02_desc:0 "Atop Vatican Hill now stands a grand temple of the Unconquered Sun, protector of the empire and our most sacred emperor."
 
-  building_pantheon_of_constantinople_01:0 "Pantheon of Constantinople (Construction Site)"
-  building_pantheon_of_constantinople_01_desc:0 "The ground has been cleared for a grand temple in the imperial capital. Let the construction commence."
-  building_type_pantheon_of_constantinople_01:0 "Pantheon of Constantinople"
-  building_type_pantheon_of_constantinople_01_desc:0 "A monumental temple dedicated to the gods of the restored Roman tradition in Constantinople."
-  building_pantheon_of_constantinople_02:0 "Pantheon of Constantinople"
-  building_pantheon_of_constantinople_02_desc:0 "The Pantheon of Constantinople stands as a monumental sanctuary to the gods and a symbol of restored Roman religious authority."
+  building_type_temple_of_holy_wisdom:0 "Temple of Holy Wisdom"
+  building_temple_of_holy_wisdom:0 "Temple of Holy Wisdom"
+  building_temple_of_holy_wisdom_desc:0 "The Temple of Holy Wisdom is one of the most important religious centres in the Eastern Empire. Dedicated to Helios Pantokrator, it houses the combined priesthoods of His most important aspects, from Phoibos Apollon to Sol Invictus-Mithras."
   #building_type_the_colosseum_02:0 "The Colosseum"
   #building_type_the_colosseum_02_desc:0 "The Colosseum restored to its former glory, once again the greatest arena the world had ever seen, dominating the city of Rome. Although the gladiatorial duels to death has not returned, the games at the restored Colosseum are still the foremost source of entertainment to the citzens of the Eternal City."
   

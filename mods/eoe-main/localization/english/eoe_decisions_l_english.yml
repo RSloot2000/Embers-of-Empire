@@ -309,3 +309,12 @@
  eoe_destroy_the_vatican_decision_effect_tooltip: "The [GetBuilding('holy_site_st_peters_basilica_01').GetName] will be destroyed and you will be presented with a choice."
  eoe_vatican_must_not_exist_tooltip: "[GetTitleByKey('k_papal_state').GetDefinitiveName] does not exist."
  eoe_destroy_the_vatican_decision_confirm: "Vatican Hill shall burn!"
+
+# Repurpose Hagia Sophia
+
+ eoe_convert_hagia_sophia_decision: "Repurpose Hagia Sophia"
+ eoe_convert_hagia_sophia_decision_desc: "With our conquest of the eastern half of the empire, we are presented with the opportunity to reshape Constantinople in our image. For generations now, the Hagia Sophia has been a symbol of Galilean triumph, a marvel of engineering no doubt but still a constant reminder of the triumph of ignorance and falsehood over divine truth. Reconsecrating this great building in the name of our holy purpose would be a powerful symbol."
+ eoe_convert_hagia_sophia_decision_tooltip: "Repurpose the Hagia Sophia of Constantinople"
+ eoe_convert_the_hagia_sophia_decision_effect_tooltip: "The [GetBuilding('hagia_sophia_01').GetName] will be replaced with [GetBuilding('temple_of_holy_wisdom').GetName].
+ eoe_byzantium_must_not_exist_tooltip: "[GetTitleByKey('e_byzantium').GetDefinitiveName] does not exist."
+ eoe_convert_hagia_sophia_decision_confirm: "Begin the Reconsecration"

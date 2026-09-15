@@ -409,50 +409,15 @@ temple_of_sol_invictus_02 = {
 	flag = religious_studies_location
 }
 
-pantheon_of_constantinople_01 = {
-
-	construction_time = very_slow_construction_time
-
-	type_icon = "construction_site.dds"
-
-	is_enabled = {
-		custom_description = {
-			text = eoe_hellenic_building_enabled_requirement_tt
-			OR = {
-				AND = {
-			        religion = religion:hellenism_religion
-			        scope:holder.religion = religion:hellenism_religion
-				}
-				AND = {
-					faith = {
-						has_doctrine = tenet_hellenic_syncretism
-					}
-					scope:holder.faith = {
-						has_doctrine = tenet_hellenic_syncretism
-					}
-				}
-			}
-		}
-	}
-
-	province_modifier = {
-		build_speed = -0.1
-	}
-
-	next_building = pantheon_of_constantinople_02
-	
-	type = special
-}
-
-pantheon_of_constantinople_02 = {
+temple_of_holy_wisdom = {
 	asset = {
 		type = pdxmesh
-		name = "building_mediterranean_temple_pagan_02_b_mesh"
+		name = "building_special_hagia_sophia_mesh"
 	}
 
 	construction_time = very_slow_construction_time
 
-	type_icon = "temple_of_sol_invictus.dds"
+	type_icon = "icon_structure_hagia_sophia.dds"
 
 	is_enabled = {
 		custom_description = {

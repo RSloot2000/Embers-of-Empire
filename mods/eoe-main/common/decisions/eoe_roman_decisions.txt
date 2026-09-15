@@ -257,76 +257,76 @@ eoe_destroy_the_vatican_decision = {
 		}
         }
 }
-#eoe_destroy_hagia_sophia_decision = {
-#        picture = {
-#                reference = "gfx/interface/illustrations/decisions/destroy_hagia_sophia.dds"
-#        }
-#        decision_group_type = roman
-#
-#        desc = eoe_destroy_hagia_sophia_decision_desc
-#        selection_tooltip = eoe_destroy_the_hagia_sophia_decision_tooltip
-#
-#        is_shown = {
-#                is_ruler = yes
-#                is_landed = yes
-#		AND = {
-#                        OR = {
-#			        religion = religion:hellenism_religion
-#                                faith = {
-#                                        has_doctrine = tenet_hellenic_syncretism
-#                                }
-#                        }
-#			is_greek_or_roman = yes
-#                        NOT = {
-#                                is_target_in_global_variable_list = {
-#			                name = unavailable_unique_decisions
-#			                target = flag:flag_destroyed_hagia_sophia
-#                                }
-#                        }
-#		}
-#        }
-#
-#        is_valid = {      
-#                AND = {
-#                        completely_controls = title:d_thrace
-#
-#                        custom_tooltip = {
-#                        text = eoe_byzantium_must_not_exist_tooltip
-#			        NOT = { 
-#                                        exists = title:e_byzantium.holder
-#                                }
-#                        }
-#                        OR = {
-#		                has_title = title:e_western_roman_empire
-#			        has_title = title:h_western_roman_empire
-#			        has_title = title:h_eastern_roman_empire
-#			        has_title = title:h_roman_empire
-#                        }
-#                }
-#        }
-#
-#        is_valid_showing_failures_only = {
-#		is_capable_adult = yes
-#		is_imprisoned = no
-#		is_independent_ruler = yes
-#	}
-#
-#        effect = {
-#                custom_tooltip = eoe_destroy_the_hagia_sophia_decision_effect_tooltip
-#                trigger_event = eoe_roman_event.0016
-#
-#                hidden_effect = {
-#			add_to_global_variable_list = {
-#				name = unavailable_unique_decisions
-#				target = flag:flag_destroyed_hagia_sophia
-#			}
-#			set_global_variable = {
-#				name = flag_destroyed_hagia_sophia
-#				value = root
-#			}
-#		}
-#        }
-#}
+eoe_convert_hagia_sophia_decision = {
+        picture = {
+                reference = "gfx/interface/illustrations/decisions/convert_hagia_sophia.dds"
+        }
+        decision_group_type = roman
+
+        desc = eoe_convert_hagia_sophia_decision_desc
+        selection_tooltip = eoe_convert_the_hagia_sophia_decision_tooltip
+
+        is_shown = {
+                is_ruler = yes
+                is_landed = yes
+		AND = {
+                        OR = {
+			        religion = religion:hellenism_religion
+                                faith = {
+                                        has_doctrine = tenet_hellenic_syncretism
+                                }
+                        }
+			is_greek_or_roman = yes
+                        NOT = {
+                                is_target_in_global_variable_list = {
+			                name = unavailable_unique_decisions
+			                target = flag:flag_converted_hagia_sophia
+                                }
+                        }
+		}
+        }
+
+        is_valid = {      
+                AND = {
+                        completely_controls = title:d_thrace
+
+                        custom_tooltip = {
+                        text = eoe_byzantium_must_not_exist_tooltip
+			        NOT = { 
+                                        exists = title:e_byzantium.holder
+                                }
+                        }
+                        OR = {
+		                has_title = title:e_western_roman_empire
+			        has_title = title:h_western_roman_empire
+			        has_title = title:h_eastern_roman_empire
+			        has_title = title:h_roman_empire
+                        }
+                }
+        }
+
+        is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+        effect = {
+                custom_tooltip = eoe_convert_the_hagia_sophia_decision_effect_tooltip
+                trigger_event = eoe_roman_event.0016
+
+                hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_converted_hagia_sophia
+			}
+			set_global_variable = {
+				name = flag_converted_hagia_sophia
+				value = root
+			}
+		}
+        }
+}
 
 recreate_the_province_of_mesopotamia_decision = {
         picture = {

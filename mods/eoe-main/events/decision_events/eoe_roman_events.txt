@@ -517,6 +517,11 @@ eoe_roman_event.0012 = {
         character = root
         animation = war_over_win
     }
+    immediate = {
+        title:k_mesopotamia_roman = {
+            set_de_jure_liege_title = title:e_praetorian_oriens
+        }
+    }
     option = {
         name = eoe_roman_event.0012.a
     }
@@ -665,13 +670,13 @@ eoe_roman_event.0016 = {
             }
             title:b_constantinople.title_province = {
                 remove_building = hagia_sophia_02
-                add_special_building = pantheon_of_constantinople_01
+                add_special_building = temple_of_holy_wisdom
             }
         }
         else = {
             title:b_constantinople.title_province = {
             remove_building = hagia_sophia_01
-            add_special_building = pantheon_of_constantinople_02
+            add_special_building = temple_of_holy_wisdom
             }
         }
     }

@@ -63,3 +63,608 @@ divinely_immortal = {
 
 	ruler_designer_cost = 1200
 }
+
+##Blood of the Sun
+
+blood_of_helios_1 = {
+	icon = helios_1.dds
+
+	opposites = {
+		blood_of_helios_2
+		blood_of_helios_3
+		blood_of_helios_4
+		blood_of_helios_5
+		blood_of_helios_6
+		blood_of_helios_7
+		blood_of_helios_8
+		blood_of_helios_9
+		blood_of_helios_10
+	}
+
+	ruler_designer_cost = 20
+
+	group = blood_of_helios
+	category = health
+	level = 1
+
+	prowess = 1
+
+	flag = lower_chance_of_dying_in_combat
+	genetic = yes
+	#inherit_chance = 50
+	#both_parent_has_trait_inherit_chance = 95
+	good = yes
+
+	negate_health_penalty_add = 0.25
+	fertility = -0.05
+	health = 0.2
+	life_expectancy = 20
+	years_of_fertility = 10
+	stress_gain_mult = -0.05
+	# same_opinion = 15
+
+	monthly_lifestyle_xp_gain_mult = -0.05
+
+	faith_modifier = { # LotR
+		#parameter = lotr_numenor_blood_bonuses
+		monthly_piety = 0.2
+		legitimacy_gain_mult = 0.025
+	}
+
+	culture_modifier = {
+		#parameter = no_lifestyle_xp_reduction_from_numenorean_blood
+		monthly_lifestyle_xp_gain_mult = 0.05
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_of_helios_1_desc
+			}
+			desc = trait_blood_of_helios_1_character_desc
+		}
+	}
+}
+blood_of_helios_2 = {
+	icon = helios_2.dds
+
+	opposites = {
+		blood_of_helios_1
+		blood_of_helios_3
+		blood_of_helios_4
+		blood_of_helios_5
+		blood_of_helios_6
+		blood_of_helios_7
+		blood_of_helios_8
+		blood_of_helios_9
+		blood_of_helios_10
+	}
+
+	ruler_designer_cost = 40
+
+	group = blood_of_helios
+	category = health
+	level = 2
+
+	prowess = 1
+
+	flag = lower_chance_of_dying_in_combat
+	genetic = yes
+	#inherit_chance = 45
+	#both_parent_has_trait_inherit_chance = 90
+	good = yes
+
+	negate_health_penalty_add = 0.4
+	fertility = -0.05
+	health = 0.4
+	life_expectancy = 40
+	years_of_fertility = 20
+	stress_gain_mult = -0.1
+
+	monthly_lifestyle_xp_gain_mult = -0.1
+
+	faith_modifier = { # LotR
+		#parameter = lotr_numenor_blood_bonuses
+		monthly_piety = 0.4
+		legitimacy_gain_mult = 0.05
+	}
+
+	culture_modifier = {
+		#parameter = no_lifestyle_xp_reduction_from_numenorean_blood
+		monthly_lifestyle_xp_gain_mult = 0.1
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_of_helios_2_desc
+			}
+			desc = trait_blood_of_helios_2_character_desc
+		}
+	}
+}
+blood_of_helios_3 = {
+	icon = helios_3.dds
+
+	opposites = {
+		blood_of_helios_1
+		blood_of_helios_2
+		blood_of_helios_4
+		blood_of_helios_5
+		blood_of_helios_6
+		blood_of_helios_7
+		blood_of_helios_8
+		blood_of_helios_9
+		blood_of_helios_10
+	}
+
+	ruler_designer_cost = 60
+
+	group = blood_of_helios
+	category = health
+	level = 3
+
+	prowess = 2
+
+	flag = lower_chance_of_dying_in_combat
+	genetic = yes
+	#inherit_chance = 40
+	#both_parent_has_trait_inherit_chance = 85
+	good = yes
+
+	negate_health_penalty_add = 0.5
+	fertility = -0.10
+	health = 0.6
+	life_expectancy = 60
+	years_of_fertility = 30
+	stress_gain_mult = -0.15
+
+	monthly_lifestyle_xp_gain_mult = -0.15
+
+	faith_modifier = { # LotR
+		#parameter = lotr_numenor_blood_bonuses
+		monthly_piety = 0.6
+		legitimacy_gain_mult = 0.075
+	}
+
+	culture_modifier = {
+		#parameter = no_lifestyle_xp_reduction_from_numenorean_blood
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_of_helios_3_desc
+			}
+			desc = trait_blood_of_helios_3_character_desc
+		}
+	}
+}
+blood_of_helios_4 = {
+	icon = helios_4.dds
+
+	opposites = {
+		blood_of_helios_1
+		blood_of_helios_2
+		blood_of_helios_3
+		blood_of_helios_5
+		blood_of_helios_6
+		blood_of_helios_7
+		blood_of_helios_8
+		blood_of_helios_9
+		blood_of_helios_10
+	}
+
+	ruler_designer_cost = 80
+
+	group = blood_of_helios
+	category = health
+	level = 4
+
+	prowess = 2
+
+	flag = lower_chance_of_dying_in_combat
+	genetic = yes
+	#inherit_chance = 35
+	#both_parent_has_trait_inherit_chance = 80
+	good = yes
+
+	negate_health_penalty_add = 0.55
+	fertility = -0.10
+	health = 0.8
+	life_expectancy = 80
+	years_of_fertility = 40
+	stress_gain_mult = -0.20
+
+	monthly_lifestyle_xp_gain_mult = -0.20
+
+	faith_modifier = { # LotR
+		#parameter = lotr_numenor_blood_bonuses
+		monthly_piety = 0.8
+		legitimacy_gain_mult = 0.1
+	}
+
+	culture_modifier = {
+		#parameter = no_lifestyle_xp_reduction_from_numenorean_blood
+		monthly_lifestyle_xp_gain_mult = 0.20
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_of_helios_4_desc
+			}
+			desc = trait_blood_of_helios_4_character_desc
+		}
+	}
+}
+blood_of_helios_5 = {
+	icon = helios_5.dds
+
+	opposites = {
+		blood_of_helios_1
+		blood_of_helios_2
+		blood_of_helios_3
+		blood_of_helios_4
+		blood_of_helios_6
+		blood_of_helios_7
+		blood_of_helios_8
+		blood_of_helios_9
+		blood_of_helios_10
+	}
+
+	ruler_designer_cost = 100
+
+	group = blood_of_helios
+	category = health
+	level = 5
+
+	prowess = 3
+
+	flag = lower_chance_of_dying_in_combat
+	genetic = yes
+	#inherit_chance = 30
+	#both_parent_has_trait_inherit_chance = 75
+	good = yes
+
+	negate_health_penalty_add = 0.6
+	fertility = -0.15
+	health = 1.0
+	life_expectancy = 100
+	years_of_fertility = 50
+	stress_gain_mult = -0.25
+
+	monthly_lifestyle_xp_gain_mult = -0.25
+
+	faith_modifier = { # LotR
+		#parameter = lotr_numenor_blood_bonuses
+		monthly_piety = 1
+		legitimacy_gain_mult = 0.125
+	}
+
+	culture_modifier = {
+		#parameter = no_lifestyle_xp_reduction_from_numenorean_blood
+		monthly_lifestyle_xp_gain_mult = 0.25
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_of_helios_5_desc
+			}
+			desc = trait_blood_of_helios_5_character_desc
+		}
+	}
+}
+blood_of_helios_6 = {
+	icon = helios_6.dds
+
+	opposites = {
+		blood_of_helios_1
+		blood_of_helios_2
+		blood_of_helios_3
+		blood_of_helios_4
+		blood_of_helios_5
+		blood_of_helios_7
+		blood_of_helios_8
+		blood_of_helios_9
+		blood_of_helios_10
+	}
+
+	ruler_designer_cost = 120
+
+	group = blood_of_helios
+	category = health
+	level = 6
+
+	prowess = 3
+
+	flag = lower_chance_of_dying_in_combat
+	genetic = yes
+	#inherit_chance = 25
+	#both_parent_has_trait_inherit_chance = 70
+	good = yes
+
+	negate_health_penalty_add = 0.6
+	fertility = -0.15
+	health = 1.2
+	life_expectancy = 120
+	years_of_fertility = 60
+	stress_gain_mult = -0.30
+
+	monthly_lifestyle_xp_gain_mult = -0.30
+
+	faith_modifier = { # LotR
+		#parameter = lotr_numenor_blood_bonuses
+		monthly_piety = 1.2
+		legitimacy_gain_mult = 0.15
+	}
+
+	culture_modifier = {
+		#parameter = no_lifestyle_xp_reduction_from_numenorean_blood
+		monthly_lifestyle_xp_gain_mult = 0.30
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_of_helios_6_desc
+			}
+			desc = trait_blood_of_helios_6_character_desc
+		}
+	}
+}
+blood_of_helios_7 = {
+	icon = helios_7.dds
+
+	opposites = {
+		blood_of_helios_1
+		blood_of_helios_2
+		blood_of_helios_3
+		blood_of_helios_4
+		blood_of_helios_5
+		blood_of_helios_6
+		blood_of_helios_8
+		blood_of_helios_9
+		blood_of_helios_10
+	}
+
+	ruler_designer_cost = 140
+
+	group = blood_of_helios
+	category = health
+	level = 7
+
+	prowess = 4
+
+	flag = lower_chance_of_dying_in_combat
+	genetic = yes
+	#inherit_chance = 20
+	#both_parent_has_trait_inherit_chance = 65
+	good = yes
+
+	negate_health_penalty_add = 0.7
+	fertility = -0.20
+	health = 1.4
+	life_expectancy = 140
+	years_of_fertility = 70
+	stress_gain_mult = -0.35
+
+	monthly_lifestyle_xp_gain_mult = -0.35
+
+	faith_modifier = { # LotR
+		#parameter = lotr_numenor_blood_bonuses
+		monthly_piety = 1.4
+		legitimacy_gain_mult = 0.175
+	}
+
+	culture_modifier = {
+		#parameter = no_lifestyle_xp_reduction_from_numenorean_blood
+		monthly_lifestyle_xp_gain_mult = 0.35
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_of_helios_7_desc
+			}
+			desc = trait_blood_of_helios_7_character_desc
+		}
+	}
+}
+blood_of_helios_8 = {
+	icon = helios_8.dds
+
+	opposites = {
+		blood_of_helios_1
+		blood_of_helios_2
+		blood_of_helios_3
+		blood_of_helios_4
+		blood_of_helios_5
+		blood_of_helios_6
+		blood_of_helios_7
+		blood_of_helios_9
+		blood_of_helios_10
+	}
+
+	ruler_designer_cost = 160
+
+	group = blood_of_helios
+	category = health
+	level = 8
+
+	prowess = 4
+
+	flag = lower_chance_of_dying_in_combat
+	genetic = yes
+	#inherit_chance = 15
+	#both_parent_has_trait_inherit_chance = 60
+	good = yes
+
+	negate_health_penalty_add = 0.75
+	health = 1.6
+	fertility = -0.20
+	life_expectancy = 160
+	years_of_fertility = 80
+	stress_gain_mult = -0.40
+
+	monthly_lifestyle_xp_gain_mult = -0.40
+
+	faith_modifier = { # LotR
+		#parameter = lotr_numenor_blood_bonuses
+		monthly_piety = 1.6
+		legitimacy_gain_mult = 0.2
+	}
+
+	culture_modifier = {
+		#parameter = no_lifestyle_xp_reduction_from_numenorean_blood
+		monthly_lifestyle_xp_gain_mult = 0.40
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_of_helios_8_desc
+			}
+			desc = trait_blood_of_helios_8_character_desc
+		}
+	}
+}
+blood_of_helios_9 = {
+	icon = helios_9.dds
+
+	opposites = {
+		blood_of_helios_1
+		blood_of_helios_2
+		blood_of_helios_3
+		blood_of_helios_4
+		blood_of_helios_5
+		blood_of_helios_6
+		blood_of_helios_7
+		blood_of_helios_8
+		blood_of_helios_10
+	}
+
+	ruler_designer_cost = 180
+
+	group = blood_of_helios
+	category = health
+	level = 9
+
+	prowess = 5
+
+	flag = lower_chance_of_dying_in_combat
+	genetic = yes
+	#inherit_chance = 10
+	#both_parent_has_trait_inherit_chance = 55
+	good = yes
+
+	negate_health_penalty_add = 0.80
+	health = 1.8
+	life_expectancy = 180
+	fertility = -0.25
+	years_of_fertility = 90
+	stress_gain_mult = -0.45
+
+	monthly_lifestyle_xp_gain_mult = -0.45
+
+	faith_modifier = { # LotR
+		#parameter = lotr_numenor_blood_bonuses
+		monthly_piety = 1.8
+		legitimacy_gain_mult = 0.225
+	}
+
+	culture_modifier = {
+		#parameter = no_lifestyle_xp_reduction_from_numenorean_blood
+		monthly_lifestyle_xp_gain_mult = 0.45
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_of_helios_9_desc
+			}
+			desc = trait_blood_of_helios_9_character_desc
+		}
+	}
+}
+blood_of_helios_10 = {
+	icon = helios_10.dds
+
+	opposites = {
+		blood_of_helios_1
+		blood_of_helios_2
+		blood_of_helios_3
+		blood_of_helios_4
+		blood_of_helios_5
+		blood_of_helios_6
+		blood_of_helios_7
+		blood_of_helios_8
+		blood_of_helios_9
+	}
+
+	ruler_designer_cost = 200
+
+	group = blood_of_helios
+	category = health
+	level = 10
+
+	prowess = 5
+
+	flag = lower_chance_of_dying_in_combat
+	genetic = yes
+	#inherit_chance = 5
+	#both_parent_has_trait_inherit_chance = 50
+	good = yes
+
+	negate_health_penalty_add = 0.9
+	health = 2.0
+	fertility = -0.25
+	life_expectancy = 200
+	years_of_fertility = 100
+	stress_gain_mult = -0.50
+
+	monthly_lifestyle_xp_gain_mult = -0.50
+
+	faith_modifier = {
+		#parameter = lotr_numenor_blood_bonuses
+		monthly_piety = 2
+		legitimacy_gain_mult = 0.25
+	}
+
+	culture_modifier = {
+		#parameter = no_lifestyle_xp_reduction_from_numenorean_blood
+		monthly_lifestyle_xp_gain_mult = 0.5
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blood_of_helios_10_desc
+			}
+			desc = trait_blood_of_helios_10_character_desc
+		}
+	}
+}

@@ -3,6 +3,8 @@
  #romanic
  romanic_pagan_old_old:0 "Ancient Roman Pantheon"
  romanic_pagan_old_old_adj:0 "Ancient Romanic"
+ romanic_pagan_old_adherent:0 "Ancient Romannist"
+ romanic_pagan_old_adherent_plural:0 "Ancient Romannists"
  romanic_pagan_old:0 "Roman Pantheon"
  romanic_pagan_old_adj:0 "Romanic"
  romanic_pagan_old_adherent:0 "Romanist"

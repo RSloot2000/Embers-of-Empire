@@ -413,3 +413,44 @@ trait_blood_discordia:0 "Discordia's Bloodline"
 
  born_in_the_septem_colles:0 "Born in Septem Colles"
 
+# Blood of Helios
+
+ trait_blood_of_helios_1:0 "Blood of the Unconquered Sun I"
+ trait_blood_of_helios_1_desc:0 "In the veins of this character flows the blood of Helios-Sol-Invictus. Granting them divine power which grows ever greater the thicker it flows."
+ trait_blood_of_helios_1_character_desc:0 "In the veins of [ROOT.GetCharacter.GetFirstNameNoTooltip] flows the blood of Helios-Sol-Invictus. Granting [ROOT.Char.GetHerHim] divine power which grows ever greater the thicker it flows.
+
+ trait_blood_of_helios_2:0 "Blood of the Unconquered Sun II"
+ trait_blood_of_helios_2_desc:0 "In the veins of this character flows the blood of Helios-Sol-Invictus. Granting them divine power which grows ever greater the thicker it flows."
+ trait_blood_of_helios_2_character_desc:0 "In the veins of [ROOT.GetCharacter.GetFirstNameNoTooltip] flows the blood of Helios-Sol-Invictus. Granting [ROOT.Char.GetHerHim] divine power which grows ever greater the thicker it flows.
+
+ trait_blood_of_helios_3:0 "Blood of the Unconquered Sun III"
+ trait_blood_of_helios_3_desc:0 "In the veins of this character flows the blood of Helios-Sol-Invictus. Granting them divine power which grows ever greater the thicker it flows."
+ trait_blood_of_helios_3_character_desc:0 "In the veins of [ROOT.GetCharacter.GetFirstNameNoTooltip] flows the blood of Helios-Sol-Invictus. Granting [ROOT.Char.GetHerHim] divine power which grows ever greater the thicker it flows.
+
+ trait_blood_of_helios_4:0 "Blood of the Unconquered Sun IV"
+ trait_blood_of_helios_4_desc:0 "In the veins of this character flows the blood of Helios-Sol-Invictus. Granting them divine power which grows ever greater the thicker it flows."
+ trait_blood_of_helios_4_character_desc:0 "In the veins of [ROOT.GetCharacter.GetFirstNameNoTooltip] flows the blood of Helios-Sol-Invictus. Granting [ROOT.Char.GetHerHim] divine power which grows ever greater the thicker it flows.
+
+ trait_blood_of_helios_5:0 "Blood of the Unconquered Sun V"
+ trait_blood_of_helios_5_desc:0 "In the veins of this character flows the blood of Helios-Sol-Invictus. Granting them divine power which grows ever greater the thicker it flows."
+ trait_blood_of_helios_5_character_desc:0 "In the veins of [ROOT.GetCharacter.GetFirstNameNoTooltip] flows the blood of Helios-Sol-Invictus. Granting [ROOT.Char.GetHerHim] divine power which grows ever greater the thicker it flows.
+
+ trait_blood_of_helios_6:0 "Blood of the Unconquered Sun VI"
+ trait_blood_of_helios_6_desc:0 "In the veins of this character flows the blood of Helios-Sol-Invictus. Granting them divine power which grows ever greater the thicker it flows."
+ trait_blood_of_helios_6_character_desc:0 "In the veins of [ROOT.GetCharacter.GetFirstNameNoTooltip] flows the blood of Helios-Sol-Invictus. Granting [ROOT.Char.GetHerHim] divine power which grows ever greater the thicker it flows.
+
+ trait_blood_of_helios_7:0 "Blood of the Unconquered Sun VII"
+ trait_blood_of_helios_7_desc:0 "In the veins of this character flows the blood of Helios-Sol-Invictus. Granting them divine power which grows ever greater the thicker it flows."
+ trait_blood_of_helios_7_character_desc:0 "In the veins of [ROOT.GetCharacter.GetFirstNameNoTooltip] flows the blood of Helios-Sol-Invictus. Granting [ROOT.Char.GetHerHim] divine power which grows ever greater the thicker it flows.
+
+ trait_blood_of_helios_8:0 "Blood of the Unconquered Sun VIII"
+ trait_blood_of_helios_8_desc:0 "In the veins of this character flows the blood of Helios-Sol-Invictus. Granting them divine power which grows ever greater the thicker it flows."
+ trait_blood_of_helios_8_character_desc:0 "In the veins of [ROOT.GetCharacter.GetFirstNameNoTooltip] flows the blood of Helios-Sol-Invictus. Granting [ROOT.Char.GetHerHim] divine power which grows ever greater the thicker it flows.
+
+ trait_blood_of_helios_9:0 "Blood of the Unconquered Sun IX"
+ trait_blood_of_helios_9_desc:0 "In the veins of this character flows the blood of Helios-Sol-Invictus. Granting them divine power which grows ever greater the thicker it flows."
+ trait_blood_of_helios_9_character_desc:0 "In the veins of [ROOT.GetCharacter.GetFirstNameNoTooltip] flows the blood of Helios-Sol-Invictus. Granting [ROOT.Char.GetHerHim] divine power which grows ever greater the thicker it flows.
+
+ trait_blood_of_helios_10:0 "Blood of the Unconquered Sun X"
+ trait_blood_of_helios_10_desc:0 "In the veins of this character flows the blood of Helios-Sol-Invictus. Granting them divine power which grows ever greater the thicker it flows."
+ trait_blood_of_helios_10_character_desc:0 "In the veins of [ROOT.GetCharacter.GetFirstNameNoTooltip] flows the blood of Helios-Sol-Invictus. Granting [ROOT.Char.GetHerHim] divine power which grows ever greater the thicker it flows.
