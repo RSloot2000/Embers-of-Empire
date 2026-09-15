@@ -3,6 +3,7 @@ param()
 
 $ErrorActionPreference = 'Stop'
 $repositoryRoot = Split-Path $PSScriptRoot -Parent
+. (Join-Path $PSScriptRoot 'lib/mods.ps1')
 $failures = [Collections.Generic.List[string]]::new()
 $warnings = [Collections.Generic.List[string]]::new()
 
@@ -42,12 +43,7 @@ function Add-ValidationWarning {
     }
 }
 
-$modDirectories = @(
-    'mods/eoe-main',
-    'mods/eoe-compat-epe',
-    'mods/eoe-compat-it',
-    'mods/eoe-compat-ce'
-)
+$modDirectories = @(Get-ModInventory -RepositoryRoot $repositoryRoot | ForEach-Object { "mods/$($_.Source)" })
 
 foreach ($relativeModDirectory in $modDirectories) {
     $descriptorPath = Join-Path $repositoryRoot $relativeModDirectory 'descriptor.mod'

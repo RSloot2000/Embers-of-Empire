@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "mods": {
+    "eoe-main": {
+      "workshopId": "3679840613",
+      "devName": "EoE_Dev",
+      "artifact": "embers-of-empire",
+      "dependencies": []
+    },
+    "eoe-compat-epe": {
+      "workshopId": "3679849030",
+      "devName": "EoE_EPE_Dev",
+      "dependencies": [
+        { "id": "3679840613", "title": "Embers of Empire - A Roman Restoration" },
+        { "id": "2507209632", "title": "Ethnicities & Portraits Expanded" }
+      ]
+    },
+    "eoe-compat-it": {
+      "workshopId": "3679849283",
+      "devName": "EoE_IT_Dev",
+      "dependencies": [
+        { "id": "3679840613", "title": "Embers of Empire - A Roman Restoration" },
+        { "id": "2255229872", "title": "Immersive Toponyms" }
+      ]
+    },
+    "eoe-compat-ce": {
+      "workshopId": "3679850009",
+      "devName": "EoE_CE_Dev",
+      "dependencies": [
+        { "id": "3679840613", "title": "Embers of Empire - A Roman Restoration" },
+        { "id": "2829397295", "title": "Culture Expanded" }
+      ]
+    },
+    "eoe-compat-reno": {
+      "workshopId": null,
+      "devName": "EoE_Reno_Dev",
+      "dependencies": [
+        { "id": "3679840613", "title": "Embers of Empire - A Roman Restoration" },
+        { "id": "3798537678", "title": "Renovatio" }
+      ]
+    },
+    "eoe-compat-cfp-reno": {
+      "workshopId": null,
+      "devName": "EoE_CFP_Reno_Dev",
+      "dependencies": [
+        { "id": "3679840613", "title": "Embers of Empire - A Roman Restoration" },
+        { "id": "2220098919", "title": "Community Flavor Pack" },
+        { "id": "3798537678", "title": "Renovatio" }
+      ]
+    }
+  }
+}

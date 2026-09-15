@@ -5,39 +5,16 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $repositoryRoot = Split-Path $PSScriptRoot -Parent
+. (Join-Path $PSScriptRoot 'lib/mods.ps1')
 $detailsEndpoint = 'https://api.steampowered.com/ISteamRemoteStorage/GetPublishedFileDetails/v1/'
 
-$mods = @(
-    @{ Id = '3679840613'; Path = 'mods\eoe-main'; Dependencies = @() },
-    @{
-        Id = '3679849030'
-        Path = 'mods\eoe-compat-epe'
-        Dependencies = @(
-            @{ Id = '3679840613'; Title = 'Embers of Empire - A Roman Restoration' },
-            @{ Id = '2507209632'; Title = 'Ethnicities & Portraits Expanded' }
-        )
-    },
-    @{
-        Id = '3679849283'
-        Path = 'mods\eoe-compat-it'
-        Dependencies = @(
-            @{ Id = '3679840613'; Title = 'Embers of Empire - A Roman Restoration' },
-            @{ Id = '2255229872'; Title = 'Immersive Toponyms' }
-        )
-    },
-    @{
-        Id = '3679850009'
-        Path = 'mods\eoe-compat-ce'
-        Dependencies = @(
-            @{ Id = '3679840613'; Title = 'Embers of Empire - A Roman Restoration' },
-            @{ Id = '2829397295'; Title = 'Culture Expanded' }
-        )
-    }
-)
+# Only published mods (those with a WorkshopId) have public Steam metadata.
+# Unpublished submods are skipped here; they are still covered by the other scripts.
+$mods = @(Get-ModInventory -RepositoryRoot $repositoryRoot | Where-Object { $_.WorkshopId })
 
 $body = @{ itemcount = $mods.Count }
 for ($index = 0; $index -lt $mods.Count; $index++) {
-    $body["publishedfileids[$index]"] = $mods[$index].Id
+    $body["publishedfileids[$index]"] = $mods[$index].WorkshopId
 }
 
 $response = Invoke-RestMethod -Method Post -Uri $detailsEndpoint -Body $body
@@ -47,25 +24,25 @@ foreach ($detail in $response.response.publishedfiledetails) {
 }
 
 $items = foreach ($mod in $mods) {
-    $detail = $detailsById[$mod.Id]
+    $detail = $detailsById[$mod.WorkshopId]
     if ($null -eq $detail -or $detail.result -ne 1) {
-        throw "Steam returned no public metadata for Workshop item $($mod.Id)."
+        throw "Steam returned no public metadata for Workshop item $($mod.WorkshopId)."
     }
 
-    $descriptorPath = Join-Path (Join-Path $repositoryRoot $mod.Path) 'descriptor.mod'
+    $descriptorPath = Join-Path (Join-Path (Join-Path $repositoryRoot 'mods') $mod.Source) 'descriptor.mod'
     $descriptor = Get-Content $descriptorPath -Raw
     $descriptorId = [regex]::Match($descriptor, '(?m)^remote_file_id\s*=\s*"([^"]+)"').Groups[1].Value
     $version = [regex]::Match($descriptor, '(?m)^version\s*=\s*"([^"]+)"').Groups[1].Value
     $supportedVersion = [regex]::Match($descriptor, '(?m)^supported_version\s*=\s*"([^"]+)"').Groups[1].Value
     $descriptorName = [regex]::Match($descriptor, '(?m)^name\s*=\s*"([^"]+)"').Groups[1].Value
-    if ($descriptorId -ne $mod.Id) {
-        throw "Descriptor ID $descriptorId does not match expected Workshop ID $($mod.Id): $descriptorPath"
+    if ($descriptorId -ne $mod.WorkshopId) {
+        throw "Descriptor ID $descriptorId does not match expected Workshop ID $($mod.WorkshopId): $descriptorPath"
     }
 
-    $pageUri = "https://steamcommunity.com/sharedfiles/filedetails/?id=$($mod.Id)&l=english"
+    $pageUri = "https://steamcommunity.com/sharedfiles/filedetails/?id=$($mod.WorkshopId)&l=english"
     $pageUris = @(
         $pageUri,
-        "https://steamcommunity.com/workshop/filedetails/?id=$($mod.Id)&l=english"
+        "https://steamcommunity.com/workshop/filedetails/?id=$($mod.WorkshopId)&l=english"
     )
     $html = ''
     $requiredBlock = ''
@@ -106,13 +83,13 @@ $items = foreach ($mod in $mods) {
     $expectedDependencyIds = @($dependencies.id | Sort-Object)
     $dependenciesVerified = $requiredBlock -and (($actualDependencyIds -join ',') -eq ($expectedDependencyIds -join ','))
     if ($requiredBlock -and -not $dependenciesVerified) {
-        throw "Workshop dependencies for $($mod.Id) differ from the managed set. Expected $($expectedDependencyIds -join ', '); found $($actualDependencyIds -join ', ')."
+        throw "Workshop dependencies for $($mod.WorkshopId) differ from the managed set. Expected $($expectedDependencyIds -join ', '); found $($actualDependencyIds -join ', ')."
     }
     $changeNoteMatch = [regex]::Match($html, '(\d+) Change Notes')
 
     [pscustomobject][ordered]@{
-        id = $mod.Id
-        repositoryPath = $mod.Path.Replace('\', '/')
+        id = $mod.WorkshopId
+        repositoryPath = "mods/$($mod.Source)"
         pageUrl = $pageUri
         result = [int]$detail.result
         title = $detail.title

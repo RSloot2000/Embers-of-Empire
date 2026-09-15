@@ -5,19 +5,15 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $repositoryRoot = Split-Path $PSScriptRoot -Parent
+. (Join-Path $PSScriptRoot 'lib/mods.ps1')
 
-$mods = @(
-    @{ Source = 'mods\eoe-main'; Artifact = 'embers-of-empire'; WorkshopId = '3679840613' },
-    @{ Source = 'mods\eoe-compat-epe'; Artifact = 'eoe-compat-epe'; WorkshopId = '3679849030' },
-    @{ Source = 'mods\eoe-compat-it'; Artifact = 'eoe-compat-it'; WorkshopId = '3679849283' },
-    @{ Source = 'mods\eoe-compat-ce'; Artifact = 'eoe-compat-ce'; WorkshopId = '3679850009' }
-)
+$mods = @(Get-ModInventory -RepositoryRoot $repositoryRoot)
 
 New-Item -ItemType Directory -Path $OutputDirectory -Force | Out-Null
 $artifacts = @()
 
 foreach ($mod in $mods) {
-    $source = Join-Path $repositoryRoot $mod.Source
+    $source = Join-Path (Join-Path $repositoryRoot 'mods') $mod.Source
     $descriptorPath = Join-Path $source 'descriptor.mod'
     if (-not (Test-Path $descriptorPath)) {
         throw "Missing source descriptor: $descriptorPath"
@@ -80,7 +76,7 @@ foreach ($mod in $mods) {
     $archiveInfo = Get-Item $archivePath
     $artifacts += [pscustomobject][ordered]@{
         artifact = $archiveInfo.Name
-        mod = $mod.Source.Replace('\', '/')
+        mod = "mods/$($mod.Source)"
         workshopId = $mod.WorkshopId
         version = $versionMatch.Groups[1].Value
         size = $archiveInfo.Length

@@ -2,12 +2,20 @@
   "schemaVersion": 1,
   "artifacts": [
     {
-      "artifact": "embers-of-empire-v1.18.4.zip",
-      "mod": "mods/eoe-main",
-      "workshopId": "3679840613",
-      "version": "1.18.4",
-      "size": 101239695,
-      "sha256": "8754482544b8f55a89a0f43a93534a752f78ff61bad1b8ab809fe48e70ec4aa7"
+      "artifact": "eoe-compat-ce-v1.18.2.zip",
+      "mod": "mods/eoe-compat-ce",
+      "workshopId": "3679850009",
+      "version": "1.18.2",
+      "size": 794536,
+      "sha256": "14cd7dd1fee48663a91c33fdc370a34a6945087df7286ed332f9e0002a95f00d"
+    },
+    {
+      "artifact": "eoe-compat-cfp-reno-v1.0.0.zip",
+      "mod": "mods/eoe-compat-cfp-reno",
+      "workshopId": null,
+      "version": "1.0.0",
+      "size": 58126,
+      "sha256": "feec171ba4d73ba3e13d99c9b1729fe937ea10f1a0cd94784fb32a0d0b93f1df"
     },
     {
       "artifact": "eoe-compat-epe-v1.18.4.zip",
@@ -15,7 +23,7 @@
       "workshopId": "3679849030",
       "version": "1.18.4",
       "size": 815893,
-      "sha256": "a88002c992d19a326f2e8e66a60d4557c43d979c1c26abdb8ba9d707317162bb"
+      "sha256": "d90e349de4ef5eef54a569f6b59a13a1d433eb258369c4083af94d865e496dc4"
     },
     {
       "artifact": "eoe-compat-it-v1.18.3.zip",
@@ -26,12 +34,20 @@
       "sha256": "5f85b90edcb70bba0d943e0b84c2a0bb1d6349a51ba7cc9072b9702d4e8cdb05"
     },
     {
-      "artifact": "eoe-compat-ce-v1.18.2.zip",
-      "mod": "mods/eoe-compat-ce",
-      "workshopId": "3679850009",
-      "version": "1.18.2",
-      "size": 794536,
-      "sha256": "2fee0daeca4737cbe3678a222a87a3ed797604c4f59cddd77e63ebfe7bc40781"
+      "artifact": "eoe-compat-reno-v1.19.0.zip",
+      "mod": "mods/eoe-compat-reno",
+      "workshopId": null,
+      "version": "1.19.0",
+      "size": 1567,
+      "sha256": "d455016793ed815d034524b36968d0a0d099dde36cec807d8cd9f5c5a6ecb699"
+    },
+    {
+      "artifact": "embers-of-empire-v1.18.4.zip",
+      "mod": "mods/eoe-main",
+      "workshopId": "3679840613",
+      "version": "1.18.4",
+      "size": 102858723,
+      "sha256": "e8fc980853b87e46f6d72440ee4de10f9d5a01a5ddadd2e5a62aefecc47ec53b"
     }
   ]
 }

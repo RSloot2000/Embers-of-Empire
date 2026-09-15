@@ -6,6 +6,7 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $repositoryRoot = Split-Path $PSScriptRoot -Parent
+. (Join-Path $PSScriptRoot 'lib/mods.ps1')
 
 function Get-FileHashMap {
     param(
@@ -83,28 +84,7 @@ function Assert-DevDescriptors {
     }
 }
 
-$mods = @(
-    @{
-        Source = 'mods\eoe-main'
-        DevName = 'EoE_Dev'
-        DisplayName = 'Embers of Empire - A Roman Restoration DEV_VERSION'
-    },
-    @{
-        Source = 'mods\eoe-compat-epe'
-        DevName = 'EoE_EPE_Dev'
-        DisplayName = 'EoE + EPE DEV_VERSION'
-    },
-    @{
-        Source = 'mods\eoe-compat-it'
-        DevName = 'EoE_IT_Dev'
-        DisplayName = 'EoE + Immersive Toponyms DEV_VERSION'
-    },
-    @{
-        Source = 'mods\eoe-compat-ce'
-        DevName = 'EoE_CE_Dev'
-        DisplayName = 'EoE + CE Flavour Patch DEV_VERSION'
-    }
-)
+$mods = @(Get-ModInventory -RepositoryRoot $repositoryRoot)
 
 if (-not (Test-Path $ModDirectory)) {
     if ($PSCmdlet.ShouldProcess($ModDirectory, 'Create CK3 mod directory')) {
@@ -113,9 +93,10 @@ if (-not (Test-Path $ModDirectory)) {
 }
 
 foreach ($mod in $mods) {
-    $source = Join-Path $repositoryRoot $mod.Source
+    $source = Join-Path (Join-Path $repositoryRoot 'mods') $mod.Source
     $destination = Join-Path $ModDirectory $mod.DevName
     $externalDescriptor = Join-Path $ModDirectory ($mod.DevName + '.mod')
+    $displayName = $mod.DisplayName + ' DEV_VERSION'
 
     if (-not (Test-Path (Join-Path $source 'descriptor.mod'))) {
         throw "Missing source descriptor: $source"
@@ -139,7 +120,7 @@ foreach ($mod in $mods) {
         $internalDescriptorPath = Join-Path $destination 'descriptor.mod'
         $descriptor = Get-Content $internalDescriptorPath -Raw
         $descriptor = [regex]::Replace($descriptor, '(?m)^\s*remote_file_id\s*=.*(?:\r?\n)?', '')
-        $descriptor = [regex]::Replace($descriptor, '(?m)^name\s*=\s*"[^"]*"', 'name="' + $mod.DisplayName + '"')
+        $descriptor = [regex]::Replace($descriptor, '(?m)^name\s*=\s*"[^"]*"', 'name="' + $displayName + '"')
         [IO.File]::WriteAllText($internalDescriptorPath, $descriptor, [Text.UTF8Encoding]::new($false))
 
         $external = $descriptor.TrimEnd() + "`r`npath=`"mod/$($mod.DevName)`"`r`n"
@@ -149,9 +130,9 @@ foreach ($mod in $mods) {
         Assert-DevDescriptors `
             -InternalDescriptor $internalDescriptorPath `
             -ExternalDescriptor $externalDescriptor `
-            -DisplayName $mod.DisplayName `
+            -DisplayName $displayName `
             -DevName $mod.DevName
 
-        Write-Host "Prepared and verified $($mod.DisplayName) at $destination"
+        Write-Host "Prepared and verified $displayName at $destination"
     }
 }
