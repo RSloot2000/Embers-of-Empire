@@ -7,7 +7,7 @@
       "workshopId": "3679850009",
       "version": "1.18.2",
       "size": 794536,
-      "sha256": "14cd7dd1fee48663a91c33fdc370a34a6945087df7286ed332f9e0002a95f00d"
+      "sha256": "6e829e61b4289ff75cd8abf9bdd48d6e994c6f327faf06810c31ee320195f66d"
     },
     {
       "artifact": "eoe-compat-cfp-reno-v1.0.0.zip",
@@ -15,7 +15,7 @@
       "workshopId": null,
       "version": "1.0.0",
       "size": 58126,
-      "sha256": "feec171ba4d73ba3e13d99c9b1729fe937ea10f1a0cd94784fb32a0d0b93f1df"
+      "sha256": "9b37f46181fb594b6dfe39fd763a946b1e57a74814b6d7e271d114f8790c9d64"
     },
     {
       "artifact": "eoe-compat-epe-v1.18.4.zip",
@@ -23,7 +23,7 @@
       "workshopId": "3679849030",
       "version": "1.18.4",
       "size": 815893,
-      "sha256": "d90e349de4ef5eef54a569f6b59a13a1d433eb258369c4083af94d865e496dc4"
+      "sha256": "204d017f8fe3f7be26722cfe4c7a5e1494bcb37b022ccb9a9f804774b729cf51"
     },
     {
       "artifact": "eoe-compat-it-v1.18.3.zip",
@@ -38,8 +38,8 @@
       "mod": "mods/eoe-compat-reno",
       "workshopId": null,
       "version": "1.19.0",
-      "size": 1567,
-      "sha256": "d455016793ed815d034524b36968d0a0d099dde36cec807d8cd9f5c5a6ecb699"
+      "size": 1533,
+      "sha256": "c595e93b7330427741382f0fd5eb2fc51ac703c892944568293eaa407f4be3d6"
     },
     {
       "artifact": "embers-of-empire-v1.18.4.zip",
@@ -47,7 +47,7 @@
       "workshopId": "3679840613",
       "version": "1.18.4",
       "size": 102858723,
-      "sha256": "e8fc980853b87e46f6d72440ee4de10f9d5a01a5ddadd2e5a62aefecc47ec53b"
+      "sha256": "85904a027e358a9cb2f7d4e6146f6b14d6f0127fcb372b3abc125a2dd4dcc673"
     }
   ]
 }
