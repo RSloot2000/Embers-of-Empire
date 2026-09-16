@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "retrievedAt": "2026-09-15T17:25:10.5147531+00:00",
+  "retrievedAt": "2026-09-16T12:19:45.2146471+00:00",
   "source": "https://api.steampowered.com/ISteamRemoteStorage/GetPublishedFileDetails/v1/",
   "items": [
     {
       "id": "3679850009",
-      "repositoryPath": "mods/eoe-compat-ce",
+      "repositoryPath": "eoe-mods/eoe-compat-ce",
       "pageUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3679850009&l=english",
       "result": 1,
       "title": "EoE + CE Flavour Patch",
@@ -39,7 +39,7 @@
     },
     {
       "id": "3679849030",
-      "repositoryPath": "mods/eoe-compat-epe",
+      "repositoryPath": "eoe-mods/eoe-compat-epe",
       "pageUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3679849030&l=english",
       "result": 1,
       "title": "EoE + EPE",
@@ -74,7 +74,7 @@
     },
     {
       "id": "3679849283",
-      "repositoryPath": "mods/eoe-compat-it",
+      "repositoryPath": "eoe-mods/eoe-compat-it",
       "pageUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3679849283&l=english",
       "result": 1,
       "title": "EoE + Immersive Toponyms",
@@ -110,7 +110,7 @@
     },
     {
       "id": "3679840613",
-      "repositoryPath": "mods/eoe-main",
+      "repositoryPath": "eoe-mods/eoe-main",
       "pageUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3679840613&l=english",
       "result": 1,
       "title": "Embers of Empire - A Roman Restoration",

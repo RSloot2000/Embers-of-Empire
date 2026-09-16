@@ -13,7 +13,7 @@ New-Item -ItemType Directory -Path $OutputDirectory -Force | Out-Null
 $artifacts = @()
 
 foreach ($mod in $mods) {
-    $source = Join-Path (Join-Path $repositoryRoot 'mods') $mod.Source
+    $source = Join-Path (Join-Path $repositoryRoot 'eoe-mods') $mod.Source
     $descriptorPath = Join-Path $source 'descriptor.mod'
     if (-not (Test-Path $descriptorPath)) {
         throw "Missing source descriptor: $descriptorPath"
@@ -76,7 +76,7 @@ foreach ($mod in $mods) {
     $archiveInfo = Get-Item $archivePath
     $artifacts += [pscustomobject][ordered]@{
         artifact = $archiveInfo.Name
-        mod = "mods/$($mod.Source)"
+        mod = "eoe-mods/$($mod.Source)"
         workshopId = $mod.WorkshopId
         version = $versionMatch.Groups[1].Value
         size = $archiveInfo.Length

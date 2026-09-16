@@ -43,7 +43,7 @@ function Add-ValidationWarning {
     }
 }
 
-$modDirectories = @(Get-ModInventory -RepositoryRoot $repositoryRoot | ForEach-Object { "mods/$($_.Source)" })
+$modDirectories = @(Get-ModInventory -RepositoryRoot $repositoryRoot | ForEach-Object { "eoe-mods/$($_.Source)" })
 
 foreach ($relativeModDirectory in $modDirectories) {
     $descriptorPath = Join-Path $repositoryRoot $relativeModDirectory 'descriptor.mod'
@@ -69,7 +69,7 @@ foreach ($relativeModDirectory in $modDirectories) {
     }
 }
 
-$modsRoot = Join-Path $repositoryRoot 'mods'
+$modsRoot = Join-Path $repositoryRoot 'eoe-mods'
 $forbiddenEntries = Get-ChildItem -LiteralPath $modsRoot -Recurse -Force | Where-Object {
     $_.PSIsContainer -and $_.Name -in @('.vscode', 'steamcmd') -or
     -not $_.PSIsContainer -and (
@@ -80,7 +80,7 @@ $forbiddenEntries = Get-ChildItem -LiteralPath $modsRoot -Recurse -Force | Where
 }
 foreach ($entry in $forbiddenEntries) {
     $relativePath = Get-RelativePath -Path $entry.FullName
-    Add-ValidationFailure -Message 'Forbidden local-only content under mods/.' -Path $relativePath
+    Add-ValidationFailure -Message 'Forbidden local-only content under eoe-mods/.' -Path $relativePath
 }
 
 $localizationFiles = Get-ChildItem -LiteralPath $modsRoot -Recurse -File -Filter '*.yml' |

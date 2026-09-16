@@ -93,7 +93,7 @@ if (-not (Test-Path $ModDirectory)) {
 }
 
 foreach ($mod in $mods) {
-    $source = Join-Path (Join-Path $repositoryRoot 'mods') $mod.Source
+    $source = Join-Path (Join-Path $repositoryRoot 'eoe-mods') $mod.Source
     $destination = Join-Path $ModDirectory $mod.DevName
     $externalDescriptor = Join-Path $ModDirectory ($mod.DevName + '.mod')
     $displayName = $mod.DisplayName + ' DEV_VERSION'

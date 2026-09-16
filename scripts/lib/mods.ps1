@@ -1,6 +1,6 @@
 # Shared mod-discovery helper for the EoE build/deploy/validate scripts.
 #
-# Scans <repoRoot>/mods for folders that contain a descriptor.mod and merges
+# Scans <repoRoot>/eoe-mods for folders that contain a descriptor.mod and merges
 # them with the per-mod config in scripts/mod-config.json.
 #
 # Fields that can be derived from the folder + descriptor are read directly.
@@ -51,7 +51,7 @@ function Get-ModInventory {
         [Parameter(Mandatory)][string]$RepositoryRoot
     )
 
-    $modsRoot = Join-Path $RepositoryRoot 'mods'
+    $modsRoot = Join-Path $RepositoryRoot 'eoe-mods'
     if (-not (Test-Path -LiteralPath $modsRoot -PathType Container)) {
         return @()
     }
