@@ -1,23 +1,24 @@
     special_genes = {
         morph_genes = {
-
-		gene_bs_pregnant = {
-
-		    pregnant = {
-		        index = 0
-		        female = {
-		            setting = { attribute = "bs_body_pregnant_1" value = { min = 0.0 max = 1.0 }  }
-		        }
-		    }
-
-		}
-
-		    pregnant = {
-		        index = 0
-		        female = {
-		            setting = { attribute = "bs_body_pregnant_1" value = { min = 0.0 max = 1.0 }  }
-		        }
-		    }
+            setting = {
+            }
+            gene_bubonic_plague = {
+                no_bubonic_plague = {
+                }
+                setting = {
+                    decal = {
+                        textures = {
+                            blend_modes = {
+                            }
+                        }
+                        decal = {
+                            textures = {
+                            }
+                            blend_modes = {
+                            }
+                        }
+                    }
+                }
 
 			bubonic_plague = {
 				index = 1
@@ -72,6 +73,16 @@
 				boy = male
 				girl = male
 			}
+            }
+            gene_drunkard = {
+                decal = {
+                    textures = {
+                        blend_modes = {
+                            alpha_curve = {
+                            }
+                        }
+                    }
+                }
 
 			drunkard = {
 				index = 0
@@ -106,6 +117,28 @@
 				boy = male
 				girl = male
 			}
+            }
+            gene_great_pox = {
+                decal = {
+                    textures = {
+                        blend_modes = {
+                            uv_tiling = {
+                            }
+                            alpha_curve = {
+                            }
+                        }
+                        decal = {
+                            textures = {
+                            }
+                            blend_modes = {
+                            }
+                            uv_tiling = {
+                            }
+                            alpha_curve = {
+                            }
+                        }
+                    }
+                }
 
 			great_pox = {
 				index = 0
@@ -202,6 +235,28 @@
 				boy = male
 				girl = male
 			}
+            }
+            gene_measles = {
+                decal = {
+                    textures = {
+                        blend_modes = {
+                            uv_tiling = {
+                            }
+                            alpha_curve = {
+                            }
+                        }
+                        decal = {
+                            textures = {
+                            }
+                            blend_modes = {
+                            }
+                            uv_tiling = {
+                            }
+                            alpha_curve = {
+                            }
+                        }
+                    }
+                }
 
 			measles = {
 				index = 0
@@ -345,6 +400,14 @@
 				boy = male
 				girl = male
 			}
+            }
+            gene_illness = {
+                decal = {
+                    textures = {
+                        blend_modes = {
+                        }
+                    }
+                }
 
 			illness = {
 				index = 0
@@ -374,6 +437,20 @@
 				boy = male
 				girl = male
 			}
+            }
+            gene_hair_disease = {
+                setting = {
+                    decal = {
+                        textures = {
+                            blend_modes = {
+                            }
+                        }
+                        hair_hsv_shift_curve = {
+                            curve = {
+                            }
+                        }
+                    }
+                }
 
 			hair_disease = {
 				index = 0
@@ -416,6 +493,26 @@
 				boy = male
 				girl = male
 			}
+            }
+            gene_leprosy = {
+                setting = {
+                    decal = {
+                        textures = {
+                            blend_modes = {
+                            }
+                        }
+                        decal = {
+                            textures = {
+                            }
+                            blend_modes = {
+                            }
+                            uv_tiling = {
+                            }
+                            alpha_curve = {
+                            }
+                        }
+                    }
+                }
 
 			leprosy = {
 				index = 5
@@ -465,6 +562,14 @@
 				boy = male
 				girl = male
 			}
+            }
+            gene_lovers_pox = {
+                decal = {
+                    textures = {
+                        blend_modes = {
+                        }
+                    }
+                }
 
 			lovers_pox = {
 				index = 0
@@ -496,6 +601,22 @@
 				boy = male
 				girl = male
 			}
+            }
+            gene_scaly = {
+                decal = {
+                    textures = {
+                        blend_modes = {
+                        }
+                        decal = {
+                            textures = {
+                            }
+                            blend_modes = {
+                            }
+                            uv_tiling = {
+                            }
+                        }
+                    }
+                }
 
 			scaly = {
 				index = 7
@@ -550,6 +671,14 @@
 				boy = male
 				girl = male
 			}
+            }
+            gene_scars_battle = {
+                decal = {
+                    textures = {
+                        blend_modes = {
+                        }
+                    }
+                }
 
 			scars_battle = {
 				index = 0
@@ -581,6 +710,14 @@
 				boy = male
 				girl = male
 			}
+            }
+            gene_scars_battle_2 = {
+                decal = {
+                    textures = {
+                        blend_modes = {
+                        }
+                    }
+                }
 
 			scars_battle_2 = {
 				index = 0
@@ -612,6 +749,14 @@
 				boy = male
 				girl = male
 			}
+            }
+            gene_scars_battle_3 = {
+                decal = {
+                    textures = {
+                        blend_modes = {
+                        }
+                    }
+                }
 
 			scars_battle_3 = {
 				index = 0
@@ -643,6 +788,14 @@
 				boy = male
 				girl = male
 			}
+            }
+            gene_scars_disease = {
+                decal = {
+                    textures = {
+                        blend_modes = {
+                        }
+                    }
+                }
 
 			scars_disease = {
 				index = 0
@@ -674,6 +827,28 @@
 				boy = male
 				girl = male
 			}
+            }
+            gene_smallpox = {
+                decal = {
+                    textures = {
+                        blend_modes = {
+                            uv_tiling = {
+                            }
+                            alpha_curve = {
+                            }
+                        }
+                        decal = {
+                            textures = {
+                            }
+                            blend_modes = {
+                            }
+                            uv_tiling = {
+                            }
+                            alpha_curve = {
+                            }
+                        }
+                    }
+                }
 
 			smallpox_01 = {
 				index = 0
@@ -820,6 +995,14 @@
 				boy = male
 				girl = male
 			}
+            }
+            gene_tuberculosis = {
+                decal = {
+                    textures = {
+                        blend_modes = {
+                        }
+                    }
+                }
 
 			tuberculosis = {
 				index = 0
@@ -851,6 +1034,22 @@
 				boy = male
 				girl = male
 			}
+            }
+            gene_typhus = {
+                decal = {
+                    textures = {
+                        blend_modes = {
+                        }
+                        decal = {
+                            textures = {
+                            }
+                            blend_modes = {
+                            }
+                            uv_tiling = {
+                            }
+                        }
+                    }
+                }
 
 			typhus = {
 				index = 0
@@ -898,6 +1097,16 @@
 				boy = male
 				girl = male
 			}
+            }
+            gene_wounded = {
+                setting = {
+                    decal = {
+                        textures = {
+                            blend_modes = {
+                            }
+                        }
+                    }
+                }
 
 			wounded_1 = {
 				index = 0
@@ -994,6 +1203,10 @@
 				boy = male
 				girl = male
 			}
+            }
+            gene_maimed_left_arm = {
+                setting = {
+                }
 
 			maimed_left_arm = {
 				index = 0
@@ -1004,6 +1217,8 @@
 				boy = male
 				girl = male
 			}
+            }
+            gene_no_decal = {
 
 			no_decal = {
 				index = 0
@@ -1013,6 +1228,8 @@
 				boy = male
 				girl = male
 			}
+            }
+            gene_spindly = {
 
 			spindly = {
 				index = 0
@@ -1023,6 +1240,10 @@
 				boy = male
 				girl = male
 			}
+            }
+            gene_one_legged = {
+                setting = {
+                }
 
 			no_left_leg = {
 				index = 0
@@ -1033,6 +1254,12 @@
 				boy = male
 				girl = male
 			}
+            }
+            gene_hunchbacked = {
+                setting = {
+                    setting = {
+                    }
+                }
 
 			hunchbacked = {
 				index = 0
@@ -1044,6 +1271,10 @@
 				boy = male
 				girl = male
 			}
+            }
+            gene_clubfooted = {
+                setting = {
+                }
 
 			clubfooted = {
 				index = 0
@@ -1054,6 +1285,12 @@
 				boy = male
 				girl = male
 			}
+            }
+            gene_bs_cloak = {
+                setting = {
+                    setting = {
+                    }
+                }
 
 			no_cloak = {
 				index = 0
@@ -1075,8 +1312,30 @@
 				boy = male
 				girl = female
 			}
+            }
+            pose = {
+            }
+
+		gene_bs_pregnant = {
+
+		    pregnant = {
+		        index = 0
+		        female = {
+		            setting = { attribute = "bs_body_pregnant_1" value = { min = 0.0 max = 1.0 }  }
+		        }
+		    }
+
+		}
+
+		    pregnant = {
+		        index = 0
+		        female = {
+		            setting = { attribute = "bs_body_pregnant_1" value = { min = 0.0 max = 1.0 }  }
+		        }
+		    }
         }
         accessory_genes = {
+            special_headgear_face_mask = {
 
 			no_mask = {
 				index = 0
@@ -1090,39 +1349,39 @@
 				girl = female
 			}
 
-            face_mask = {
-                    index = 1
-                male = {
-                    1 = male_headgear_special_face_mask_01
-                    1 = male_headgear_special_cfp_face_mask_02
-                    1 = male_headgear_special_cfp_face_mask_01
-                    1 = male_headgear_special_cfp_face_mask_03
-                    1 = male_headgear_special_cfp_face_mask_04
-                    1 = male_headgear_special_cfp_face_mask_04_opened
-                    1 = male_headgear_special_cfp_face_mask_05
-                    1 = male_headgear_special_cfp_face_mask_05_opened
-                    1 = male_headgear_special_cfp_face_mask_06
-                    1 = male_headgear_special_cfp_face_mask_06_opened
-                    1 = male_headgear_special_cfp_fake_nose_01
-                    1 = male_headgear_special_cfp_fake_nose_02
+                face_mask = {
+                        index = 1
+                    male = {
+                        100 = male_headgear_special_face_mask_01
+                        1 = male_headgear_special_cfp_face_mask_02
+                        1 = male_headgear_special_cfp_face_mask_01
+                        1 = male_headgear_special_cfp_face_mask_03
+                        1 = male_headgear_special_cfp_face_mask_04
+                        1 = male_headgear_special_cfp_face_mask_04_opened
+                        1 = male_headgear_special_cfp_face_mask_05
+                        1 = male_headgear_special_cfp_face_mask_05_opened
+                        1 = male_headgear_special_cfp_face_mask_06
+                        1 = male_headgear_special_cfp_face_mask_06_opened
+                        1 = male_headgear_special_cfp_fake_nose_01
+                        1 = male_headgear_special_cfp_fake_nose_02
+                    }
+                    female = {
+                        100 = female_headgear_special_face_mask_01
+                        1 = female_headgear_special_cfp_face_mask_02
+                        1 = female_headgear_special_cfp_face_mask_01
+                        1 = female_headgear_special_cfp_face_mask_03
+                        1 = female_headgear_special_cfp_face_mask_04
+                        1 = female_headgear_special_cfp_face_mask_04_opened
+                        1 = female_headgear_special_cfp_face_mask_05
+                        1 = female_headgear_special_cfp_face_mask_05_opened
+                        1 = female_headgear_special_cfp_face_mask_06
+                        1 = female_headgear_special_cfp_face_mask_06_opened
+                        1 = female_headgear_special_cfp_fake_nose_01
+                        1 = female_headgear_special_cfp_fake_nose_02
+                    }
+                    boy = male
+                    girl = female
                 }
-                female = {
-                    1 = female_headgear_special_face_mask_01
-                    1 = female_headgear_special_cfp_face_mask_02
-                    1 = female_headgear_special_cfp_face_mask_01
-                    1 = female_headgear_special_cfp_face_mask_03
-                    1 = female_headgear_special_cfp_face_mask_04
-                    1 = female_headgear_special_cfp_face_mask_04_opened
-                    1 = female_headgear_special_cfp_face_mask_05
-                    1 = female_headgear_special_cfp_face_mask_05_opened
-                    1 = female_headgear_special_cfp_face_mask_06
-                    1 = female_headgear_special_cfp_face_mask_06_opened
-                    1 = female_headgear_special_cfp_fake_nose_01
-                    1 = female_headgear_special_cfp_fake_nose_02
-                }
-                boy = male
-                girl = female
-            }
 
 
 			ep3_golden_nose = {
@@ -1197,6 +1456,40 @@
 				girl = female
 			}
 
+			epe_jerusalem_face_mask = {
+				index = 8
+				male = {
+					1 = m_headgear_baldwin_mask_war_01
+					1 = m_headgear_baldwin_mask_clean_01
+				}
+				boy = male
+				girl = female
+			}			
+
+			no_face_mask = {
+				index = 0
+				male = {
+					1 = empty
+				}
+				female = male
+				boy = male
+				girl = male
+			}
+
+			renov_roman_face_masks = {
+				index = 254
+				male = {
+					1 = male_headgear_renov_roman_emesa_mask
+				}
+				female = {
+					1 = female_headgear_renov_roman_emesa_mask
+				}
+				boy = male
+				girl = female
+			}
+            }
+            special_headgear_spectacles = {
+
 			no_spectacles = {
 				index = 0
 				male = {
@@ -1207,25 +1500,25 @@
 				girl = female
 			}
 
-            spectacles = {
-                    index = 1
-                male = {
-                    30 = male_headgear_special_spectacles_01
-                    30 = male_headgear_special_cfp_glasses_01
-                    1 = male_headgear_special_cfp_glasses_01b
-                    30 = male_headgear_special_cfp_glasses_02
-                    1 = male_headgear_special_cfp_glasses_02b
+                spectacles = {
+                        index = 1
+                    male = {
+                        10 = male_headgear_special_spectacles_01
+                        30 = male_headgear_special_cfp_glasses_01
+                        1 = male_headgear_special_cfp_glasses_01b
+                        30 = male_headgear_special_cfp_glasses_02
+                        1 = male_headgear_special_cfp_glasses_02b
+                    }
+                    female = {
+                        10 = female_headgear_special_spectacles_01
+                        30 = female_headgear_special_cfp_glasses_01
+                        1 = female_headgear_special_cfp_glasses_01b
+                        30 = female_headgear_special_cfp_glasses_02
+                        1 = female_headgear_special_cfp_glasses_02b
+                    }
+                    boy = male
+                    girl = female
                 }
-                female = {
-                    30 = female_headgear_special_spectacles_01
-                    30 = female_headgear_special_cfp_glasses_01
-                    1 = female_headgear_special_cfp_glasses_01b
-                    30 = female_headgear_special_cfp_glasses_02
-                    1 = female_headgear_special_cfp_glasses_02b
-                }
-                boy = male
-                girl = female
-            }
 
 
 			blindfold = {
@@ -1279,39 +1572,6 @@
 				boy = male
 				girl = female
 			}
-
-			epe_jerusalem_face_mask = {
-				index = 8
-				male = {
-					1 = m_headgear_baldwin_mask_war_01
-					1 = m_headgear_baldwin_mask_clean_01
-				}
-				boy = male
-				girl = female
-			}
-
-			renov_roman_face_masks = {
-				index = 254
-				male = {
-					1 = male_headgear_renov_roman_emesa_mask
-				}
-				female = {
-					1 = female_headgear_renov_roman_emesa_mask
-				}
-				boy = male
-				girl = female
-			}
-
-                        no_face_mask = {
-                                index = 255
-                                male = {
-                                        1 = empty
-                                }
-                                female = {
-                                        1 = empty
-                                }
-                                boy = male
-                                girl = female
-                        }
+            }
         }
     }

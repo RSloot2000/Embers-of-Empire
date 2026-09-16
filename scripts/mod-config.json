@@ -32,7 +32,7 @@
       ]
     },
     "eoe-compat-reno": {
-      "workshopId": null,
+      "workshopId": "3802802624",
       "devName": "EoE_Reno_Dev",
       "dependencies": [
         { "id": "3679840613", "title": "Embers of Empire - A Roman Restoration" },
@@ -40,7 +40,7 @@
       ]
     },
     "cfp-reno-compatch": {
-      "workshopId": 3802631920,
+      "workshopId": "3802631920",
       "devName": "CFP_Reno_Compatch_Dev",
       "artifact": "cfp-reno-compatch",
       "dependencies": [

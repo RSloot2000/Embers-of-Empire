@@ -467,7 +467,6 @@
                     girl = female
                 }
 
-
                 western_high_nobility_clothes = {
                         index = 4
                     male = {
@@ -486,7 +485,6 @@
                     boy = male
                     girl = female
                 }
-
 
 			western_royalty_clothes = {
 				index = 5
@@ -611,19 +609,19 @@
                         index = 12
                     male = {
                         1 = m_clothes_sec_crusades_western_war_nob_01_templar
+                        1 = m_clothes_sec_crusades_western_war_nob_01_hospitaller
                         1 = m_clothes_sec_crusades_western_war_nob_01_jerusalem
                         1 = m_clothes_sec_crusades_western_war_nob_01_common
                         1 = m_clothes_sec_crusades_western_war_nob_01_teutonic
                         1 = m_clothes_sec_crusades_western_war_nob_01_santiago
-                        1 = m_clothes_sec_crusades_western_war_nob_01_hospitaller
                     }
                     female = {
                         1 = f_clothes_sec_crusades_western_war_nob_01_templar
+                        1 = f_clothes_sec_crusades_western_war_nob_01_hospitaller
                         1 = f_clothes_sec_crusades_western_war_nob_01_jerusalem
                         1 = f_clothes_sec_crusades_western_war_nob_01_common
                         1 = f_clothes_sec_crusades_western_war_nob_01_teutonic
                         1 = f_clothes_sec_crusades_western_war_nob_01_santiago
-                        1 = f_clothes_sec_crusades_western_war_nob_01_hospitaller
                     }
                     boy = male
                     girl = female
@@ -731,7 +729,6 @@
                     girl = female
                 }
 
-
                 byzantine_low_nobility_clothes = {
                         index = 18
                     male = {
@@ -794,7 +791,6 @@
                     girl = female
                 }
 
-
                 byzantine_high_nobility_clothes = {
                         index = 19
                     male = {
@@ -853,7 +849,6 @@
                     girl = female
                 }
 
-
                 byzantine_war_nobility_clothes = {
                         index = 20
                     male = {
@@ -877,7 +872,6 @@
                     boy = male
                     girl = female
                 }
-
 
 			steppe_commoner_clothes = {
 				index = 21
@@ -1129,7 +1123,6 @@
                     girl = female
                 }
 
-
                 northern_low_nobility_clothes = {
                         index = 35
                     male = {
@@ -1155,7 +1148,6 @@
                     boy = male
                     girl = female
                 }
-
 
                 northern_high_nobility_clothes = {
                         index = 36
@@ -1189,7 +1181,6 @@
                     girl = female
                 }
 
-
                 northern_war_nobility_clothes = {
                         index = 37
                     male = {
@@ -1207,7 +1198,6 @@
                     boy = male
                     girl = female
                 }
-
 
 			sub_saharan_commoner_clothes = {
 				index = 38
@@ -1261,14 +1251,14 @@
                 sub_saharan_war_nobility_clothes = {
                         index = 41
                     male = {
-                        0 = m_clothes_sec_mena_war_nob_01_lo
-                        0 = m_clothes_sec_mena_war_nob_01_hi
+                        1 = m_clothes_sec_mena_war_nob_01_lo
+                        1 = m_clothes_sec_mena_war_nob_01_hi
                         1 = male_clothes_secular_africa_central_cfp_war_padded_01
                         1 = male_clothes_secular_africa_central_cfp_war_padded_02
                     }
                     female = {
-                        0 = f_clothes_sec_mena_war_nob_01_lo
-                        0 = f_clothes_sec_mena_war_nob_01_hi
+                        1 = f_clothes_sec_mena_war_nob_01_lo
+                        1 = f_clothes_sec_mena_war_nob_01_hi
                         1 = female_clothes_secular_africa_central_cfp_war_padded_01
                         1 = female_clothes_secular_africa_central_cfp_war_padded_02
                     }
@@ -1405,7 +1395,6 @@
                     boy = male
                     girl = female
                 }
-
 
 			dde_abbasid_war_nobility_clothes = {
 				index = 49
@@ -1989,7 +1978,6 @@
                     girl = female
                 }
 
-
 			ep2_western_era2_war_nobility_clothes = {
 				index = 88
 
@@ -2284,7 +2272,6 @@
                     girl = female
                 }
 
-
                 fp3_iranian_high_nobility_clothes = {
                         index = 102
                     male = {
@@ -2355,7 +2342,6 @@
                     girl = female
                 }
 
-
                 fp3_iranian_war_nobility_clothes = {
                         index = 103
                     male = {
@@ -2400,7 +2386,6 @@
                     girl = female
                 }
 
-
                 afr_commoner_clothes = {
                         index = 104
                     male = {
@@ -2432,7 +2417,6 @@
                     boy = male
                     girl = female
                 }
-
 
                 afr_low_nobility_clothes = {
                         index = 105
@@ -2468,7 +2452,6 @@
                     girl = female
                 }
 
-
                 afr_high_nobility_clothes = {
                         index = 106
                     male = {
@@ -2500,7 +2483,6 @@
                     girl = female
                 }
 
-
                 afr_war_nobility_clothes = {
                         index = 107
                     male = {
@@ -2520,7 +2502,6 @@
                     boy = male
                     girl = female
                 }
-
 
 			sp3_western_royalty_clothes = {
 				index = 108
@@ -2717,7 +2698,6 @@
                     girl = female
                 }
 
-
 			ep3_byzantine_era2_commoner_clothes = {
 				index = 120
 
@@ -2807,7 +2787,6 @@
                     girl = female
                 }
 
-
                 ep3_byzantine_era2_imperial_clothes = {
                         index = 125
                     male = {
@@ -2828,7 +2807,6 @@
                     boy = male
                     girl = female
                 }
-
 
 			ep3_byzantine_charioteer_clothes_blue = {
 				index = 126
@@ -3502,19 +3480,20 @@
 				girl = female
 			}
 
-			tgp_southeast_high_nobility_clothes = {
-				index = 176
-				male = {
-					1 = m_clothes_sec_tgp_southeast_nob_01
-					1 = m_clothes_sec_tgp_southeast_nob_02
-				}
-				female = {
-					1 = f_clothes_sec_tgp_southeast_nob_01_hi
-					1 = f_clothes_sec_tgp_southeast_nob_02_hi
-				}
-				boy = male
-				girl = female
-			}
+                tgp_southeast_high_nobility_clothes = {
+                        index = 176
+                    male = {
+                        1 = m_clothes_sec_tgp_southeast_nob_01
+                        1 = m_clothes_sec_tgp_southeast_nob_02
+                    }
+                    female = {
+                        1 = f_clothes_sec_tgp_southeast_nob_01_hi
+                        1 = f_clothes_sec_tgp_southeast_nob_02_hi
+                        2 = f_clothes_sec_tgp_southeast_roy_01
+                    }
+                    boy = male
+                    girl = female
+                }
 
 			tgp_southeast_royalty_clothes = {
 				index = 177

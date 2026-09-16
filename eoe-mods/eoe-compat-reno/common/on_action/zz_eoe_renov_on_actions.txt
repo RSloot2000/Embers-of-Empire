@@ -8,34 +8,38 @@ on_game_start = {
 
 eoe_renov_restore_eoe_values = {
 	effect = {
-		# --- hellenic_pagan: restore EoE's doctrine set ---
-		# EoE defines: unreformed_faith_doctrine, tenet_astrology, tenet_communal_identity, tenet_esotericism
-		# Reno removes: tenet_communal_identity, unreformed_faith_doctrine
-		# Reno adds:    tenet_household_gods, doctrine_monogamy, doctrine_pilgrimage_local_rites, doctrine_adultery_women_crime
-		# We remove Reno's additions and restore EoE's originals.
 		faith:hellenic_pagan = {
 			remove_doctrine = tenet_household_gods
 			remove_doctrine = doctrine_monogamy
 			remove_doctrine = doctrine_pilgrimage_local_rites
 			remove_doctrine = doctrine_adultery_women_crime
 			add_doctrine = tenet_communal_identity
+			add_doctrine = doctrine_concubines
+			add_doctrine = doctrine_pilgrimage_encouraged
+			add_doctrine = doctrine_adultery_women_shunned
 			add_doctrine = unreformed_faith_doctrine
 		}
 
-		# --- roman culture: remove only what Reno added on top of EoE's set ---
-		# EoE defines: tradition_ep3_roman_ceremonies (fb: tradition_byzantine_succession),
-		#               tradition_ep3_cultivated_sophistication (fb: tradition_legalistic),
-		#               tradition_sundered_soul, tradition_pantheon_integration
-		# Reno adds on top: the traditions below. We remove only those.
 		culture:roman = {
 			remove_culture_tradition = tradition_ep3_imperial_tagmata
 			remove_culture_tradition = tradition_ep3_palace_politics
 			remove_culture_tradition = tradition_republican_legacy
 			remove_culture_tradition = tradition_formation_fighting
+			remove_culture_tradition = tradition_legalistic
 			remove_culture_tradition = tradition_poetry
 			remove_culture_tradition = tradition_roman_legacy
 			remove_culture_tradition = tradition_noble_adoption
 			remove_culture_tradition = tradition_hereditary_hierarchy
+		}
+
+		if = {
+			limit = {
+				NOT = { exists = global_var:renov_roman_empire_realm_culture_variable }
+			}
+			set_global_variable = {
+				name = renov_roman_empire_realm_culture_variable
+				value = yes
+			}
 		}
 	}
 }

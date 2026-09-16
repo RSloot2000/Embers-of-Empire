@@ -1,8 +1,12 @@
-version="1.19.0"
+version="1.19.0.6."
 tags={
-	"1.19 'Scribe'"
+	"Religion"
+	"Historical"
+	"Alternative History"
 	"Fixes"
-	"Compatibility"
+	"Culture"
+	"Map"
 }
 name="EoE + Renovatio"
 supported_version="1.19.0.6"
+remote_file_id="3802802624"

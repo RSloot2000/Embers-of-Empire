@@ -298,9 +298,9 @@ foreach ($name in $selected) {
         $previewFile = ''
     }
 
-    # --- Escape for VDF: quotes and newlines (paths keep single backslashes) ---
-    $escapedChangelog = $changelog.Replace('"', '\"').Replace("`r`n", '\n').Replace("`n", '\n')
-    $escapedDescription = $description.Replace('"', '\"').Replace("`r`n", '\n').Replace("`n", '\n')
+    # --- Escape for VDF: only quotes (VDF supports real newlines in quoted strings) ---
+    $escapedChangelog = $changelog.Replace('"', '\"')
+    $escapedDescription = $description.Replace('"', '\"')
 
     # --- Build VDF ---
     $vdfLines = @(

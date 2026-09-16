@@ -515,6 +515,7 @@
 			girl = female
 		}
             }
+            special_legwear = {
 
 		special_wooden_leg = {
 			index = 0
@@ -527,6 +528,8 @@
 			boy = male
 			girl = female
 		}
+            }
+            cloaks = {
 
 		no_cloak = {
 			index = 0
@@ -540,62 +543,61 @@
 			girl = female
 		}
 
-            all_cloaks = {
-                    index = 1
-                male = {
-                    1 = male_cloaks_secular_western_royalty_01
-                    1 = male_cloaks_secular_fp1_nobility_01
-                    1 = male_cloaks_secular_fp1_nobility_02
-                    1 = male_cloaks_secular_fp1_nobility_03
-                    1 = male_furs_secular_fp1_nobility_01
-                    1 = male_furs_secular_fp1_nobility_02
-                    1 = male_furs_secular_fp1_nobility_03
-                    1 = male_cloaks_secular_ep1_adventurer_01
-                    1 = m_cloaks_sec_ep2_western_era1_nob_01_lo
-                    1 = m_cloaks_sec_ep2_western_era1_nob_01_hi
-                    1 = m_cloaks_sec_sp2_western_imp_01
-                    1 = m_cloaks_sec_ep2_western_travel_01
-                    1 = m_cloaks_sec_ep2_mena_travel_01
-                    1 = m_cloaks_sec_fp4_western_era3_nob_01
-                    1 = m_cloaks_sec_fp4_western_era3_nob_02_a
-                    1 = m_cloaks_sec_fp4_western_era3_nob_02_b
-                    1 = m_cloaks_sec_ep3_byzantine_era2_imp_01_loros
-                    1 = m_cloaks_sec_sp3_western_roy_01
-                    1 = m_cloaks_ep3_byzantine_era1_nob_01
-                    1 = m_cloaks_ep3_byzantine_era1_imp_01
-                    1 = m_cloaks_ep3_byzantine_era2_nob_01
-                    1 = male_byzantine_imperial_sagum_02
-                    1 = male_byzantine_imperial_sagum_02_plane
+                all_cloaks = {
+                        index = 1
+                    male = {
+                        1 = male_cloaks_secular_western_royalty_01
+                        1 = male_cloaks_secular_fp1_nobility_01
+                        1 = male_cloaks_secular_fp1_nobility_02
+                        1 = male_cloaks_secular_fp1_nobility_03
+                        1 = male_furs_secular_fp1_nobility_01
+                        1 = male_furs_secular_fp1_nobility_02
+                        1 = male_furs_secular_fp1_nobility_03
+                        1 = male_cloaks_secular_ep1_adventurer_01
+                        1 = m_cloaks_sec_ep2_western_era1_nob_01_lo
+                        1 = m_cloaks_sec_ep2_western_era1_nob_01_hi
+                        1 = m_cloaks_sec_sp2_western_imp_01
+                        1 = m_cloaks_sec_ep2_western_travel_01
+                        1 = m_cloaks_sec_ep2_mena_travel_01
+                        1 = m_cloaks_sec_fp4_western_era3_nob_01
+                        1 = m_cloaks_sec_fp4_western_era3_nob_02_a
+                        1 = m_cloaks_sec_fp4_western_era3_nob_02_b
+                        1 = m_cloaks_sec_ep3_byzantine_era2_imp_01_loros
+                        1 = m_cloaks_sec_sp3_western_roy_01
+                        1 = m_cloaks_ep3_byzantine_era1_nob_01
+                        1 = m_cloaks_ep3_byzantine_era1_imp_01
+                        1 = m_cloaks_ep3_byzantine_era2_nob_01
+                        1 = male_byzantine_imperial_sagum_02
+                        1 = male_byzantine_imperial_sagum_02_plane
+                    }
+                    female = {
+                        1 = female_cloaks_secular_western_royalty_01
+                        1 = female_cloaks_secular_fp1_nobility_01
+                        1 = female_cloaks_secular_fp1_nobility_02
+                        1 = female_cloaks_secular_fp1_nobility_03
+                        1 = female_furs_secular_fp1_nobility_01
+                        1 = female_furs_secular_fp1_nobility_02
+                        1 = female_furs_secular_fp1_nobility_03
+                        1 = f_cloaks_sec_sp2_western_imp_01
+                        1 = f_cloaks_sec_ep2_western_era1_01_lo
+                        1 = f_cloaks_sec_ep2_western_era1_01_hi
+                        1 = f_cloaks_sec_ep2_western_travel_01
+                        1 = f_cloaks_sec_ep2_mena_travel_01
+                        1 = f_cloaks_sec_fp4_western_era3_nob_01
+                        1 = f_cloaks_sec_fp4_western_era3_nob_02_a
+                        1 = f_cloaks_sec_fp4_western_era3_nob_02_b
+                        1 = f_cloaks_sec_afr_common_01
+                        1 = f_cloaks_sec_afr_low_nob_01
+                        1 = f_cloaks_sec_afr_high_nob_01
+                        1 = f_cloaks_sec_sp3_western_roy_01
+                        1 = f_cloaks_ep3_byzantine_era1_nob_01
+                        1 = f_cloaks_ep3_byzantine_era1_imp_01
+                        1 = female_byzantine_imperial_sagum_02
+                        1 = female_byzantine_imperial_sagum_02_plane
+                    }
+                    boy = male
+                    girl = female
                 }
-                female = {
-                    1 = female_cloaks_secular_western_royalty_01
-                    1 = female_cloaks_secular_fp1_nobility_01
-                    1 = female_cloaks_secular_fp1_nobility_02
-                    1 = female_cloaks_secular_fp1_nobility_03
-                    1 = female_furs_secular_fp1_nobility_01
-                    1 = female_furs_secular_fp1_nobility_02
-                    1 = female_furs_secular_fp1_nobility_03
-                    1 = f_cloaks_sec_sp2_western_imp_01
-                    1 = f_cloaks_sec_ep2_western_era1_01_lo
-                    1 = f_cloaks_sec_ep2_western_era1_01_hi
-                    1 = f_cloaks_sec_ep2_western_travel_01
-                    1 = f_cloaks_sec_ep2_mena_travel_01
-                    1 = f_cloaks_sec_fp4_western_era3_nob_01
-                    1 = f_cloaks_sec_fp4_western_era3_nob_02_a
-                    1 = f_cloaks_sec_fp4_western_era3_nob_02_b
-                    1 = f_cloaks_sec_afr_common_01
-                    1 = f_cloaks_sec_afr_low_nob_01
-                    1 = f_cloaks_sec_afr_high_nob_01
-                    1 = f_cloaks_sec_sp3_western_roy_01
-                    1 = f_cloaks_ep3_byzantine_era1_nob_01
-                    1 = f_cloaks_ep3_byzantine_era1_imp_01
-                    1 = female_byzantine_imperial_sagum_02
-                    1 = female_byzantine_imperial_sagum_02_plane
-                }
-                boy = male
-                girl = female
-            }
-
 
 		western_royalty = {
 			index = 2
@@ -673,35 +675,33 @@
 			girl = female
 		}
 
-            ep2_cloak_western_era1_low_nobility = {
-                    index = 8
-                male = {
-                    1 = m_cloaks_sec_ep2_western_era1_nob_01_lo
-                    1 = male_west_sagum_03a_low
-                    1 = male_west_sagum_04a_low
+                ep2_cloak_western_era1_low_nobility = {
+                        index = 8
+                    male = {
+                        1 = m_cloaks_sec_ep2_western_era1_nob_01_lo
+                        1 = male_west_sagum_03a_low
+                        1 = male_west_sagum_04a_low
+                    }
+                    female = {
+                        1 = f_cloaks_sec_ep2_western_era1_01_lo
+                    }
+                    boy = male
+                    girl = female
                 }
-                female = {
-                    1 = f_cloaks_sec_ep2_western_era1_01_lo
-                }
-                boy = male
-                girl = female
-            }
 
-
-            ep2_cloak_western_era1_high_nobility = {
-                    index = 9
-                male = {
-                    1 = m_cloaks_sec_ep2_western_era1_nob_01_hi
-                    1 = male_west_sagum_03a_high
-                    1 = male_west_sagum_04a_high
+                ep2_cloak_western_era1_high_nobility = {
+                        index = 9
+                    male = {
+                        1 = m_cloaks_sec_ep2_western_era1_nob_01_hi
+                        1 = male_west_sagum_03a_high
+                        1 = male_west_sagum_04a_high
+                    }
+                    female = {
+                        1 = f_cloaks_sec_ep2_western_era1_01_hi
+                    }
+                    boy = male
+                    girl = female
                 }
-                female = {
-                    1 = f_cloaks_sec_ep2_western_era1_01_hi
-                }
-                boy = male
-                girl = female
-            }
-
 
 		sp2_cloak_imperial = {
 				index = 10
@@ -715,24 +715,24 @@
 				girl = female
 		}
 
-            afr_cloaks = {
-                    index = 11
-                male = {
-                    1 = empty
-                    1 = male_cloaks_secular_mena_cfp_double_harness_01
+                afr_cloaks = {
+                        index = 11
+                    male = {
+                        1 = empty
+                        1 = male_cloaks_secular_mena_cfp_double_harness_01
+                    }
+                    female = {
+                        1 = empty
+                        1 = f_cloaks_sec_afr_common_01
+                        1 = f_cloaks_sec_afr_low_nob_01
+                        1 = f_cloaks_sec_afr_high_nob_01
+                        1 = f_cloaks_epe_butr_common_01
+                        1 = f_cloaks_epe_butr_low_nob_01
+                        1 = f_cloaks_epe_butr_high_nob_01
+                    }
+                    boy = male
+                    girl = female
                 }
-                female = {
-                    1 = empty
-                    1 = f_cloaks_sec_afr_common_01
-                    1 = f_cloaks_sec_afr_low_nob_01
-                    1 = f_cloaks_sec_afr_high_nob_01
-                    1 = f_cloaks_epe_butr_common_01
-                    1 = f_cloaks_epe_butr_low_nob_01
-                    1 = f_cloaks_epe_butr_high_nob_01
-                }
-                boy = male
-                girl = female
-            }
 
 
 		sp3_cloak = {
@@ -746,66 +746,63 @@
 		    }
 		    boy = male
 			girl = female
-		}
+	    }
 
-            fp4_cloak_western = {
-                    index = 13
-                male = {
-                    1 = m_cloaks_sec_fp4_western_era3_nob_01
-                    1 = m_cloaks_sec_fp4_western_era3_nob_02_a
-                    1 = m_cloaks_sec_fp4_western_era3_nob_02_b
-                    1 = m_cloaks_sec_epe_fp4_western_era3_commoner_01
-                    1 = m_cloaks_sec_epe_fp4_western_era3_commoner_02_a
-                    1 = m_cloaks_sec_epe_fp4_western_era3_commoner_02_b
+                fp4_cloak_western = {
+                        index = 13
+                    male = {
+                        1 = m_cloaks_sec_fp4_western_era3_nob_01
+                        1 = m_cloaks_sec_fp4_western_era3_nob_02_a
+                        1 = m_cloaks_sec_fp4_western_era3_nob_02_b
+                        1 = m_cloaks_sec_epe_fp4_western_era3_commoner_01
+                        1 = m_cloaks_sec_epe_fp4_western_era3_commoner_02_a
+                        1 = m_cloaks_sec_epe_fp4_western_era3_commoner_02_b
+                    }
+                    female = {
+                        1 = f_cloaks_sec_fp4_western_era3_nob_01
+                        1 = f_cloaks_sec_fp4_western_era3_nob_02_a
+                        1 = f_cloaks_sec_fp4_western_era3_nob_02_b
+                        1 = f_cloaks_sec_epe_fp4_western_era3_commoner_01
+                        1 = f_cloaks_sec_epe_fp4_western_era3_commoner_02_a
+                        1 = f_cloaks_sec_epe_fp4_western_era3_commoner_02_b
+                    }
+                    boy = male
+                    girl = female
                 }
-                female = {
-                    1 = f_cloaks_sec_fp4_western_era3_nob_01
-                    1 = f_cloaks_sec_fp4_western_era3_nob_02_a
-                    1 = f_cloaks_sec_fp4_western_era3_nob_02_b
-                    1 = f_cloaks_sec_epe_fp4_western_era3_commoner_01
-                    1 = f_cloaks_sec_epe_fp4_western_era3_commoner_02_a
-                    1 = f_cloaks_sec_epe_fp4_western_era3_commoner_02_b
-                }
-                boy = male
-                girl = female
-            }
 
-
-            ep3_byzantine_era1_nob = {
-                    index = 14
-                male = {
-                    1 = m_cloaks_ep3_byzantine_era1_nob_01
-                    1 = empty
-                    1 = m_cloaks_sec_ep2_byz_era1_nob_01_hi
-                    1 = male_byzantine_duchy_sagum_01
-                    1 = male_byzantine_duchy_sagum_02
-                    1 = male_west_sagum_02a_byzantine_duke
-                    1 = male_west_sagum_03a_byzantine_duke
-                    1 = male_west_sagum_04a_byzantine_duke
+                ep3_byzantine_era1_nob = {
+                        index = 14
+                    male = {
+                        1 = m_cloaks_ep3_byzantine_era1_nob_01
+                        1 = empty
+                        1 = m_cloaks_sec_ep2_byz_era1_nob_01_hi
+                        1 = male_byzantine_duchy_sagum_01
+                        1 = male_byzantine_duchy_sagum_02
+                        1 = male_west_sagum_02a_byzantine_duke
+                        1 = male_west_sagum_03a_byzantine_duke
+                        1 = male_west_sagum_04a_byzantine_duke
+                    }
+                    female = {
+                        1 = f_cloaks_ep3_byzantine_era1_nob_01
+                        1 = empty
+                    }
+                    boy = male
+                    girl = female
                 }
-                female = {
-                    1 = f_cloaks_ep3_byzantine_era1_nob_01
-                    1 = empty
-                }
-                boy = male
-                girl = female
-            }
 
-
-            ep3_byzantine_era1_imperial = {
-                    index = 15
-                male = {
-                    1 = m_cloaks_ep3_byzantine_era1_imp_01
-                    1 = m_cloaks_sec_ep2_byz_era1_imp_01_hi
+                ep3_byzantine_era1_imperial = {
+                        index = 15
+                    male = {
+                        1 = m_cloaks_ep3_byzantine_era1_imp_01
+                        1 = m_cloaks_sec_ep2_byz_era1_imp_01_hi
+                    }
+                    female = {
+                        1 = f_cloaks_ep3_byzantine_era1_imp_01
+                        1 = empty
+                    }
+                    boy = male
+                    girl = female
                 }
-                female = {
-                    1 = f_cloaks_ep3_byzantine_era1_imp_01
-                    1 = empty
-                }
-                boy = male
-                girl = female
-            }
-
 
 		ep3_byzantine_era2_nob = {
 			index = 16
@@ -1067,6 +1064,412 @@
 			boy = male
 			girl = female
 		}
+
+			byzantine_royalty = {
+				index = 24
+				male = {
+					#1 = male_cloaks_secular_byzantine_royalty_01
+					1 = m_cloaks_sec_ep2_byz_era1_roy_01_hi
+					1 = male_byzantine_royal_sagum_01				
+				}
+				female = {
+					1 = female_cloaks_secular_byzantine_royalty_01
+				}
+			}	
+
+			bulgarian_royalty = {
+				index = 25
+				male = {
+					1 = m_cloaks_ep3_bulgarian_era1_imp_01		
+				}
+				female = {
+					1 = f_cloaks_ep3_bulgarian_era1_imp_01
+				}
+			}	
+
+			south_slav_royalty = {
+				index = 26
+				male = {
+					1 = male_south_slav_royalty_sagum_01	
+					1 = m_cloaks_sec_ep2_south_slav_era1_roy_01				
+				}
+				female = {
+					1 = female_south_slav_royalty_cloak_01
+				}
+			}	
+
+			georgia_royalty = {
+				index = 27
+				male = {
+					1 = male_georgia_royalty_sagum_01	
+					1 = m_cloaks_sec_ep2_georgian_era1_roy_01				
+				}
+				female = {
+					1 = female_georgia_royalty_cloak_01
+				}
+			}
+
+			ep3_georgian_era2_roy_01_loros = {
+				index = 28
+				male = {
+					1 = m_cloaks_sec_ep3_georgian_era2_roy_01_loros
+				}
+				female = {
+				}
+				boy = male
+				girl = female
+			}
+
+			armenian_royalty = {
+				index = 29
+				male = {
+					1 = male_armenian_royalty_sagum_01	
+					1 = m_cloaks_sec_ep2_armenian_era1_roy_01					
+				}
+				female = {
+					1 = female_armenian_royalty_cloak_01
+				}
+			}	
+
+			german_royalty = {
+				index = 30
+				male = {
+					2 = male_cloaks_secular_western_royalty_01	
+				}
+				female = {
+					2 = female_cloaks_secular_western_royalty_01		
+				}
+			}		
+
+			eastern_slav_cloak = {
+				index = 31
+				male = {
+					5 = empty			
+					2 = male_cloaks_northern_slav_low_01
+					2 = male_cloaks_northern_slav_low_02
+					2 = male_cloaks_northern_slav_low_03
+						
+				}
+				female = {
+					5 = empty				
+					2 = female_cloaks_northern_slav_low_01
+					2 = female_cloaks_northern_slav_low_02
+					2 = female_cloaks_northern_slav_low_03
+				
+				}
+			}
+
+			eastern_slav_cloak_high_nobility = {
+				index = 32
+				male = {
+					2 = male_cloaks_northern_slav_high_01
+					5 = male_cloaks_northern_slav_high_02
+					2 = male_cloaks_northern_slav_high_03
+				}
+				female = {
+					1 = female_cloaks_northern_slav_high_01
+					1 = female_cloaks_northern_slav_high_02
+				}
+			}	
+
+			eastern_slav_cloak_royalty = {
+				index = 33
+				male = {
+					5 = male_cloaks_northern_slav_royalty_01
+					5 = male_cloaks_northern_slav_royalty_02
+				}
+				female = {
+					1 = female_cloaks_northern_slav_royalty_01
+					1 = female_cloaks_northern_slav_royalty_02
+				}
+			}
+
+			balto_finnic_cloak = {
+				index = 34
+				male = {
+					5 = empty			
+					2 = male_cloaks_balto_finnic_low_01
+					2 = male_cloaks_balto_finnic_low_02
+					2 = male_cloaks_balto_finnic_low_03
+						
+				}
+				female = {
+					5 = empty				
+					2 = female_cloaks_balto_finnic_low_01
+					2 = female_cloaks_balto_finnic_low_02
+					2 = female_cloaks_balto_finnic_low_03
+				
+				}
+			}
+
+			balto_finnic_cloak_high_nobility = {
+				index = 35
+				male = {
+					2 = male_cloaks_balto_finnic_high_01
+					2 = male_cloaks_balto_finnic_high_02
+					2 = male_cloaks_balto_finnic_high_03
+				}
+				female = {
+					2 = female_cloaks_balto_finnic_high_01
+					2 = female_cloaks_balto_finnic_high_02
+					2 = female_cloaks_balto_finnic_high_03				
+				}
+			}
+
+			early_west_slav_cloak = {
+				index = 36
+				male = {
+					5 = empty			
+					2 = male_cloaks_northern_slav_low_01
+					2 = male_cloaks_northern_slav_low_02
+					2 = male_cloaks_northern_slav_low_03
+						
+				}
+				female = {
+					5 = empty				
+					2 = female_cloaks_northern_slav_low_01
+					2 = female_cloaks_northern_slav_low_02
+					2 = female_cloaks_northern_slav_low_03
+				
+				}
+			}
+
+			early_west_slav_cloak_high_nobility = {
+				index = 37
+				male = {
+					2 = male_cloaks_northern_slav_high_01
+					5 = male_cloaks_northern_slav_high_02
+					2 = male_cloaks_northern_slav_high_03
+				}
+				female = {
+					1 = female_cloaks_northern_slav_high_01
+					1 = female_cloaks_northern_slav_high_02
+				}
+			}
+
+			gaelic_cloak = {
+				index = 38
+				male = {
+					3 = empty			
+					2 = male_cloaks_irish_low_01
+					2 = male_cloaks_irish_low_02
+					2 = male_cloaks_irish_low_03
+						
+				}
+				female = {
+					3 = empty				
+					2 = female_cloaks_irish_low_01
+					2 = female_cloaks_irish_low_02
+					2 = female_cloaks_irish_low_03
+				
+				}
+			}
+
+			gaelic_cloak_high_nobility = {
+				index = 39
+				male = {
+					2 = male_cloaks_irish_high_01
+					2 = male_cloaks_irish_high_02
+					2 = male_cloaks_irish_high_03
+				}
+				female = {
+					2 = female_cloaks_irish_high_01
+					2 = female_cloaks_irish_high_02
+					2 = female_cloaks_irish_high_03				
+				}
+			}	
+
+			gaelic_cloak_royalty_nobility = {
+				index = 40
+				male = {
+					2 = male_cloaks_irish_royalty_01
+					2 = male_cloaks_irish_royalty_02
+					2 = male_cloaks_irish_royalty_03
+					2 = male_cloaks_irish_high_01
+					2 = male_cloaks_irish_high_02
+					2 = male_cloaks_irish_high_03
+				}
+				female = {
+					2 = female_cloaks_irish_royalty_01
+					2 = female_cloaks_irish_royalty_02
+					2 = female_cloaks_irish_royalty_03	
+					2 = female_cloaks_irish_high_01
+					2 = female_cloaks_irish_high_02
+					2 = female_cloaks_irish_high_03		
+				}
+			}
+
+			early_islamic_iranian_royalty = {
+				index = 41
+				male = {
+					2 = male_cloak_early_iranian_nobility_v2
+				}
+				female = {
+					2 = empty	
+				}
+			}
+
+			eastern_iranian_royalty = {
+				index = 42
+				male = {
+					2 = male_cloak_eastern_iranian_nobility_v2
+				}
+				female = {
+					2 = female_cloak_eastern_iranian_nobility	
+				}
+			}
+
+			ep2_cloak_western_era1_royalty_nobility = {
+				index = 43
+				male = {
+					2 = m_cloaks_sec_ep2_western_era1_nob_01_roy  ##Era1 Royal
+					2 = male_west_sagum_02a_royalty               ##Era1 Royal	
+					2 = m_cloaks_sec_ep2_western_era1_nob_01_imp  ##Era1 Imperial	
+					2 = male_west_sagum_02a_imperial              ##Era1 Imperial	
+					2 = male_west_sagum_01_visigoth_royalty              ##Era1 Iberian Royal	
+					2 = male_west_sagum_02a_visigoth_royalty              ##Era1 Iberian Royal							
+					2 = m_cloaks_sec_ep2_western_era2_nob_01_roy  ##Era2					
+				}
+				female = {
+					2 = f_cloaks_sec_ep2_western_era1_nob_01_roy  ##Era1 Royal
+					2 = f_cloaks_sec_ep2_western_era1_nob_01_roy  ##Era1 Royal	
+					2 = f_cloaks_sec_ep2_western_era1_nob_01_imp  ##Era1 Imperial	
+					2 = f_cloaks_sec_ep2_western_era1_nob_01_imp  ##Era1 Imperial	
+					2 = female_west_sagum_01_visigoth_royalty              ##Era1 Iberian Royal	
+					2 = female_west_sagum_01_visigoth_royalty              ##Era1 Iberian Royal						
+					2 = f_cloaks_sec_ep2_western_era2_nob_01_roy  ##Era2					
+				}
+			}
+
+			byzantine_imperial_war_cloak = {
+				index = 44
+				male = {
+				####Imperial
+					2 = male_cloak_epe_byzantine_war_imperial_01
+				####war cloak era 1
+					2 = m_cloaks_sec_ep2_byzantine_war_era1				
+				}
+				female = {
+				####Imperial				
+					2 = empty
+				####war cloak era 1
+					2 = empty				
+					
+				}
+			}
+
+			epe_spymaster_cloaks = {
+				index = 45
+				male = {		
+					2 = male_cloak_western_spy_master_01   ##Western
+					2 = male_cloak_mena_spy_master_01      ##Mena
+					2 = male_furs_epe_northern_spymaster   ##Northern
+					2 = m_cloak_persian_spy_master_01   ##Persian
+					
+				}
+				female = {
+					2 = female_cloak_western_spy_master_01   ##Western
+					2 = female_cloak_mena_spy_master_01      ##Mena
+					2 = female_furs_epe_northern_spymaster   ##Northern	
+					2 = f_cloak_persian_spy_master_01   ##Persian					
+				}
+			}
+
+			brythonic_low = {
+				index = 46
+				male = {
+					1 = m_cloaks_sec_ep2_brythonic_era1_nob_01_lo
+					# 1 = male_brythonic_low_sagum_02					
+					# 1 = male_brythonic_low_sagum_03						
+					# 1 = male_brythonic_low_sagum_04						
+				}
+				female = {
+					1 = f_cloaks_sec_ep2_brythonic_era1_nob_01_lo
+				}
+			}
+
+			brythonic_duchy = {
+				index = 47
+				male = {
+					1 = m_cloaks_sec_ep2_brythonic_era1_nob_01_hi			
+					# 1 = male_brythonic_high_sagum_02					
+					# 1 = male_brythonic_high_sagum_03						
+					# 1 = male_brythonic_high_sagum_04							
+				}
+				female = {
+					1 = f_cloaks_sec_ep2_brythonic_era1_nob_01_hi
+				}
+			}
+
+			brythonic_royal = {
+				index = 48
+				male = {
+					1 = m_cloaks_sec_ep2_brythonic_era1_nob_01_roy								
+				}
+				female = {
+					1 = f_cloaks_sec_ep2_brythonic_era1_nob_01_roy
+				}
+			}
+
+		sp2_norman_sicilian_cloak_imperial = {
+				index = 49
+				male = {
+					2 = m_cloaks_sec_ep3_norman_sicilian_roy_01_loros				
+					2 = m_cloaks_sec_sp2_norman_sicilian_imp_01
+				}
+				female = {
+					2 = empty				
+					2 = f_cloaks_sec_sp2_norman_sicilian_imp_01
+				}
+				boy = male
+				girl = female
+		}
+
+		ep2_cloak_western_war_era1 = {
+			index = 50
+			male = {
+				1 = male_frankish_era1war_low_sagum_01			
+				1 = male_frankish_era1war_low_sagum_02
+			}
+			female = {
+				1 = female_frankish_era1war_low_sagum_01
+			}
+			boy = male
+			girl = female
+		}
+
+		epe_scripted_character_cloaks = {
+			index = 51
+			male = {
+				# EPE Kingdom of Heaven
+				1 = m_cloaks_west_sagum_03a_epe_baldwin_white  ###Baldwin IV				
+			}
+			female = {
+				1 = empty
+			}
+			boy = male
+			girl = female
+		}		
+
+		renov_roman_cloaks = {
+			index = 254
+			male = {
+				1 = male_cloak_renov_roman_lorica_musculata_cloak
+				1 = male_cloak_renov_roman_lorica_musculata_cloak_imperial
+				1 = male_cloak_renov_roman_lorica_musculata_cloak_neptune
+				1 = male_cloak_renov_roman_centurion_cloak
+			}
+			female = {
+				1 = female_cloak_renov_roman_lorica_musculata_cloak
+				1 = female_cloak_renov_roman_lorica_musculata_cloak_imperial
+				1 = female_cloak_renov_roman_lorica_musculata_cloak_neptune
+				1 = female_cloak_renov_roman_centurion_cloak
+			}
+			boy = male
+			girl = female
+		}
+            }
+            props_left = {
 
 	no_props = {
 		index = 0
@@ -2186,6 +2589,8 @@
 		boy = male
 		girl = female
 	}
+            }
+            props_right = {
 
 		ep1_mena_book_big = {
 			index = 1
@@ -3371,6 +3776,8 @@
 			boy = male
 			girl = female
 		}
+            }
+            animated_props = {
 
 			ep2_horse_idle = {
 				index = 2
@@ -3684,409 +4091,6 @@
 				boy = male
 				girl = female
 			}
-
-			byzantine_royalty = {
-				index = 24
-				male = {
-					#1 = male_cloaks_secular_byzantine_royalty_01
-					1 = m_cloaks_sec_ep2_byz_era1_roy_01_hi
-					1 = male_byzantine_royal_sagum_01				
-				}
-				female = {
-					1 = female_cloaks_secular_byzantine_royalty_01
-				}
-			}	
-
-			bulgarian_royalty = {
-				index = 25
-				male = {
-					1 = m_cloaks_ep3_bulgarian_era1_imp_01		
-				}
-				female = {
-					1 = f_cloaks_ep3_bulgarian_era1_imp_01
-				}
-			}	
-
-			south_slav_royalty = {
-				index = 26
-				male = {
-					1 = male_south_slav_royalty_sagum_01	
-					1 = m_cloaks_sec_ep2_south_slav_era1_roy_01				
-				}
-				female = {
-					1 = female_south_slav_royalty_cloak_01
-				}
-			}	
-
-			georgia_royalty = {
-				index = 27
-				male = {
-					1 = male_georgia_royalty_sagum_01	
-					1 = m_cloaks_sec_ep2_georgian_era1_roy_01				
-				}
-				female = {
-					1 = female_georgia_royalty_cloak_01
-				}
-			}
-
-			ep3_georgian_era2_roy_01_loros = {
-				index = 28
-				male = {
-					1 = m_cloaks_sec_ep3_georgian_era2_roy_01_loros
-				}
-				female = {
-				}
-				boy = male
-				girl = female
-			}
-
-			armenian_royalty = {
-				index = 29
-				male = {
-					1 = male_armenian_royalty_sagum_01	
-					1 = m_cloaks_sec_ep2_armenian_era1_roy_01					
-				}
-				female = {
-					1 = female_armenian_royalty_cloak_01
-				}
-			}	
-
-			german_royalty = {
-				index = 30
-				male = {
-					2 = male_cloaks_secular_western_royalty_01	
-				}
-				female = {
-					2 = female_cloaks_secular_western_royalty_01		
-				}
-			}		
-
-			eastern_slav_cloak = {
-				index = 31
-				male = {
-					5 = empty			
-					2 = male_cloaks_northern_slav_low_01
-					2 = male_cloaks_northern_slav_low_02
-					2 = male_cloaks_northern_slav_low_03
-						
-				}
-				female = {
-					5 = empty				
-					2 = female_cloaks_northern_slav_low_01
-					2 = female_cloaks_northern_slav_low_02
-					2 = female_cloaks_northern_slav_low_03
-				
-				}
-			}
-
-			eastern_slav_cloak_high_nobility = {
-				index = 32
-				male = {
-					2 = male_cloaks_northern_slav_high_01
-					5 = male_cloaks_northern_slav_high_02
-					2 = male_cloaks_northern_slav_high_03
-				}
-				female = {
-					1 = female_cloaks_northern_slav_high_01
-					1 = female_cloaks_northern_slav_high_02
-				}
-			}	
-
-			eastern_slav_cloak_royalty = {
-				index = 33
-				male = {
-					5 = male_cloaks_northern_slav_royalty_01
-					5 = male_cloaks_northern_slav_royalty_02
-				}
-				female = {
-					1 = female_cloaks_northern_slav_royalty_01
-					1 = female_cloaks_northern_slav_royalty_02
-				}
-			}
-
-			balto_finnic_cloak = {
-				index = 34
-				male = {
-					5 = empty			
-					2 = male_cloaks_balto_finnic_low_01
-					2 = male_cloaks_balto_finnic_low_02
-					2 = male_cloaks_balto_finnic_low_03
-						
-				}
-				female = {
-					5 = empty				
-					2 = female_cloaks_balto_finnic_low_01
-					2 = female_cloaks_balto_finnic_low_02
-					2 = female_cloaks_balto_finnic_low_03
-				
-				}
-			}
-
-			balto_finnic_cloak_high_nobility = {
-				index = 35
-				male = {
-					2 = male_cloaks_balto_finnic_high_01
-					2 = male_cloaks_balto_finnic_high_02
-					2 = male_cloaks_balto_finnic_high_03
-				}
-				female = {
-					2 = female_cloaks_balto_finnic_high_01
-					2 = female_cloaks_balto_finnic_high_02
-					2 = female_cloaks_balto_finnic_high_03				
-				}
-			}
-
-			early_west_slav_cloak = {
-				index = 36
-				male = {
-					5 = empty			
-					2 = male_cloaks_northern_slav_low_01
-					2 = male_cloaks_northern_slav_low_02
-					2 = male_cloaks_northern_slav_low_03
-						
-				}
-				female = {
-					5 = empty				
-					2 = female_cloaks_northern_slav_low_01
-					2 = female_cloaks_northern_slav_low_02
-					2 = female_cloaks_northern_slav_low_03
-				
-				}
-			}
-
-			early_west_slav_cloak_high_nobility = {
-				index = 37
-				male = {
-					2 = male_cloaks_northern_slav_high_01
-					5 = male_cloaks_northern_slav_high_02
-					2 = male_cloaks_northern_slav_high_03
-				}
-				female = {
-					1 = female_cloaks_northern_slav_high_01
-					1 = female_cloaks_northern_slav_high_02
-				}
-			}
-
-			gaelic_cloak = {
-				index = 38
-				male = {
-					3 = empty			
-					2 = male_cloaks_irish_low_01
-					2 = male_cloaks_irish_low_02
-					2 = male_cloaks_irish_low_03
-						
-				}
-				female = {
-					3 = empty				
-					2 = female_cloaks_irish_low_01
-					2 = female_cloaks_irish_low_02
-					2 = female_cloaks_irish_low_03
-				
-				}
-			}
-
-			gaelic_cloak_high_nobility = {
-				index = 39
-				male = {
-					2 = male_cloaks_irish_high_01
-					2 = male_cloaks_irish_high_02
-					2 = male_cloaks_irish_high_03
-				}
-				female = {
-					2 = female_cloaks_irish_high_01
-					2 = female_cloaks_irish_high_02
-					2 = female_cloaks_irish_high_03				
-				}
-			}	
-
-			gaelic_cloak_royalty_nobility = {
-				index = 40
-				male = {
-					2 = male_cloaks_irish_royalty_01
-					2 = male_cloaks_irish_royalty_02
-					2 = male_cloaks_irish_royalty_03
-					2 = male_cloaks_irish_high_01
-					2 = male_cloaks_irish_high_02
-					2 = male_cloaks_irish_high_03
-				}
-				female = {
-					2 = female_cloaks_irish_royalty_01
-					2 = female_cloaks_irish_royalty_02
-					2 = female_cloaks_irish_royalty_03	
-					2 = female_cloaks_irish_high_01
-					2 = female_cloaks_irish_high_02
-					2 = female_cloaks_irish_high_03		
-				}
-			}
-
-			early_islamic_iranian_royalty = {
-				index = 41
-				male = {
-					2 = male_cloak_early_iranian_nobility_v2
-				}
-				female = {
-					2 = empty	
-				}
-			}
-
-			eastern_iranian_royalty = {
-				index = 42
-				male = {
-					2 = male_cloak_eastern_iranian_nobility_v2
-				}
-				female = {
-					2 = female_cloak_eastern_iranian_nobility	
-				}
-			}
-
-			ep2_cloak_western_era1_royalty_nobility = {
-				index = 43
-				male = {
-					2 = m_cloaks_sec_ep2_western_era1_nob_01_roy  ##Era1 Royal
-					2 = male_west_sagum_02a_royalty               ##Era1 Royal	
-					2 = m_cloaks_sec_ep2_western_era1_nob_01_imp  ##Era1 Imperial	
-					2 = male_west_sagum_02a_imperial              ##Era1 Imperial	
-					2 = male_west_sagum_01_visigoth_royalty              ##Era1 Iberian Royal	
-					2 = male_west_sagum_02a_visigoth_royalty              ##Era1 Iberian Royal							
-					2 = m_cloaks_sec_ep2_western_era2_nob_01_roy  ##Era2					
-				}
-				female = {
-					2 = f_cloaks_sec_ep2_western_era1_nob_01_roy  ##Era1 Royal
-					2 = f_cloaks_sec_ep2_western_era1_nob_01_roy  ##Era1 Royal	
-					2 = f_cloaks_sec_ep2_western_era1_nob_01_imp  ##Era1 Imperial	
-					2 = f_cloaks_sec_ep2_western_era1_nob_01_imp  ##Era1 Imperial	
-					2 = female_west_sagum_01_visigoth_royalty              ##Era1 Iberian Royal	
-					2 = female_west_sagum_01_visigoth_royalty              ##Era1 Iberian Royal						
-					2 = f_cloaks_sec_ep2_western_era2_nob_01_roy  ##Era2					
-				}
-			}
-
-			byzantine_imperial_war_cloak = {
-				index = 44
-				male = {
-				####Imperial
-					2 = male_cloak_epe_byzantine_war_imperial_01
-				####war cloak era 1
-					2 = m_cloaks_sec_ep2_byzantine_war_era1				
-				}
-				female = {
-				####Imperial				
-					2 = empty
-				####war cloak era 1
-					2 = empty				
-					
-				}
-			}
-
-			epe_spymaster_cloaks = {
-				index = 45
-				male = {		
-					2 = male_cloak_western_spy_master_01   ##Western
-					2 = male_cloak_mena_spy_master_01      ##Mena
-					2 = male_furs_epe_northern_spymaster   ##Northern
-					2 = m_cloak_persian_spy_master_01   ##Persian
-					
-				}
-				female = {
-					2 = female_cloak_western_spy_master_01   ##Western
-					2 = female_cloak_mena_spy_master_01      ##Mena
-					2 = female_furs_epe_northern_spymaster   ##Northern	
-					2 = f_cloak_persian_spy_master_01   ##Persian					
-				}
-			}
-
-			brythonic_low = {
-				index = 46
-				male = {
-					1 = m_cloaks_sec_ep2_brythonic_era1_nob_01_lo
-					# 1 = male_brythonic_low_sagum_02					
-					# 1 = male_brythonic_low_sagum_03						
-					# 1 = male_brythonic_low_sagum_04						
-				}
-				female = {
-					1 = f_cloaks_sec_ep2_brythonic_era1_nob_01_lo
-				}
-			}
-
-			brythonic_duchy = {
-				index = 47
-				male = {
-					1 = m_cloaks_sec_ep2_brythonic_era1_nob_01_hi			
-					# 1 = male_brythonic_high_sagum_02					
-					# 1 = male_brythonic_high_sagum_03						
-					# 1 = male_brythonic_high_sagum_04							
-				}
-				female = {
-					1 = f_cloaks_sec_ep2_brythonic_era1_nob_01_hi
-				}
-			}
-
-			brythonic_royal = {
-				index = 48
-				male = {
-					1 = m_cloaks_sec_ep2_brythonic_era1_nob_01_roy								
-				}
-				female = {
-					1 = f_cloaks_sec_ep2_brythonic_era1_nob_01_roy
-				}
-			}
-
-		sp2_norman_sicilian_cloak_imperial = {
-				index = 49
-				male = {
-					2 = m_cloaks_sec_ep3_norman_sicilian_roy_01_loros				
-					2 = m_cloaks_sec_sp2_norman_sicilian_imp_01
-				}
-				female = {
-					2 = empty				
-					2 = f_cloaks_sec_sp2_norman_sicilian_imp_01
-				}
-				boy = male
-				girl = female
-		}
-
-		ep2_cloak_western_war_era1 = {
-			index = 50
-			male = {
-				1 = male_frankish_era1war_low_sagum_01			
-				1 = male_frankish_era1war_low_sagum_02
-			}
-			female = {
-				1 = female_frankish_era1war_low_sagum_01
-			}
-			boy = male
-			girl = female
-		}
-
-		epe_scripted_character_cloaks = {
-			index = 51
-			male = {
-				# EPE Kingdom of Heaven
-				1 = m_cloaks_west_sagum_03a_epe_baldwin_white  ###Baldwin IV				
-			}
-			female = {
-				1 = empty
-			}
-			boy = male
-			girl = female
-		}		
-
-		renov_roman_cloaks = {
-			index = 254
-			male = {
-				1 = male_cloak_renov_roman_lorica_musculata_cloak
-				1 = male_cloak_renov_roman_lorica_musculata_cloak_imperial
-				1 = male_cloak_renov_roman_lorica_musculata_cloak_neptune
-				1 = male_cloak_renov_roman_centurion_cloak
-			}
-			female = {
-				1 = female_cloak_renov_roman_lorica_musculata_cloak
-				1 = female_cloak_renov_roman_lorica_musculata_cloak_imperial
-				1 = female_cloak_renov_roman_lorica_musculata_cloak_neptune
-				1 = female_cloak_renov_roman_centurion_cloak
-			}
-			boy = male
-			girl = female
-		}
+            }
         }
     }

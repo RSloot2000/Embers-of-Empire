@@ -1,0 +1,36 @@
+"workshopitem"
+{
+    "appid" "1158310"
+    "publishedfileid" "3802802624"
+    "contentfolder" "C:\Users\ruben\Desktop\EoE_mod_dev\EoE+compatches\eoe-mods\eoe-compat-reno"
+    "title" "EoE + Renovatio"
+    "changenote" "Version 1.19.0.6."
+    "description" "[h1]EoE + Renovatio[/h1]
+
+Compatibility patch for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3679840613]Embers of Empire - A Roman Restoration[/url] and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3798537678]Renovatio[/url].
+
+[h2]One Empire, One Identity[/h2]
+
+Renovatio reshapes the Hellenic Pagan faith, Roman culture, and the Roman Empire's coat of arms. This patch restores EoE's original values after Renovatio's changes, so both mods can coexist without stepping on each other.
+
+[hr][/hr]
+
+[h2]Requirements[/h2]
+
+[list]
+[*]Embers of Empire - A Roman Restoration
+[*]Renovatio
+[/list]
+
+[h2]Load Order[/h2]
+
+[list=1]
+[*]Embers of Empire
+[*]Renovatio
+[*][b]EoE + Renovatio[/b]
+[/list]
+
+Start a new campaign after installing this patch. If Roman traditions or doctrines look wrong, report your complete playset, load order, and CK3 version."
+    "previewfile" "C:\Users\ruben\Desktop\EoE_mod_dev\EoE+compatches\eoe-mods\eoe-compat-reno\thumbnail.png"
+}
+

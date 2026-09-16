@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "retrievedAt": "2026-09-16T12:42:16.4376068+00:00",
+  "retrievedAt": "2026-09-16T21:33:52.9210878+00:00",
   "source": "https://api.steampowered.com/ISteamRemoteStorage/GetPublishedFileDetails/v1/",
   "items": [
     {
@@ -109,6 +109,42 @@
       "description": "This is the compatch for [b]Embers of Empire[/b] and [b]Immersive Toponyms[/b]\r\n\r\nLoad this mod after both"
     },
     {
+      "id": "3802802624",
+      "repositoryPath": "eoe-mods/eoe-compat-reno",
+      "pageUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3802802624&l=english",
+      "result": 1,
+      "title": "EoE + Renovatio",
+      "descriptorName": "EoE + Renovatio",
+      "descriptorVersion": "1.19.0.6.",
+      "descriptorSupportedVersion": "1.19.0.6",
+      "visibility": 0,
+      "timeCreated": "2026-09-16T18:55:21.0000000+00:00",
+      "timeUpdated": "2026-09-16T19:38:47.0000000+00:00",
+      "previewUrl": "https://images.steamusercontent.com/ugc/9933537441604584152/9D46C8FE837394CFC5BBB2A8D022789A6E8EE23E/",
+      "tags": [
+        "Religion",
+        "Historical",
+        "Alternative History",
+        "Fixes",
+        "Culture",
+        "Map"
+      ],
+      "pageMetadataAvailable": true,
+      "changeNoteCount": 3,
+      "dependenciesVerifiedFromPage": true,
+      "dependencies": [
+        {
+          "id": "3679840613",
+          "title": "Embers of Empire - A Roman Restoration"
+        },
+        {
+          "id": "3798537678",
+          "title": "Renovatio"
+        }
+      ],
+      "description": "[h1]EoE + Renovatio[/h1]\r\n\r\nCompatibility patch for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3679840613]Embers of Empire - A Roman Restoration[/url] and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3798537678]Renovatio[/url].\r\n\r\n[h2]One Empire, One Identity[/h2]\r\n\r\nRenovatio reshapes the Hellenic Pagan faith, Roman culture, and the Roman Empire's coat of arms. This patch restores EoE's original values after Renovatio's changes, so both mods can coexist without stepping on each other.\r\n\r\n[hr][/hr]\r\n\r\n[h2]Requirements[/h2]\r\n\r\n[list]\r\n[*]Embers of Empire - A Roman Restoration\r\n[*]Renovatio\r\n[/list]\r\n\r\n[h2]Load Order[/h2]\r\n\r\n[list=1]\r\n[*]Embers of Empire\r\n[*]Renovatio\r\n[*][b]EoE + Renovatio[/b]\r\n[/list]\r\n\r\nStart a new campaign after installing this patch. If Roman traditions or doctrines look wrong, report your complete playset, load order, and CK3 version."
+    },
+    {
       "id": "3679840613",
       "repositoryPath": "eoe-mods/eoe-main",
       "pageUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3679840613&l=english",
@@ -134,7 +170,40 @@
       "changeNoteCount": 21,
       "dependenciesVerifiedFromPage": false,
       "dependencies": [],
-      "description": "[h1] Embers of Empire - A Roman Restoration mod [/h1]\r\n\r\n[i] Over the past view years since the release of Crusader Kings 3 there have been many mods aiming to bring the glory of Rome to the base game and I enjoyed playing a great many of them. However, none of them was exactly the type of restoration I wanted, so I decided to make my own. [/i]\r\n\r\n[h2] Content Update 2.1 [/h2]\r\n\r\n[b] New buildings and decisions [/b]\r\n\r\n[*] Temple of Jupiter Optimus Maximus\r\n[*] Temple of Sol Invictus\r\n[*] Circus of Nero\r\n[*] Palatine Palace\r\n\r\n[*] Great Projects: [b] Restore the Temple of Jupiter Optimus Maximus [/b]; [b] Restore the Palatine Hill [/b]\r\n[*] Decision: Destroy the Church of Saint Peter\r\n\r\n[b] New faith and tenets [/b]\r\n\r\n[*] New Faith: [b] Orphism [/b]\r\n[*] New Tenets: [b] Sophrosynia; Bacchanalia; Eleusinia [/b]\r\n\r\n[h3] Fixes [h3]\r\n\r\n[*] Fixed Germania not getting properly integrated when forming the Western Roman Empire\r\n[*] Fixed Dacia not getting properly integrated when forming the Western Roman Empire\r\n\r\n[i] I am planning on making more special buildings and possibly a few more great projects. [/i]\r\n\r\n[b] THIS UPDATE IS NOT SAVEGAME COMPATIBLE! [/b]\r\n\r\n[h2] What is this mod? [/h2]\r\n\r\nEoE brings new flavour to the Roman restoration of the [b] base game [/b] by:\r\n\r\n1. Combining elements from existing Roman flavour mods such as TFE\r\n\r\n2. Creating new original content to fill in the gaps and give it it's own unique vision\r\n\r\n[h3] From other mods [/h3]\r\n\r\nThe Fallen Eagle:\r\n[*] TFE mechanics form the basis of this mod. This includes cultures, icons, the Province restoration system, etc.\r\n\r\nRoma Invicta (@skela):\r\n[*] The Born in Red framework so children of Emperors residing in Rome will have an equivalent to the Born in Purple framework\r\n\r\nBetter Roman Empire Map (@洛山达的法师):\r\n[*] The western reconquest event chain for Western Roman Emperors\r\n\r\nTrue Romans (@Adaelaetus):\r\n[*] Icons\r\n\r\nTraits of the Greek Gods (@Caracus):\r\n[*] Roman flavoured Demi-God traits\r\n\r\nMore Holding Graphics (@Scratchmen):\r\n[*] Unique GFX\r\n\r\nLux Renata (@Cameron122 and team)\r\n\r\n[*] Unique Roman and Hellenic CoA\r\n\r\n[h3] Original Content [/h3]\r\n\r\n[*] New Greco-Roman faiths\r\n[*] New unique faith tenets\r\n[*] New cultural traditions for western Rome\r\n[*] New decisions to repopulate the old western provinces with loyal Romans\r\n[*] Various smaller decisions involving the addition of new Imperial Provinces\r\n[*] New formable titles, religious and secular\r\n[*] New MAA\r\n[*] New Great Projects and special buildings\r\n\r\n[b] I aim to expand on this in the future by creating new ahistorical options of conquest for Rome [/b]\r\n\r\n[hr][/hr]\r\n[h2] Compatibility [/h2]\r\nThis mod modifies [b]00_landed_titles [/b] anything that overwrites this file will result in a CTD\r\n\r\n[b]THIS MOD IS COMPATIBLE WITH RICE!!!! I HAVE TESTED THAT A DOZEN TIMES.[/b] Any issues you experience are most likely related to another mod conflicting with EoE.\r\n\r\n[h3] Link to my personal mod collection for Embers of Empire:[/h3]\r\n\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=3795443022\r\n\r\n[h3] Compatches [/h3]\r\n\r\n[b] Compatches for the following mods are provided [/b]\r\n\r\n[*] [b]Ethnicities and Portraits Expanded:[/b]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3679849030] [img]https://i.imgur.com/XlydGGS.png[/img] [/url]\r\n\r\n[*] [b]Culture Expanded:[/b]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3679850009] [img]https://i.imgur.com/7Y3Cb6j.png[/img] [/url]\r\n\r\n[*] [b]Communion and Denotations:[/b]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3679849819] [img]https://i.imgur.com/dghj9vn.png[/img] [/url]\r\n\r\n[*] [b]Immersive Toponyms:[/b]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3679849283] [img]https://i.imgur.com/XYyfee2.png[/img] [/url]\r\n\r\n[*] [b]More Holding Graphics:[/b]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3791600555] [img]https://i.imgur.com/FSYwNfY.png[/img] [/url]\r\n\r\n[*] [b]Medieval Arts:[/b]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?edit=true&id=3800562770] [img]https://i.imgur.com/ebWyULW.png[/img] [/url]\r\n\r\n[h3][b]Since I made quite a lot of stuff in the past few years, I have decided to make a discord server for all my stuff so I don't have to jump in between servers all the time.[/b][/h3]\r\n \r\nhttps://discord.gg/zDtwQxBjY"
+      "description": "[h1] Embers of Empire - A Roman Restoration mod [/h1]\r\n\r\n[i] Over the past view years since the release of Crusader Kings 3 there have been many mods aiming to bring the glory of Rome to the base game and I enjoyed playing a great many of them. However, none of them was exactly the type of restoration I wanted, so I decided to make my own. [/i]\r\n\r\n[h2] Content Update 2.1 [/h2]\r\n\r\n[b] New buildings and decisions [/b]\r\n\r\n[*] Temple of Jupiter Optimus Maximus\r\n[*] Temple of Sol Invictus\r\n[*] Circus of Nero\r\n[*] Palatine Palace\r\n\r\n[*] Great Projects: [b] Restore the Temple of Jupiter Optimus Maximus [/b]; [b] Restore the Palatine Hill [/b]\r\n[*] Decision: Destroy the Church of Saint Peter\r\n\r\n[b] New faith and tenets [/b]\r\n\r\n[*] New Faith: [b] Orphism [/b]\r\n[*] New Tenets: [b] Sophrosynia; Bacchanalia; Eleusinia [/b]\r\n\r\n[h3] Fixes [h3]\r\n\r\n[*] Fixed Germania not getting properly integrated when forming the Western Roman Empire\r\n[*] Fixed Dacia not getting properly integrated when forming the Western Roman Empire\r\n\r\n[i] I am planning on making more special buildings and possibly a few more great projects. [/i]\r\n\r\n[b] THIS UPDATE IS NOT SAVEGAME COMPATIBLE! [/b]\r\n\r\n[h2] What is this mod? [/h2]\r\n\r\nEoE brings new flavour to the Roman restoration of the [b] base game [/b] by:\r\n\r\n1. Combining elements from existing Roman flavour mods such as TFE\r\n\r\n2. Creating new original content to fill in the gaps and give it it's own unique vision\r\n\r\n[h3] From other mods [/h3]\r\n\r\nThe Fallen Eagle:\r\n[*] TFE mechanics form the basis of this mod. This includes cultures, icons, the Province restoration system, etc.\r\n\r\nRoma Invicta (@skela):\r\n[*] The Born in Red framework so children of Emperors residing in Rome will have an equivalent to the Born in Purple framework\r\n\r\nBetter Roman Empire Map (@洛山达的法师):\r\n[*] The western reconquest event chain for Western Roman Emperors\r\n\r\nTrue Romans (@Adaelaetus):\r\n[*] Icons\r\n\r\nTraits of the Greek Gods (@Caracus):\r\n[*] Roman flavoured Demi-God traits\r\n\r\nMore Holding Graphics (@Scratchmen):\r\n[*] Unique GFX\r\n\r\nLux Renata (@Cameron122 and team)\r\n\r\n[*] Unique Roman and Hellenic CoA\r\n\r\n[h3] Original Content [/h3]\r\n\r\n[*] New Greco-Roman faiths\r\n[*] New unique faith tenets\r\n[*] New cultural traditions for western Rome\r\n[*] New decisions to repopulate the old western provinces with loyal Romans\r\n[*] Various smaller decisions involving the addition of new Imperial Provinces\r\n[*] New formable titles, religious and secular\r\n[*] New MAA\r\n[*] New Great Projects and special buildings\r\n\r\n[b] I aim to expand on this in the future by creating new ahistorical options of conquest for Rome [/b]\r\n\r\n[hr][/hr]\r\n[h2] Compatibility [/h2]\r\nThis mod modifies [b]00_landed_titles [/b] anything that overwrites this file will result in a CTD\r\n\r\n[b]THIS MOD IS COMPATIBLE WITH RICE!!!! I HAVE TESTED THAT A DOZEN TIMES.[/b] Any issues you experience are most likely related to another mod conflicting with EoE.\r\n\r\n[h3] Link to my personal mod collection for Embers of Empire:[/h3]\r\n\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=3795443022\r\n\r\n[h3] Compatches [/h3]\r\n\r\n[b] Compatches for the following mods are provided [/b]\r\n\r\n[*] [b]Ethnicities and Portraits Expanded:[/b]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3679849030] [img]https://i.imgur.com/XlydGGS.png[/img] [/url]\r\n\r\n[*] [b]Culture Expanded:[/b]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3679850009] [img]https://i.imgur.com/7Y3Cb6j.png[/img] [/url]\r\n\r\n[*] [b]Communion and Denotations:[/b]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3679849819] [img]https://i.imgur.com/dghj9vn.png[/img] [/url]\r\n\r\n[*] [b]Immersive Toponyms:[/b]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3679849283] [img]https://i.imgur.com/XYyfee2.png[/img] [/url]\r\n\r\n[*] [b]More Holding Graphics:[/b]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3791600555] [img]https://i.imgur.com/FSYwNfY.png[/img] [/url]\r\n\r\n[*] [b]Medieval Arts:[/b]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?edit=true&id=3800562770] [img]https://i.imgur.com/ebWyULW.png[/img] [/url]\r\n\r\n[*] [b]Renovatio:[/b]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?edit=true&id=3802802624] [img]https://i.imgur.com/NpxRJrM.png[/img] [/url]\r\n\r\n[h3][b]Since I made quite a lot of stuff in the past few years, I have decided to make a discord server for all my stuff so I don't have to jump in between servers all the time.[/b][/h3]\r\n \r\nhttps://discord.gg/zDtwQxBjY"
+    },
+    {
+      "id": "3802631920",
+      "repositoryPath": "other_mods/cfp-reno-compatch",
+      "pageUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3802631920&l=english",
+      "result": 1,
+      "title": "CFP + Renovatio Compatibility Patch",
+      "descriptorName": "CFP + Renovatio Compatibility Patch",
+      "descriptorVersion": "1.0.1",
+      "descriptorSupportedVersion": "1.19.0.6",
+      "visibility": 0,
+      "timeCreated": "2026-09-16T13:24:27.0000000+00:00",
+      "timeUpdated": "2026-09-16T14:52:36.0000000+00:00",
+      "previewUrl": "https://images.steamusercontent.com/ugc/17229185791727860230/4EEFC8906B5DD4758719436E6F4528637B4681D3/",
+      "tags": [
+        "1.19 'Scribe'",
+        "Fixes",
+        "Compatibility"
+      ],
+      "pageMetadataAvailable": true,
+      "changeNoteCount": 2,
+      "dependenciesVerifiedFromPage": true,
+      "dependencies": [
+        {
+          "id": "2220098919",
+          "title": "Community Flavor Pack"
+        },
+        {
+          "id": "3798537678",
+          "title": "Renovatio"
+        }
+      ],
+      "description": "[h1]CFP + Renovatio Compatibility Patch[/h1]\n\nCompatibility patch for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2220098919]Community Flavor Pack[/url], and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3798537678]Renovatio[/url].\n\n[h2]Why this patch[/h2]\n\nCommunity Flavor Pack and Renovatio both ship their own versions of the same gene and portrait-modifier files. Because CK3 uses file-level replacement for these files, loading both mods silently drops one mod's clothing, headgear, legwear, and visual traits. This patch merges both mods' content into a single set of files so nothing is lost.\n\n[hr][/hr]\n\n[h2]Requirements[/h2]\n\n[list]\n[*]Community Flavor Pack\n[*]Renovatio\n[/list]\n\n[h2]Load Order[/h2]\n\n[list=1]\n[*]Community Flavor Pack\n[*]Ethnicities & Portraits Expanded\n[*]CFP + EPE Compatibility Patch\n[*]Renovatio\n[*][b]CFP + Renovatio Compatibility Patch[/b]\n[/list]\n\nStart a new campaign after installing this patch. If clothing, headgear, or visual traits look wrong, report your complete playset, load order, and CK3 version."
     }
   ]
 }

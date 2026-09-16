@@ -80,7 +80,16 @@ function Parse-GeneFile([string]$text) {
         for ($j = $i + 1; $j -lt $end; $j++) {
             if ($depthBefore[$j] -eq $childDepth -and $lines[$j].Trim() -match $GENDER_RE) { $isGene = $true; break }
         }
-        if (-not $isGene) { continue }
+        if (-not $isGene) {
+            # Skip gender blocks (male, female, boy, girl, pregnant) — they're not categories
+            if ($key -in @('male','female','boy','girl','pregnant')) { continue }
+            # Not a gene → treat as a category node (e.g. cloaks, props_left, props_right,
+            # animated_props, special_legwear — any section that wraps genes but isn't in $CATS)
+            $node = @{ Name = $key; Children = [ordered]@{}; Genes = [ordered]@{}; Path = ($parent.Path + $key) }
+            $parent.Children[$key] = $node
+            $stack.Add($node)
+            continue
+        }
         if ($genes.Contains($key)) { continue }
 
         $cat = $parent
