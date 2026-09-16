@@ -1301,5 +1301,17 @@
 				boy = male
 				girl = female
 			}
+
+                        no_face_mask = {
+                                index = 255
+                                male = {
+                                        1 = empty
+                                }
+                                female = {
+                                        1 = empty
+                                }
+                                boy = male
+                                girl = female
+                        }
         }
     }

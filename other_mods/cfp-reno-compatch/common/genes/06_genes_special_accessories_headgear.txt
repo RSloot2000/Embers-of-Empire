@@ -4828,7 +4828,9 @@
 					1 = male_epe_byz_pannonian_hat_01_low	
 					1 = male_epe_byz_pannonian_hat_02_low	
 					1 = male_epe_byz_pannonian_hat_03_low	
-					1 = male_epe_byz_pannonian_hat_04_low					
+					1 = male_epe_byz_pannonian_hat_04_low	
+					1 = male_headgear_secular_byzantine_skiadion_01
+					1 = male_headgear_secular_byzantine_pannonian_low_01
 					   #######EPE Roads to Power DLC
 					1 = m_headgear_sec_ep3_byzantine_era1_nob_01
 			       ##########################################################				
@@ -4880,6 +4882,8 @@
 					1 = female_headgear_secular_byzantine_nobility_01	
 					1 = female_headgear_secular_byzantine_nobility_01	
 					1 = female_headgear_secular_byzantine_nobility_01
+					1 = female_headgear_secular_byzantine_propoloma_low_01
+					1 = female_headgear_secular_byzantine_propoloma_low_02
 					   #######EPE Roads to Power DLC
 					1 = f_headgear_sec_ep3_byzantine_era1_lo_nob_01
 			       ##########################################################				
@@ -6846,11 +6850,15 @@
 					1 = male_norman_fpl_helmet_01
 					1 = male_norman_fpl_helmet_02
 					1 = male_norman_fpl_helmet_01b
-					1 = male_norman_fpl_helmet_02b					
+					1 = male_norman_fpl_helmet_02b
+					1 = male_headgear_secular_latin_war_norman_01
+					1 = male_headgear_secular_latin_war_norman_02
 				}
 				female = {
 					1 = female_western_Nasal_Helmet_01	
 					1 = female_western_Nasal_Helmet_02
+					1 = female_headgear_secular_latin_war_norman_01
+					1 = female_headgear_secular_latin_war_norman_02
 				}
 				boy = male
 				girl = female
