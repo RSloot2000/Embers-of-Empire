@@ -7,7 +7,7 @@
       "workshopId": "3679850009",
       "version": "1.18.2",
       "size": 794536,
-      "sha256": "9ae89bad4443d4aba547a25458a47f2df8c4b2b5c1ee405d166c1a6952b2d77a"
+      "sha256": "ef0c9ac18d801bdd43eef7bd69b9486f98b0307172756f5456033edfdfb25a7f"
     },
     {
       "artifact": "eoe-compat-epe-v1.18.4.zip",
@@ -15,7 +15,7 @@
       "workshopId": "3679849030",
       "version": "1.18.4",
       "size": 815893,
-      "sha256": "f230b0251ebe0b140812020c0de5aad17b2bd30d2601b9824ea2a78ec6252417"
+      "sha256": "d38cbbedb676a0dc0e11075285a4db019d3437281c9cbcc5442ff93d9204842f"
     },
     {
       "artifact": "eoe-compat-it-v1.18.3.zip",
@@ -26,12 +26,12 @@
       "sha256": "5f85b90edcb70bba0d943e0b84c2a0bb1d6349a51ba7cc9072b9702d4e8cdb05"
     },
     {
-      "artifact": "eoe-compat-reno-v1.19.0.zip",
+      "artifact": "eoe-compat-reno-v1.0.0.zip",
       "mod": "eoe-mods/eoe-compat-reno",
-      "workshopId": null,
-      "version": "1.19.0",
-      "size": 1533,
-      "sha256": "df0d0324b3795b896a8a8f20019602646231cf1da818aa01ef1980ce90ef149a"
+      "workshopId": "3802802624",
+      "version": "1.0.0",
+      "size": 734616,
+      "sha256": "964a58f02b31120a0c804421cfcc0725a6ba863b276cf914f8d6daafc9eb2673"
     },
     {
       "artifact": "embers-of-empire-v1.18.4.zip",
@@ -39,15 +39,15 @@
       "workshopId": "3679840613",
       "version": "1.18.4",
       "size": 102858723,
-      "sha256": "7c860e9b1c67ba38cd9d47b6070ee6278057aa29832b0738acee63384cce9407"
+      "sha256": "21da82acb368b73bd03682b5943a2b07c32f681d8a75b756841e64b9cc88a6b0"
     },
     {
-      "artifact": "cfp-reno-compatch-v1.0.0.zip",
+      "artifact": "cfp-reno-compatch-v1.0.1.zip",
       "mod": "other_mods/cfp-reno-compatch",
-      "workshopId": null,
-      "version": "1.0.0",
-      "size": 58196,
-      "sha256": "c7e20d256db661ac32ed9fde1cf1215d994e24a5e984d0ab535648a1263b1f68"
+      "workshopId": "3802631920",
+      "version": "1.0.1",
+      "size": 686639,
+      "sha256": "d757e940ff0217de4bd7b47956c1fbd57661e43c40067819d0fccefa1578c105"
     }
   ]
 }

@@ -1,4 +1,4 @@
-version="1.19.0.6."
+version="1.0.0"
 tags={
 	"Religion"
 	"Historical"
