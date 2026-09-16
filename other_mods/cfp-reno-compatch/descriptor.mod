@@ -4,7 +4,7 @@ tags={
 	"Fixes"
 	"Compatibility"
 }
-name="EoE + CFP + Renovatio"
+name="CFP + Renovatio Compatibility Patch"
 supported_version="1.19.0.6"
 dependencies={
 	"2220098919" # CFP
