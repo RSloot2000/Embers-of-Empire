@@ -3,31 +3,23 @@
   "artifacts": [
     {
       "artifact": "eoe-compat-ce-v1.18.2.zip",
-      "mod": "mods/eoe-compat-ce",
+      "mod": "eoe-mods/eoe-compat-ce",
       "workshopId": "3679850009",
       "version": "1.18.2",
       "size": 794536,
-      "sha256": "6e829e61b4289ff75cd8abf9bdd48d6e994c6f327faf06810c31ee320195f66d"
-    },
-    {
-      "artifact": "eoe-compat-cfp-reno-v1.0.0.zip",
-      "mod": "mods/eoe-compat-cfp-reno",
-      "workshopId": null,
-      "version": "1.0.0",
-      "size": 58126,
-      "sha256": "9b37f46181fb594b6dfe39fd763a946b1e57a74814b6d7e271d114f8790c9d64"
+      "sha256": "9ae89bad4443d4aba547a25458a47f2df8c4b2b5c1ee405d166c1a6952b2d77a"
     },
     {
       "artifact": "eoe-compat-epe-v1.18.4.zip",
-      "mod": "mods/eoe-compat-epe",
+      "mod": "eoe-mods/eoe-compat-epe",
       "workshopId": "3679849030",
       "version": "1.18.4",
       "size": 815893,
-      "sha256": "204d017f8fe3f7be26722cfe4c7a5e1494bcb37b022ccb9a9f804774b729cf51"
+      "sha256": "f230b0251ebe0b140812020c0de5aad17b2bd30d2601b9824ea2a78ec6252417"
     },
     {
       "artifact": "eoe-compat-it-v1.18.3.zip",
-      "mod": "mods/eoe-compat-it",
+      "mod": "eoe-mods/eoe-compat-it",
       "workshopId": "3679849283",
       "version": "1.18.3",
       "size": 3078889,
@@ -35,19 +27,27 @@
     },
     {
       "artifact": "eoe-compat-reno-v1.19.0.zip",
-      "mod": "mods/eoe-compat-reno",
+      "mod": "eoe-mods/eoe-compat-reno",
       "workshopId": null,
       "version": "1.19.0",
       "size": 1533,
-      "sha256": "c595e93b7330427741382f0fd5eb2fc51ac703c892944568293eaa407f4be3d6"
+      "sha256": "df0d0324b3795b896a8a8f20019602646231cf1da818aa01ef1980ce90ef149a"
     },
     {
       "artifact": "embers-of-empire-v1.18.4.zip",
-      "mod": "mods/eoe-main",
+      "mod": "eoe-mods/eoe-main",
       "workshopId": "3679840613",
       "version": "1.18.4",
       "size": 102858723,
-      "sha256": "85904a027e358a9cb2f7d4e6146f6b14d6f0127fcb372b3abc125a2dd4dcc673"
+      "sha256": "7c860e9b1c67ba38cd9d47b6070ee6278057aa29832b0738acee63384cce9407"
+    },
+    {
+      "artifact": "cfp-reno-compatch-v1.0.0.zip",
+      "mod": "other_mods/cfp-reno-compatch",
+      "workshopId": null,
+      "version": "1.0.0",
+      "size": 58196,
+      "sha256": "c7e20d256db661ac32ed9fde1cf1215d994e24a5e984d0ab535648a1263b1f68"
     }
   ]
 }

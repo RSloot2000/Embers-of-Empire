@@ -6,11 +6,11 @@ Development repository for **Embers of Empire — A Roman Restoration**, a Crusa
 
 ## What's Here
 
-- **`eoe-mods/`** — the main mod and all compatibility patches (editable)
-- **`CE`, `EpE`, `IT`** — read-only source mods used as patch references (never edit)
+- **`eoe-mods/`** — the main mod and all compatibility patches
+- **`other_mods/`** — compatibility patches for other non-EoE mods
 - **`scripts/`** — build, deploy, and validation tooling
 - **`workshop/`** — Steam Workshop metadata and upload text
-- **`refs/`** — guides, handoffs, and reference material
+- **`title_history`** — title history research files for EoE
 
 ## Quick Start
 

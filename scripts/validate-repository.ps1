@@ -43,7 +43,7 @@ function Add-ValidationWarning {
     }
 }
 
-$modDirectories = @(Get-ModInventory -RepositoryRoot $repositoryRoot | ForEach-Object { "eoe-mods/$($_.Source)" })
+$modDirectories = @(Get-ModInventory -RepositoryRoot $repositoryRoot | ForEach-Object { "$($_.Root)/$($_.Source)" })
 
 foreach ($relativeModDirectory in $modDirectories) {
     $descriptorPath = Join-Path $repositoryRoot $relativeModDirectory 'descriptor.mod'
@@ -69,22 +69,26 @@ foreach ($relativeModDirectory in $modDirectories) {
     }
 }
 
-$modsRoot = Join-Path $repositoryRoot 'eoe-mods'
-$forbiddenEntries = Get-ChildItem -LiteralPath $modsRoot -Recurse -Force | Where-Object {
-    $_.PSIsContainer -and $_.Name -in @('.vscode', 'steamcmd') -or
-    -not $_.PSIsContainer -and (
-        $_.Name -match '^\.env(?:\..*)?$' -or
-        $_.Name -eq 'local.env' -or
-        $_.Name -like 'steam-creds*'
-    )
+$modsRoots = @('eoe-mods', 'other_mods') | ForEach-Object { Join-Path $repositoryRoot $_ }
+$forbiddenEntries = foreach ($root in $modsRoots) {
+    Get-ChildItem -LiteralPath $root -Recurse -Force | Where-Object {
+        $_.PSIsContainer -and $_.Name -in @('.vscode', 'steamcmd') -or
+        -not $_.PSIsContainer -and (
+            $_.Name -match '^\.env(?:\..*)?$' -or
+            $_.Name -eq 'local.env' -or
+            $_.Name -like 'steam-creds*'
+        )
+    }
 }
 foreach ($entry in $forbiddenEntries) {
     $relativePath = Get-RelativePath -Path $entry.FullName
-    Add-ValidationFailure -Message 'Forbidden local-only content under eoe-mods/.' -Path $relativePath
+    Add-ValidationFailure -Message 'Forbidden local-only content under eoe-mods/ or other_mods/.' -Path $relativePath
 }
 
-$localizationFiles = Get-ChildItem -LiteralPath $modsRoot -Recurse -File -Filter '*.yml' |
-    Where-Object { $_.FullName -match '[\\/]localization[\\/]' }
+$localizationFiles = foreach ($root in $modsRoots) {
+    Get-ChildItem -LiteralPath $root -Recurse -File -Filter '*.yml' |
+        Where-Object { $_.FullName -match '[\\/]localization[\\/]' }
+}
 $strictUtf8 = [Text.UTF8Encoding]::new($false, $true)
 
 foreach ($file in $localizationFiles) {

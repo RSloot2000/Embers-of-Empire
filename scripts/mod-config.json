@@ -47,6 +47,15 @@
         { "id": "2220098919", "title": "Community Flavor Pack" },
         { "id": "3798537678", "title": "Renovatio" }
       ]
+    },
+    "cfp-reno-compatch": {
+      "workshopId": null,
+      "devName": "CFP_Reno_Compatch_Dev",
+      "artifact": "cfp-reno-compatch",
+      "dependencies": [
+        { "id": "2220098919", "title": "Community Flavor Pack" },
+        { "id": "3798537678", "title": "Renovatio" }
+      ]
     }
   }
 }

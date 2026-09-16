@@ -29,7 +29,7 @@ $items = foreach ($mod in $mods) {
         throw "Steam returned no public metadata for Workshop item $($mod.WorkshopId)."
     }
 
-    $descriptorPath = Join-Path (Join-Path (Join-Path $repositoryRoot 'eoe-mods') $mod.Source) 'descriptor.mod'
+    $descriptorPath = Join-Path (Join-Path (Join-Path $repositoryRoot $mod.Root) $mod.Source) 'descriptor.mod'
     $descriptor = Get-Content $descriptorPath -Raw
     $descriptorId = [regex]::Match($descriptor, '(?m)^remote_file_id\s*=\s*"([^"]+)"').Groups[1].Value
     $version = [regex]::Match($descriptor, '(?m)^version\s*=\s*"([^"]+)"').Groups[1].Value
@@ -89,7 +89,7 @@ $items = foreach ($mod in $mods) {
 
     [pscustomobject][ordered]@{
         id = $mod.WorkshopId
-        repositoryPath = "eoe-mods/$($mod.Source)"
+        repositoryPath = "$($mod.Root)/$($mod.Source)"
         pageUrl = $pageUri
         result = [int]$detail.result
         title = $detail.title

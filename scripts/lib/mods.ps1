@@ -1,7 +1,7 @@
 # Shared mod-discovery helper for the EoE build/deploy/validate scripts.
 #
-# Scans <repoRoot>/eoe-mods for folders that contain a descriptor.mod and merges
-# them with the per-mod config in scripts/mod-config.json.
+# Scans <repoRoot>/eoe-mods and <repoRoot>/other_mods for folders that contain a
+# descriptor.mod and merges them with the per-mod config in scripts/mod-config.json.
 #
 # Fields that can be derived from the folder + descriptor are read directly.
 # Fields that live nowhere in the repo (workshopId, devName, artifact override,
@@ -51,66 +51,70 @@ function Get-ModInventory {
         [Parameter(Mandatory)][string]$RepositoryRoot
     )
 
-    $modsRoot = Join-Path $RepositoryRoot 'eoe-mods'
-    if (-not (Test-Path -LiteralPath $modsRoot -PathType Container)) {
-        return @()
-    }
-
+    $modRoots = @('eoe-mods', 'other_mods')
     $config = Get-ModConfig -RepositoryRoot $RepositoryRoot
     $inventory = [Collections.Generic.List[object]]::new()
 
-    $modFolders = Get-ChildItem -LiteralPath $modsRoot -Directory |
-        Sort-Object -Property Name
-
-    foreach ($folder in $modFolders) {
-        $source = $folder.Name
-        $descriptorPath = Join-Path $folder.FullName 'descriptor.mod'
-        if (-not (Test-Path -LiteralPath $descriptorPath -PathType Leaf)) {
+    foreach ($root in $modRoots) {
+        $modsRoot = Join-Path $RepositoryRoot $root
+        if (-not (Test-Path -LiteralPath $modsRoot -PathType Container)) {
             continue
         }
 
-        $descriptor = Get-Content -LiteralPath $descriptorPath -Raw
-        $displayName = Get-DescriptorField -Descriptor $Descriptor -Field 'name'
-        $version = Get-DescriptorField -Descriptor $Descriptor -Field 'version'
-        $supportedVersion = Get-DescriptorField -Descriptor $Descriptor -Field 'supported_version'
-        $descriptorWorkshopId = Get-DescriptorField -Descriptor $Descriptor -Field 'remote_file_id'
+        $modFolders = Get-ChildItem -LiteralPath $modsRoot -Directory |
+            Sort-Object -Property Name
 
-        $modConfig = $null
-        if ($config.Contains($source)) {
-            $modConfig = $config[$source]
+        foreach ($folder in $modFolders) {
+            $source = $folder.Name
+            $descriptorPath = Join-Path $folder.FullName 'descriptor.mod'
+            if (-not (Test-Path -LiteralPath $descriptorPath -PathType Leaf)) {
+                continue
+            }
+
+            $descriptor = Get-Content -LiteralPath $descriptorPath -Raw
+            $displayName = Get-DescriptorField -Descriptor $Descriptor -Field 'name'
+            $version = Get-DescriptorField -Descriptor $Descriptor -Field 'version'
+            $supportedVersion = Get-DescriptorField -Descriptor $Descriptor -Field 'supported_version'
+            $descriptorWorkshopId = Get-DescriptorField -Descriptor $Descriptor -Field 'remote_file_id'
+
+            $modConfig = $null
+            if ($config.Contains($source)) {
+                $modConfig = $config[$source]
+            }
+
+            # workshopId: prefer the descriptor's remote_file_id, fall back to config.
+            $workshopId = $descriptorWorkshopId
+            if (-not $workshopId -and $modConfig -and $modConfig.workshopId) {
+                $workshopId = [string]$modConfig.workshopId
+            }
+
+            $devName = $null
+            if ($modConfig -and $modConfig.devName) {
+                $devName = [string]$modConfig.devName
+            }
+
+            $artifact = $source
+            if ($modConfig -and $modConfig.artifact) {
+                $artifact = [string]$modConfig.artifact
+            }
+
+            $dependencies = @()
+            if ($modConfig -and $modConfig.dependencies) {
+                $dependencies = @($modConfig.dependencies)
+            }
+
+            $inventory.Add([pscustomobject][ordered]@{
+                Source           = $source
+                Root             = $root
+                DisplayName      = $displayName
+                Version          = $version
+                SupportedVersion = $supportedVersion
+                WorkshopId       = $workshopId
+                DevName          = $devName
+                Artifact         = $artifact
+                Dependencies     = $dependencies
+            })
         }
-
-        # workshopId: prefer the descriptor's remote_file_id, fall back to config.
-        $workshopId = $descriptorWorkshopId
-        if (-not $workshopId -and $modConfig -and $modConfig.workshopId) {
-            $workshopId = [string]$modConfig.workshopId
-        }
-
-        $devName = $null
-        if ($modConfig -and $modConfig.devName) {
-            $devName = [string]$modConfig.devName
-        }
-
-        $artifact = $source
-        if ($modConfig -and $modConfig.artifact) {
-            $artifact = [string]$modConfig.artifact
-        }
-
-        $dependencies = @()
-        if ($modConfig -and $modConfig.dependencies) {
-            $dependencies = @($modConfig.dependencies)
-        }
-
-        $inventory.Add([pscustomobject][ordered]@{
-            Source           = $source
-            DisplayName      = $displayName
-            Version          = $version
-            SupportedVersion = $supportedVersion
-            WorkshopId       = $workshopId
-            DevName          = $devName
-            Artifact         = $artifact
-            Dependencies     = $dependencies
-        })
     }
 
     return @($inventory)
