@@ -1,0 +1,49 @@
+# EoE + Renovatio compat: copy of Reno's renov_realm_culture_conversion_events.txt
+#
+# The event below is disabled (commented out) because it duplicates EoE's own
+# Roman culture conversion decisions (eoe_culture_decisions.txt,
+# better_rome_decisions.txt). EoE is leidend: its decisions are the only path
+# for Roman culture conversion. The compat submod loads last, so this file
+# overrides Reno's original.
+
+namespace = renov_realm_culture_conversion_events
+
+# renov_realm_culture_conversion_events.0001 = { #Fires after gaining the Roman Empire title (only fires once!)
+# 	type = character_event
+# 	#content_source = dlc_renov
+# 	title = renov_realm_culture_conversion_events_0001
+# 	window = big_event_window
+# 	desc = renov_realm_culture_conversion_events_0001_desc
+#
+# 	trigger = {
+# 		OR = {
+# 			has_title = title:h_roman_empire
+# 			has_title = title:h_eastern_roman_empire
+# 		}
+# 	}
+#
+# 	theme = byzantine
+# 	override_background = { reference = ep3_fullscreen_restore_rome }
+#
+# 	left_portrait = {
+# 		character = root
+# 		animation = personality_honorable
+# 	}
+#
+# 	immediate = {
+# 		play_music_cue = "mx_cue_epic_sacral_moment"
+# 		set_global_variable = renov_roman_empire_realm_culture_variable
+# 	}
+#
+# 	option = { #Become Roman
+# 		name = renov_realm_culture_conversion_events.0001.a
+# 		#custom_tooltip = {
+# 		#	text = renov_realm_culture_conversion_events.0001.a.tooltip
+# 			renov_roman_conversion_realm_effect = yes
+# 			#renov_roman_conversion_personal_effect = yes
+# 		#}
+# 	}
+# 	option = { #Stay as what you are
+# 		name = renov_realm_culture_conversion_events.0001.b
+# 	}
+# }

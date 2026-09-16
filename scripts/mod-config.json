@@ -39,17 +39,8 @@
         { "id": "3798537678", "title": "Renovatio" }
       ]
     },
-    "eoe-compat-cfp-reno": {
-      "workshopId": null,
-      "devName": "EoE_CFP_Reno_Dev",
-      "dependencies": [
-        { "id": "3679840613", "title": "Embers of Empire - A Roman Restoration" },
-        { "id": "2220098919", "title": "Community Flavor Pack" },
-        { "id": "3798537678", "title": "Renovatio" }
-      ]
-    },
     "cfp-reno-compatch": {
-      "workshopId": null,
+      "workshopId": 3802631920,
       "devName": "CFP_Reno_Compatch_Dev",
       "artifact": "cfp-reno-compatch",
       "dependencies": [
