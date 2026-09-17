@@ -6,48 +6,48 @@
       "mod": "eoe-mods/eoe-compat-ce",
       "workshopId": "3679850009",
       "version": "1.18.2",
-      "size": 794536,
-      "sha256": "06ae8317857ae93c0c92cc1c6ce22b5ad4a2882664aca265590f592be36de71b"
+      "size": 2377,
+      "sha256": "12ac95a0886310cfad2651989e2c2039ac3e9fdbaa99bd8e3e4bc5a74c07593e"
     },
     {
       "artifact": "eoe-compat-epe-v1.18.4.zip",
       "mod": "eoe-mods/eoe-compat-epe",
       "workshopId": "3679849030",
       "version": "1.18.4",
-      "size": 815893,
-      "sha256": "41c755ed5cf415310fc028e9437624ac31316543c3fb2890e9f5ffc70932cec9"
+      "size": 8781,
+      "sha256": "c0c763c899bfb283edab2a9a4fedb3d0d66e7477763ab6edcdb8fcfcaefa9092"
     },
     {
       "artifact": "eoe-compat-it-v1.18.3.zip",
       "mod": "eoe-mods/eoe-compat-it",
       "workshopId": "3679849283",
       "version": "1.18.3",
-      "size": 3078889,
-      "sha256": "5f85b90edcb70bba0d943e0b84c2a0bb1d6349a51ba7cc9072b9702d4e8cdb05"
+      "size": 2323880,
+      "sha256": "60b2f1db0d6ff2ddd932848e18eed971de8a724f41bfc2c9db4dd457528676f9"
     },
     {
       "artifact": "eoe-compat-reno-v1.0.0.zip",
       "mod": "eoe-mods/eoe-compat-reno",
       "workshopId": "3802802624",
       "version": "1.0.0",
-      "size": 734616,
-      "sha256": "7eb8139fbbc62f73aa35e17f07d70d7d55c95d7cd539bb1f8ef644f22791413d"
+      "size": 2628,
+      "sha256": "5fb57ae96d643dd47f3701a1698440cc4e577d4b709f53a021ecfa61d7181edf"
     },
     {
       "artifact": "embers-of-empire-v1.18.4.zip",
       "mod": "eoe-mods/eoe-main",
       "workshopId": "3679840613",
       "version": "1.18.4",
-      "size": 102858723,
-      "sha256": "16bb13f15baeb21bdbd6ce13cd5437a38ccbbcebc041bd03f3809e57e3c600d0"
+      "size": 5200230,
+      "sha256": "59a642c04b3543514369a2950329a1f25462cc00177a3de2ffc66aa23af0ca2a"
     },
     {
       "artifact": "cfp-reno-compatch-v1.0.3.zip",
       "mod": "other_mods/cfp-reno-compatch",
       "workshopId": "3802631920",
       "version": "1.0.3",
-      "size": 709644,
-      "sha256": "6dcc81b1b3b07833f3bb3b978a07baee59729e260f7e7617318e23cac20433db"
+      "size": 82157,
+      "sha256": "8bbab833edc9a4019c7adfe848f92dc58a86ec3811d72d23005d1a06a6240281"
     }
   ]
 }
