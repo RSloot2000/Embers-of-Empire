@@ -1,0 +1,177 @@
+﻿namespace = renov_julii_culture_conversion_events
+
+renov_julii_culture_conversion_events.0001 = { #Fires after using the renov_julii_culture_conversion_decision
+	type = character_event
+	#content_source = dlc_renov
+	title = renov_julii_culture_conversion_events_0001
+	#window = big_event_window
+	desc = renov_julii_culture_conversion_events_0001_desc
+
+	trigger = {
+		NOT = { root.faith = faith:roman_pagan } #if the player's outward-facing faith is NOT Hellenism, trigger this event
+	}
+	
+	theme = byzantine
+	override_background = { reference = ep3_fullscreen_restore_rome }
+
+	left_portrait = {
+		character = scope:renov_zeus
+		animation = personality_zealous
+	}
+	right_portrait = {
+		character = root
+		animation = thinking
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		character:renov_Olympian_Zeus ?= {
+			save_scope_as = renov_zeus
+		}
+		#character:renov_Olympian_Aphrodite ?= { #link once she's added
+		#	save_scope_as = renov_aphrodite
+		#}
+		character:renov_Julius_Caesar_20 ?= {
+			save_scope_as = renov_julius_caesar
+		}
+	}
+	
+	option = { #embrace Hellenism
+		name = renov_julii_culture_conversion_events.0001.a
+		trigger = {
+			NOT = { root.faith = faith:roman_pagan } #just in case the player somehow converts mid-event
+		}
+		add_to_list = renov_spouses_and_family_to_convert
+		add_character_flag = renov_spouse_or_family_to_convert
+		every_spouse = {
+			limit = {
+				OR = {
+					is_courtier_of = root
+					is_vassal_of = root
+				}
+				is_ai = yes
+				NOR = {
+					has_trait = zealous
+					faith = faith:roman_pagan
+				}
+			}
+			add_to_list = renov_spouses_and_family_to_convert
+			add_character_flag = renov_spouse_or_family_to_convert
+		}
+		every_close_or_extended_family_member = {
+			limit = {
+				employer ?= root
+				is_ai = yes
+				NOT = { has_character_flag = renov_spouse_or_family_to_convert }
+				NOR = {
+					has_trait = zealous
+					faith = faith:roman_pagan
+				}
+			}
+			add_to_list = renov_spouses_and_family_to_convert
+			add_character_flag = renov_spouse_or_family_to_convert
+		}
+		every_in_list = {
+			list = renov_spouses_and_family_to_convert
+			remove_character_flag = renov_spouse_or_family_to_convert
+		}
+		renov_convert_family_to_faith_effect = {
+			FALSE_CONVERSION = no
+			FORCED = yes
+			NEW_FAITH = faith:roman_pagan
+		}
+	}
+	option = { #become crypto-Hellenist
+		name = renov_julii_culture_conversion_events.0001.b
+		trigger = {
+			NOT = {
+				exists = secret_faith
+				secret_faith = faith:roman_pagan
+			}
+		}
+		add_to_list = renov_spouses_and_family_to_convert
+		add_character_flag = renov_spouse_or_family_to_convert
+		every_spouse = {
+			limit = {
+				OR = {
+					is_courtier_of = root
+					is_vassal_of = root
+				}
+				is_ai = yes
+				NOR = {
+					has_trait = zealous
+					faith = faith:roman_pagan
+				}
+			}
+			add_to_list = renov_spouses_and_family_to_convert
+			add_character_flag = renov_spouse_or_family_to_convert
+		}
+		every_close_or_extended_family_member = {
+			limit = {
+				employer ?= root
+				is_ai = yes
+				NOT = { has_character_flag = renov_spouse_or_family_to_convert }
+				NOR = {
+					has_trait = zealous
+					faith = faith:roman_pagan
+				}
+			}
+			add_to_list = renov_spouses_and_family_to_convert
+			add_character_flag = renov_spouse_or_family_to_convert
+		}
+		every_in_list = {
+			list = renov_spouses_and_family_to_convert
+			remove_character_flag = renov_spouse_or_family_to_convert
+			
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:roman_pagan }
+			create_character_memory = { type = renov_secretly_reconverted_to_hellenism_memory }
+			# Grab the character's recently added crypto secret
+			if = {
+				limit = {
+					any_secret = { type = secret_crypto_religionist }
+					exists = secret_faith
+					# Ignore the crypto secret if it's not new
+					# This prevents the edge case of family members finding out about other family's different crypto faiths
+					secret_faith = faith:roman_pagan
+				}
+				random_secret = {
+					type = secret_crypto_religionist
+					save_scope_as = crypto_religionist_secret
+				}
+			}
+			# Make the secret known to all other family members
+			every_in_list = {
+				list = renov_spouses_and_family_to_convert
+				if = {
+					limit = {
+						exists = scope:crypto_religionist_secret
+						prev != scope:renov_spouses_and_family_to_convert
+					}
+					scope:crypto_religionist_secret = {
+						reveal_to_without_events_effect = { CHARACTER = prev }
+					}
+				}
+			}
+		}
+	}
+	option = { #keep current faith
+		name = {
+			trigger = { #if currently a crypto-Hellenist
+				AND = {
+					exists = secret_faith
+					secret_faith = faith:roman_pagan
+				}
+			}
+			text = renov_julii_culture_conversion_events.0001.c
+		}
+		name = {
+			trigger = { #if a genuine believer of current faith
+				NOT = {
+					exists = secret_faith
+					secret_faith = faith:roman_pagan
+				}
+			}
+			text = renov_julii_culture_conversion_events.0001.d
+		}
+	}
+}

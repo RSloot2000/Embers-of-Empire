@@ -255,6 +255,10 @@ if ($Mod.Count -gt 0) {
     }
 }
 
+# ---------------------------------------------------------------------------
+# Pass 1: generate a VDF for every selected mod.
+# ---------------------------------------------------------------------------
+$vdfEntries = @()
 foreach ($name in $selected) {
     $configEntry = $config.mods.$name
     if (-not $configEntry.workshopId) {
@@ -272,14 +276,16 @@ foreach ($name in $selected) {
     }
 
     # --- Changelog: prefer file from workshop/change-notes/<mod>.bbcode ---
-    $changelog = $Changelog
-    if ([string]::IsNullOrWhiteSpace($changelog)) {
+    # NOTE: use $modChangelog (not $changelog) because PowerShell is case-insensitive
+    # and $changelog would alias the $Changelog parameter.
+    $modChangelog = $Changelog
+    if ([string]::IsNullOrWhiteSpace($modChangelog)) {
         $changelogFile = Join-Path $repositoryRoot "workshop/change-notes/$name.bbcode"
         if (Test-Path $changelogFile) {
-            $changelog = (Get-Content $changelogFile -Raw).Trim()
+            $modChangelog = (Get-Content $changelogFile -Raw).Trim()
             Write-Host "  Changelog: read from $changelogFile" -ForegroundColor Cyan
         } else {
-            $changelog = "Version $($modEntry.Version)"
+            $modChangelog = "Version $($modEntry.Version)"
             Write-Host "  Changelog: no file found, using default" -ForegroundColor DarkGray
         }
     }
@@ -298,8 +304,8 @@ foreach ($name in $selected) {
         $previewFile = ''
     }
 
-    # --- Escape for VDF: only quotes (VDF supports real newlines in quoted strings) ---
-    $escapedChangelog = $changelog.Replace('"', '\"')
+    # --- Escape for VDF: quotes must be \" (newlines stay real) ---
+    $escapedChangelog = $modChangelog.Replace('"', '\"')
     $escapedDescription = $description.Replace('"', '\"')
 
     # --- Build VDF ---
@@ -324,37 +330,57 @@ foreach ($name in $selected) {
     [IO.File]::WriteAllLines($vdfPath, $vdfLines, [Text.UTF8Encoding]::new($false))
     Write-Host "Generated VDF: $vdfPath"
 
-    if ($DryRun) {
-        Write-Host "Dry run: skipping SteamCMD upload for '$name'."
-        continue
+    $vdfEntries += [pscustomobject]@{
+        Name        = $name
+        DisplayName = $modEntry.DisplayName
+        WorkshopId  = $configEntry.workshopId
+        VdfPath     = $vdfPath
     }
+}
 
-    # Prompt for Steam Guard code if not already provided
-    if ($SteamUser -and -not $SteamGuardCode) {
-        $SteamGuardCode = Show-SteamGuardPrompt
-        if (-not $SteamGuardCode) {
-            throw "No Steam Guard code provided; upload cancelled for '$name'."
-        }
-        Write-Host "  Steam Guard code received." -ForegroundColor Cyan
-    }
+if ($DryRun) {
+    Write-Host "Dry run: skipping SteamCMD upload."
+    return
+}
 
-    $steamArgs = @()
-    if ($SteamUser) {
-        $steamArgs += @('+login', $SteamUser)
-        if ($steamPassword) {
-            $steamArgs += $steamPassword
-        }
-        if ($SteamGuardCode) {
-            $steamArgs += $SteamGuardCode
-        }
+# ---------------------------------------------------------------------------
+# Pass 2: upload ALL items in a single SteamCMD session.
+# The Steam Guard code is single-use, so logging in once for all uploads
+# is required.
+# ---------------------------------------------------------------------------
+# Prompt for Steam Guard code if not already provided
+if ($SteamUser -and -not $SteamGuardCode) {
+    $SteamGuardCode = Show-SteamGuardPrompt
+    if (-not $SteamGuardCode) {
+        throw 'No Steam Guard code provided; upload cancelled.'
     }
-    $steamArgs += @('+workshop_build_item', $vdfPath, '+quit')
+    Write-Host "  Steam Guard code received." -ForegroundColor Cyan
+}
 
-    Write-Host "Uploading '$($modEntry.DisplayName)' (workshop id $($configEntry.workshopId))..."
-    & $SteamCmdPath @steamArgs
-    $exitCode = $LASTEXITCODE
-    if ($exitCode -ne 0) {
-        throw "SteamCMD exited with code $exitCode for '$name'"
+$steamArgs = @()
+if ($SteamUser) {
+    $steamArgs += @('+login', $SteamUser)
+    if ($steamPassword) {
+        $steamArgs += $steamPassword
     }
-    Write-Host "Uploaded '$($modEntry.DisplayName)' to the Steam Workshop."
+    if ($SteamGuardCode) {
+        $steamArgs += $SteamGuardCode
+    }
+}
+foreach ($entry in $vdfEntries) {
+    $steamArgs += @('+workshop_build_item', $entry.VdfPath)
+}
+$steamArgs += '+quit'
+
+foreach ($entry in $vdfEntries) {
+    Write-Host "Uploading '$($entry.DisplayName)' (workshop id $($entry.WorkshopId))..."
+}
+
+& $SteamCmdPath @steamArgs
+$exitCode = $LASTEXITCODE
+if ($exitCode -ne 0) {
+    throw "SteamCMD exited with code $exitCode"
+}
+foreach ($entry in $vdfEntries) {
+    Write-Host "Uploaded '$($entry.DisplayName)' to the Steam Workshop."
 }
