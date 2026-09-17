@@ -7,7 +7,7 @@
       "workshopId": "3679850009",
       "version": "1.18.2",
       "size": 2377,
-      "sha256": "12ac95a0886310cfad2651989e2c2039ac3e9fdbaa99bd8e3e4bc5a74c07593e"
+      "sha256": "3214e5bb3fae71a2a106b1f1a36b36849848d6874ddb3b93468878b6e1068ca2"
     },
     {
       "artifact": "eoe-compat-epe-v1.18.4.zip",
@@ -15,7 +15,7 @@
       "workshopId": "3679849030",
       "version": "1.18.4",
       "size": 8781,
-      "sha256": "c0c763c899bfb283edab2a9a4fedb3d0d66e7477763ab6edcdb8fcfcaefa9092"
+      "sha256": "d05f11a9ffccb3f759a01347594fd664d9cf00ad8eb0f1a23f6bb03691e59c98"
     },
     {
       "artifact": "eoe-compat-it-v1.18.3.zip",
@@ -23,7 +23,7 @@
       "workshopId": "3679849283",
       "version": "1.18.3",
       "size": 2323880,
-      "sha256": "60b2f1db0d6ff2ddd932848e18eed971de8a724f41bfc2c9db4dd457528676f9"
+      "sha256": "0fbf9d5e9f58e5b90fa96a5331e61d944c1d4438cfbb98743e3369afe39539c9"
     },
     {
       "artifact": "eoe-compat-reno-v1.0.0.zip",
@@ -31,7 +31,7 @@
       "workshopId": "3802802624",
       "version": "1.0.0",
       "size": 2628,
-      "sha256": "5fb57ae96d643dd47f3701a1698440cc4e577d4b709f53a021ecfa61d7181edf"
+      "sha256": "33fdaf1881bf784093295c496584f82e8e1733d0e05be98d3f43894a3020f1ed"
     },
     {
       "artifact": "embers-of-empire-v1.18.4.zip",
@@ -39,7 +39,7 @@
       "workshopId": "3679840613",
       "version": "1.18.4",
       "size": 5200230,
-      "sha256": "59a642c04b3543514369a2950329a1f25462cc00177a3de2ffc66aa23af0ca2a"
+      "sha256": "62e9ac2efb4eec764400d4435913fa1a0fc7097adc8a6c7f862105712e5969dc"
     },
     {
       "artifact": "cfp-reno-compatch-v1.0.3.zip",
@@ -47,7 +47,7 @@
       "workshopId": "3802631920",
       "version": "1.0.3",
       "size": 82157,
-      "sha256": "8bbab833edc9a4019c7adfe848f92dc58a86ec3811d72d23005d1a06a6240281"
+      "sha256": "6026102f93a0133ccdd101b4e2f8fad7c0800d6eb1a0b2931d21c960843c9ed5"
     }
   ]
 }
