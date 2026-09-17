@@ -32,6 +32,14 @@ foreach ($mod in $mods) {
     $stagingDirectory = Join-Path $OutputDirectory ($artifactName + '-staging')
     $archivePath = Join-Path $OutputDirectory ($artifactName + '.zip')
 
+    # Remove old versioned zips for this artifact (e.g. artifact-v1.0.1.zip when building v1.0.3)
+    $oldZips = Get-ChildItem $OutputDirectory -Filter "$($mod.Artifact)-v*.zip" -File |
+        Where-Object { $_.Name -ne "$artifactName.zip" }
+    foreach ($old in $oldZips) {
+        Remove-Item $old.FullName -Force
+        Write-Host "Removed old zip: $($old.Name)"
+    }
+
     if (Test-Path $stagingDirectory) {
         Remove-Item $stagingDirectory -Recurse -Force
     }

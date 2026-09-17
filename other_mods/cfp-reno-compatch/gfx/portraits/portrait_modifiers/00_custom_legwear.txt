@@ -5,9 +5,6 @@ custom_legwear = {
 	add_accessory_modifiers = {
 		gene = legwear
 		template = no_legwear
-		is_valid_custom = {
-			NOT = { cfp_allow_nudity_in_barbershop_trigger = no }
-		}
 	}
 
 	add_accessory_modifiers = {
@@ -51,6 +48,86 @@ custom_legwear = {
 			has_fp1_dlc_trigger = yes
 		}
 		template = fp1_common_legwear
+	}
+
+	add_accessory_modifiers = {
+		gene = legwear
+		template = ccp7_emishi_com_legwear
+		is_valid_custom = {
+			has_cp7_dlc_trigger = yes
+		}
+	}
+
+	add_accessory_modifiers = {
+		gene = legwear
+		template = ccp7_emishi_nob_legwear
+		is_valid_custom = {
+			has_cp7_dlc_trigger = yes
+		}
+	}
+
+	add_accessory_modifiers = {
+		gene = legwear
+		template = ccp7_nivkh_com_legwear
+		is_valid_custom = {
+			has_cp7_dlc_trigger = yes
+		}
+	}
+
+	add_accessory_modifiers = {
+		gene = legwear
+		is_valid_custom = {
+			has_tgp_dlc_trigger = yes
+		}
+		template = tgp_chinese_commoner_legwear
+	}
+
+	add_accessory_modifiers = {
+		gene = legwear
+		is_valid_custom = {
+			has_tgp_dlc_trigger = yes
+		}
+		template = tgp_chinese_high_nobility_legwear
+	}	
+
+	add_accessory_modifiers = {
+		gene = legwear
+		is_valid_custom = {
+			has_tgp_dlc_trigger = yes
+		}
+		template = tgp_chinese_war_legwear
+	}
+
+	add_accessory_modifiers = {
+		gene = legwear
+		is_valid_custom = {
+			has_tgp_dlc_trigger = yes
+		}
+		template = tgp_chinese_nobility_legwear
+	}
+
+	add_accessory_modifiers = {
+		gene = legwear
+		is_valid_custom = {
+			has_tgp_dlc_trigger = yes
+		}
+		template = tgp_japanese_commoner_legwear
+	}
+
+	add_accessory_modifiers = {
+		gene = legwear
+		is_valid_custom = {
+			has_tgp_dlc_trigger = yes
+		}
+		template = tgp_japanese_war_legwear
+	}
+
+	add_accessory_modifiers = {
+		gene = legwear
+		is_valid_custom = {
+			has_tgp_dlc_trigger = yes
+		}
+		template = tgp_japanese_imperial_legwear
 	}
 
 	add_accessory_modifiers = {
@@ -127,87 +204,17 @@ custom_legwear = {
 
 	add_accessory_modifiers = {
 		gene = legwear
+		template = fp2_andalusian_legwear
+	}	
+
+	add_accessory_modifiers = {
+		gene = legwear
+		template = epe_ottoman_turks_legwear
+	}	
+
+	add_accessory_modifiers = {
+		gene = legwear
 		template = cfp_sub_saharan_common_legwear
-	}
-
-	add_accessory_modifiers = {
-		gene = legwear
-		is_valid_custom = {
-			has_tgp_dlc_trigger = yes
-		}
-		template = tgp_chinese_commoner_legwear
-	}
-
-	add_accessory_modifiers = {
-		gene = legwear
-		is_valid_custom = {
-			has_tgp_dlc_trigger = yes
-		}
-		template = tgp_chinese_war_legwear
-	}
-
-	add_accessory_modifiers = {
-		gene = legwear
-		is_valid_custom = {
-			has_tgp_dlc_trigger = yes
-		}
-		template = tgp_chinese_nobility_legwear
-	}
-
-	add_accessory_modifiers = {
-		gene = legwear
-		is_valid_custom = {
-			has_tgp_dlc_trigger = yes
-		}
-		template = tgp_chinese_high_nobility_legwear
-	}
-
-	add_accessory_modifiers = {
-		gene = legwear
-		is_valid_custom = {
-			has_tgp_dlc_trigger = yes
-		}
-		template = tgp_japanese_commoner_legwear
-	}
-
-	add_accessory_modifiers = {
-		gene = legwear
-		is_valid_custom = {
-			has_tgp_dlc_trigger = yes
-		}
-		template = tgp_japanese_war_legwear
-	}
-
-	add_accessory_modifiers = {
-		gene = legwear
-		is_valid_custom = {
-			has_tgp_dlc_trigger = yes
-		}
-		template = tgp_japanese_imperial_legwear
-	}
-
-	add_accessory_modifiers = {
-		gene = legwear
-		template = ccp7_emishi_com_legwear
-		is_valid_custom = {
-			has_cp7_dlc_trigger = yes
-		}
-	}
-
-	add_accessory_modifiers = {
-		gene = legwear
-		template = ccp7_emishi_nob_legwear
-		is_valid_custom = {
-			has_cp7_dlc_trigger = yes
-		}
-	}
-
-	add_accessory_modifiers = {
-		gene = legwear
-		template = ccp7_nivkh_com_legwear
-		is_valid_custom = {
-			has_cp7_dlc_trigger = yes
-		}
 	}
 
 	add_accessory_modifiers = {
@@ -224,16 +231,6 @@ custom_legwear = {
 		gene = legwear
 		template = cfp_javanese_royalty_legwear
 	}
-
-	add_accessory_modifiers = {
-		gene = legwear
-		template = fp2_andalusian_legwear
-	}	
-
-	add_accessory_modifiers = {
-		gene = legwear
-		template = epe_ottoman_turks_legwear
-	}	
 
 	add_accessory_modifiers = {
 		gene = legwear

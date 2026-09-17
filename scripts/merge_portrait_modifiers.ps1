@@ -1,7 +1,7 @@
 <#
 .SYNOPSIS
 Merge two CK3 portrait modifier files (union of add_accessory_modifiers blocks by template name).
-A = CFP (base), B = Reno (appended). Shared templates keep A's version.
+A = CFP+EPE compat (base), B = Reno (leading). Shared templates keep B's (Reno) version.
 #>
 param(
     [Parameter(Mandatory)][string]$A,
@@ -107,9 +107,13 @@ if ($parseA.Usage) { [void]$sb.AppendLine("$indent usage = $($parseA.Usage)") }
 if ($parseA.InterfacePosition) { [void]$sb.AppendLine("$indent interface_position = $($parseA.InterfacePosition)") }
 [void]$sb.AppendLine()
 
-# A's blocks in order
+# A's blocks in order; B (Reno) wins for shared templates
 foreach ($name in $parseA.BlockOrder) {
-    [void]$sb.AppendLine($parseA.Blocks[$name])
+    if ($parseB.Blocks.Contains($name)) {
+        [void]$sb.AppendLine($parseB.Blocks[$name])
+    } else {
+        [void]$sb.AppendLine($parseA.Blocks[$name])
+    }
     [void]$sb.AppendLine()
 }
 

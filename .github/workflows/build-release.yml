@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: build-release-${{ github.workflow }}-${{ github.ref }}
@@ -55,3 +55,17 @@ jobs:
           path: dist/
           if-no-files-found: error
           retention-days: 14
+
+      - name: Commit dist to repository
+        shell: pwsh
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dist/
+          if (-not (git diff --cached --quiet)) {
+            git commit -m "chore: update release zips"
+            git push
+            Write-Host "Committed and pushed dist/"
+          } else {
+            Write-Host "No changes in dist/ — nothing to commit"
+          }

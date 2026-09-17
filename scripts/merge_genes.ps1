@@ -179,8 +179,7 @@ if ($different.Count -gt 0) {
     Write-Host ""
     Write-Host "  shared-but-different:"
     $different | ForEach-Object {
-        $tag = if ($allA[$_].IsCloth) { "cloth-union" } else { "morph-keepA" }
-        Write-Host "    $_  [$tag]"
+        Write-Host "    $_  [B-wins]"
     }
 }
 if ($bOnly.Count -gt 0) {
@@ -211,19 +210,11 @@ Walk-Node $parseA.Root
 foreach ($leaf in $leafOrder) {
     $ps = Join-PathStr $leaf.Path
     $mergedByPath[$ps] = [ordered]@{}
-    # A's genes in order
+    # A's genes in order; B (Reno) wins for shared genes
     foreach ($k in $leaf.Genes.Keys) {
-        if ($allB.Contains($k) -and $allA[$k].IsCloth -and $allB[$k].IsCloth -and ($different -contains $k)) {
-            # union
-            $urefs = [ordered]@{}
-            foreach ($g in $allA[$k].Refs.Keys) { $urefs[$g] = [ordered]@{}; foreach ($r in $allA[$k].Refs[$g].Keys) { $urefs[$g][$r] = $allA[$k].Refs[$g][$r] } }
-            foreach ($g in $allB[$k].Refs.Keys) {
-                if (-not $urefs.Contains($g)) { $urefs[$g] = [ordered]@{} }
-                foreach ($r in $allB[$k].Refs[$g].Keys) { if (-not $urefs[$g].Contains($r)) { $urefs[$g][$r] = $allB[$k].Refs[$g][$r] } }
-            }
-            $ugene = @{ Index = $allA[$k].Index; Aliases = $allA[$k].Aliases; Refs = $urefs }
-            $indent = $leaf.Path.Count + 1
-            $mergedByPath[$ps][$k] = Serialize-UnionGene $k $ugene $indent
+        if ($allB.Contains($k)) {
+            # B (Reno) wins for shared genes
+            $mergedByPath[$ps][$k] = $allB[$k].Raw
         }
         else {
             $mergedByPath[$ps][$k] = $allA[$k].Raw

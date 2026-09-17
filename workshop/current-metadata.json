@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "retrievedAt": "2026-09-16T21:33:52.9210878+00:00",
+  "retrievedAt": "2026-09-17T13:10:12.8707086+00:00",
   "source": "https://api.steampowered.com/ISteamRemoteStorage/GetPublishedFileDetails/v1/",
   "items": [
     {
@@ -115,12 +115,12 @@
       "result": 1,
       "title": "EoE + Renovatio",
       "descriptorName": "EoE + Renovatio",
-      "descriptorVersion": "1.19.0.6.",
+      "descriptorVersion": "1.0.0",
       "descriptorSupportedVersion": "1.19.0.6",
       "visibility": 0,
       "timeCreated": "2026-09-16T18:55:21.0000000+00:00",
-      "timeUpdated": "2026-09-16T19:38:47.0000000+00:00",
-      "previewUrl": "https://images.steamusercontent.com/ugc/9933537441604584152/9D46C8FE837394CFC5BBB2A8D022789A6E8EE23E/",
+      "timeUpdated": "2026-09-17T12:21:39.0000000+00:00",
+      "previewUrl": "https://images.steamusercontent.com/ugc/14978465184321072572/9D46C8FE837394CFC5BBB2A8D022789A6E8EE23E/",
       "tags": [
         "Religion",
         "Historical",
@@ -130,7 +130,7 @@
         "Map"
       ],
       "pageMetadataAvailable": true,
-      "changeNoteCount": 3,
+      "changeNoteCount": 4,
       "dependenciesVerifiedFromPage": true,
       "dependencies": [
         {
@@ -179,7 +179,7 @@
       "result": 1,
       "title": "CFP + Renovatio Compatibility Patch",
       "descriptorName": "CFP + Renovatio Compatibility Patch",
-      "descriptorVersion": "1.0.1",
+      "descriptorVersion": "1.0.3",
       "descriptorSupportedVersion": "1.19.0.6",
       "visibility": 0,
       "timeCreated": "2026-09-16T13:24:27.0000000+00:00",

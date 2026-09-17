@@ -7,7 +7,7 @@
       "workshopId": "3679850009",
       "version": "1.18.2",
       "size": 794536,
-      "sha256": "ef0c9ac18d801bdd43eef7bd69b9486f98b0307172756f5456033edfdfb25a7f"
+      "sha256": "06ae8317857ae93c0c92cc1c6ce22b5ad4a2882664aca265590f592be36de71b"
     },
     {
       "artifact": "eoe-compat-epe-v1.18.4.zip",
@@ -15,7 +15,7 @@
       "workshopId": "3679849030",
       "version": "1.18.4",
       "size": 815893,
-      "sha256": "d38cbbedb676a0dc0e11075285a4db019d3437281c9cbcc5442ff93d9204842f"
+      "sha256": "41c755ed5cf415310fc028e9437624ac31316543c3fb2890e9f5ffc70932cec9"
     },
     {
       "artifact": "eoe-compat-it-v1.18.3.zip",
@@ -31,7 +31,7 @@
       "workshopId": "3802802624",
       "version": "1.0.0",
       "size": 734616,
-      "sha256": "964a58f02b31120a0c804421cfcc0725a6ba863b276cf914f8d6daafc9eb2673"
+      "sha256": "7eb8139fbbc62f73aa35e17f07d70d7d55c95d7cd539bb1f8ef644f22791413d"
     },
     {
       "artifact": "embers-of-empire-v1.18.4.zip",
@@ -39,15 +39,15 @@
       "workshopId": "3679840613",
       "version": "1.18.4",
       "size": 102858723,
-      "sha256": "21da82acb368b73bd03682b5943a2b07c32f681d8a75b756841e64b9cc88a6b0"
+      "sha256": "16bb13f15baeb21bdbd6ce13cd5437a38ccbbcebc041bd03f3809e57e3c600d0"
     },
     {
-      "artifact": "cfp-reno-compatch-v1.0.1.zip",
+      "artifact": "cfp-reno-compatch-v1.0.3.zip",
       "mod": "other_mods/cfp-reno-compatch",
       "workshopId": "3802631920",
-      "version": "1.0.1",
-      "size": 686639,
-      "sha256": "d757e940ff0217de4bd7b47956c1fbd57661e43c40067819d0fccefa1578c105"
+      "version": "1.0.3",
+      "size": 709644,
+      "sha256": "6dcc81b1b3b07833f3bb3b978a07baee59729e260f7e7617318e23cac20433db"
     }
   ]
 }
